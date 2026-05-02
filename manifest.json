@@ -1,0 +1,27 @@
+{
+  "name": "Abdelkader Atia - Animal Sciences & Agricultural Innovation",
+  "short_name": "Abdelkader Atia",
+  "description": "Personal website of Abdelkader Atia - PhD student in Animal Sciences, FBS Trainer, and Digital Agriculture Solutions Developer",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0e27",
+  "theme_color": "#06b6d4",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "science", "agriculture"],
+  "lang": "ar",
+  "dir": "rtl"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "abdelkader-atia-website",
+  "version": "1.0.0",
+  "description": "Bilingual personal website for Abdelkader Atia - PhD Researcher & Agricultural Innovator",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Build complete - static site ready for deployment'",
+    "minify-css": "npx cssnano assets/css/style.css assets/css/style.min.css",
+    "minify-js": "npx terser assets/js/main-ar.js -o assets/js/main-ar.min.js && npx terser assets/js/main-en.js -o assets/js/main-en.min.js"
+  },
+  "keywords": [
+    "agriculture",
+    "research",
+    "phd",
+    "training",
+    "digital-innovation"
+  ],
+  "author": "Abdelkader Atia",
+  "license": "MIT",
+  "devDependencies": {
+    "cssnano": "^7.0.0",
+    "serve": "^14.2.0",
+    "terser": "^5.27.0"
+  }
+}
