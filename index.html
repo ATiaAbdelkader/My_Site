@@ -8,17 +8,21 @@
   <meta name="author" content="عبد القادر عطيه">
   <meta name="og:title" content="عبد القادر عطيه | Abdelkader Atia - Ph.D Researcher & Agricultural Innovator">
   <meta name="og:description" content="محترف متخصص في البحث العلمي والتدريب والابتكار الرقمي في مجال الزراعة">
-  <meta name="og:image" content="/og-image.jpg">
+  <meta name="og:image" content="/og-image.svg">
   <meta name="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="عبد القادر عطيه | Abdelkader Atia - Ph.D Researcher & Agricultural Innovator">
   <meta name="twitter:description" content="محترف متخصص في البحث العلمي والتدريب والابتكار الرقمي في مجال الزراعة">
-  <meta name="twitter:image" content="/og-image.jpg">
+  <meta name="twitter:image" content="/og-image.svg">
   <link rel="canonical" href="https://abdelkader-atia.com/">
   <link rel="manifest" href="/manifest.json">
   <title>عبد القادر عطيه | Abdelkader Atia - Agricultural Researcher & Trainer</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌾</text></svg>">
   <script type="application/ld+json">
@@ -68,7 +72,7 @@ tailwind.config = {
  </head>
  <body class="h-full overflow-auto" id="app-body">
   <a href="#home" class="sr-only skip-link-focus">انتقل إلى المحتوى الرئيسي</a>
-  <!-- Scroll to top -->  <button id="scrollTopBtn" class="scroll-top w-12 h-12 rounded-full btn-primary flex items-center justify-center text-white" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top"> <i data-lucide="chevron-up" class="icon-md"></i> </button> <!-- NAVBAR -->
+  <!-- NAVBAR -->
   <nav id="navbar" class="fixed top-0 right-0 left-0 z-50 transition-all duration-300 navbar-transparent">
    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16 lg:h-20">
@@ -108,50 +112,33 @@ tailwind.config = {
    </div>
   </nav><!-- HERO SECTION -->
   <section id="home" class="hero-bg relative min-h-full flex items-center overflow-hidden">
-   <!-- Particles -->
-   <div class="float-particle" style="width:6px;height:6px;background:#22d3ee;top:20%;right:15%;animation-delay:0s;"></div>
-   <div class="float-particle" style="width:4px;height:4px;background:#fbbf24;top:60%;right:80%;animation-delay:2s;"></div>
-   <div class="float-particle" style="width:8px;height:8px;background:#22d3ee;top:40%;right:60%;animation-delay:4s;"></div>
-   <div class="float-particle" style="width:5px;height:5px;background:#fbbf24;top:75%;right:30%;animation-delay:1s;"></div>
-   <div class="float-particle" style="width:3px;height:3px;background:#22d3ee;top:10%;right:50%;animation-delay:3s;"></div><!-- DNA decoration -->
-   <div class="dna-helix" style="top:-20px;left:-40px;">
-    🧬
-   </div>
-   <div class="dna-helix" style="bottom:20px;right:-30px;font-size:150px;">
-    🔬
-   </div>
+
    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 lg:py-0 w-full">
     <div class="grid lg:grid-cols-2 gap-12 items-center">
      <div class="text-right">
-      <div class="anim-in anim-delay-1 inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-cyan-400 text-sm mb-6">
+      <div class="anim-in inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-cyan-400 text-sm mb-6">
        <i data-lucide="sparkles" style="width:14px;height:14px"></i> <span>باحث دكتوراه | مدرب | مبتكر</span>
       </div>
-      <h1 id="heroTitle" class="anim-in anim-delay-2 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-900 leading-tight mb-6">تحويل <span class="gradient-text">المعرفة الزراعية</span> إلى أثر حقيقي</h1>
-      <p id="heroSubtitle" class="anim-in anim-delay-3 text-gray-400 text-base sm:text-lg leading-relaxed mb-8 max-w-xl">باحث دكتوراه ومدرب ومبتكر في الزراعة الرقمية، أعمل على بناء جسور بين العلم والتطبيق لتطوير أنظمة زراعية أكثر ذكاءً وكفاءة.</p>
-      <div class="anim-in anim-delay-4 flex flex-wrap gap-4">
-       <a href="#projects" class="btn-primary text-white px-7 py-3 rounded-xl font-semibold text-sm flex items-center gap-2"> <span>استكشف أعمالي</span> <i data-lucide="arrow-left" style="width:16px;height:16px"></i> </a> <a href="#contact" class="btn-outline text-cyan-400 px-7 py-3 rounded-xl font-semibold text-sm">تواصل معي</a> <button class="btn-gold text-navy-900 px-7 py-3 rounded-xl font-bold text-sm flex items-center gap-2" onclick="downloadCV()"> <i data-lucide="download" style="width:16px;height:16px"></i> <span>تحميل السيرة</span> </button>
+      <h1 id="heroTitle" class="anim-in text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-900 leading-tight mb-6">تحويل <span class="gradient-text">المعرفة الزراعية</span> إلى أثر حقيقي</h1>
+      <p id="heroSubtitle" class="anim-in text-gray-400 text-base sm:text-lg leading-relaxed mb-8 max-w-xl">باحث دكتوراه ومدرب ومبتكر في الزراعة الرقمية، أعمل على بناء جسور بين العلم والتطبيق لتطوير أنظمة زراعية أكثر ذكاءً وكفاءة.</p>
+      <div class="anim-in flex flex-wrap gap-4">
+        <a href="#projects" class="btn-primary text-white px-7 py-3 rounded-xl font-semibold text-sm flex items-center gap-2"> <span>استكشف أعمالي</span> <i data-lucide="arrow-left" style="width:16px;height:16px"></i> </a> <a href="#contact" class="btn-outline text-cyan-400 px-7 py-3 rounded-xl font-semibold text-sm">تواصل معي</a>
       </div><!-- Quick Stats -->
-      <div class="anim-in anim-delay-5 flex gap-8 mt-10">
+      <div class="anim-in flex gap-8 mt-10">
        <div>
-        <div class="stat-number gradient-text">
-         +10
-        </div>
+        <div class="stat-number gradient-text" data-target="10">0</div>
         <div class="text-gray-500 text-xs mt-1">
          سنوات خبرة
         </div>
        </div>
        <div>
-        <div class="stat-number gradient-text">
-         +25
-        </div>
+        <div class="stat-number gradient-text" data-target="25">0</div>
         <div class="text-gray-500 text-xs mt-1">
          مشروع بحثي
         </div>
        </div>
        <div>
-        <div class="stat-number gradient-text">
-         +500
-        </div>
+        <div class="stat-number gradient-text" data-target="500">0</div>
         <div class="text-gray-500 text-xs mt-1">
          متدرب
         </div>
@@ -172,26 +159,11 @@ tailwind.config = {
           PhD Researcher
          </div>
         </div>
-       </div><!-- Orbiting icons -->
-       <div class="absolute top-0 right-1/2 -translate-y-2 translate-x-1/2 w-12 h-12 glass rounded-full flex items-center justify-center text-2xl" style="animation:floatUp 6s ease-in-out infinite;">
-        🔬
-       </div>
-       <div class="absolute bottom-4 right-0 w-12 h-12 glass rounded-full flex items-center justify-center text-2xl" style="animation:floatUp 6s ease-in-out infinite 2s;">
-        💻
-       </div>
-       <div class="absolute bottom-4 left-0 w-12 h-12 glass rounded-full flex items-center justify-center text-2xl" style="animation:floatUp 6s ease-in-out infinite 4s;">
-        🐄
-       </div>
-       <div class="absolute top-1/2 left-0 -translate-x-4 w-12 h-12 glass rounded-full flex items-center justify-center text-2xl" style="animation:floatUp 6s ease-in-out infinite 1s;">
-        📊
-       </div>
+
       </div>
      </div>
     </div>
-   </div><!-- Scroll indicator -->
-   <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-500 text-xs" style="animation:floatUp 3s ease-in-out infinite;">
-    <span>اكتشف المزيد</span> <i data-lucide="chevron-down" style="width:16px;height:16px"></i>
-   </div>
+
   </section><!-- ABOUT SECTION -->
   <section id="about" class="section-padding relative">
    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -521,49 +493,49 @@ tailwind.config = {
      <h2 class="text-3xl sm:text-4xl font-800 text-white mt-3 gradient-border inline-block pb-3">الإنجازات والشهادات</h2>
     </div>
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-     <div class="glass-card rounded-2xl p-6 hover:scale-105 transition-transform cursor-pointer group">
+     <div class="glass-card rounded-2xl p-6 cursor-pointer">
       <div class="flex items-center gap-3 mb-3">
-       <div class="w-10 h-10 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform" style="background:rgba(251,191,36,0.15);"><span class="text-xl">🏆</span>
+       <div class="w-10 h-10 rounded-lg flex items-center justify-center " style="background:rgba(251,191,36,0.15);"><span class="text-xl">🏆</span>
        </div>
        <h3 class="text-white font-bold">مؤتمرات دولية</h3>
       </div>
       <p class="text-gray-400 text-sm">مشاركات فعّالة في أكثر من 10 مؤتمرات علمية دولية مع أوراق بحثية مُقدمة (2023-2026)</p>
      </div>
-     <div class="glass-card rounded-2xl p-6 hover:scale-105 transition-transform cursor-pointer group">
+     <div class="glass-card rounded-2xl p-6 cursor-pointer">
       <div class="flex items-center gap-3 mb-3">
-       <div class="w-10 h-10 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform" style="background:rgba(34,211,238,0.15);"><span class="text-xl">📄</span>
+       <div class="w-10 h-10 rounded-lg flex items-center justify-center " style="background:rgba(34,211,238,0.15);"><span class="text-xl">📄</span>
        </div>
        <h3 class="text-white font-bold">أبحاث منشورة</h3>
       </div>
       <p class="text-gray-400 text-sm">أكثر من 25 بحثًا علميًا محكّمًا منشورًا في مجلات دولية متخصصة وعالية التصنيف</p>
      </div>
-     <div class="glass-card rounded-2xl p-6 hover:scale-105 transition-transform cursor-pointer group">
+     <div class="glass-card rounded-2xl p-6 cursor-pointer">
       <div class="flex items-center gap-3 mb-3">
-       <div class="w-10 h-10 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform" style="background:rgba(251,191,36,0.15);"><span class="text-xl">🎖️</span>
+       <div class="w-10 h-10 rounded-lg flex items-center justify-center " style="background:rgba(251,191,36,0.15);"><span class="text-xl">🎖️</span>
        </div>
        <h3 class="text-white font-bold">شهادات مهنية</h3>
       </div>
       <p class="text-gray-400 text-sm">+40 شهادة تدريب دولية متقدمة من مؤسسات مرموقة (Wageningen, FAO, ASM, GIZ وغيرها)</p>
      </div>
-     <div class="glass-card rounded-2xl p-6 hover:scale-105 transition-transform cursor-pointer group">
+     <div class="glass-card rounded-2xl p-6 cursor-pointer">
       <div class="flex items-center gap-3 mb-3">
-       <div class="w-10 h-10 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform" style="background:rgba(34,211,238,0.15);"><span class="text-xl">🌍</span>
+       <div class="w-10 h-10 rounded-lg flex items-center justify-center " style="background:rgba(34,211,238,0.15);"><span class="text-xl">🌍</span>
        </div>
        <h3 class="text-white font-bold">عضويات دولية</h3>
       </div>
       <p class="text-gray-400 text-sm">عضو نشط في الجمعية الأمريكية لعلم الأحياء الدقيقة، جمعية تربية الأسماك الأوروبية، والرابطة الدولية لممارسري الأعمال الزراعية</p>
      </div>
-     <div class="glass-card rounded-2xl p-6 hover:scale-105 transition-transform cursor-pointer group">
+     <div class="glass-card rounded-2xl p-6 cursor-pointer">
       <div class="flex items-center gap-3 mb-3">
-       <div class="w-10 h-10 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform" style="background:rgba(251,191,36,0.15);"><span class="text-xl">📱</span>
+       <div class="w-10 h-10 rounded-lg flex items-center justify-center " style="background:rgba(251,191,36,0.15);"><span class="text-xl">📱</span>
        </div>
        <h3 class="text-white font-bold">ابتكارات رقمية</h3>
       </div>
       <p class="text-gray-400 text-sm">تطوير نماذج أولية لمصائد حشرات ونظم هيدروبونيك/أكوابونيك متكاملة</p>
      </div>
-     <div class="glass-card rounded-2xl p-6 hover:scale-105 transition-transform cursor-pointer group">
+     <div class="glass-card rounded-2xl p-6 cursor-pointer">
       <div class="flex items-center gap-3 mb-3">
-       <div class="w-10 h-10 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform" style="background:rgba(34,211,238,0.15);"><span class="text-xl">🤝</span>
+       <div class="w-10 h-10 rounded-lg flex items-center justify-center " style="background:rgba(34,211,238,0.15);"><span class="text-xl">🤝</span>
        </div>
        <h3 class="text-white font-bold">قيادة مجتمعية</h3>
       </div>
@@ -589,67 +561,8 @@ tailwind.config = {
      <span class="text-cyan-400 text-sm font-semibold">مشاركة المعرفة</span>
      <h2 class="text-3xl sm:text-4xl font-800 text-white mt-3 gradient-border inline-block pb-3">أحدث المقالات</h2>
     </div>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-     <div class="glass-card rounded-2xl overflow-hidden hover:scale-105 transition-transform">
-      <div class="h-40 flex items-center justify-center text-5xl" style="background:linear-gradient(135deg,rgba(34,211,238,0.15),rgba(6,182,212,0.05));">
-       🐄
-      </div>
-      <div class="p-6">
-       <span class="text-cyan-400 text-xs font-semibold">علوم الحيوان</span>
-       <h3 class="text-white font-bold mt-2 mb-2">تحسين جودة السائل المنوي: أحدث التقنيات</h3>
-       <p class="text-gray-400 text-sm mb-4">نظرة شاملة على أحدث الأبحاث والتقنيات المستخدمة في تقييم وتحسين جودة السائل المنوي والأداء التناسلي...</p><button onclick="showToast('📝 المقالة قادمة قريبًا!', 'info')" class="text-cyan-400 text-sm font-semibold hover:text-cyan-300 flex items-center gap-1">اقرأ المزيد <i data-lucide="arrow-left" style="width:14px;height:14px"></i></button>
-      </div>
-     </div>
-     <div class="glass-card rounded-2xl overflow-hidden hover:scale-105 transition-transform">
-      <div class="h-40 flex items-center justify-center text-5xl" style="background:linear-gradient(135deg,rgba(251,191,36,0.15),rgba(245,158,11,0.05));">
-       📊
-      </div>
-      <div class="p-6">
-       <span class="text-gold-400 text-xs font-semibold">تحليل بيانات</span>
-       <h3 class="text-white font-bold mt-2 mb-2">استخدام R في تحليل البيانات الزراعية</h3>
-       <p class="text-gray-400 text-sm mb-4">دليل عملي لاستخدام لغة R في معالجة وتحليل وتصور البيانات الزراعية بكفاءة واحترافية...</p><button onclick="showToast('📝 المقالة قادمة قريبًا!', 'info')" class="text-cyan-400 text-sm font-semibold hover:text-cyan-300 flex items-center gap-1">اقرأ المزيد <i data-lucide="arrow-left" style="width:14px;height:14px"></i></button>
-      </div>
-     </div>
-     <div class="glass-card rounded-2xl overflow-hidden hover:scale-105 transition-transform">
-      <div class="h-40 flex items-center justify-center text-5xl" style="background:linear-gradient(135deg,rgba(34,211,238,0.15),rgba(6,182,212,0.05));">
-       🌾
-      </div>
-      <div class="p-6">
-       <span class="text-cyan-400 text-xs font-semibold">تدريب</span>
-       <h3 class="text-white font-bold mt-2 mb-2">مدارس المزارعين الحقلية: منهجية فعّالة</h3>
-       <p class="text-gray-400 text-sm mb-4">كيف تساهم مدارس FBS في تمكين المزارعين وتحسين الإنتاجية الزراعية والممارسات الحديثة...</p><button onclick="showToast('📝 المقالة قادمة قريبًا!', 'info')" class="text-cyan-400 text-sm font-semibold hover:text-cyan-300 flex items-center gap-1">اقرأ المزيد <i data-lucide="arrow-left" style="width:14px;height:14px"></i></button>
-      </div>
-     </div>
-     <div class="glass-card rounded-2xl overflow-hidden hover:scale-105 transition-transform">
-      <div class="h-40 flex items-center justify-center text-5xl" style="background:linear-gradient(135deg,rgba(251,191,36,0.15),rgba(245,158,11,0.05));">
-       💡
-      </div>
-      <div class="p-6">
-       <span class="text-gold-400 text-xs font-semibold">ابتكار</span>
-       <h3 class="text-white font-bold mt-2 mb-2">الذكاء الاصطناعي في الزراعة: التطبيقات العملية</h3>
-       <p class="text-gray-400 text-sm mb-4">استكشاف استخدامات الذكاء الاصطناعي والتعلم الآلي في تحسين القرارات الزراعية والإنتاجية...</p><button onclick="showToast('📝 المقالة قادمة قريبًا!', 'info')" class="text-cyan-400 text-sm font-semibold hover:text-cyan-300 flex items-center gap-1">اقرأ المزيد <i data-lucide="arrow-left" style="width:14px;height:14px"></i></button>
-      </div>
-     </div>
-     <div class="glass-card rounded-2xl overflow-hidden hover:scale-105 transition-transform">
-      <div class="h-40 flex items-center justify-center text-5xl" style="background:linear-gradient(135deg,rgba(34,211,238,0.15),rgba(6,182,212,0.05));">
-       🔬
-      </div>
-      <div class="p-6">
-       <span class="text-cyan-400 text-xs font-semibold">بحث</span>
-       <h3 class="text-white font-bold mt-2 mb-2">النشر العلمي الدولي: دليل البداية</h3>
-       <p class="text-gray-400 text-sm mb-4">خطوات عملية لنشر بحثك في المجلات العلمية الدولية المحكّمة والعالية التصنيف...</p><button onclick="showToast('📝 المقالة قادمة قريبًا!', 'info')" class="text-cyan-400 text-sm font-semibold hover:text-cyan-300 flex items-center gap-1">اقرأ المزيد <i data-lucide="arrow-left" style="width:14px;height:14px"></i></button>
-      </div>
-     </div>
-     <div class="glass-card rounded-2xl overflow-hidden hover:scale-105 transition-transform">
-      <div class="h-40 flex items-center justify-center text-5xl" style="background:linear-gradient(135deg,rgba(251,191,36,0.15),rgba(245,158,11,0.05));">
-       🚀
-      </div>
-      <div class="p-6">
-       <span class="text-gold-400 text-xs font-semibold">ريادة أعمال</span>
-       <h3 class="text-white font-bold mt-2 mb-2">بدء مشروع زراعي: من الفكرة إلى التنفيذ</h3>
-       <p class="text-gray-400 text-sm mb-4">دليل شامل لرواد الأعمال الزراعيين حول كيفية بدء وتطوير مشروع زراعي ناجح...</p><button onclick="showToast('📝 المقالة قادمة قريبًا!', 'info')" class="text-cyan-400 text-sm font-semibold hover:text-cyan-300 flex items-center gap-1">اقرأ المزيد <i data-lucide="arrow-left" style="width:14px;height:14px"></i></button>
-      </div>
-     </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="blogGrid">
+     <!-- Blog articles rendered by JS -->
     </div>
    </div>
   </section><!-- FAQ SECTION -->
@@ -773,6 +686,46 @@ tailwind.config = {
     </div>
     <p class="text-gray-500 text-xs mt-3">🔒 بريدك آمن معنا - لن نرسل رسائل بريدية عشوائية</p>
    </div>
+  </section><!-- معرض المحفظة -->
+  <section id="gallery" class="section-padding" style="background:linear-gradient(180deg,rgba(15,21,56,0.5),#0a0e27);">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16" data-aos="fade-up">
+     <span class="text-cyan-400 text-sm font-semibold">معرض أعمالي</span>
+     <h2 class="text-3xl sm:text-4xl font-800 text-white mt-3 gradient-border inline-block pb-3">معرض الصور</h2>
+    </div>
+    <div class="flex flex-wrap justify-center gap-3 mb-10" id="galleryFilters">
+     <button onclick="filterGallery('all')" class="gallery-filter-btn px-5 py-2 rounded-lg text-sm font-semibold btn-primary text-white" data-filter="all">الكل</button>
+     <button onclick="filterGallery('research')" class="gallery-filter-btn px-5 py-2 rounded-lg text-sm font-semibold btn-outline text-gray-400" data-filter="research">بحث</button>
+     <button onclick="filterGallery('training')" class="gallery-filter-btn px-5 py-2 rounded-lg text-sm font-semibold btn-outline text-gray-400" data-filter="training">تدريب</button>
+     <button onclick="filterGallery('farm')" class="gallery-filter-btn px-5 py-2 rounded-lg text-sm font-semibold btn-outline text-gray-400" data-filter="farm">العمل الميداني</button>
+     <button onclick="filterGallery('event')" class="gallery-filter-btn px-5 py-2 rounded-lg text-sm font-semibold btn-outline text-gray-400" data-filter="event">الفعاليات</button>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="galleryGrid">
+     <!-- معرض الصور من JS -->
+    </div>
+   </div>
+  </section><!-- دراسات الحالة -->
+  <section id="case-studies" class="section-padding">
+   <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16" data-aos="fade-up">
+     <span class="text-cyan-400 text-sm font-semibold">النتائج الحقيقية</span>
+     <h2 class="text-3xl sm:text-4xl font-800 text-white mt-3 gradient-border inline-block pb-3">دراسات الحالة</h2>
+    </div>
+    <div class="space-y-8" id="caseStudiesContainer">
+     <!-- دراسات الحالة من JS -->
+    </div>
+   </div>
+  </section><!-- قسم الأسئلة الشائعة -->
+  <section id="faq" class="section-padding" style="background:linear-gradient(180deg,rgba(15,21,56,0.5),#0a0e27);">
+   <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16" data-aos="fade-up">
+     <span class="text-cyan-400 text-sm font-semibold">أسئلة شائعة</span>
+     <h2 class="text-3xl sm:text-4xl font-800 text-white mt-3 gradient-border inline-block pb-3">الأسئلة الشائعة</h2>
+    </div>
+    <div class="space-y-4" id="faqContainer">
+     <!-- الأسئلة الشائعة من JS -->
+    </div>
+   </div>
   </section><!-- FOOTER -->
   <footer class="py-8 border-t border-gray-800">
    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -782,11 +735,36 @@ tailwind.config = {
        ع
       </div><span class="text-gray-400 text-sm">© 2026 عبد القادر عطيه. جميع الحقوق محفوظة.</span>
      </div>
-     <div class="flex items-center gap-6">
-     </div>
+      <div class="flex items-center gap-4">
+       <button onclick="subscribePushNotifications()" class="text-gray-500 hover:text-cyan-400 text-xs flex items-center gap-1 transition-colors" title="تفعيل الإشعارات"><i data-lucide="bell" style="width:14px;height:14px"></i> الإشعارات</button>
+      </div>
     </div>
    </div>
   </footer>
+  <!-- Article Modal -->
+  <div id="articleModal" class="hidden fixed inset-0 z-[9998] flex items-center justify-center p-4" style="background:rgba(0,0,0,0.8);backdrop-filter:blur(8px);">
+    <div class="glass-card rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-8 relative" style="background:rgba(15,21,56,0.95);">
+      <button onclick="closeArticle()" class="absolute top-4 left-4 text-gray-400 hover:text-white transition-colors"><i data-lucide="x" style="width:24px;height:24px"></i></button>
+      <div id="articleContent"></div>
+    </div>
+  </div>
+  <!-- Share Modal -->
+  <div id="shareModal" class="hidden fixed inset-0 z-[9998] flex items-center justify-center p-4" style="background:rgba(0,0,0,0.8);backdrop-filter:blur(8px);">
+    <div class="glass-card rounded-2xl max-w-md w-full p-6 relative" style="background:rgba(15,21,56,0.95);">
+      <div class="flex justify-between items-center mb-4">
+        <h3 class="text-white font-bold text-lg">مشاركة</h3>
+        <button onclick="closeShareModal()" class="text-gray-400 hover:text-white transition-colors"><i data-lucide="x" style="width:20px;height:20px"></i></button>
+      </div>
+      <div id="shareContent" class="space-y-2"></div>
+      <div class="mt-4">
+        <label class="text-gray-400 text-xs block mb-1">رابط الصفحة</label>
+        <div class="flex gap-2">
+          <input id="shareUrl" type="text" readonly class="flex-1 bg-gray-800 text-gray-300 rounded-lg px-3 py-2 text-xs border border-gray-700" onclick="this.select()">
+          <button onclick="navigator.clipboard.writeText(document.getElementById('shareUrl').value).then(()=>{showToast('✅ تم نسخ الرابط','success')})" class="bg-cyan-600 hover:bg-cyan-700 text-white px-3 py-2 rounded-lg text-xs">نسخ</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <script>
    if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js').then(registration => {
@@ -796,5 +774,13 @@ tailwind.config = {
     });
    }
   </script>
+  <!-- AI Chatbot & Analytics Features -->
+  <script src="/api/chat.js" defer></script>
+  <script src="/api/rag-search.js" defer></script>
+  <script src="/api/analytics.js" defer></script>
+  <script src="/assets/js/chatbot-widget.js" defer></script>
+  <script src="/assets/js/analytics-tracker.js" defer></script>
+  <script src="/assets/js/structured-data.js" defer></script>
+  <script src="/evals/runner.js" defer></script>
 </body>
 </html>

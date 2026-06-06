@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0e27"/>
+      <stop offset="100%" stop-color="#0f1538"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="100" cy="100" r="300" fill="none" stroke="url(#accent)" stroke-width="2" opacity="0.08"/>
+  <circle cx="1100" cy="530" r="400" fill="none" stroke="url(#gold)" stroke-width="2" opacity="0.06"/>
+  <text x="90" y="220" font-family="Arial,sans-serif" font-size="72" font-weight="bold" fill="url(#accent)">Abdelkader Atia</text>
+  <text x="90" y="300" font-family="Arial,sans-serif" font-size="40" fill="#e2e8f0">PhD Researcher &amp; Agricultural Innovator</text>
+  <text x="90" y="370" font-family="Arial,sans-serif" font-size="28" fill="#94a3b8">Animal Sciences · Digital Agriculture · Training</text>
+  <line x1="90" y1="420" x2="400" y2="420" stroke="url(#accent)" stroke-width="4" stroke-linecap="round"/>
+  <text x="90" y="490" font-family="Arial,sans-serif" font-size="22" fill="#64748b">abdelkader-atia.com</text>
+  <text x="90" y="540" font-family="Arial,sans-serif" font-size="70">🌾</text>
+</svg>

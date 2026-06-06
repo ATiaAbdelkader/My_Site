@@ -1,26 +1,41 @@
 {
   "name": "abdelkader-atia-website",
-  "version": "1.0.0",
-  "description": "Bilingual personal website for Abdelkader Atia - PhD Researcher & Agricultural Innovator",
+  "version": "2.0.0",
+  "description": "Bilingual personal website for Abdelkader Atia - PhD Researcher & Agricultural Innovator with AI chatbot, analytics, and advanced PWA features",
   "main": "index.html",
   "scripts": {
     "dev": "npx serve .",
-    "build": "echo 'Build complete - static site ready for deployment'",
-    "minify-css": "npx cssnano assets/css/style.css assets/css/style.min.css",
-    "minify-js": "npx terser assets/js/main-ar.js -o assets/js/main-ar.min.js && npx terser assets/js/main-en.js -o assets/js/main-en.min.js"
+    "build": "npm run minify-js && npm run build-evals && npm run validate && echo '✅ Build complete - all features ready for deployment'",
+    "minify-js": "npm run minify-js-ar && npm run minify-js-en",
+    "minify-js-ar": "npx terser assets/js/main-ar.js -o assets/js/main-ar.min.js -c passes=2 -m",
+    "minify-js-en": "npx terser assets/js/main-en.js -o assets/js/main-en.min.js -c passes=2 -m",
+    "build-evals": "node evals/build-evals.js",
+    "run-evals": "node evals/run-tests.js",
+    "validate": "node scripts/validate.js",
+    "sitemap": "node scripts/generate-sitemap.js",
+    "evals": "npm run run-evals",
+    "test:ops": "node tests/ops-contract.test.js",
+    "analytics:report": "node scripts/generate-analytics-report.js",
+    "ops:export": "node scripts/export-ops-data.js"
   },
   "keywords": [
     "agriculture",
     "research",
     "phd",
     "training",
-    "digital-innovation"
+    "digital-innovation",
+    "ai-chatbot",
+    "pwa",
+    "observability"
   ],
   "author": "Abdelkader Atia",
   "license": "MIT",
   "devDependencies": {
     "cssnano": "^7.0.0",
     "serve": "^14.2.0",
-    "terser": "^5.27.0"
+    "terser": "^5.47.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }
