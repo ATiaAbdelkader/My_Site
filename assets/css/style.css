@@ -329,3 +329,60 @@ textarea:focus {
   0%, 60%, 100% { opacity: 0.2; transform: translateY(0); }
   30% { opacity: 1; transform: translateY(-4px); }
 }
+
+/* ===== Reading Progress Bar ===== */
+#readingProgress {
+  position: fixed;
+  top: 0; left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #06b6d4, #22d3ee);
+  z-index: 9999;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+/* ===== Cookie Consent Banner ===== */
+#cookieBanner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9997;
+  transform: translateY(100%);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+#cookieBanner.show { transform: translateY(0); }
+
+/* ===== Search Modal ===== */
+#searchModal {
+  z-index: 9999;
+}
+#searchInput {
+  caret-color: #22d3ee;
+}
+.search-highlight {
+  background: rgba(34, 211, 238, 0.15);
+  border-radius: 4px;
+}
+#searchResults::-webkit-scrollbar { width: 4px; }
+#searchResults::-webkit-scrollbar-track { background: transparent; }
+#searchResults::-webkit-scrollbar-thumb { background: rgba(34,211,238,0.3); border-radius: 2px; }
+
+/* ===== 404 Page ===== */
+.page-404 .hero-bg {
+  min-height: 100vh;
+}
+
+/* ===== Keyboard Shortcut Hints ===== */
+.shortcut-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 6px;
+  background: rgba(34, 211, 238, 0.1);
+  border: 1px solid rgba(34, 211, 238, 0.2);
+  border-radius: 4px;
+  font-size: 10px;
+  color: #22d3ee;
+  font-family: monospace;
+}

@@ -73,6 +73,7 @@ tailwind.config = {
  </head>
  <body class="h-full overflow-auto" id="app-body">
   <a href="#home" class="sr-only skip-link-focus">Passer au contenu principal</a>
+  <!-- Reading Progress Bar --> <div id="readingProgress"></div>
   <!-- NAVBAR -->
   <nav id="navbar" class="fixed top-0 right-0 left-0 z-50 transition-all duration-300 navbar-transparent">
    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -785,5 +786,29 @@ tailwind.config = {
   <script src="/assets/js/analytics-tracker.js" defer></script>
   <script src="/assets/js/structured-data.js" defer></script>
   <script src="/evals/runner.js" defer></script>
+  <!-- Search Modal -->
+  <div id="searchModal" class="hidden fixed inset-0 flex items-start justify-center pt-[15vh] p-4" style="background:rgba(0,0,0,0.85);backdrop-filter:blur(8px);">
+   <div class="glass-card rounded-2xl w-full max-w-lg max-h-[70vh] flex flex-col overflow-hidden" style="background:rgba(15,21,56,0.97);">
+    <div class="p-4 border-b border-gray-800 flex items-center gap-3">
+     <i data-lucide="search" style="width:18px;height:18px;color:#22d3ee;flex-shrink:0;"></i>
+     <input id="searchInput" type="text" class="flex-1 bg-transparent text-white text-base focus:outline-none placeholder-gray-500" placeholder="Rechercher projets, articles, compétences..." autocomplete="off">
+     <span class="shortcut-hint flex-shrink-0">ESC</span>
+    </div>
+    <div id="searchResults" class="flex-1 overflow-y-auto p-2 space-y-1"></div>
+    <div class="p-3 border-t border-gray-800 text-gray-600 text-xs text-center">
+     Utilisez <span class="shortcut-hint">↑</span> <span class="shortcut-hint">↓</span> pour naviguer · <span class="shortcut-hint">Entrée</span> pour ouvrir · <span class="shortcut-hint">Esc</span> pour fermer
+    </div>
+   </div>
+  </div>
+  <!-- Cookie Consent Banner -->
+  <div id="cookieBanner" class="glass" style="background:rgba(10,14,39,0.97);backdrop-filter:blur(16px);border-top:1px solid rgba(34,211,238,0.1);">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <p class="text-gray-400 text-sm">🍪 Ce site utilise des cookies pour l'analyse et le contenu personnalisé. En continuant, vous acceptez notre utilisation des cookies.</p>
+    <div class="flex gap-3 flex-shrink-0">
+     <button onclick="acceptCookies()" class="btn-primary text-white px-5 py-2 rounded-lg text-sm font-semibold">Accepter</button>
+     <button onclick="declineCookies()" class="btn-outline text-gray-400 px-5 py-2 rounded-lg text-sm font-semibold">Refuser</button>
+    </div>
+   </div>
+  </div>
 </body>
 </html>

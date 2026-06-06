@@ -624,19 +624,54 @@ window.addEventListener('load', () => {
   }
 });
 
-// Keyboard navigation
+// Keyboard navigation & shortcuts
 document.addEventListener('keydown', (e) => {
-  // Close mobile menu with Escape
+  const tag = document.activeElement?.tagName;
+  const isInput = tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT';
+  
+  // Escape: إغلاق جميع النوافذ المنبثقة
   if (e.key === 'Escape') {
     const menu = document.getElementById('mobileMenu');
-    if (menu.classList.contains('open')) {
-      toggleMobile();
-    }
+    if (menu.classList.contains('open')) { toggleMobile(); return; }
+    const search = document.getElementById('searchModal');
+    if (!search?.classList.contains('hidden')) { closeSearch(); return; }
+    const article = document.getElementById('articleModal');
+    if (!article?.classList.contains('hidden')) { closeArticle(); return; }
   }
   
   // Scroll to top with Ctrl+Home or Cmd+Home
   if ((e.ctrlKey || e.metaKey) && e.key === 'Home') {
+    e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  
+  // تخطي الاختصارات عند الكتابة في الحقول
+  if (isInput) return;
+  
+  // / or Ctrl+K: فتح البحث
+  if (e.key === '/' || ((e.ctrlKey || e.metaKey) && e.key === 'k')) {
+    e.preventDefault();
+    openSearch();
+  }
+  
+  // t: تبديل المظهر
+  if (e.key === 't' && !e.ctrlKey && !e.metaKey) { toggleTheme(); }
+  // b: التمرير إلى المقالات
+  if (e.key === 'b' && !e.ctrlKey && !e.metaKey) {
+    e.preventDefault();
+    const el = document.getElementById('blogGrid');
+    if (el) el.closest('section')?.scrollIntoView({ behavior: 'smooth' });
+  }
+  // p: التمرير إلى المشاريع
+  if (e.key === 'p' && !e.ctrlKey && !e.metaKey) {
+    e.preventDefault();
+    const el = document.getElementById('projectGrid');
+    if (el) el.closest('section')?.scrollIntoView({ behavior: 'smooth' });
+  }
+  // c: تبديل الدردشة
+  if (e.key === 'c' && !e.ctrlKey && !e.metaKey) {
+    const chat = document.querySelector('.chatbot-toggle-btn');
+    if (chat) chat.click();
   }
 });
 
@@ -678,6 +713,132 @@ window.addEventListener('DOMContentLoaded', () => {
     if (arBtn) arBtn.style.background = 'transparent';
   }
 });
+
+// Reading Progress Bar
+function initProgressBar() {
+  const bar = document.getElementById('readingProgress');
+  if (!bar) return;
+  document.getElementById('app-body').addEventListener('scroll', () => {
+    const scrollTop = document.getElementById('app-body').scrollTop;
+    const scrollHeight = document.getElementById('app-body').scrollHeight - window.innerHeight;
+    const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+    bar.style.width = Math.min(progress, 100) + '%';
+  });
+}
+
+// Cookie Consent
+function acceptCookies() {
+  localStorage.setItem('cookie_consent', 'accepted');
+  document.getElementById('cookieBanner').classList.remove('show');
+}
+function declineCookies() {
+  localStorage.setItem('cookie_consent', 'declined');
+  document.getElementById('cookieBanner').classList.remove('show');
+}
+function initCookieBanner() {
+  const consent = localStorage.getItem('cookie_consent');
+  if (!consent) {
+    setTimeout(() => document.getElementById('cookieBanner')?.classList.add('show'), 500);
+  }
+}
+
+// Search Modal
+let searchIndex = [];
+function buildSearchIndex() {
+  searchIndex = [];
+  projects.forEach(p => searchIndex.push({
+    type: 'مشروع', title: p.name, desc: p.desc, url: '#projects', icon: p.icon, tags: [p.cat]
+  }));
+  blogArticles.forEach(a => searchIndex.push({
+    type: 'مقال', title: a.title, desc: a.summary, url: '#', icon: a.icon, tags: [a.category], action: `openArticle(${a.id})`
+  }));
+  faqItems.forEach((f, i) => searchIndex.push({
+    type: 'سؤال شائع', title: f.question, desc: f.answer.slice(0, 120) + '...', url: '#faq', icon: '❓'
+  }));
+  const skillNames = ['تحليل البيانات', 'تصميم التجارب', 'الكتابة العلمية', 'R / Excel / Power BI', 'تطوير التطبيقات', 'تصور البيانات', 'الإنتاج الحيواني', 'التربية والانتخاب', 'تغذية الحيوان', 'مدرب FBS', 'تصميم البرامج', 'التواصل'];
+  skillNames.forEach(s => searchIndex.push({
+    type: 'مهارة', title: s, desc: 'مهارة احترافية', url: '#skills', icon: '⚡'
+  }));
+}
+function openSearch() {
+  const modal = document.getElementById('searchModal');
+  if (!modal) return;
+  if (searchIndex.length === 0) buildSearchIndex();
+  modal.classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
+  setTimeout(() => {
+    const input = document.getElementById('searchInput');
+    input.value = ''; input.focus();
+    renderSearchResults('');
+  }, 100);
+}
+function closeSearch() {
+  const modal = document.getElementById('searchModal');
+  if (modal) { modal.classList.add('hidden'); document.body.style.overflow = ''; }
+}
+function renderSearchResults(query) {
+  const container = document.getElementById('searchResults');
+  const q = query.toLowerCase().trim();
+  let results = q ? searchIndex.filter(item =>
+    item.title.toLowerCase().includes(q) || item.desc.toLowerCase().includes(q) ||
+    item.tags?.some(t => t.toLowerCase().includes(q))
+  ) : searchIndex;
+  results = results.slice(0, 12);
+  if (!results.length) {
+    container.innerHTML = '<div class="p-6 text-center text-gray-500 text-sm">لا توجد نتائج</div>';
+    return;
+  }
+  container.innerHTML = results.map((item, i) => `
+    <button onclick="navigateSearchResult(${i})" class="search-result-item w-full flex items-center gap-3 p-3 rounded-xl hover:bg-gray-800/50 transition text-right ${i === 0 ? 'search-highlight' : ''}"
+      data-index="${i}" onmouseenter="highlightSearchItem(${i})">
+      <span class="text-xl flex-shrink-0">${item.icon}</span>
+      <div class="flex-1 min-w-0">
+        <div class="text-white text-sm font-semibold truncate">${highlightMatch(item.title, q)}</div>
+        <div class="text-gray-500 text-xs truncate">${item.type} · ${highlightMatch(item.desc.slice(0, 80), q)}</div>
+      </div>
+      <span class="text-gray-600 text-xs flex-shrink-0">${item.type}</span>
+    </button>
+  `).join('');
+  container.dataset.results = JSON.stringify(results);
+}
+function highlightMatch(text, query) {
+  if (!query) return text;
+  const idx = text.toLowerCase().indexOf(query);
+  if (idx === -1) return text;
+  return text.slice(0, idx) + '<strong class="text-cyan-400">' + text.slice(idx, idx + query.length) + '</strong>' + text.slice(idx + query.length);
+}
+let searchSelectedIndex = 0;
+function highlightSearchItem(idx) { searchSelectedIndex = idx; }
+function navigateSearchResult(idx) {
+  const results = JSON.parse(document.getElementById('searchResults').dataset.results || '[]');
+  const item = results[idx];
+  if (!item) return;
+  closeSearch();
+  if (item.action) { eval(item.action); }
+  else if (item.url && item.url !== '#') { document.querySelector(item.url)?.scrollIntoView({ behavior: 'smooth' }); }
+}
+function initSearch() {
+  buildSearchIndex();
+  const input = document.getElementById('searchInput');
+  if (!input) return;
+  input.addEventListener('input', (e) => renderSearchResults(e.target.value));
+  input.addEventListener('keydown', (e) => {
+    const items = document.querySelectorAll('.search-result-item');
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      searchSelectedIndex = Math.min(searchSelectedIndex + 1, items.length - 1);
+      items.forEach((el, i) => el.classList.toggle('search-highlight', i === searchSelectedIndex));
+      items[searchSelectedIndex]?.scrollIntoView({ block: 'nearest' });
+    }
+    if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      searchSelectedIndex = Math.max(searchSelectedIndex - 1, 0);
+      items.forEach((el, i) => el.classList.toggle('search-highlight', i === searchSelectedIndex));
+      items[searchSelectedIndex]?.scrollIntoView({ block: 'nearest' });
+    }
+    if (e.key === 'Enter') { e.preventDefault(); navigateSearchResult(searchSelectedIndex); }
+  });
+}
 
 // Element SDK
 const defaultConfig = {
@@ -785,6 +946,18 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Init lazy loading for images
   initLazyLoading();
+  
+  initProgressBar();
+  initCookieBanner();
+  initSearch();
+});
+
+// Close search on overlay click
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('searchModal');
+  if (modal) {
+    modal.addEventListener('click', (e) => { if (e.target === modal) closeSearch(); });
+  }
 });
 
 /**
