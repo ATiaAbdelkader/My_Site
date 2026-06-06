@@ -650,6 +650,8 @@ function setLanguage(lang) {
   
   if (lang === 'ar') {
     window.location.href = 'index.html';
+  } else if (lang === 'fr') {
+    window.location.href = 'index-fr.html';
   } else {
     window.location.href = 'index-en.html';
   }
@@ -660,13 +662,20 @@ window.addEventListener('DOMContentLoaded', () => {
   const savedLang = localStorage.getItem('language') || 'ar';
   const arBtn = document.getElementById('langAr');
   const enBtn = document.getElementById('langEn');
+  const frBtn = document.getElementById('langFr');
   
   if (savedLang === 'ar') {
-    arBtn.style.background = 'rgba(34,211,238,0.2)';
-    enBtn.style.background = 'transparent';
+    if (arBtn) arBtn.style.background = 'rgba(34,211,238,0.2)';
+    if (frBtn) frBtn.style.background = 'transparent';
+    if (enBtn) enBtn.style.background = 'transparent';
+  } else if (savedLang === 'fr') {
+    if (frBtn) frBtn.style.background = 'rgba(34,211,238,0.2)';
+    if (arBtn) arBtn.style.background = 'transparent';
+    if (enBtn) enBtn.style.background = 'transparent';
   } else {
-    enBtn.style.background = 'rgba(34,211,238,0.2)';
-    arBtn.style.background = 'transparent';
+    if (enBtn) enBtn.style.background = 'rgba(34,211,238,0.2)';
+    if (frBtn) frBtn.style.background = 'transparent';
+    if (arBtn) arBtn.style.background = 'transparent';
   }
 });
 

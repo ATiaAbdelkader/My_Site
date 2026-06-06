@@ -1,112 +1,108 @@
-// Projects data (English)
+// Projects data (French)
 const projects = [
-  { name: 'Semen Analysis App', desc: 'Smart application for evaluating and analyzing semen quality using imaging and AI techniques', cat: 'app', icon: '🔬', link: '#' },
-  { name: 'AgriSkills Academy', desc: 'Integrated educational platform for agricultural training and professional capacity building with recognized certifications', cat: 'business', icon: '🎓', link: '#' },
-  { name: 'FBS Training Program', desc: 'Comprehensive training program series in Farmer Field Schools covering livestock production and sustainable agriculture', cat: 'training', icon: '🌾', link: '#' },
-  { name: 'Animal Reproduction Research', desc: 'Advanced research projects in improving reproductive performance and semen quality with international publishing', cat: 'research', icon: '🧬', link: '#' },
-  { name: 'BSF Breeding Project', desc: 'Innovative initiative for breeding Black Soldier Fly as alternative protein source and waste management solution', cat: 'business', icon: '🦟', link: '#' },
-  { name: 'kamel3lom Platform', desc: 'Digital platform for disseminating agricultural knowledge and simplifying sciences for the community with interactive content', cat: 'app', icon: '📱', link: '#' },
-  { name: 'Smart Farm Management System', desc: 'Comprehensive application for farm management with asset tracking, productivity, and smart predictions', cat: 'app', icon: '🌐', link: '#' },
-  { name: 'Breeding & Genetics Studies', desc: 'Specialized research in selective breeding and genetic improvement indicators for cattle', cat: 'research', icon: '📊', link: '#' },
-  { name: 'Modern Agriculture Workshops', desc: 'Series of practical workshops on modern techniques and best practices in agricultural production', cat: 'training', icon: '🛠️', link: '#' },
+  { name: 'Application Analyse Semence', desc: 'Application intelligente pour évaluer et analyser la qualité du sperme à l\'aide de l\'imagerie et de l\'IA', cat: 'app', icon: '🔬', link: '#' },
+  { name: 'AgriSkills Academy', desc: 'Plateforme éducative intégrée pour la formation agricole et le renforcement des capacités avec certifications reconnues', cat: 'business', icon: '🎓', link: '#' },
+  { name: 'Programme FBS', desc: 'Série complète de programmes de formation dans les écoles pratiques agricoles couvrant la production animale et l\'agriculture durable', cat: 'training', icon: '🌾', link: '#' },
+  { name: 'Recherche Reproduction Animale', desc: 'Projets de recherche avancés pour améliorer les performances reproductives et la qualité du sperme avec publications internationales', cat: 'research', icon: '🧬', link: '#' },
+  { name: 'Projet Élevage BSF', desc: 'Initiative innovante d\'élevage de mouche soldat noire comme source de protéines alternative et solution de gestion des déchets', cat: 'business', icon: '🦟', link: '#' },
+  { name: 'Plateforme kamel3lom', desc: 'Plateforme numérique pour diffuser les connaissances agricoles et simplifier les sciences avec du contenu interactif', cat: 'app', icon: '📱', link: '#' },
+  { name: 'Système Gestion Ferme Intelligente', desc: 'Application complète de gestion agricole avec suivi des actifs, productivité et prévisions intelligentes', cat: 'app', icon: '🌐', link: '#' },
+  { name: 'Études Amélioration Génétique', desc: 'Recherche spécialisée en sélection génétique et amélioration des indicateurs pour les bovins', cat: 'research', icon: '📊', link: '#' },
+  { name: 'Ateliers Agriculture Moderne', desc: 'Série d\'ateliers pratiques sur les techniques modernes et les bonnes pratiques en production agricole', cat: 'training', icon: '🛠️', link: '#' },
 ];
 
-// Testimonials data (English)
+// Testimonials data (French)
 const testimonials = [
-  { text: 'Excellent training with solid scientific content. I learned a lot from the practical aspects of the FBS program. The trainer explains concepts clearly and simply.', author: 'Eng. Ahmed', role: 'Agricultural Engineer', initials: 'EA', color: 'from-cyan-500 to-cyan-600', rating: 5 },
-  { text: 'Dr. Abdelkader helped me analyze my thesis data professionally and clearly. He is an excellent supervisor who deeply masters his field.', author: 'Sarah K.', role: 'Master\'s Student', initials: 'SK', color: 'from-amber-500 to-amber-600', rating: 5 },
-  { text: 'A reliable partner in agricultural innovation. He combines scientific vision with practical implementation perfectly committed to quality results.', author: 'Dr. Mohamed', role: 'Business Partner', initials: 'DM', color: 'from-cyan-500 to-cyan-600', rating: 5 },
-  { text: 'Training programs are specialized and very practical. They helped me develop modern farm management skills and apply new technologies.', author: 'Fatima A.', role: 'Farmer', initials: 'FA', color: 'from-amber-500 to-amber-600', rating: 5 },
-  { text: 'The kamel3lom platform changed how I understand complex agricultural concepts. Rich content, easy to understand, and very valuable.', author: 'Ibrahim Q.', role: 'University Student', initials: 'IQ', color: 'from-cyan-500 to-cyan-600', rating: 5 },
-  { text: 'Professional support in scientific research and international publishing. He helped me publish my research in a reputable international journal.', author: 'Dr. Leila', role: 'Researcher', initials: 'DL', color: 'from-amber-500 to-amber-600', rating: 5 },
+  { text: 'Formation excellente avec un contenu scientifique solide. J\'ai beaucoup appris des aspects pratiques du programme FBS. Le formateur explique clairement et simplement.', author: 'Ing. Ahmed', role: 'Ingénieur Agronome', initials: 'IA', color: 'from-cyan-500 to-cyan-600', rating: 5 },
+  { text: 'Dr. Abdelkader m\'a aidée à analyser les données de ma thèse de façon professionnelle et claire. Un excellent encadrant qui maîtrise profondément son domaine.', author: 'Sarah K.', role: 'Étudiante Master', initials: 'SK', color: 'from-amber-500 to-amber-600', rating: 5 },
+  { text: 'Un partenaire fiable en innovation agricole. Il allie vision scientifique et mise en œuvre pratique, toujours engagé pour des résultats de qualité.', author: 'Dr. Mohamed', role: 'Partenaire d\'Affaires', initials: 'DM', color: 'from-cyan-500 to-cyan-600', rating: 5 },
+  { text: 'Les programmes de formation sont spécialisés et très pratiques. Ils m\'ont aidé à développer des compétences modernes en gestion agricole.', author: 'Fatima A.', role: 'Agricultrice', initials: 'FA', color: 'from-amber-500 to-amber-600', rating: 5 },
+  { text: 'La plateforme kamel3lom a changé ma façon de comprendre les concepts agricoles complexes. Contenu riche, facile à comprendre et très précieux.', author: 'Ibrahim Q.', role: 'Étudiant Universitaire', initials: 'IQ', color: 'from-cyan-500 to-cyan-600', rating: 5 },
+  { text: 'Soutien professionnel en recherche scientifique et publication internationale. Il m\'a aidé à publier mes recherches dans une revue internationale réputée.', author: 'Dr. Leila', role: 'Chercheuse', initials: 'DL', color: 'from-amber-500 to-amber-600', rating: 5 },
 ];
 
-// Gallery data (English)
+// Gallery data (French)
 const galleryItems = [
-  { id: 1, title: 'Field Research Lab', desc: 'Advanced laboratory setup for semen quality analysis', cat: 'research', icon: '🔬', image: '🧪' },
-  { id: 2, title: 'Training Session', desc: 'FBS training program in action with farmers', cat: 'training', icon: '👨‍🌾', image: '🎓' },
-  { id: 3, title: 'Farm Visit', desc: 'Field work and livestock monitoring', cat: 'farm', icon: '🐄', image: '🚜' },
-  { id: 4, title: 'Conference Presentation', desc: 'International agricultural conference', cat: 'event', icon: '🎤', image: '🌍' },
-  { id: 5, title: 'Research Data', desc: 'Collaborative research and analysis', cat: 'research', icon: '📊', image: '📈' },
-  { id: 6, title: 'Farmer Workshop', desc: 'Hands-on practical training workshop', cat: 'training', icon: '🛠️', image: '🌱' },
-  { id: 7, title: 'Livestock Assessment', desc: 'Animal health and productivity evaluation', cat: 'farm', icon: '🐑', image: '✅' },
-  { id: 8, title: 'Seminar Event', desc: 'Educational seminar with industry experts', cat: 'event', icon: '🎯', image: '🏆' },
-  { id: 9, title: 'Digital Platform', desc: 'kamel3lom platform demonstration', cat: 'research', icon: '💻', image: '📱' },
+  { id: 1, title: 'Laboratoire de Recherche', desc: 'Installation avancée pour l\'analyse de la qualité du sperme', cat: 'research', icon: '🔬', image: '🧪' },
+  { id: 2, title: 'Session de Formation', desc: 'Programme FBS en action avec les agriculteurs', cat: 'training', icon: '👨‍🌾', image: '🎓' },
+  { id: 3, title: 'Visite de Ferme', desc: 'Travail sur le terrain et suivi du bétail', cat: 'farm', icon: '🐄', image: '🚜' },
+  { id: 4, title: 'Conférence', desc: 'Conférence agricole internationale', cat: 'event', icon: '🎤', image: '🌍' },
+  { id: 5, title: 'Données de Recherche', desc: 'Recherche collaborative et analyse', cat: 'research', icon: '📊', image: '📈' },
+  { id: 6, title: 'Atelier Agricole', desc: 'Atelier de formation pratique', cat: 'training', icon: '🛠️', image: '🌱' },
+  { id: 7, title: 'Évaluation du Bétail', desc: 'Évaluation de la santé et de la productivité animale', cat: 'farm', icon: '🐑', image: '✅' },
+  { id: 8, title: 'Séminaire', desc: 'Séminaire éducatif avec des experts du secteur', cat: 'event', icon: '🎯', image: '🏆' },
+  { id: 9, title: 'Plateforme Numérique', desc: 'Démonstration de la plateforme kamel3lom', cat: 'research', icon: '💻', image: '📱' },
 ];
 
-// Case studies data (English)
+// Case studies data (French)
 const caseStudies = [
-  { id: 1, title: 'AgriSkills Academy Growth', subtitle: 'Building Educational Excellence', challenge: 'Needed to create a comprehensive agricultural training platform that serves farmers and researchers', solution: 'Developed integrated academy with online & offline programs, certifications, and industry partnerships', results: '500+ trainees | 40+ programs | 95% satisfaction rate', impact: '🎓 Educational transformation', tags: ['Training', 'Platform', 'Education'] },
-  { id: 2, title: 'Semen Quality Research', subtitle: 'Scientific Innovation', challenge: 'Improving livestock breeding through better semen quality assessment', solution: 'Advanced laboratory techniques combined with AI-powered analysis system', results: '20+ publications | International collaborations | Patent-pending technology', impact: '🧬 Research breakthrough', tags: ['Research', 'Innovation', 'Science'] },
-  { id: 3, title: 'FBS Training Impact', subtitle: 'Community Empowerment', challenge: 'Farmers lacking modern agricultural knowledge and techniques', solution: 'Structured Field Farmer Schools program with hands-on training', results: '500+ farmers trained | 40% productivity increase | Sustainable practices adopted', impact: '🌾 Community growth', tags: ['Training', 'Impact', 'Sustainability'] },
+  { id: 1, title: 'Croissance AgriSkills Academy', subtitle: 'Bâtir l\'Excellence Éducative', challenge: 'Créer une plateforme de formation agricole complète au service des agriculteurs et des chercheurs', solution: 'Académie intégrée avec programmes en ligne & présentiels, certifications et partenariats industriels', results: '500+ stagiaires | 40+ programmes | 95% satisfaction', impact: '🎓 Transformation éducative', tags: ['Formation', 'Plateforme', 'Éducation'] },
+  { id: 2, title: 'Recherche sur la Qualité du Sperme', subtitle: 'Innovation Scientifique', challenge: 'Améliorer l\'élevage par une meilleure évaluation de la qualité du sperme', solution: 'Techniques de laboratoire avancées combinées à un système d\'analyse par IA', results: '20+ publications | Collaborations internationales | Technologie brevetable', impact: '🧬 Percée scientifique', tags: ['Recherche', 'Innovation', 'Science'] },
+  { id: 3, title: 'Impact de la Formation FBS', subtitle: 'Autonomisation Communautaire', challenge: 'Agriculteurs manquant de connaissances et techniques agricoles modernes', solution: 'Programme structuré d\'écoles pratiques agricoles avec formation pratique', results: '500+ agriculteurs formés | 40% d\'augmentation productivité | Pratiques durables', impact: '🌾 Croissance communautaire', tags: ['Formation', 'Impact', 'Durabilité'] },
 ];
 
-// Blog articles data (English)
+// Blog articles data (French)
 const blogArticles = [
   {
-    id: 1, icon: '🐄', category: 'ANIMAL SCIENCE',
-    title: 'Improving Semen Quality: Latest Techniques',
-    summary: 'Comprehensive overview of latest research and techniques used in assessing and improving semen quality and reproductive performance.',
-    content: 'Semen quality plays a pivotal role in improving animal reproductive performance and increasing farm productivity. This article reviews the latest techniques used in assessing and improving semen quality.\n\nModern techniques include:\n- AI-powered analysis for motility and morphology assessment\n- Electron microscopy for fine structure examination\n- Advanced cooling and freezing techniques for quality preservation\n- Biomarkers for early detection of issues\n\nPractical applications:\n- Improving artificial insemination programs\n- Selecting genetically superior sires\n- Reducing production costs and increasing efficiency',
-    date: '2026-01-15', readTime: '8 min read'
+    id: 1, icon: '🐄', category: 'SCIENCE ANIMALE',
+    title: 'Amélioration de la Qualité du Sperme : Techniques Récentes',
+    summary: 'Aperçu complet des dernières recherches et techniques utilisées pour évaluer et améliorer la qualité du sperme et les performances reproductives.',
+    content: 'La qualité du sperme joue un rôle crucial dans l\'amélioration des performances reproductives animales et l\'augmentation de la productivité agricole. Cet article passe en revue les dernières techniques utilisées.\n\nTechniques modernes :\n- Analyse par IA pour l\'évaluation de la motilité et de la morphologie\n- Microscopie électronique pour l\'examen des structures fines\n- Techniques avancées de refroidissement et congélation\n- Biomarqueurs pour la détection précoce des problèmes\n\nApplications pratiques :\n- Amélioration des programmes d\'insémination artificielle\n- Sélection de géniteurs génétiquement supérieurs\n- Réduction des coûts de production',
+    date: '2026-01-15', readTime: '8 min'
   },
   {
-    id: 2, icon: '📊', category: 'DATA ANALYSIS',
-    title: 'Using R for Agricultural Data Analysis',
-    summary: 'Practical guide to using R language for processing, analyzing, and visualizing agricultural data efficiently and professionally.',
-    content: 'R is one of the most powerful open-source tools for statistical analysis and data visualization. In agriculture, R offers a wide range of specialized packages.\n\nEssential packages:\n- agricolae: Statistical analysis for agricultural experiments\n- lme4: Linear mixed-effects models\n- ggplot2: Professional data visualization\n- caret: Machine learning\n\nPractical steps:\n1. Import data from Excel or CSV\n2. Clean data and handle missing values\n3. Statistical analysis (ANOVA, Regression)\n4. Create visualizations and reports',
-    date: '2026-02-20', readTime: '10 min read'
+    id: 2, icon: '📊', category: 'ANALYSE DE DONNÉES',
+    title: 'Utilisation de R pour l\'Analyse des Données Agricoles',
+    summary: 'Guide pratique pour utiliser le langage R pour traiter, analyser et visualiser les données agricoles de manière efficace et professionnelle.',
+    content: 'R est l\'un des outils open-source les plus puissants pour l\'analyse statistique et la visualisation de données. En agriculture, R offre une large gamme de packages spécialisés.\n\nPackages essentiels :\n- agricolae : Analyse statistique pour expériences agricoles\n- lme4 : Modèles linéaires à effets mixtes\n- ggplot2 : Visualisation professionnelle\n- caret : Apprentissage automatique\n\nÉtapes pratiques :\n1. Importer des données Excel ou CSV\n2. Nettoyer et traiter les valeurs manquantes\n3. Analyse statistique (ANOVA, Régression)\n4. Créer des visualisations et rapports',
+    date: '2026-02-20', readTime: '10 min'
   },
   {
-    id: 3, icon: '🌾', category: 'TRAINING',
-    title: 'Field Farmer Schools: Effective Methodology',
-    summary: 'How FBS programs empower farmers and improve agricultural productivity through modern practices and knowledge sharing.',
-    content: 'Field Farmer Schools (FBS) are an innovative training methodology based on learning by doing and peer knowledge exchange among farmers.\n\nCore principles:\n- Learning by Doing\n- Group decision making\n- Comparative field experiments\n- Empowering farmers as local experts\n\nAchieved results:\n- 30-50% productivity improvement\n- Reduced production costs\n- Adoption of sustainable practices\n- Building local knowledge networks',
-    date: '2026-03-10', readTime: '7 min read'
+    id: 3, icon: '🌾', category: 'FORMATION',
+    title: 'Écoles Pratiques Agricoles : Méthodologie Efficace',
+    summary: 'Comment les programmes FBS responsabilisent les agriculteurs et améliorent la productivité grâce aux pratiques modernes.',
+    content: 'Les Écoles Pratiques Agricoles (FBS) sont une méthodologie de formation innovante basée sur l\'apprentissage par la pratique et l\'échange de connaissances entre agriculteurs.\n\nPrincipes fondamentaux :\n- Apprendre en faisant\n- Prise de décision collective\n- Expériences comparatives sur le terrain\n- Autonomisation des agriculteurs comme experts locaux\n\nRésultats obtenus :\n- 30-50% d\'amélioration de la productivité\n- Réduction des coûts de production\n- Adoption de pratiques durables\n- Construction de réseaux de connaissances locaux',
+    date: '2026-03-10', readTime: '7 min'
   },
   {
     id: 4, icon: '💡', category: 'INNOVATION',
-    title: 'AI in Agriculture: Practical Applications',
-    summary: 'Exploring use cases of artificial intelligence and machine learning in improving agricultural decisions and productivity.',
-    content: 'AI is revolutionizing the agricultural sector by providing intelligent solutions for increased productivity and sustainability.\n\nKey applications:\n- Plant disease recognition through imaging\n- Yield prediction and climate risk assessment\n- Smart agricultural robotics\n- Efficient water resource management\n- Agricultural product quality analysis\n\nCase study:\nUsing deep learning techniques to analyze pollen grain images and assess quality automatically, reducing inspection time from hours to minutes.',
-    date: '2026-04-05', readTime: '9 min read'
+    title: 'IA en Agriculture : Applications Pratiques',
+    summary: 'Exploration des cas d\'utilisation de l\'intelligence artificielle pour améliorer les décisions agricoles et la productivité.',
+    content: 'L\'IA révolutionne le secteur agricole en fournissant des solutions intelligentes pour une productivité et une durabilité accrues.\n\nApplications clés :\n- Reconnaissance des maladies des plantes par imagerie\n- Prédiction des rendements et évaluation des risques climatiques\n- Robotique agricole intelligente\n- Gestion efficace des ressources en eau\n- Analyse de la qualité des produits agricoles\n\nÉtude de cas :\nUtilisation de techniques d\'apprentissage profond pour analyser les images de grains de pollen et évaluer automatiquement la qualité, réduisant le temps d\'inspection de plusieurs heures à quelques minutes.',
+    date: '2026-04-05', readTime: '9 min'
   },
   {
-    id: 5, icon: '🔬', category: 'RESEARCH',
-    title: 'Scientific Publishing Guide',
-    summary: 'Practical steps for publishing your research in peer-reviewed international journals and reputable databases.',
-    content: 'International scientific publishing is the gateway to connecting with the global scientific community and building a prestigious academic reputation.\n\nKey steps:\n1. Choose the right journal (Scopus, Web of Science)\n2. Write the paper according to journal standards\n3. Prepare the manuscript professionally\n4. Handle reviewer feedback\n5. Follow up on publication and promotion\n\nImportant tips:\n- Choose an attractive and clear title\n- Write a strong abstract\n- Cite references accurately\n- Follow scientific publishing ethics',
-    date: '2026-05-01', readTime: '11 min read'
+    id: 5, icon: '🔬', category: 'RECHERCHE',
+    title: 'Guide de Publication Scientifique',
+    summary: 'Étapes pratiques pour publier vos recherches dans des revues internationales à comité de lecture et des bases de données réputées.',
+    content: 'La publication scientifique internationale est la porte d\'entrée pour se connecter à la communauté scientifique mondiale et bâtir une réputation académique prestigieuse.\n\nÉtapes clés :\n1. Choisir la bonne revue (Scopus, Web of Science)\n2. Rédiger selon les normes de la revue\n3. Préparer le manuscrit professionnellement\n4. Gérer les commentaires des évaluateurs\n5. Suivre la publication et la promotion\n\nConseils importants :\n- Choisir un titre attrayant et clair\n- Rédiger un résumé percutant\n- Citer les références avec précision\n- Respecter l\'éthique scientifique',
+    date: '2026-05-01', readTime: '11 min'
   },
   {
-    id: 6, icon: '🚀', category: 'ENTREPRENEURSHIP',
-    title: 'Starting an Agricultural Project',
-    summary: 'Comprehensive guide for agricultural entrepreneurs on launching and developing a successful agricultural business.',
-    content: 'Agricultural entrepreneurship requires a unique blend of technical knowledge, managerial skills, and future vision.\n\nProject stages:\n1. Feasibility study and market analysis\n2. Business plan development\n3. Securing funding (loans, grants, investors)\n4. Location and equipment selection\n5. Hiring and training\n6. Marketing and distribution\n\nPromising areas:\n- Organic farming\n- Climate-smart agriculture\n- Sustainable livestock production\n- Vertical farming and greenhouses',
-    date: '2026-05-20', readTime: '8 min read'
+    id: 6, icon: '🚀', category: 'ENTREPRENEURIAT',
+    title: 'Lancer un Projet Agricole',
+    summary: 'Guide complet pour les entrepreneurs agricoles sur le lancement et le développement d\'une entreprise agricole prospère.',
+    content: 'L\'entrepreneuriat agricole nécessite un mélange unique de connaissances techniques, de compétences managériales et de vision d\'avenir.\n\nÉtapes du projet :\n1. Étude de faisabilité et analyse de marché\n2. Élaboration du plan d\'affaires\n3. Obtention de financement (prêts, subventions, investisseurs)\n4. Choix du site et de l\'équipement\n5. Recrutement et formation\n6. Marketing et distribution\n\nDomaines prometteurs :\n- Agriculture biologique\n- Agriculture climato-intelligente\n- Production animale durable\n- Agriculture verticale et serres',
+    date: '2026-05-20', readTime: '8 min'
   }
 ];
 const faqItems = [
-  { question: 'What is your background and expertise?', answer: 'I hold a PhD in animal sciences specializing in semen quality and reproductive performance. I have 10+ years of experience in research, training, and digital innovation in agriculture.' },
-  { question: 'What training programs do you offer?', answer: 'I offer comprehensive agricultural training through FBS programs, AgriSkills Academy, and specialized workshops covering livestock production, modern farming techniques, and digital agriculture.' },
-  { question: 'Do you offer research consulting services?', answer: 'Yes! I provide consulting in experimental design, data analysis, scientific writing, and international publishing support for researchers and institutions.' },
-  { question: 'How can I access the kamel3lom platform?', answer: 'kamel3lom is our digital platform for agricultural knowledge. You can access it through our website or mobile app with free and premium content.' },
-  { question: 'Do you provide certification for training?', answer: 'Yes, all our training programs include recognized certificates upon completion. AgriSkills Academy provides internationally recognized agricultural certifications.' },
-  { question: 'What is your consulting availability?', answer: 'I offer flexible consulting arrangements. You can contact me for custom solutions for training, research, or digital platform development.' },
-  { question: 'How do I contact you for collaboration?', answer: 'You can reach me through the contact form on this website, email, LinkedIn, or phone. I respond within 24-48 hours to all inquiries.' },
-  { question: 'Do you work internationally?', answer: 'Yes! I have collaborations with institutions across Europe, Middle East, and Africa. Remote consulting and training are available worldwide.' },
+  { question: 'Quel est votre parcours et votre expertise ?', answer: 'Je suis titulaire d\'un doctorat en sciences animales spécialisé dans la qualité du sperme et les performances reproductives. J\'ai plus de 10 ans d\'expérience en recherche, formation et innovation numérique en agriculture.' },
+  { question: 'Quels programmes de formation proposez-vous ?', answer: 'Je propose des formations agricoles complètes via les programmes FBS, AgriSkills Academy, et des ateliers spécialisés couvrant la production animale, les techniques agricoles modernes et l\'agriculture numérique.' },
+  { question: 'Offrez-vous des services de conseil en recherche ?', answer: 'Oui ! Je fournis du conseil en conception expérimentale, analyse de données, rédaction scientifique et soutien à la publication internationale pour les chercheurs et institutions.' },
+  { question: 'Comment accéder à la plateforme kamel3lom ?', answer: 'kamel3lom est notre plateforme numérique de connaissances agricoles. Vous pouvez y accéder via notre site web ou application mobile avec du contenu gratuit et premium.' },
+  { question: 'Fournissez-vous des certifications pour les formations ?', answer: 'Oui, tous nos programmes de formation incluent des certificats reconnus. AgriSkills Academy délivre des certifications agricoles internationalement reconnues.' },
+  { question: 'Quelle est votre disponibilité pour le conseil ?', answer: 'Je propose des modalités de conseil flexibles. Vous pouvez me contacter pour des solutions sur mesure en formation, recherche ou développement de plateformes numériques.' },
+  { question: 'Comment vous contacter pour une collaboration ?', answer: 'Vous pouvez me joindre via le formulaire de contact sur ce site, par email, LinkedIn ou téléphone. Je réponds sous 24-48 heures à toutes les demandes.' },
+  { question: 'Travaillez-vous à l\'international ?', answer: 'Oui ! J\'ai des collaborations avec des institutions en Europe, au Moyen-Orient et en Afrique. Le conseil et la formation à distance sont disponibles dans le monde entier.' },
 ];
 
-/**
- * Render projects grid with optional category filter
- * @param {string} filter - Category filter ('all', 'app', 'research', 'training', 'business')
- */
 function renderProjects(filter = 'all') {
   const grid = document.getElementById('projectGrid');
   grid.innerHTML = '';
   const filtered = filter === 'all' ? projects : projects.filter(p => p.cat === filter);
   filtered.forEach((p, i) => {
-    const catLabels = { app: 'Application', research: 'Research', training: 'Training', business: 'Business' };
+    const catLabels = { app: 'Application', research: 'Recherche', training: 'Formation', business: 'Entreprise' };
     const card = document.createElement('div');
     card.className = 'glass-card rounded-2xl overflow-hidden anim-in';
     card.style.animationDelay = `${i * 0.1}s`;
@@ -117,7 +113,7 @@ function renderProjects(filter = 'all') {
         <span class="text-cyan-400 text-xs font-semibold">${catLabels[p.cat]}</span>
         <h3 class="text-white font-bold mt-2 mb-2">${p.name}</h3>
         <p class="text-gray-400 text-sm mb-4">${p.desc}</p>
-        <a href="${p.link}" class="text-cyan-400 text-sm font-semibold hover:text-cyan-300 flex items-center gap-1">View Details <i data-lucide="arrow-right" style="width:14px;height:14px"></i></a>
+        <a href="${p.link}" class="text-cyan-400 text-sm font-semibold hover:text-cyan-300 flex items-center gap-1">Voir Détails <i data-lucide="arrow-right" style="width:14px;height:14px"></i></a>
       </div>
     `;
     grid.appendChild(card);
@@ -125,10 +121,6 @@ function renderProjects(filter = 'all') {
   lucide.createIcons();
 }
 
-/**
- * Filter projects by category and update button styles
- * @param {string} cat - Category to filter by
- */
 function filterProjects(cat) {
   document.querySelectorAll('.filter-btn').forEach(btn => {
     if (btn.dataset.filter === cat) {
@@ -140,10 +132,6 @@ function filterProjects(cat) {
   renderProjects(cat);
 }
 
-// Render testimonials
-/**
- * Render testimonials carousel
- */
 function renderTestimonials() {
   const container = document.getElementById('testimonialsContainer');
   container.innerHTML = '';
@@ -173,12 +161,6 @@ function renderTestimonials() {
   });
 }
 
-
-
-/**
- * Render portfolio gallery with filtering
- * @param {string} filter - Category filter
- */
 function renderGallery(filter = 'all') {
   const grid = document.getElementById('galleryGrid');
   grid.innerHTML = '';
@@ -203,9 +185,6 @@ function renderGallery(filter = 'all') {
   });
 }
 
-/**
- * Filter gallery by category
- */
 function filterGallery(cat) {
   document.querySelectorAll('.gallery-filter-btn').forEach(btn => {
     if (btn.dataset.filter === cat) {
@@ -217,9 +196,6 @@ function filterGallery(cat) {
   renderGallery(cat);
 }
 
-/**
- * Render case studies
- */
 function renderCaseStudies() {
   const container = document.getElementById('caseStudiesContainer');
   container.innerHTML = '';
@@ -239,13 +215,13 @@ function renderCaseStudies() {
       </div>
       <div class="space-y-4">
         <div>
-          <p class="text-gray-400 text-sm"><strong>Challenge:</strong> ${study.challenge}</p>
+          <p class="text-gray-400 text-sm"><strong>Défi :</strong> ${study.challenge}</p>
         </div>
         <div>
-          <p class="text-gray-400 text-sm"><strong>Solution:</strong> ${study.solution}</p>
+          <p class="text-gray-400 text-sm"><strong>Solution :</strong> ${study.solution}</p>
         </div>
         <div>
-          <p class="text-cyan-400 text-sm font-semibold">Results: ${study.results}</p>
+          <p class="text-cyan-400 text-sm font-semibold">Résultats : ${study.results}</p>
         </div>
         <div class="flex flex-wrap gap-2 pt-2">
           ${study.tags.map(tag => `<span class="px-3 py-1 rounded-full bg-gradient-cyan-light text-white text-xs font-semibold">${tag}</span>`).join('')}
@@ -256,9 +232,6 @@ function renderCaseStudies() {
   });
 }
 
-/**
- * Render FAQ items with accordion functionality
- */
 function renderFAQ() {
   const container = document.getElementById('faqContainer');
   container.innerHTML = '';
@@ -282,9 +255,6 @@ function renderFAQ() {
   lucide.createIcons();
 }
 
-/**
- * Toggle FAQ answer visibility
- */
 function toggleFAQ(index) {
   const answer = document.getElementById(`faq-answer-${index}`);
   const icon = document.querySelector(`.faq-icon-${index}`);
@@ -295,15 +265,10 @@ function toggleFAQ(index) {
   }
 }
 
-// Mobile menu
-/**
- * Toggle mobile menu visibility
- */
 function toggleMobile() {
   document.getElementById('mobileMenu').classList.toggle('open');
 }
 
-// Navbar scroll effect and active link
 let lastScroll = 0;
 document.getElementById('app-body').addEventListener('scroll', function() {
   const nav = document.getElementById('navbar');
@@ -318,15 +283,10 @@ document.getElementById('app-body').addEventListener('scroll', function() {
     nav.style.backdropFilter = 'none';
     nav.style.borderBottom = 'none';
   }
-  // Update active nav links
   updateActiveNavLink(scrollTop);
   lastScroll = scrollTop;
 });
 
-/**
- * Update active navigation link based on scroll position
- * @param {number} scrollTop - Current scroll position
- */
 function updateActiveNavLink(scrollTop) {
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-link');
@@ -346,7 +306,6 @@ function updateActiveNavLink(scrollTop) {
   });
 }
 
-// Animate progress bars on scroll
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -358,11 +317,6 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.3 });
 document.getElementById('skills') && observer.observe(document.getElementById('skills'));
 
-// Contact form
-/**
- * Handle contact form submission
- * @param {Event} e - Form submit event
- */
 function handleContact(e) {
   e.preventDefault();
   const form = document.getElementById('contactForm');
@@ -374,22 +328,19 @@ function handleContact(e) {
   const submitBtn = form.querySelector('button[type="submit"]');
   const originalBtnText = submitBtn.innerHTML;
   
-  // Validation
   if (!name || !email || !subject || !message) {
-    showToast('⚠️ Please fill in all required fields', 'warning');
+    showToast('⚠️ Veuillez remplir tous les champs requis', 'warning');
     return;
   }
   
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    showToast('⚠️ Invalid email address', 'warning');
+    showToast('⚠️ Adresse email invalide', 'warning');
     return;
   }
   
-  // Show loading state
   submitBtn.disabled = true;
-  submitBtn.innerHTML = '<span>Sending...</span>';
+  submitBtn.innerHTML = '<span>Envoi...</span>';
   
-  // Send to Formspree
   const formData = new FormData();
   formData.append('name', name);
   formData.append('email', email);
@@ -399,22 +350,20 @@ function handleContact(e) {
   fetch('https://formspree.io/f/ada15_agro@', {
     method: 'POST',
     body: formData,
-    headers: {
-      'Accept': 'application/json'
-    }
+    headers: { 'Accept': 'application/json' }
   })
   .then(response => {
     if (response.ok) {
       success.classList.remove('hidden');
       form.reset();
       setTimeout(() => success.classList.add('hidden'), 4000);
-      showToast('✅ Message sent successfully! I\'ll be in touch soon.', 'success');
+      showToast('✅ Message envoyé avec succès ! Je vous répondrai bientôt.', 'success');
     } else {
       throw new Error('Network response was not ok');
     }
   })
   .catch(error => {
-    showToast('❌ Failed to send message. Please try again.', 'warning');
+    showToast('❌ Échec d\'envoi du message. Veuillez réessayer.', 'warning');
     console.error('Error:', error);
   })
   .finally(() => {
@@ -423,11 +372,6 @@ function handleContact(e) {
   });
 }
 
-/**
- * Display toast notification message
- * @param {string} message - Message to display
- * @param {string} type - Toast type ('info', 'warning', 'success')
- */
 function showToast(message, type = 'info') {
   const toast = document.createElement('div');
   const bgColor = type === 'warning' ? 'from-amber-500 to-amber-600' : 'from-cyan-500 to-cyan-600';
@@ -437,43 +381,35 @@ function showToast(message, type = 'info') {
   setTimeout(() => toast.remove(), 3000);
 }
 
-// Newsletter subscription
-/**
- * Handle newsletter subscription
- */
 function subscribeNewsletter() {
   const email = document.getElementById('newsletterEmail').value.trim();
   
   if (!email) {
-    showToast('⚠️ Please enter your email address', 'warning');
+    showToast('⚠️ Veuillez entrer votre adresse email', 'warning');
     return;
   }
   
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    showToast('⚠️ Invalid email address', 'warning');
+    showToast('⚠️ Adresse email invalide', 'warning');
     return;
   }
   
-  // Save subscription to localStorage
   const subscriptions = JSON.parse(localStorage.getItem('newsletter_subscriptions') || '[]');
   if (subscriptions.find(s => s.email === email)) {
-    showToast('⚠️ This email is already subscribed', 'warning');
+    showToast('⚠️ Cet email est déjà abonné', 'warning');
     return;
   }
   subscriptions.push({ email, subscribedAt: new Date().toISOString() });
   localStorage.setItem('newsletter_subscriptions', JSON.stringify(subscriptions));
   localStorage.setItem('newsletter_count', subscriptions.length);
   
-  showToast('✅ Thank you! You\'ve subscribed successfully', 'success');
+  showToast('✅ Merci ! Vous êtes abonné avec succès', 'success');
   document.getElementById('newsletterEmail').value = '';
   if (window.analyticsTracker) {
     window.analyticsTracker.trackEvent('newsletter_subscribe', { email });
   }
 }
 
-/**
- * Render blog articles grid
- */
 function renderBlog() {
   const grid = document.getElementById('blogGrid');
   if (!grid) return;
@@ -494,7 +430,7 @@ function renderBlog() {
         <p class="text-gray-400 text-sm mb-4">${article.summary}</p>
         <div class="flex items-center justify-between">
           <span class="text-gray-500 text-xs">${article.date} · ${article.readTime}</span>
-          <button onclick="openArticle(${article.id})" class="text-cyan-400 text-sm font-semibold hover:text-cyan-300 flex items-center gap-1">Read More <i data-lucide="arrow-right" style="width:14px;height:14px"></i></button>
+          <button onclick="openArticle(${article.id})" class="text-cyan-400 text-sm font-semibold hover:text-cyan-300 flex items-center gap-1">Lire Plus <i data-lucide="arrow-right" style="width:14px;height:14px"></i></button>
         </div>
       </div>
     `;
@@ -503,9 +439,6 @@ function renderBlog() {
   lucide.createIcons();
 }
 
-/**
- * Open article in a modal overlay
- */
 function openArticle(id) {
   const article = blogArticles.find(a => a.id === id);
   if (!article) return;
@@ -526,9 +459,6 @@ function openArticle(id) {
   document.body.style.overflow = 'hidden';
 }
 
-/**
- * Close article modal
- */
 function closeArticle() {
   const overlay = document.getElementById('articleModal');
   if (overlay) {
@@ -537,7 +467,6 @@ function closeArticle() {
   }
 }
 
-// Close modal on overlay click and Escape key
 document.addEventListener('DOMContentLoaded', () => {
   const overlay = document.getElementById('articleModal');
   if (overlay) {
@@ -550,14 +479,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Download CV
-/**
- * Download CV PDF file
- */
 function downloadCV() {
   const cvUrl = 'CV_AbdelkaderAtia.pdf';
   
-  // Check if file exists before attempting download
   fetch(cvUrl, { method: 'HEAD' }).then(response => {
     if (response.ok) {
       const link = document.createElement('a');
@@ -566,20 +490,16 @@ function downloadCV() {
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
-      showToast('✅ Downloading CV...', 'success');
+      showToast('✅ Téléchargement du CV...', 'success');
     } else {
-      showToast('📄 CV is not available at the moment', 'warning');
+      showToast('📄 CV non disponible actuellement', 'warning');
     }
   }).catch(() => {
-    showToast('📄 CV is not available at the moment', 'warning');
+    showToast('📄 CV non disponible actuellement', 'warning');
   });
 }
 
-// Theme toggle
 let isDarkMode = true;
-/**
- * Toggle between dark and light theme
- */
 function toggleTheme() {
   isDarkMode = !isDarkMode;
   const body = document.body;
@@ -597,7 +517,6 @@ function toggleTheme() {
   lucide.createIcons();
 }
 
-// Load saved theme
 window.addEventListener('load', () => {
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme === 'light') {
@@ -606,9 +525,7 @@ window.addEventListener('load', () => {
   }
 });
 
-// Keyboard navigation
 document.addEventListener('keydown', (e) => {
-  // Close mobile menu with Escape
   if (e.key === 'Escape') {
     const menu = document.getElementById('mobileMenu');
     if (menu.classList.contains('open')) {
@@ -616,17 +533,11 @@ document.addEventListener('keydown', (e) => {
     }
   }
   
-  // Scroll to top with Ctrl+Home or Cmd+Home
   if ((e.ctrlKey || e.metaKey) && e.key === 'Home') {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 });
 
-// Language switcher - Load different version
-/**
- * Switch language and redirect to appropriate page
- * @param {string} lang - Language code ('ar' or 'en')
- */
 function loadLanguage(lang) {
   localStorage.setItem('language', lang);
   
@@ -639,20 +550,19 @@ function loadLanguage(lang) {
   }
 }
 
-// Check saved language on load
 window.addEventListener('DOMContentLoaded', () => {
-  const savedLang = localStorage.getItem('language') || 'en';
+  const savedLang = localStorage.getItem('language') || 'fr';
+  const frBtn = document.getElementById('langFr');
   const enBtn = document.getElementById('langEn');
   const arBtn = document.getElementById('langAr');
-  const frBtn = document.getElementById('langFr');
   
-  if (savedLang === 'en' || !savedLang) {
-    if (enBtn) enBtn.style.background = 'rgba(34,211,238,0.2)';
-    if (frBtn) frBtn.style.background = 'transparent';
-    if (arBtn) arBtn.style.background = 'transparent';
-  } else if (savedLang === 'fr') {
+  if (savedLang === 'fr') {
     if (frBtn) frBtn.style.background = 'rgba(34,211,238,0.2)';
     if (enBtn) enBtn.style.background = 'transparent';
+    if (arBtn) arBtn.style.background = 'transparent';
+  } else if (savedLang === 'en') {
+    if (enBtn) enBtn.style.background = 'rgba(34,211,238,0.2)';
+    if (frBtn) frBtn.style.background = 'transparent';
     if (arBtn) arBtn.style.background = 'transparent';
   } else {
     if (arBtn) arBtn.style.background = 'rgba(34,211,238,0.2)';
@@ -661,7 +571,6 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', function(e) {
     e.preventDefault();
@@ -670,7 +579,6 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
-// Init projects
 renderProjects();
 renderTestimonials();
 renderGallery();
@@ -678,10 +586,8 @@ renderCaseStudies();
 renderFAQ();
 renderBlog();
 
-// Lucide
 lucide.createIcons();
 
-// Initialize AOS (Animate On Scroll)
 document.addEventListener('DOMContentLoaded', () => {
   if (typeof AOS !== 'undefined') {
     AOS.init({
@@ -693,23 +599,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
   
-  // Start counter animations
   startCounterAnimation();
-  
-  // Init lazy loading for images
   initLazyLoading();
 });
 
-/**
- * Animated counter for statistics
- */
 function startCounterAnimation() {
   const counters = document.querySelectorAll('.stat-number');
   
   const runCounters = () => {
     counters.forEach(counter => {
       const target = parseInt(counter.dataset.target);
-      const increment = target / 50; // Animate in 50 steps
+      const increment = target / 50;
       let current = 0;
       
       const updateCounter = () => {
@@ -722,7 +622,6 @@ function startCounterAnimation() {
         }
       };
       
-      // Trigger animation when element is in view
       const observer = new IntersectionObserver((entries) => {
         if (entries[0].isIntersecting && !counter.classList.contains('animated')) {
           counter.classList.add('animated');
@@ -738,9 +637,6 @@ function startCounterAnimation() {
   runCounters();
 }
 
-/**
- * Open social sharing modal
- */
 function shareToSocial(text) {
   const url = encodeURIComponent(window.location.href);
   const shareText = encodeURIComponent(text || document.title);
@@ -750,19 +646,19 @@ function shareToSocial(text) {
   document.getElementById('shareContent').innerHTML = `
     <button onclick="window.open('https://twitter.com/intent/tweet?text=${shareText}&url=${url}','_blank','width=600,height=400')"
       class="flex items-center gap-3 w-full p-4 rounded-xl hover:bg-gray-700 transition text-left">
-      <span class="text-2xl">🐦</span><div><div class="text-white font-semibold">Twitter / X</div><div class="text-gray-400 text-xs">Share on Twitter</div></div>
+      <span class="text-2xl">🐦</span><div><div class="text-white font-semibold">Twitter / X</div><div class="text-gray-400 text-xs">Partager sur Twitter</div></div>
     </button>
     <button onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url=${url}','_blank','width=600,height=400')"
       class="flex items-center gap-3 w-full p-4 rounded-xl hover:bg-gray-700 transition text-left">
-      <span class="text-2xl">💼</span><div><div class="text-white font-semibold">LinkedIn</div><div class="text-gray-400 text-xs">Share on LinkedIn</div></div>
+      <span class="text-2xl">💼</span><div><div class="text-white font-semibold">LinkedIn</div><div class="text-gray-400 text-xs">Partager sur LinkedIn</div></div>
     </button>
     <button onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=${url}','_blank','width=600,height=400')"
       class="flex items-center gap-3 w-full p-4 rounded-xl hover:bg-gray-700 transition text-left">
-      <span class="text-2xl">📘</span><div><div class="text-white font-semibold">Facebook</div><div class="text-gray-400 text-xs">Share on Facebook</div></div>
+      <span class="text-2xl">📘</span><div><div class="text-white font-semibold">Facebook</div><div class="text-gray-400 text-xs">Partager sur Facebook</div></div>
     </button>
-    <button onclick="navigator.clipboard.writeText(window.location.href).then(()=>{showToast('✅ Link copied!','success');closeShareModal();})"
+    <button onclick="navigator.clipboard.writeText(window.location.href).then(()=>{showToast('✅ Lien copié !','success');closeShareModal();})"
       class="flex items-center gap-3 w-full p-4 rounded-xl hover:bg-gray-700 transition text-left">
-      <span class="text-2xl">🔗</span><div><div class="text-white font-semibold">Copy Link</div><div class="text-gray-400 text-xs">Copy link to clipboard</div></div>
+      <span class="text-2xl">🔗</span><div><div class="text-white font-semibold">Copier le Lien</div><div class="text-gray-400 text-xs">Copier le lien dans le presse-papier</div></div>
     </button>
   `;
   modal.classList.remove('hidden');
@@ -777,9 +673,6 @@ function closeShareModal() {
   }
 }
 
-/**
- * Lazy load images for better performance
- */
 function initLazyLoading() {
   const images = document.querySelectorAll('img[data-src]');
   
@@ -797,23 +690,21 @@ function initLazyLoading() {
   images.forEach(img => imageObserver.observe(img));
 }
 
-// Responsive improvements
 window.addEventListener('resize', () => {
   if (typeof AOS !== 'undefined') {
     AOS.refresh();
   }
 });
 
-// Push notification subscription
 async function subscribePushNotifications() {
   if (!('Notification' in window) || !('serviceWorker' in navigator)) {
-    showToast('⚠️ Notifications not supported in your browser', 'warning');
+    showToast('⚠️ Notifications non supportées par ce navigateur', 'warning');
     return false;
   }
   try {
     const permission = await Notification.requestPermission();
     if (permission !== 'granted') {
-      showToast('⚠️ Notification permission denied', 'warning');
+      showToast('⚠️ Permission de notification refusée', 'warning');
       return false;
     }
     const registration = await navigator.serviceWorker.ready;
@@ -821,11 +712,11 @@ async function subscribePushNotifications() {
       userVisibleOnly: true
     });
     localStorage.setItem('push_subscription', JSON.stringify(subscription));
-    showToast('✅ Notifications enabled successfully', 'success');
+    showToast('✅ Notifications activées avec succès', 'success');
     return true;
   } catch (err) {
     console.error('Push subscription failed:', err);
-    showToast('❌ Failed to enable notifications', 'warning');
+    showToast('❌ Échec d\'activation des notifications', 'warning');
     return false;
   }
 }
@@ -837,14 +728,13 @@ async function unsubscribePushNotifications() {
     if (subscription) {
       await subscription.unsubscribe();
       localStorage.removeItem('push_subscription');
-      showToast('✅ Notifications disabled', 'success');
+      showToast('✅ Notifications désactivées', 'success');
     }
   } catch (err) {
     console.error('Unsubscribe failed:', err);
   }
 }
 
-// Check push subscription status on load
 window.addEventListener('load', async () => {
   if ('serviceWorker' in navigator && 'PushManager' in window) {
     try {
@@ -857,12 +747,11 @@ window.addEventListener('load', async () => {
   }
 });
 
-// Element SDK for visual editor (English version)
-const defaultConfigEn = {
-  hero_title: 'Transforming Agricultural Knowledge into Real Impact',
-  hero_subtitle: 'PhD student and trainer specializing in digital agriculture, building bridges between science and practical application.',
-  about_title: 'About Me',
-  services_title: 'My Services',
+const defaultConfigFr = {
+  hero_title: 'Transformer les Connaissances Agricoles en Impact Réel',
+  hero_subtitle: 'Doctorant et formateur spécialisé en agriculture numérique, construisant des ponts entre la science et l\'application pratique.',
+  about_title: 'À Propos de Moi',
+  services_title: 'Mes Services',
   contact_email: 'atia.abdelkader@gmail.com',
   background_color: '#0a0e27',
   surface_color: '#0f1538',
@@ -876,11 +765,11 @@ const defaultConfigEn = {
 async function initSDK() {
   if (!window.elementSdk) return;
   await window.elementSdk.init({
-    defaultConfig: defaultConfigEn,
+    defaultConfig: defaultConfigFr,
     onConfigChange: async (config) => {
-      const c = { ...defaultConfigEn, ...config };
+      const c = { ...defaultConfigFr, ...config };
       const heroEl = document.getElementById('heroTitle');
-      if (heroEl) heroEl.innerHTML = c.hero_title.replace(/(Agricultural Knowledge)/g, '<span class="gradient-text">$1</span>');
+      if (heroEl) heroEl.innerHTML = c.hero_title.replace(/(Connaissances Agricoles)/g, '<span class="gradient-text">$1</span>');
       const heroSub = document.getElementById('heroSubtitle');
       if (heroSub) heroSub.textContent = c.hero_subtitle;
       const aboutEl = document.getElementById('aboutTitle');
@@ -902,7 +791,7 @@ async function initSDK() {
       document.querySelectorAll('h3').forEach(el => el.style.fontSize = `${base * 1.15}px`);
     },
     mapToCapabilities: (config) => {
-      const c = { ...defaultConfigEn, ...config };
+      const c = { ...defaultConfigFr, ...config };
       return {
         recolorables: [
           { get: () => c.background_color, set: (v) => { c.background_color = v; window.elementSdk.setConfig({ background_color: v }); } },
@@ -923,7 +812,7 @@ async function initSDK() {
       };
     },
     mapToEditPanelValues: (config) => {
-      const c = { ...defaultConfigEn, ...config };
+      const c = { ...defaultConfigFr, ...config };
       return new Map([
         ['hero_title', c.hero_title],
         ['hero_subtitle', c.hero_subtitle],
