@@ -100,11 +100,11 @@ const faqItems = [
 // ===== Knowledge Hub Data =====
 const thoughts = [
   { platform: 'facebook', text: 'متشوق لمشاركة خبر قبول ورقي البحثية الجديدة حول تقييم جودة السائل المنوي في مجلة علمية محكمة. ممتن لدعم مشرفي وزملائي.', date: 'مايو 2026', link: 'https://www.facebook.com/abdelkader.atia' },
-  { platform: 'linkedin', text: 'اختتمت لتوي برنامج تدريبي مكثف لمدارس المزارعين الحقلية في المعهد الوطني للتكوين المهني بالوادي. تفاعل المتدربين وفضولهم يؤكد لماذا أحب هذا العمل - التعليم الزراعي التطبيقي يغير حياة الناس.', date: 'أبريل 2026', link: 'https://www.linkedin.com/in/abdelkader-atia/' },
+  { platform: 'linkedin', text: 'اختتمت لتوي برنامج تدريبي مكثف لمدارس المزارعين الحقلية في المعهد الوطني للتكوين المهني بالوادي. تفاعل المتدربين وفضولهم يؤكد لماذا أحب هذا العمل - التعليم الزراعي التطبيقي يغير حياة الناس.', date: 'أبريل 2026', link: 'https://www.linkedin.com/in/abdelkader-atia-89061a146/' },
   { platform: 'facebook', text: 'حضرت مؤتمر ESNA وقدمت أحدث أبحاثي حول الأداء التناسلي للكباش تحت الظروف الجافة. نقاشات مثمرة مع باحثين من جميع أنحاء المتوسط.', date: 'مارس 2026', link: 'https://www.facebook.com/abdelkader.atia' },
-  { platform: 'linkedin', text: 'إنجاز جديد: أكثر من 50 شهادة دولية! من Wageningen إلى FAO إلى Oxford Climate Society - التعلم المستمر هو مفتاح البقاء في طليعة الابتكار الزراعي.', date: 'فبراير 2026', link: 'https://www.linkedin.com/in/abdelkader-atia/' },
+  { platform: 'linkedin', text: 'إنجاز جديد: أكثر من 50 شهادة دولية! من Wageningen إلى FAO إلى Oxford Climate Society - التعلم المستمر هو مفتاح البقاء في طليعة الابتكار الزراعي.', date: 'فبراير 2026', link: 'https://www.linkedin.com/in/abdelkader-atia-89061a146/' },
   { platform: 'facebook', text: 'فخور بمشاركة التقدم في نظامنا النموذجي للزراعة المائية والأكوابونيك. دمج المعرفة التقليدية مع الهندسة الحديثة لإنتاج غذاء مستدام في المناطق الجافة.', date: 'يناير 2026', link: 'https://www.facebook.com/abdelkader.atia' },
-  { platform: 'linkedin', text: 'يشرفني العمل كنائب رئيس جمعية النحالين والمساهمة في تطوير تربية النحل في الجزائر. النحل شغف وركيزة أساسية في نظامنا الزراعي.', date: 'ديسمبر 2025', link: 'https://www.linkedin.com/in/abdelkader-atia/' },
+  { platform: 'linkedin', text: 'يشرفني العمل كنائب رئيس جمعية النحالين والمساهمة في تطوير تربية النحل في الجزائر. النحل شغف وركيزة أساسية في نظامنا الزراعي.', date: 'ديسمبر 2025', link: 'https://www.linkedin.com/in/abdelkader-atia-89061a146/' },
 ];
 
 const publications = [
@@ -349,7 +349,7 @@ function renderThoughts(container) {
       <a href="https://www.facebook.com/abdelkader.atia" target="_blank" rel="noopener noreferrer" class="btn-outline text-cyan-400 px-5 py-3 rounded-xl text-sm font-semibold flex items-center gap-2 hover:bg-cyan-500/10 transition">
         <i data-lucide="facebook" style="width:16px;height:16px"></i> تابعني على فيسبوك
       </a>
-      <a href="https://www.linkedin.com/in/abdelkader-atia/" target="_blank" rel="noopener noreferrer" class="btn-outline text-cyan-400 px-5 py-3 rounded-xl text-sm font-semibold flex items-center gap-2 hover:bg-cyan-500/10 transition">
+      <a href="https://www.linkedin.com/in/abdelkader-atia-89061a146/" target="_blank" rel="noopener noreferrer" class="btn-outline text-cyan-400 px-5 py-3 rounded-xl text-sm font-semibold flex items-center gap-2 hover:bg-cyan-500/10 transition">
         <i data-lucide="linkedin" style="width:16px;height:16px"></i> تابعني على لينكد إن
       </a>
     </div>

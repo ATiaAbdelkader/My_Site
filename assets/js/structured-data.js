@@ -25,7 +25,7 @@ class StructuredDataGenerator {
       "telephone": "+213-XXXXXXXXX", // Add actual number
       "url": `${this.baseUrl}/`,
       "sameAs": [
-        "https://www.linkedin.com/in/abdelkader-atia/",
+        "https://www.linkedin.com/in/abdelkader-atia-89061a146/",
         "https://twitter.com/abdelkader_atia",
         "https://www.facebook.com/abdelkader.atia",
         "https://github.com/abdelkader-atia"
@@ -69,7 +69,7 @@ class StructuredDataGenerator {
       "logo": `${this.baseUrl}/assets/images/logo.png`,
       "description": "Agricultural innovation, research consulting, and professional training services",
       "sameAs": [
-        "https://www.linkedin.com/in/abdelkader-atia/",
+        "https://www.linkedin.com/in/abdelkader-atia-89061a146/",
         "https://twitter.com/abdelkader_atia"
       ],
       "contact": {

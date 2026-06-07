@@ -100,11 +100,11 @@ const faqItems = [
 // ===== Knowledge Hub Data =====
 const thoughts = [
   { platform: 'facebook', text: 'Excited to share that my latest paper on semen quality assessment has been accepted in a peer-reviewed journal. Grateful to my supervisors and collaborators for their support.', date: 'May 2026', link: 'https://www.facebook.com/abdelkader.atia' },
-  { platform: 'linkedin', text: 'Just wrapped up an intensive FBS training program at INSFP EL-Oued. The engagement and curiosity from the trainees reaffirm why I love this work — practical agriculture education changes lives.', date: 'Apr 2026', link: 'https://www.linkedin.com/in/abdelkader-atia/' },
+  { platform: 'linkedin', text: 'Just wrapped up an intensive FBS training program at INSFP EL-Oued. The engagement and curiosity from the trainees reaffirm why I love this work — practical agriculture education changes lives.', date: 'Apr 2026', link: 'https://www.linkedin.com/in/abdelkader-atia-89061a146/' },
   { platform: 'facebook', text: 'Attended the ESNA conference and presented my latest research on reproductive performance in rams under arid conditions. Productive discussions with fellow researchers from across the Mediterranean.', date: 'Mar 2026', link: 'https://www.facebook.com/abdelkader.atia' },
-  { platform: 'linkedin', text: 'New milestone: 50+ international certifications completed! From Wageningen to FAO to Oxford Climate Society — continuous learning is the key to staying at the forefront of agricultural innovation.', date: 'Feb 2026', link: 'https://www.linkedin.com/in/abdelkader-atia/' },
+  { platform: 'linkedin', text: 'New milestone: 50+ international certifications completed! From Wageningen to FAO to Oxford Climate Society — continuous learning is the key to staying at the forefront of agricultural innovation.', date: 'Feb 2026', link: 'https://www.linkedin.com/in/abdelkader-atia-89061a146/' },
   { platform: 'facebook', text: 'Proud to share progress on our hydroponic/aquaponic prototype system. Combining traditional knowledge with modern engineering for sustainable food production in arid regions.', date: 'Jan 2026', link: 'https://www.facebook.com/abdelkader.atia' },
-  { platform: 'linkedin', text: 'Honored to serve as Vice President of the Beekeeper Association and contribute to the development of apiculture in Algeria. Beekeeping is both a passion and a critical pillar of our agricultural ecosystem.', date: 'Dec 2025', link: 'https://www.linkedin.com/in/abdelkader-atia/' },
+  { platform: 'linkedin', text: 'Honored to serve as Vice President of the Beekeeper Association and contribute to the development of apiculture in Algeria. Beekeeping is both a passion and a critical pillar of our agricultural ecosystem.', date: 'Dec 2025', link: 'https://www.linkedin.com/in/abdelkader-atia-89061a146/' },
 ];
 
 const publications = [
@@ -352,7 +352,7 @@ function renderThoughts(container) {
       <a href="https://www.facebook.com/abdelkader.atia" target="_blank" rel="noopener noreferrer" class="btn-outline text-cyan-400 px-5 py-3 rounded-xl text-sm font-semibold flex items-center gap-2 hover:bg-cyan-500/10 transition">
         <i data-lucide="facebook" style="width:16px;height:16px"></i> Follow on Facebook
       </a>
-      <a href="https://www.linkedin.com/in/abdelkader-atia/" target="_blank" rel="noopener noreferrer" class="btn-outline text-cyan-400 px-5 py-3 rounded-xl text-sm font-semibold flex items-center gap-2 hover:bg-cyan-500/10 transition">
+      <a href="https://www.linkedin.com/in/abdelkader-atia-89061a146/" target="_blank" rel="noopener noreferrer" class="btn-outline text-cyan-400 px-5 py-3 rounded-xl text-sm font-semibold flex items-center gap-2 hover:bg-cyan-500/10 transition">
         <i data-lucide="linkedin" style="width:16px;height:16px"></i> Follow on LinkedIn
       </a>
     </div>

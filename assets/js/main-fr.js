@@ -100,11 +100,11 @@ const faqItems = [
 // ===== Knowledge Hub Data =====
 const thoughts = [
   { platform: 'facebook', text: 'Ravi de partager que mon dernier article sur l\'évaluation de la qualité du sperme a été accepté dans une revue à comité de lecture. Reconnaissant envers mes superviseurs et collaborateurs pour leur soutien.', date: 'Mai 2026', link: 'https://www.facebook.com/abdelkader.atia' },
-  { platform: 'linkedin', text: 'Je viens de terminer un programme de formation intensive FBS à l\'INSFP EL-Oued. L\'engagement et la curiosité des stagiaires me rappellent pourquoi j\'aime ce travail — l\'éducation agricole pratique transforme des vies.', date: 'Avr 2026', link: 'https://www.linkedin.com/in/abdelkader-atia/' },
+  { platform: 'linkedin', text: 'Je viens de terminer un programme de formation intensive FBS à l\'INSFP EL-Oued. L\'engagement et la curiosité des stagiaires me rappellent pourquoi j\'aime ce travail — l\'éducation agricole pratique transforme des vies.', date: 'Avr 2026', link: 'https://www.linkedin.com/in/abdelkader-atia-89061a146/' },
   { platform: 'facebook', text: 'Participé à la conférence ESNA et présenté mes dernières recherches sur les performances reproductives des béliers en conditions arides. Échanges enrichissants avec des chercheurs de toute la Méditerranée.', date: 'Mar 2026', link: 'https://www.facebook.com/abdelkader.atia' },
-  { platform: 'linkedin', text: 'Nouveau cap franchi : plus de 50 certifications internationales ! De Wageningen à la FAO en passant par l\'Oxford Climate Society — l\'apprentissage continu est la clé pour rester à la pointe de l\'innovation agricole.', date: 'Fév 2026', link: 'https://www.linkedin.com/in/abdelkader-atia/' },
+  { platform: 'linkedin', text: 'Nouveau cap franchi : plus de 50 certifications internationales ! De Wageningen à la FAO en passant par l\'Oxford Climate Society — l\'apprentissage continu est la clé pour rester à la pointe de l\'innovation agricole.', date: 'Fév 2026', link: 'https://www.linkedin.com/in/abdelkader-atia-89061a146/' },
   { platform: 'facebook', text: 'Fier de partager l\'avancement de notre prototype de système hydroponique/aquaponique. Alliance du savoir traditionnel et de l\'ingénierie moderne pour une production alimentaire durable en régions arides.', date: 'Jan 2026', link: 'https://www.facebook.com/abdelkader.atia' },
-  { platform: 'linkedin', text: 'Honoré de servir en tant que Vice-Président de l\'Association des Apiculteurs et de contribuer au développement de l\'apiculture en Algérie. L\'apiculture est à la fois une passion et un pilier essentiel de notre écosystème agricole.', date: 'Déc 2025', link: 'https://www.linkedin.com/in/abdelkader-atia/' },
+  { platform: 'linkedin', text: 'Honoré de servir en tant que Vice-Président de l\'Association des Apiculteurs et de contribuer au développement de l\'apiculture en Algérie. L\'apiculture est à la fois une passion et un pilier essentiel de notre écosystème agricole.', date: 'Déc 2025', link: 'https://www.linkedin.com/in/abdelkader-atia-89061a146/' },
 ];
 
 const publications = [
@@ -320,7 +320,7 @@ function renderThoughts(container) {
       <a href="https://www.facebook.com/abdelkader.atia" target="_blank" rel="noopener noreferrer" class="btn-outline text-cyan-400 px-5 py-3 rounded-xl text-sm font-semibold flex items-center gap-2 hover:bg-cyan-500/10 transition">
         <i data-lucide="facebook" style="width:16px;height:16px"></i> Suivre sur Facebook
       </a>
-      <a href="https://www.linkedin.com/in/abdelkader-atia/" target="_blank" rel="noopener noreferrer" class="btn-outline text-cyan-400 px-5 py-3 rounded-xl text-sm font-semibold flex items-center gap-2 hover:bg-cyan-500/10 transition">
+      <a href="https://www.linkedin.com/in/abdelkader-atia-89061a146/" target="_blank" rel="noopener noreferrer" class="btn-outline text-cyan-400 px-5 py-3 rounded-xl text-sm font-semibold flex items-center gap-2 hover:bg-cyan-500/10 transition">
         <i data-lucide="linkedin" style="width:16px;height:16px"></i> Suivre sur LinkedIn
       </a>
     </div>
