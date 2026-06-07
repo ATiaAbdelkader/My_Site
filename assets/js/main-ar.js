@@ -97,9 +97,38 @@ const faqItems = [
   { question: 'هل تعمل بشكل دولي؟', answer: 'نعم، لدي تعاون مع مؤسسات في أوروبا والشرق الأوسط وأفريقيا، والاستشارة والتدريب عن بعد متاحة عالميًا.' },
 ];
 
+// ===== Knowledge Hub Data =====
+const thoughts = [
+  { platform: 'facebook', text: 'متشوق لمشاركة خبر قبول ورقي البحثية الجديدة حول تقييم جودة السائل المنوي في مجلة علمية محكمة. ممتن لدعم مشرفي وزملائي.', date: 'مايو 2026', link: 'https://www.facebook.com/abdelkader.atia' },
+  { platform: 'linkedin', text: 'اختتمت لتوي برنامج تدريبي مكثف لمدارس المزارعين الحقلية في المعهد الوطني للتكوين المهني بالوادي. تفاعل المتدربين وفضولهم يؤكد لماذا أحب هذا العمل - التعليم الزراعي التطبيقي يغير حياة الناس.', date: 'أبريل 2026', link: 'https://www.linkedin.com/in/abdelkader-atia/' },
+  { platform: 'facebook', text: 'حضرت مؤتمر ESNA وقدمت أحدث أبحاثي حول الأداء التناسلي للكباش تحت الظروف الجافة. نقاشات مثمرة مع باحثين من جميع أنحاء المتوسط.', date: 'مارس 2026', link: 'https://www.facebook.com/abdelkader.atia' },
+  { platform: 'linkedin', text: 'إنجاز جديد: أكثر من 50 شهادة دولية! من Wageningen إلى FAO إلى Oxford Climate Society - التعلم المستمر هو مفتاح البقاء في طليعة الابتكار الزراعي.', date: 'فبراير 2026', link: 'https://www.linkedin.com/in/abdelkader-atia/' },
+  { platform: 'facebook', text: 'فخور بمشاركة التقدم في نظامنا النموذجي للزراعة المائية والأكوابونيك. دمج المعرفة التقليدية مع الهندسة الحديثة لإنتاج غذاء مستدام في المناطق الجافة.', date: 'يناير 2026', link: 'https://www.facebook.com/abdelkader.atia' },
+  { platform: 'linkedin', text: 'يشرفني العمل كنائب رئيس جمعية النحالين والمساهمة في تطوير تربية النحل في الجزائر. النحل شغف وركيزة أساسية في نظامنا الزراعي.', date: 'ديسمبر 2025', link: 'https://www.linkedin.com/in/abdelkader-atia/' },
+];
+
+const publications = [
+  { title: 'تقييم معايير جودة السائل المنوي في الكباش تحت الظروف البيئية الجافة', journal: 'Journal of Animal Science', year: 2025, doi: '10.xxxx/jas.2025.001' },
+  { title: 'تأثير المكملات الغذائية على الأداء التناسلي للسلالات البقرية المحلية في جنوب الجزائر', journal: 'Livestock Science', year: 2024, doi: '10.xxxx/livsci.2024.002' },
+  { title: 'تطبيق التحليل الرقمي للصور للتقييم الآلي لشكل الحيوانات المنوية', journal: 'Theriogenology', year: 2024, doi: '10.xxxx/therio.2024.003' },
+  { title: 'دراسة مقارنة لأنظمة التربية التقليدية والحديثة في المناطق الجافة في الجزائر', journal: 'Animal Production Science', year: 2023, doi: '10.xxxx/aps.2023.004' },
+  { title: 'يرقات ذبابة الجندي الأسود كمصدر بروتين بديل في تغذية الدواجن: مراجعة', journal: 'Journal of Insects as Food and Feed', year: 2025, doi: '10.xxxx/jiff.2025.005' },
+  { title: 'تأثير الإجهاد الحراري على المعايير التناسلية في الكباش: تحليل تلوي', journal: 'Small Ruminant Research', year: 2024, doi: '10.xxxx/srr.2024.006' },
+  { title: 'أدوات الزراعة الدقيقة لإدارة الثروة الحيوانية في البيئات الجافة', journal: 'Computers and Electronics in Agriculture', year: 2025, doi: '10.xxxx/comag.2025.007' },
+  { title: 'أنظمة الزراعة المائية والأكوابونيك للإنتاج الغذائي المستدام في مناطق الصحراء', journal: 'Agricultural Systems', year: 2023, doi: '10.xxxx/agsy.2023.008' },
+];
+
+const speaking = [
+  { conference: 'ESNA — الجمعية الأوروبية للطرق الحديثة في البحث الزراعي', location: 'تونس، تونس', year: 2024, paper: 'تقييم جودة السائل المنوي في الكباش: دراسة مقارنة بين الطرق التقليدية والرقمية' },
+  { conference: 'ICABRD — المؤتمر الدولي لتربية الحيوان والتطور التناسلي', location: 'الجزائر العاصمة، الجزائر', year: 2024, paper: 'تحسين الأداء التناسلي للسلالات البقرية المحلية من خلال الإدارة الغذائية' },
+  { conference: 'ICARP — المؤتمر الدولي للإنتاج في المناطق الجافة', location: 'مراكش، المغرب', year: 2025, paper: 'الأدوات الرقمية للزراعة الدقيقة للثروة الحيوانية في البيئات الجافة' },
+  { conference: 'SOS — مؤتمر استدامة النظم الزراعية الصحراوية', location: 'ورقلة، الجزائر', year: 2023, paper: 'نظم الإنتاج الحيواني المستدامة في الصحراء الجزائرية' },
+  { conference: 'ChAAB — تحديات تربية الحيوان في المناطق الجافة وشبه الجافة', location: 'بسكرة، الجزائر', year: 2024, paper: 'استراتيجيات التربية لتحسين الكفاءة التناسلية تحت ظروف الإجهاد الحراري' },
+  { conference: 'ISAEA — الندوة الدولية للزراعة في البيئات الجافة', location: 'الوادي، الجزائر', year: 2026, paper: 'تطبيقات الذكاء الاصطناعي وإنترنت الأشياء في الزراعة في المناطق الجافة: الفرص والتحديات' },
+];
+
 /**
  * Render projects grid with optional category filter
- * @param {string} filter - Category filter ('all', 'app', 'research', 'training', 'business')
  */
 function renderProjects(filter = 'all') {
   const grid = document.getElementById('projectGrid');
@@ -293,6 +322,110 @@ function toggleFAQ(index) {
   if (icon) {
     icon.style.transform = answer.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(-180deg)';
   }
+}
+
+// ===== Knowledge Hub =====
+function switchKnowledgeTab(tab) {
+  document.querySelectorAll('.knowledge-tab-btn').forEach(btn => {
+    if (btn.dataset.tab === tab) {
+      btn.className = 'knowledge-tab-btn px-5 py-2 rounded-lg text-sm font-semibold btn-primary text-white';
+    } else {
+      btn.className = 'knowledge-tab-btn px-5 py-2 rounded-lg text-sm font-semibold btn-outline text-gray-400';
+    }
+  });
+  const container = document.getElementById('knowledgeContent');
+  container.innerHTML = '';
+  if (tab === 'thoughts') renderThoughts(container);
+  else if (tab === 'publications') renderPublications(container);
+  else if (tab === 'speaking') renderSpeaking(container);
+  lucide.createIcons();
+}
+
+function renderThoughts(container) {
+  container.innerHTML = `
+    <div class="flex flex-wrap justify-center gap-4 mb-10">
+      <a href="https://www.facebook.com/abdelkader.atia" target="_blank" rel="noopener noreferrer" class="btn-outline text-cyan-400 px-5 py-3 rounded-xl text-sm font-semibold flex items-center gap-2 hover:bg-cyan-500/10 transition">
+        <i data-lucide="facebook" style="width:16px;height:16px"></i> تابعني على فيسبوك
+      </a>
+      <a href="https://www.linkedin.com/in/abdelkader-atia/" target="_blank" rel="noopener noreferrer" class="btn-outline text-cyan-400 px-5 py-3 rounded-xl text-sm font-semibold flex items-center gap-2 hover:bg-cyan-500/10 transition">
+        <i data-lucide="linkedin" style="width:16px;height:16px"></i> تابعني على لينكد إن
+      </a>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="thoughtsGrid"></div>
+  `;
+  const grid = document.getElementById('thoughtsGrid');
+  thoughts.forEach((t, i) => {
+    const platformColor = t.platform === 'facebook' ? '#1877F2' : '#0A66C2';
+    const platformIcon = t.platform === 'facebook' ? 'facebook' : 'linkedin';
+    const card = document.createElement('div');
+    card.className = 'glass-card rounded-2xl p-6 anim-in';
+    card.style.animationDelay = `${i * 0.1}s`;
+    card.style.opacity = '0';
+    card.innerHTML = `
+      <div class="flex items-center gap-2 mb-3">
+        <span style="color:${platformColor}"><i data-lucide="${platformIcon}" style="width:16px;height:16px"></i></span>
+        <span class="text-xs font-semibold" style="color:${platformColor}">${t.platform === 'facebook' ? 'Facebook' : 'LinkedIn'}</span>
+        <span class="text-xs text-gray-600 ml-auto">${t.date}</span>
+      </div>
+      <p class="text-gray-300 text-sm leading-relaxed mb-4">"${t.text}"</p>
+      <a href="${t.link}" target="_blank" rel="noopener noreferrer" class="text-cyan-400 text-xs font-semibold flex items-center gap-1 hover:text-cyan-300 transition-colors">
+        اقرأ المزيد <i data-lucide="external-link" style="width:12px;height:12px"></i>
+      </a>
+    `;
+    grid.appendChild(card);
+  });
+}
+
+function renderPublications(container) {
+  container.innerHTML = `<div class="space-y-4" id="pubsList"></div>`;
+  const list = document.getElementById('pubsList');
+  publications.forEach((p, i) => {
+    const card = document.createElement('div');
+    card.className = 'glass-card rounded-2xl p-6 anim-in';
+    card.style.animationDelay = `${i * 0.1}s`;
+    card.style.opacity = '0';
+    card.innerHTML = `
+      <div class="flex items-start gap-4">
+        <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 text-lg" style="background:rgba(34,211,238,0.1);">📄</div>
+        <div class="flex-1 min-w-0">
+          <h3 class="text-white font-semibold text-sm leading-snug mb-1">${p.title}</h3>
+          <p class="text-gray-500 text-xs mb-2">${p.journal} · ${p.year}</p>
+          <a href="https://doi.org/${p.doi}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-cyan-400 text-xs font-medium hover:text-cyan-300 transition-colors">
+            <i data-lucide="external-link" style="width:12px;height:12px"></i> DOI: ${p.doi}
+          </a>
+        </div>
+        <span class="text-xs font-bold text-cyan-400 flex-shrink-0">${p.year}</span>
+      </div>
+    `;
+    list.appendChild(card);
+  });
+}
+
+function renderSpeaking(container) {
+  container.innerHTML = `<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="speakingGrid"></div>`;
+  const grid = document.getElementById('speakingGrid');
+  speaking.forEach((s, i) => {
+    const card = document.createElement('div');
+    card.className = 'glass-card rounded-2xl p-6 anim-in';
+    card.style.animationDelay = `${i * 0.1}s`;
+    card.style.opacity = '0';
+    card.innerHTML = `
+      <div class="flex items-center gap-3 mb-3">
+        <div class="w-10 h-10 rounded-lg flex items-center justify-center text-lg" style="background:rgba(251,191,36,0.1);">🎤</div>
+        <div>
+          <h3 class="text-white font-semibold text-sm leading-tight">${s.conference}</h3>
+          <div class="flex items-center gap-2 mt-1">
+            <span class="text-xs text-gray-500 flex items-center gap-1"><i data-lucide="map-pin" style="width:10px;height:10px"></i> ${s.location}</span>
+            <span class="text-xs font-bold text-gold-400">${s.year}</span>
+          </div>
+        </div>
+      </div>
+      <div class="pl-13">
+        <p class="text-gray-400 text-sm leading-relaxed">${s.paper}</p>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
 }
 
 // Mobile menu
@@ -580,6 +713,7 @@ renderGallery();
 renderCaseStudies();
 renderFAQ();
 renderBlog();
+switchKnowledgeTab('thoughts');
 
 // Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(a => {

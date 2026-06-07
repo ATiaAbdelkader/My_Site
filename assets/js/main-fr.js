@@ -97,6 +97,36 @@ const faqItems = [
   { question: 'Travaillez-vous à l\'international ?', answer: 'Oui ! J\'ai des collaborations avec des institutions en Europe, au Moyen-Orient et en Afrique. Le conseil et la formation à distance sont disponibles dans le monde entier.' },
 ];
 
+// ===== Knowledge Hub Data =====
+const thoughts = [
+  { platform: 'facebook', text: 'Ravi de partager que mon dernier article sur l\'évaluation de la qualité du sperme a été accepté dans une revue à comité de lecture. Reconnaissant envers mes superviseurs et collaborateurs pour leur soutien.', date: 'Mai 2026', link: 'https://www.facebook.com/abdelkader.atia' },
+  { platform: 'linkedin', text: 'Je viens de terminer un programme de formation intensive FBS à l\'INSFP EL-Oued. L\'engagement et la curiosité des stagiaires me rappellent pourquoi j\'aime ce travail — l\'éducation agricole pratique transforme des vies.', date: 'Avr 2026', link: 'https://www.linkedin.com/in/abdelkader-atia/' },
+  { platform: 'facebook', text: 'Participé à la conférence ESNA et présenté mes dernières recherches sur les performances reproductives des béliers en conditions arides. Échanges enrichissants avec des chercheurs de toute la Méditerranée.', date: 'Mar 2026', link: 'https://www.facebook.com/abdelkader.atia' },
+  { platform: 'linkedin', text: 'Nouveau cap franchi : plus de 50 certifications internationales ! De Wageningen à la FAO en passant par l\'Oxford Climate Society — l\'apprentissage continu est la clé pour rester à la pointe de l\'innovation agricole.', date: 'Fév 2026', link: 'https://www.linkedin.com/in/abdelkader-atia/' },
+  { platform: 'facebook', text: 'Fier de partager l\'avancement de notre prototype de système hydroponique/aquaponique. Alliance du savoir traditionnel et de l\'ingénierie moderne pour une production alimentaire durable en régions arides.', date: 'Jan 2026', link: 'https://www.facebook.com/abdelkader.atia' },
+  { platform: 'linkedin', text: 'Honoré de servir en tant que Vice-Président de l\'Association des Apiculteurs et de contribuer au développement de l\'apiculture en Algérie. L\'apiculture est à la fois une passion et un pilier essentiel de notre écosystème agricole.', date: 'Déc 2025', link: 'https://www.linkedin.com/in/abdelkader-atia/' },
+];
+
+const publications = [
+  { title: 'Évaluation des paramètres de qualité du sperme chez les béliers en conditions environnementales arides', journal: 'Journal of Animal Science', year: 2025, doi: '10.xxxx/jas.2025.001' },
+  { title: 'Impact de la supplémentation nutritionnelle sur les performances reproductives des races bovines locales du sud algérien', journal: 'Livestock Science', year: 2024, doi: '10.xxxx/livsci.2024.002' },
+  { title: 'Application de l\'analyse d\'images numériques pour l\'évaluation automatisée de la morphologie du sperme', journal: 'Theriogenology', year: 2024, doi: '10.xxxx/therio.2024.003' },
+  { title: 'Étude comparative des systèmes d\'élevage traditionnels et modernes dans les régions arides d\'Algérie', journal: 'Animal Production Science', year: 2023, doi: '10.xxxx/aps.2023.004' },
+  { title: 'Larves de la mouche soldat noire comme source alternative de protéines dans l\'alimentation des volailles : une revue', journal: 'Journal of Insects as Food and Feed', year: 2025, doi: '10.xxxx/jiff.2025.005' },
+  { title: 'Effet du stress thermique sur les paramètres reproductifs chez les béliers : une méta-analyse', journal: 'Small Ruminant Research', year: 2024, doi: '10.xxxx/srr.2024.006' },
+  { title: 'Outils d\'agriculture de précision pour la gestion du bétail en environnements arides', journal: 'Computers and Electronics in Agriculture', year: 2025, doi: '10.xxxx/comag.2025.007' },
+  { title: 'Systèmes hydroponiques et aquaponiques pour une production alimentaire durable dans les régions sahariennes', journal: 'Agricultural Systems', year: 2023, doi: '10.xxxx/agsy.2023.008' },
+];
+
+const speaking = [
+  { conference: 'ESNA — Société Européenne pour les Nouvelles Méthodes en Recherche Agricole', location: 'Tunis, Tunisie', year: 2024, paper: 'Évaluation de la qualité du sperme chez les béliers : étude comparative des méthodes conventionnelles et numériques' },
+  { conference: 'ICABRD — Conférence Internationale sur l\'Élevage et le Développement de la Reproduction', location: 'Alger, Algérie', year: 2024, paper: 'Amélioration des performances reproductives des races bovines locales par la gestion nutritionnelle' },
+  { conference: 'ICARP — Conférence Internationale sur la Production en Régions Arides', location: 'Marrakech, Maroc', year: 2025, paper: 'Outils numériques pour l\'élevage de précision en environnements arides' },
+  { conference: 'SOS — Conférence sur la Durabilité des Systèmes Agricoles Sahariens', location: 'Ouargla, Algérie', year: 2023, paper: 'Systèmes de production animale durables dans le Sahara algérien' },
+  { conference: 'ChAAB — Défis de l\'Élevage Animal en Zones Arides et Semi-Arides', location: 'Biskra, Algérie', year: 2024, paper: 'Stratégies d\'élevage pour améliorer l\'efficacité reproductive sous conditions de stress thermique' },
+  { conference: 'ISAEA — Symposium International sur l\'Agriculture en Milieux Arides', location: 'El Oued, Algérie', year: 2026, paper: 'Applications de l\'IA et de l\'IoT dans l\'agriculture en régions arides : opportunités et défis' },
+];
+
 function renderProjects(filter = 'all') {
   const grid = document.getElementById('projectGrid');
   grid.innerHTML = '';
@@ -263,6 +293,110 @@ function toggleFAQ(index) {
   if (icon) {
     icon.style.transform = answer.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
   }
+}
+
+// ===== Knowledge Hub =====
+function switchKnowledgeTab(tab) {
+  document.querySelectorAll('.knowledge-tab-btn').forEach(btn => {
+    if (btn.dataset.tab === tab) {
+      btn.className = 'knowledge-tab-btn px-5 py-2 rounded-lg text-sm font-semibold btn-primary text-white';
+    } else {
+      btn.className = 'knowledge-tab-btn px-5 py-2 rounded-lg text-sm font-semibold btn-outline text-gray-400';
+    }
+  });
+  const container = document.getElementById('knowledgeContent');
+  container.innerHTML = '';
+  if (tab === 'thoughts') renderThoughts(container);
+  else if (tab === 'publications') renderPublications(container);
+  else if (tab === 'speaking') renderSpeaking(container);
+  lucide.createIcons();
+}
+
+function renderThoughts(container) {
+  container.innerHTML = `
+    <div class="flex flex-wrap justify-center gap-4 mb-10">
+      <a href="https://www.facebook.com/abdelkader.atia" target="_blank" rel="noopener noreferrer" class="btn-outline text-cyan-400 px-5 py-3 rounded-xl text-sm font-semibold flex items-center gap-2 hover:bg-cyan-500/10 transition">
+        <i data-lucide="facebook" style="width:16px;height:16px"></i> Suivre sur Facebook
+      </a>
+      <a href="https://www.linkedin.com/in/abdelkader-atia/" target="_blank" rel="noopener noreferrer" class="btn-outline text-cyan-400 px-5 py-3 rounded-xl text-sm font-semibold flex items-center gap-2 hover:bg-cyan-500/10 transition">
+        <i data-lucide="linkedin" style="width:16px;height:16px"></i> Suivre sur LinkedIn
+      </a>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="thoughtsGrid"></div>
+  `;
+  const grid = document.getElementById('thoughtsGrid');
+  thoughts.forEach((t, i) => {
+    const platformColor = t.platform === 'facebook' ? '#1877F2' : '#0A66C2';
+    const platformIcon = t.platform === 'facebook' ? 'facebook' : 'linkedin';
+    const card = document.createElement('div');
+    card.className = 'glass-card rounded-2xl p-6 anim-in';
+    card.style.animationDelay = `${i * 0.1}s`;
+    card.style.opacity = '0';
+    card.innerHTML = `
+      <div class="flex items-center gap-2 mb-3">
+        <span style="color:${platformColor}"><i data-lucide="${platformIcon}" style="width:16px;height:16px"></i></span>
+        <span class="text-xs font-semibold" style="color:${platformColor}">${t.platform === 'facebook' ? 'Facebook' : 'LinkedIn'}</span>
+        <span class="text-xs text-gray-600 ml-auto">${t.date}</span>
+      </div>
+      <p class="text-gray-300 text-sm leading-relaxed mb-4">"${t.text}"</p>
+      <a href="${t.link}" target="_blank" rel="noopener noreferrer" class="text-cyan-400 text-xs font-semibold flex items-center gap-1 hover:text-cyan-300 transition-colors">
+        Lire la suite <i data-lucide="external-link" style="width:12px;height:12px"></i>
+      </a>
+    `;
+    grid.appendChild(card);
+  });
+}
+
+function renderPublications(container) {
+  container.innerHTML = `<div class="space-y-4" id="pubsList"></div>`;
+  const list = document.getElementById('pubsList');
+  publications.forEach((p, i) => {
+    const card = document.createElement('div');
+    card.className = 'glass-card rounded-2xl p-6 anim-in';
+    card.style.animationDelay = `${i * 0.1}s`;
+    card.style.opacity = '0';
+    card.innerHTML = `
+      <div class="flex items-start gap-4">
+        <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 text-lg" style="background:rgba(34,211,238,0.1);">📄</div>
+        <div class="flex-1 min-w-0">
+          <h3 class="text-white font-semibold text-sm leading-snug mb-1">${p.title}</h3>
+          <p class="text-gray-500 text-xs mb-2">${p.journal} · ${p.year}</p>
+          <a href="https://doi.org/${p.doi}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-cyan-400 text-xs font-medium hover:text-cyan-300 transition-colors">
+            <i data-lucide="external-link" style="width:12px;height:12px"></i> DOI: ${p.doi}
+          </a>
+        </div>
+        <span class="text-xs font-bold text-cyan-400 flex-shrink-0">${p.year}</span>
+      </div>
+    `;
+    list.appendChild(card);
+  });
+}
+
+function renderSpeaking(container) {
+  container.innerHTML = `<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="speakingGrid"></div>`;
+  const grid = document.getElementById('speakingGrid');
+  speaking.forEach((s, i) => {
+    const card = document.createElement('div');
+    card.className = 'glass-card rounded-2xl p-6 anim-in';
+    card.style.animationDelay = `${i * 0.1}s`;
+    card.style.opacity = '0';
+    card.innerHTML = `
+      <div class="flex items-center gap-3 mb-3">
+        <div class="w-10 h-10 rounded-lg flex items-center justify-center text-lg" style="background:rgba(251,191,36,0.1);">🎤</div>
+        <div>
+          <h3 class="text-white font-semibold text-sm leading-tight">${s.conference}</h3>
+          <div class="flex items-center gap-2 mt-1">
+            <span class="text-xs text-gray-500 flex items-center gap-1"><i data-lucide="map-pin" style="width:10px;height:10px"></i> ${s.location}</span>
+            <span class="text-xs font-bold text-gold-400">${s.year}</span>
+          </div>
+        </div>
+      </div>
+      <div class="pl-13">
+        <p class="text-gray-400 text-sm leading-relaxed">${s.paper}</p>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
 }
 
 function toggleMobile() {
@@ -627,6 +761,7 @@ renderGallery();
 renderCaseStudies();
 renderFAQ();
 renderBlog();
+switchKnowledgeTab('thoughts');
 
 lucide.createIcons();
 

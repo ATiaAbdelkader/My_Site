@@ -97,7 +97,7 @@ tailwind.config = {
       <i id="themeIcon" data-lucide="moon" class="icon-sm"></i>
      </button><!-- Desktop Nav -->
      <div class="hidden lg:flex items-center gap-8">
-      <a href="#home" class="nav-link text-gray-300 hover:text-white text-sm font-medium active">Accueil</a> <a href="#about" class="nav-link text-gray-300 hover:text-white text-sm font-medium">À Propos</a> <a href="#skills" class="nav-link text-gray-300 hover:text-white text-sm font-medium">Compétences</a> <a href="#experience" class="nav-link text-gray-300 hover:text-white text-sm font-medium">Expérience</a> <a href="#projects" class="nav-link text-gray-300 hover:text-white text-sm font-medium">Projets</a> <a href="#services" class="nav-link text-gray-300 hover:text-white text-sm font-medium">Services</a> <a href="#achievements" class="nav-link text-gray-300 hover:text-white text-sm font-medium">Réalisations</a> <a href="#contact" class="nav-link text-gray-300 hover:text-white text-sm font-medium">Contact</a>
+      <a href="#home" class="nav-link text-gray-300 hover:text-white text-sm font-medium active">Accueil</a> <a href="#about" class="nav-link text-gray-300 hover:text-white text-sm font-medium">À Propos</a> <a href="#skills" class="nav-link text-gray-300 hover:text-white text-sm font-medium">Compétences</a> <a href="#experience" class="nav-link text-gray-300 hover:text-white text-sm font-medium">Expérience</a> <a href="#projects" class="nav-link text-gray-300 hover:text-white text-sm font-medium">Projets</a> <a href="#services" class="nav-link text-gray-300 hover:text-white text-sm font-medium">Services</a> <a href="#achievements" class="nav-link text-gray-300 hover:text-white text-sm font-medium">Réalisations</a> <a href="#knowledge" class="nav-link text-gray-300 hover:text-white text-sm font-medium">Savoir</a> <a href="#contact" class="nav-link text-gray-300 hover:text-white text-sm font-medium">Contact</a>
      </div><!-- CTA + Mobile Toggle -->
      <div class="flex items-center gap-3">
       <a href="#contact" class="hidden sm:inline-flex btn-primary text-white px-5 py-2 rounded-lg text-sm font-semibold">Me Contacter</a> <button id="mobileToggle" class="lg:hidden text-white p-2" onclick="toggleMobile()" aria-label="Open mobile menu"> <i data-lucide="menu" style="width:24px;height:24px"></i> </button>
@@ -109,7 +109,7 @@ tailwind.config = {
      <span class="text-white font-bold">Menu</span> <button onclick="toggleMobile()" class="text-gray-400 hover:text-white" aria-label="Close mobile menu"><i data-lucide="x" style="width:24px;height:24px"></i></button>
     </div>
     <div class="flex flex-col gap-4">
-     <a href="#home" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">Accueil</a> <a href="#about" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">À Propos</a> <a href="#skills" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">Compétences</a> <a href="#experience" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">Expérience</a> <a href="#projects" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">Projets</a> <a href="#services" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">Services</a> <a href="#achievements" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">Réalisations</a> <a href="#contact" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">Contact</a> <a href="#contact" class="btn-primary text-white text-center px-5 py-3 rounded-lg text-sm font-semibold mt-4">Me Contacter</a>
+     <a href="#home" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">Accueil</a> <a href="#about" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">À Propos</a> <a href="#skills" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">Compétences</a> <a href="#experience" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">Expérience</a> <a href="#projects" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">Projets</a> <a href="#services" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">Services</a> <a href="#achievements" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">Réalisations</a> <a href="#knowledge" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">Savoir</a> <a href="#contact" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">Contact</a> <a href="#contact" class="btn-primary text-white text-center px-5 py-3 rounded-lg text-sm font-semibold mt-4">Me Contacter</a>
     </div>
    </div>
   </nav><!-- HERO SECTION -->
@@ -553,7 +553,24 @@ tailwind.config = {
      </div>
     </div>
    </div>
-  </section><!-- TESTIMONIALS -->
+   </section><!-- KNOWLEDGE HUB -->
+   <section id="knowledge" class="section-padding">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="text-center mb-16">
+      <span class="text-cyan-400 text-sm font-semibold">PLATEFORME SAVOIR</span>
+      <h2 class="text-3xl sm:text-4xl font-800 text-white mt-3 gradient-border inline-block pb-3">Idées &amp; Recherche</h2>
+     </div>
+     <div class="flex flex-wrap justify-center gap-3 mb-10" id="knowledgeTabs">
+      <button onclick="switchKnowledgeTab('thoughts')" class="knowledge-tab-btn px-5 py-2 rounded-lg text-sm font-semibold btn-primary text-white" data-tab="thoughts">💭 Réflexions</button>
+      <button onclick="switchKnowledgeTab('publications')" class="knowledge-tab-btn px-5 py-2 rounded-lg text-sm font-semibold btn-outline text-gray-400" data-tab="publications">📄 Publications</button>
+      <button onclick="switchKnowledgeTab('speaking')" class="knowledge-tab-btn px-5 py-2 rounded-lg text-sm font-semibold btn-outline text-gray-400" data-tab="speaking">🎤 Conférences</button>
+     </div>
+     <div id="knowledgeContent" class="min-h-[200px]">
+      <!-- Rendered by JS -->
+     </div>
+    </div>
+   </section>
+   </section><!-- TESTIMONIALS -->
   <section class="section-padding">
    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">

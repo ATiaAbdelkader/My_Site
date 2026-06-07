@@ -471,3 +471,10 @@ body.light-theme #offlineToast .glass { background: rgba(248,249,250,0.95) !impo
 body.light-theme #scrollProgress .bg-circle { stroke: rgba(8,145,178,0.15); }
 body.light-theme #scrollProgress .fg-circle { stroke: #0891b2; }
 body.light-theme #scrollProgress .scroll-icon { color: #0891b2; }
+
+/* ===== Knowledge Hub ===== */
+.knowledge-tab-btn { transition: all 0.3s; }
+#knowledgeContent .anim-in { animation: fadeInUp 0.5s ease forwards; }
+#knowledgeContent .glass-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+body.light-theme #knowledgeContent .text-gray-300 { color: #4a5568 !important; }
+body.light-theme #knowledgeContent .text-gold-400 { color: #d97706 !important; }
