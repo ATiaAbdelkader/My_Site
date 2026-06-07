@@ -180,17 +180,19 @@ function renderTestimonials() {
   testimonials.forEach((t, i) => {
     const stars = '⭐'.repeat(t.rating);
     const card = document.createElement('div');
-    card.className = 'testimonial-card glass-card rounded-2xl p-6 flex-shrink-0';
+    card.className = 'glass-card rounded-2xl p-5 flex flex-col h-full anim-in';
+    card.style.animationDelay = `${i * 0.1}s`;
+    card.style.opacity = '0';
     card.innerHTML = `
-      <div class="flex gap-1 mb-3">${stars}</div>
-      <p class="text-gray-300 text-sm mb-4 leading-relaxed">"${t.text}"</p>
-      <div class="flex items-center gap-3 border-t border-gray-800 pt-4">
-        <div class="w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold text-white" style="background:linear-gradient(135deg,var(--color-start),var(--color-end));">
+      <div class="flex gap-1 mb-2">${stars}</div>
+      <p class="text-gray-300 text-sm leading-relaxed flex-1">"${t.text}"</p>
+      <div class="flex items-center gap-3 border-t border-gray-800 pt-3 mt-3">
+        <div class="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold text-white flex-shrink-0" style="background:linear-gradient(135deg,var(--color-start),var(--color-end));">
           ${t.initials}
         </div>
-        <div>
-          <div class="text-white text-sm font-semibold">${t.author}</div>
-          <div class="text-gray-500 text-xs">${t.role}</div>
+        <div class="min-w-0">
+          <div class="text-white text-sm font-semibold truncate">${t.author}</div>
+          <div class="text-gray-500 text-xs truncate">${t.role}</div>
         </div>
       </div>
     `;

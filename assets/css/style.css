@@ -159,8 +159,6 @@ html[dir="ltr"] .mobile-menu { transform: translateX(-100%); transition: transfo
 .mobile-menu.open { transform: translateX(0); }
 
 /* ===== Testimonials ===== */
-.testimonial-card { min-width: 320px; }
-@media (max-width: 640px) { .testimonial-card { min-width: 280px; } }
 
 /* ===== Scroll Top ===== */
 
