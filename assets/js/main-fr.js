@@ -341,16 +341,11 @@ function handleContact(e) {
   submitBtn.disabled = true;
   submitBtn.innerHTML = '<span>Envoi...</span>';
   
-  const formData = new FormData();
-  formData.append('name', name);
-  formData.append('email', email);
-  formData.append('subject', subject);
-  formData.append('message', message);
-  
+  // Send via Formspree with mailto fallback
   fetch('https://formspree.io/f/ada15_agro@', {
     method: 'POST',
-    body: formData,
-    headers: { 'Accept': 'application/json' }
+    body: JSON.stringify({ name, email, subject, message }),
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
   })
   .then(response => {
     if (response.ok) {
@@ -359,12 +354,16 @@ function handleContact(e) {
       setTimeout(() => success.classList.add('hidden'), 4000);
       showToast('✅ Message envoyé avec succès ! Je vous répondrai bientôt.', 'success');
     } else {
-      throw new Error('Network response was not ok');
+      throw new Error('Formspree error');
     }
   })
-  .catch(error => {
-    showToast('❌ Échec d\'envoi du message. Veuillez réessayer.', 'warning');
-    console.error('Error:', error);
+  .catch(() => {
+    const mailtoLink = `mailto:atia.abdelkader@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Nom: ${name}\nEmail: ${email}\n\n${message}`)}`;
+    window.location.href = mailtoLink;
+    success.classList.remove('hidden');
+    form.reset();
+    setTimeout(() => success.classList.add('hidden'), 4000);
+    showToast('📧 Ouverture de votre client email...', 'success');
   })
   .finally(() => {
     submitBtn.disabled = false;

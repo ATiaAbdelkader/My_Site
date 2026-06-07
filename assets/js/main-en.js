@@ -389,19 +389,13 @@ function handleContact(e) {
   submitBtn.disabled = true;
   submitBtn.innerHTML = '<span>Sending...</span>';
   
-  // Send to Formspree
-  const formData = new FormData();
-  formData.append('name', name);
-  formData.append('email', email);
-  formData.append('subject', subject);
-  formData.append('message', message);
+  // Send via Formspree with mailto fallback
+  const formspreeId = localStorage.getItem('formspree_id') || 'ada15_agro@';
   
-  fetch('https://formspree.io/f/ada15_agro@', {
+  fetch(`https://formspree.io/f/${formspreeId}`, {
     method: 'POST',
-    body: formData,
-    headers: {
-      'Accept': 'application/json'
-    }
+    body: JSON.stringify({ name, email, subject, message }),
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
   })
   .then(response => {
     if (response.ok) {
@@ -410,12 +404,17 @@ function handleContact(e) {
       setTimeout(() => success.classList.add('hidden'), 4000);
       showToast('✅ Message sent successfully! I\'ll be in touch soon.', 'success');
     } else {
-      throw new Error('Network response was not ok');
+      throw new Error('Formspree error');
     }
   })
-  .catch(error => {
-    showToast('❌ Failed to send message. Please try again.', 'warning');
-    console.error('Error:', error);
+  .catch(() => {
+    // Fallback to mailto:
+    const mailtoLink = `mailto:atia.abdelkader@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
+    window.location.href = mailtoLink;
+    success.classList.remove('hidden');
+    form.reset();
+    setTimeout(() => success.classList.add('hidden'), 4000);
+    showToast('📧 Opening your email client...', 'success');
   })
   .finally(() => {
     submitBtn.disabled = false;
