@@ -636,9 +636,9 @@ tailwind.config = {
          <div class="text-gray-500 text-xs">
           Adresse Email
          </div>
-         <div id="contactEmail" class="text-white text-sm">
-          atia.abdelkader@gmail.com
-         </div>
+          <div id="contactEmail" class="text-white text-sm">
+           <span class="email-obfuscated" onclick="revealEmail(this)" data-user="atia.abdelkader" data-domain="gmail" data-tld="com">Cliquez pour voir</span>
+          </div>
         </div>
        </div>
        <div class="flex items-center gap-4">
@@ -740,7 +740,8 @@ tailwind.config = {
      </div>
       <div class="flex items-center gap-4">
        <button onclick="subscribePushNotifications()" class="text-gray-500 hover:text-cyan-400 text-xs flex items-center gap-1 transition-colors" title="Activer les notifications"><i data-lucide="bell" style="width:14px;height:14px"></i> Notifications</button>
-       <span class="text-gray-600 text-xs">AgriSkills Academy</span>
+        <span id="networkDot" title="État du réseau"><span class="dot online"></span><span class="status-text">En ligne</span></span>
+        <span class="text-gray-600 text-xs">AgriSkills Academy</span>
       </div>
     </div>
    </div>
@@ -810,5 +811,15 @@ tailwind.config = {
     </div>
    </div>
   </div>
+  <!-- Scroll Progress Ring -->
+  <div id="scrollProgress" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Retour en haut" style="cursor:pointer;">
+    <svg width="44" height="44" viewBox="0 0 44 44">
+      <circle class="bg-circle" cx="22" cy="22" r="18"></circle>
+      <circle class="fg-circle" cx="22" cy="22" r="18" stroke-dasharray="113.1" stroke-dashoffset="113.1"></circle>
+    </svg>
+    <span class="scroll-icon"><i data-lucide="chevron-up" style="width:16px;height:16px"></i></span>
+  </div>
+  <!-- Offline Toast -->
+  <div id="offlineToast" class="glass px-5 py-3 rounded-xl text-sm font-semibold" style="background:rgba(245,158,11,0.95);color:#fff;">📡 Vous êtes hors ligne — certaines fonctionnalités peuvent ne pas fonctionner</div>
 </body>
 </html>

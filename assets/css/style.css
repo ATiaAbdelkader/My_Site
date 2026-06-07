@@ -386,3 +386,88 @@ textarea:focus {
   color: #22d3ee;
   font-family: monospace;
 }
+
+/* ===== Offline Indicator ===== */
+#offlineToast {
+  position: fixed;
+  bottom: 90px; left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  z-index: 9996;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  pointer-events: none;
+}
+#offlineToast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: all;
+}
+
+/* ===== Email Obfuscation ===== */
+.email-obfuscated {
+  cursor: pointer;
+}
+.email-obfuscated:hover {
+  color: #22d3ee;
+}
+
+/* ===== Scroll Progress Ring ===== */
+#scrollProgress {
+  position: fixed;
+  z-index: 50;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s, transform 0.3s;
+  pointer-events: none;
+}
+html[dir="rtl"] #scrollProgress { left: 24px; }
+html[dir="ltr"] #scrollProgress { right: 24px; }
+#scrollProgress.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+#scrollProgress svg {
+  transform: rotate(-90deg);
+}
+#scrollProgress circle {
+  fill: none;
+  stroke-width: 3;
+}
+#scrollProgress .bg-circle {
+  stroke: rgba(34, 211, 238, 0.15);
+}
+#scrollProgress .fg-circle {
+  stroke: #22d3ee;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.1s linear;
+}
+#scrollProgress .scroll-icon {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  color: #22d3ee;
+}
+
+/* ===== Network Status Dot ===== */
+#networkDot {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  cursor: default;
+}
+#networkDot .dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background 0.3s;
+}
+#networkDot .dot.online { background: #22d3ee; box-shadow: 0 0 6px rgba(34,211,238,0.5); }
+#networkDot .dot.offline { background: #f59e0b; box-shadow: 0 0 6px rgba(245,158,11,0.5); }
+
+/* Light theme overrides for new features */
+body.light-theme #offlineToast .glass { background: rgba(248,249,250,0.95) !important; color: #1a202c; }
+body.light-theme #scrollProgress .bg-circle { stroke: rgba(8,145,178,0.15); }
+body.light-theme #scrollProgress .fg-circle { stroke: #0891b2; }
+body.light-theme #scrollProgress .scroll-icon { color: #0891b2; }

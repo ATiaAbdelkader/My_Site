@@ -499,7 +499,12 @@ function downloadCV() {
   });
 }
 
+// Theme toggle (per-language)
 let isDarkMode = true;
+function getThemeKey() {
+  const lang = document.documentElement.lang || 'fr';
+  return `theme_${lang}`;
+}
 function toggleTheme() {
   isDarkMode = !isDarkMode;
   const body = document.body;
@@ -513,12 +518,12 @@ function toggleTheme() {
     icon.setAttribute('data-lucide', 'sun');
   }
   
-  localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+  localStorage.setItem(getThemeKey(), isDarkMode ? 'dark' : 'light');
   lucide.createIcons();
 }
 
 window.addEventListener('load', () => {
-  const savedTheme = localStorage.getItem('theme');
+  const savedTheme = localStorage.getItem(getThemeKey());
   if (savedTheme === 'light') {
     isDarkMode = true;
     toggleTheme();
@@ -924,6 +929,9 @@ document.addEventListener('DOMContentLoaded', () => {
   initProgressBar();
   initCookieBanner();
   initSearch();
+  initScrollProgress();
+  initNetworkStatus();
+  initOfflineIndicator();
 });
 
 // Close search on overlay click
@@ -933,6 +941,61 @@ document.addEventListener('DOMContentLoaded', () => {
     modal.addEventListener('click', (e) => { if (e.target === modal) closeSearch(); });
   }
 });
+
+// Scroll Progress Ring
+function initScrollProgress() {
+  const ring = document.getElementById('scrollProgress');
+  const circle = ring?.querySelector('.fg-circle');
+  if (!circle) return;
+  const circumference = 2 * Math.PI * 18;
+  circle.style.strokeDasharray = circumference;
+  circle.style.strokeDashoffset = circumference;
+  
+  document.getElementById('app-body').addEventListener('scroll', () => {
+    const scrollTop = document.getElementById('app-body').scrollTop;
+    const scrollHeight = document.getElementById('app-body').scrollHeight - window.innerHeight;
+    const progress = scrollHeight > 0 ? scrollTop / scrollHeight : 0;
+    circle.style.strokeDashoffset = circumference - progress * circumference;
+    ring.classList.toggle('visible', scrollTop > 200);
+  });
+  lucide.createIcons();
+}
+
+// Network Status Dot
+function initNetworkStatus() {
+  const dot = document.getElementById('networkDot');
+  if (!dot) return;
+  const update = () => {
+    const online = navigator.onLine;
+    const dotEl = dot.querySelector('.dot');
+    const text = dot.querySelector('.status-text');
+    dotEl.className = `dot ${online ? 'online' : 'offline'}`;
+    text.textContent = online ? 'En ligne' : 'Hors ligne';
+  };
+  window.addEventListener('online', update);
+  window.addEventListener('offline', update);
+  update();
+}
+
+// Offline Indicator Toast
+function initOfflineIndicator() {
+  const toast = document.getElementById('offlineToast');
+  if (!toast) return;
+  window.addEventListener('offline', () => toast.classList.add('show'));
+  window.addEventListener('online', () => toast.classList.remove('show'));
+  if (!navigator.onLine) toast.classList.add('show');
+}
+
+// Email Obfuscation
+function revealEmail(el) {
+  const user = el.dataset.user;
+  const domain = el.dataset.domain;
+  const tld = el.dataset.tld;
+  const email = `${user}@${domain}.${tld}`;
+  el.innerHTML = email;
+  el.style.cursor = 'default';
+  el.onclick = null;
+}
 
 // Element SDK for visual editor (French version)
 const defaultConfigFr = {

@@ -636,9 +636,9 @@ tailwind.config = {
          <div class="text-gray-500 text-xs">
           Email Address
          </div>
-         <div id="contactEmail" class="text-white text-sm">
-          atia.abdelkader@gmail.com
-         </div>
+          <div id="contactEmail" class="text-white text-sm">
+           <span class="email-obfuscated" onclick="revealEmail(this)" data-user="atia.abdelkader" data-domain="gmail" data-tld="com">Click to reveal</span>
+          </div>
         </div>
        </div>
        <div class="flex items-center gap-4">
@@ -739,8 +739,9 @@ tailwind.config = {
       </div><span class="text-gray-400 text-sm">© 2026 Abdelkader Atia. All rights reserved.</span>
      </div>
       <div class="flex items-center gap-4">
-       <button onclick="subscribePushNotifications()" class="text-gray-500 hover:text-cyan-400 text-xs flex items-center gap-1 transition-colors" title="Enable notifications"><i data-lucide="bell" style="width:14px;height:14px"></i> Notifications</button>
-       <span class="text-gray-600 text-xs">AgriSkills Academy</span>
+        <button onclick="subscribePushNotifications()" class="text-gray-500 hover:text-cyan-400 text-xs flex items-center gap-1 transition-colors" title="Enable notifications"><i data-lucide="bell" style="width:14px;height:14px"></i> Notifications</button>
+        <span id="networkDot" title="Network status"><span class="dot online"></span><span class="status-text">Online</span></span>
+        <span class="text-gray-600 text-xs">AgriSkills Academy</span>
       </div>
     </div>
    </div>
@@ -800,6 +801,16 @@ tailwind.config = {
     </div>
    </div>
   </div>
+  <!-- Scroll Progress Ring -->
+  <div id="scrollProgress" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Scroll to top" style="cursor:pointer;">
+    <svg width="44" height="44" viewBox="0 0 44 44">
+      <circle class="bg-circle" cx="22" cy="22" r="18"></circle>
+      <circle class="fg-circle" cx="22" cy="22" r="18" stroke-dasharray="113.1" stroke-dashoffset="113.1"></circle>
+    </svg>
+    <span class="scroll-icon"><i data-lucide="chevron-up" style="width:16px;height:16px"></i></span>
+  </div>
+  <!-- Offline Toast -->
+  <div id="offlineToast" class="glass px-5 py-3 rounded-xl text-sm font-semibold" style="background:rgba(245,158,11,0.95);color:#fff;">📡 You are offline — some features may not work</div>
   <!-- Cookie Consent Banner -->
   <div id="cookieBanner" class="glass" style="background:rgba(10,14,39,0.97);backdrop-filter:blur(16px);border-top:1px solid rgba(34,211,238,0.1);">
    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
