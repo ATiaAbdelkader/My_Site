@@ -87,7 +87,7 @@ const blogArticles = [
   }
 ];
 const faqItems = [
-  { question: 'What is your background and expertise?', answer: 'I hold a PhD in animal sciences specializing in semen quality and reproductive performance. I have 10+ years of experience in research, training, and digital innovation in agriculture.' },
+  { question: 'What is your background and expertise?', answer: 'I am an agronomy professional with 12+ years of experience in agricultural engineering, vocational training, and project supervision. I currently pursue a PhD in Animal Production and serve as a Specialized Teacher at Hassani Abdelkrim INSFP in EL-Oued.' },
   { question: 'What training programs do you offer?', answer: 'I offer comprehensive agricultural training through FBS programs, AgriSkills Academy, and specialized workshops covering livestock production, modern farming techniques, and digital agriculture.' },
   { question: 'Do you offer research consulting services?', answer: 'Yes! I provide consulting in experimental design, data analysis, scientific writing, and international publishing support for researchers and institutions.' },
   { question: 'How can I access the kamel3lom platform?', answer: 'kamel3lom is our digital platform for agricultural knowledge. You can access it through our website or mobile app with free and premium content.' },

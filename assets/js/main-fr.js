@@ -87,7 +87,7 @@ const blogArticles = [
   }
 ];
 const faqItems = [
-  { question: 'Quel est votre parcours et votre expertise ?', answer: 'Je suis titulaire d\'un doctorat en sciences animales spécialisé dans la qualité du sperme et les performances reproductives. J\'ai plus de 10 ans d\'expérience en recherche, formation et innovation numérique en agriculture.' },
+  { question: 'Quel est votre parcours et votre expertise ?', answer: 'Je suis un professionnel en agronomie avec plus de 12 ans d\'expérience en génie agricole, formation professionnelle et supervision de projets. Je prépare actuellement un doctorat en Agronomie (Production Animale) et travaille comme Enseignant Spécialisé à l\'INSFP Hassani Abdelkrim à EL-Oued.' },
   { question: 'Quels programmes de formation proposez-vous ?', answer: 'Je propose des formations agricoles complètes via les programmes FBS, AgriSkills Academy, et des ateliers spécialisés couvrant la production animale, les techniques agricoles modernes et l\'agriculture numérique.' },
   { question: 'Offrez-vous des services de conseil en recherche ?', answer: 'Oui ! Je fournis du conseil en conception expérimentale, analyse de données, rédaction scientifique et soutien à la publication internationale pour les chercheurs et institutions.' },
   { question: 'Comment accéder à la plateforme kamel3lom ?', answer: 'kamel3lom est notre plateforme numérique de connaissances agricoles. Vous pouvez y accéder via notre site web ou application mobile avec du contenu gratuit et premium.' },
