@@ -1086,12 +1086,10 @@ function revealEmail(el) {
   const domain = el.dataset.domain;
   const tld = el.dataset.tld;
   const email = `${user}@${domain}.${tld}`;
-  el.innerHTML = email;
+  el.innerHTML = `<a href="mailto:${email}" class="hover:text-cyan-400 transition-colors">${email}</a>`;
   el.style.cursor = 'default';
   el.onclick = null;
-  // Update SDK reference too
-  const sdkEmail = document.getElementById('contactEmail');
-  if (sdkEmail) sdkEmail.textContent = email;
+  el.style.textDecoration = 'none';
 }
 
 // Element SDK for visual editor (English version)

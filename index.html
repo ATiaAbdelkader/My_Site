@@ -653,10 +653,13 @@ tailwind.config = {
         </div>
        </div>
       </div><!-- Social -->
-      <div class="flex gap-3 pt-4">
-       <a href="https://www.linkedin.com/in/abdelkader-atia/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg glass flex items-center justify-center text-gray-400 hover:text-cyan-400 transition-colors" title="LinkedIn"><i data-lucide="linkedin" style="width:18px;height:18px"></i></a> <a href="https://twitter.com/abdelkader_atia" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg glass flex items-center justify-center text-gray-400 hover:text-cyan-400 transition-colors" title="Twitter"><i data-lucide="twitter" style="width:18px;height:18px"></i></a> <a href="https://www.facebook.com/abdelkader.atia" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg glass flex items-center justify-center text-gray-400 hover:text-cyan-400 transition-colors" title="Facebook"><i data-lucide="facebook" style="width:18px;height:18px"></i></a> <a href="https://github.com/abdelkader-atia" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg glass flex items-center justify-center text-gray-400 hover:text-cyan-400 transition-colors" title="GitHub"><i data-lucide="github" style="width:18px;height:18px"></i></a>
-      </div>
-     </div><!-- Contact Form -->
+       <div class="flex gap-3 pt-4">
+        <a href="https://www.linkedin.com/in/abdelkader-atia/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg glass flex items-center justify-center text-gray-400 hover:text-cyan-400 transition-colors" title="LinkedIn"><i data-lucide="linkedin" style="width:18px;height:18px"></i></a> <a href="https://twitter.com/abdelkader_atia" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg glass flex items-center justify-center text-gray-400 hover:text-cyan-400 transition-colors" title="Twitter"><i data-lucide="twitter" style="width:18px;height:18px"></i></a> <a href="https://www.facebook.com/abdelkader.atia" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg glass flex items-center justify-center text-gray-400 hover:text-cyan-400 transition-colors" title="Facebook"><i data-lucide="facebook" style="width:18px;height:18px"></i></a> <a href="https://github.com/abdelkader-atia" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg glass flex items-center justify-center text-gray-400 hover:text-cyan-400 transition-colors" title="GitHub"><i data-lucide="github" style="width:18px;height:18px"></i></a>
+       </div>
+       <a href="mailto:atia.abdelkader@gmail.com" class="btn-outline text-cyan-400 w-full px-4 py-3 rounded-xl text-sm font-semibold flex items-center justify-center gap-2 mt-4 hover:bg-cyan-500/10 transition">
+        <i data-lucide="mail" style="width:16px;height:16px"></i> <span>أرسل بريدًا إلكترونيًا</span>
+       </a>
+      </div><!-- Contact Form -->
      <form id="contactForm" class="glass-card rounded-2xl p-8 space-y-5" onsubmit="handleContact(event)">
       <div>
        <label for="name" class="block text-gray-400 text-sm mb-2">الاسم الكامل</label> <input id="name" type="text" required class="w-full px-4 py-3 rounded-xl bg-navy-900 border border-gray-800 text-white text-sm focus:border-cyan-500 focus:outline-none transition-colors" placeholder="أدخل اسمك">
@@ -738,6 +741,7 @@ tailwind.config = {
      </div>
       <div class="flex items-center gap-4">
         <span id="networkDot" title="حالة الاتصال"><span class="dot online"></span><span class="status-text">متصل</span></span>
+        <a href="mailto:atia.abdelkader@gmail.com" class="text-gray-500 hover:text-cyan-400 text-xs flex items-center gap-1 transition-colors" title="إرسال بريد"><i data-lucide="mail" style="width:14px;height:14px"></i> البريد</a>
         <button onclick="subscribePushNotifications()" class="text-gray-500 hover:text-cyan-400 text-xs flex items-center gap-1 transition-colors" title="تفعيل الإشعارات"><i data-lucide="bell" style="width:14px;height:14px"></i> الإشعارات</button>
       </div>
     </div>
