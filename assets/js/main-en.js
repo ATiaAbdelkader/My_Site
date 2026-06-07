@@ -430,7 +430,6 @@ function renderSpeaking(container) {
     grid.appendChild(card);
   });
 }
-}
 
 // Mobile menu
 /**
