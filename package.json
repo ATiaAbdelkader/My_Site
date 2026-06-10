@@ -4,8 +4,10 @@
   "description": "Bilingual personal website for Abdelkader Atia - PhD Researcher & Agricultural Innovator with AI chatbot, analytics, and advanced PWA features",
   "main": "index.html",
   "scripts": {
-    "dev": "npx serve .",
-    "build": "npm run minify-js && npm run build-evals && npm run validate && echo '✅ Build complete - all features ready for deployment'",
+    "dev": "npx tailwindcss -i ./src/tailwind.css -o ./assets/css/style.css --watch",
+    "dev:serve": "npx serve .",
+    "build:css": "npx tailwindcss -i ./src/tailwind.css -o ./assets/css/style.css --minify",
+    "build": "npm run build:css && npm run minify-js && npm run build-evals && npm run validate && echo '✅ Build complete - all features ready for deployment'",
     "minify-js": "npm run minify-js-ar && npm run minify-js-en",
     "minify-js-ar": "npx terser assets/js/main-ar.js -o assets/js/main-ar.min.js -c passes=2 -m",
     "minify-js-en": "npx terser assets/js/main-en.js -o assets/js/main-en.min.js -c passes=2 -m",

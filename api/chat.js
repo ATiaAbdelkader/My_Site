@@ -21,31 +21,59 @@ const knowledgeBase = [
   { keywords: ['collaboration', 'partner', 'international', 'project'], response: "I collaborate with institutions across Europe, Middle East, and Africa including Wageningen University, FAO, and GIZ. I'm open to research partnerships, training collaborations, and consulting projects." },
 ];
 
+const knowledgeBaseAr = [
+  { keywords: ['دكتوراه', 'علوم حيوان', 'جودة السائل', 'تكاثر', 'إنتاج حيواني'], response: 'أمتلك خبرة 12+ عامًا في الهندسة الزراعية والتدريب المهني. أحضر الدكتوراه في الإنتاج الحيواني وأعمل كأستاذ متخصص في المعهد الوطني للتكوين المهني بالوادي.' },
+  { keywords: ['تدريب', 'تكوين', 'برنامج', 'FBS', 'مدارس'], response: 'مدارس المزارعين الحقلية (FBS) هي منهجيتنا الرئيسية للتدريب - نهج عملي تشاركي يمكّن المزارعين من خلال التعلم بالتطبيق. قمنا بتدريب أكثر من 500 مزارع.' },
+  { keywords: ['أكاديمية', 'agriskills', 'دورة', 'دورات'], response: 'أكاديمية AgriSkills هي منصتنا التعليمية المتكاملة التي تقدم برامج تدريب زراعي شاملة مع شهادات معترف بها دوليًا.' },
+  { keywords: ['kamel3lom', 'منصة', 'تطبيق'], response: 'kamel3lom هي منصتنا الرقمية التي تجعل المعرفة الزراعية متاحة عبر الويب والتطبيق. تتميز بمحتوى تفاعلي ودروس وميزات مجتمعية.' },
+  { keywords: ['بحث', 'استشارة', 'تحليل', 'بيانات', 'نشر'], response: 'أقدم خدمات استشارية في تصميم التجارب والتحليل الإحصائي (R, SPSS) والكتابة العلمية واستراتيجية النشر الدولي.' },
+  { keywords: ['شهادة', 'شهادات', 'معترف'], response: 'أمتلك أكثر من 50 شهادة دولية من Wageningen وFAO وASM وGIZ وجمعية أكسفورد للمناخ وغيرها.' },
+  { keywords: ['مشروع', 'تعاون', 'شراكة', 'دولي'], response: 'أتعاون مع مؤسسات في أوروبا والشرق الأوسط وأفريقيا بما في ذلك جامعة Wageningen وFAO وGIZ.' },
+];
+
+const knowledgeBaseFr = [
+  { keywords: ['doctorat', 'science animale', 'qualité du sperme', 'reproduction', 'production animale'], response: 'J\'ai 12+ ans d\'expérience en génie agricole, formation professionnelle et supervision. Je prépare un doctorat en Production Animale et travaille comme Enseignant Spécialisé à l\'INSFP EL-Oued.' },
+  { keywords: ['formation', 'programme', 'stage', 'FBS', 'école'], response: 'Les écoles pratiques d\'agriculteurs (FBS) sont notre méthodologie de formation phare - une approche participative qui forme les agriculteurs par la pratique. Nous avons formé 500+ agriculteurs.' },
+  { keywords: ['académie', 'agriskills', 'cours', 'certification'], response: 'AgriSkills Academy est notre plateforme éducative intégrée offrant des programmes de formation agricole complets avec des certifications reconnues internationalement.' },
+  { keywords: ['kamel3lom', 'plateforme', 'application'], response: 'kamel3lom est notre plateforme numérique rendant le savoir agricole accessible via le web et l\'application mobile avec du contenu interactif et des tutoriels.' },
+  { keywords: ['recherche', 'conseil', 'consultation', 'analyse', 'publication'], response: 'Je fournis des services de conseil en conception expérimentale, analyse statistique (R, SPSS), rédaction scientifique et stratégie de publication internationale.' },
+  { keywords: ['certificat', 'certification', 'diplôme'], response: 'Je détiens plus de 50 certifications internationales de Wageningen, FAO, ASM, GIZ, Oxford Climate Society et d\'autres institutions prestigieuses.' },
+  { keywords: ['projet', 'collaboration', 'partenariat', 'international'], response: 'Je collabore avec des institutions en Europe, au Moyen-Orient et en Afrique, notamment l\'Université de Wageningen, la FAO et la GIZ.' },
+];
+
 function detectIntent(message) {
   const msg = message.toLowerCase();
 
-  // Greetings
-  if (/^(مرحبا|السلام|hi|hello|hey|مرحباً|اهلا|peace)/.test(msg)) {
+  // Greetings - Arabic
+  if (/^(مرحبا|السلام|السلام عليكم|اهلا|مرحباً|أهلا)/.test(msg)) {
+    return 'greeting_ar';
+  }
+  // Greetings - French
+  if (/^(bonjour|salut|bonsoir|coucou|hey|hello)/i.test(msg)) {
+    return 'greeting_fr';
+  }
+  // Greetings - English
+  if (/^(hi|hello|hey|peace)/.test(msg)) {
     return 'greeting';
   }
 
   // About / background
-  if (/^(من|who|tell me|what is|how are|عرفني|اخبرني)/.test(msg) || msg.includes('your background') || msg.includes('yourself')) {
+  if (/^(من|who|tell me|what is|how are|عرفني|اخبرني|qui es|parcours|présente)/.test(msg) || msg.includes('your background') || msg.includes('yourself')) {
     return 'about';
   }
 
   // Contact
-  if (/contact|email|phone|call|reach|تواصل|اتصل|بريد|هاتف/.test(msg)) {
+  if (/contact|email|phone|call|reach|تواصل|اتصل|بريد|هاتف|contactez|téléphone|appeler/.test(msg)) {
     return 'contact';
   }
 
   // Services
-  if (/service|offer|provide|price|cost|سعر|خدمة|كم/.test(msg)) {
+  if (/service|offer|provide|price|cost|سعر|خدمة|كم|proposez|prix|coût/.test(msg)) {
     return 'services';
   }
 
-  // Thanks
-  if (/^(شكرا|thanks|thank you|شكراً|جزاك)/.test(msg)) {
+  // Thanks - Arabic & French
+  if (/^(شكرا|شكراً|جزاك|merci|merci beaucoup)/.test(msg)) {
     return 'thanks';
   }
 
@@ -58,16 +86,28 @@ function generateMockResponse(userMessage, context = {}) {
 
   switch (intent) {
     case 'greeting':
-      const greetings = [
-        "مرحباً! 👋 كيف يمكنني مساعدتك اليوم؟ يمكنك السؤال عن خدماتي، أبحاثي، أو أي استفسار في المجال الزراعي.",
-        "أهلاً بك! 🌾 أنا هنا للإجابة على أسئلتك حول التدريب الزراعي، البحث العلمي، أو المشاريع الرقمية. كيف أقدر أساعدك؟",
+      const enGreets = [
         "Hello! 👋 Welcome to Abdelkader Atia's assistant. How can I help you today? Feel free to ask about training, research, or digital agriculture solutions.",
         "Hi there! 🌾 I'm here to help with information about agricultural innovation, training programs, and research. What would you like to know?"
       ];
-      return greetings[Math.floor(Math.random() * greetings.length)];
+      return enGreets[Math.floor(Math.random() * enGreets.length)];
+
+    case 'greeting_ar':
+      const arGreets = [
+        "مرحباً! 👋 كيف يمكنني مساعدتك اليوم؟ يمكنك السؤال عن خدماتي، أبحاثي، أو أي استفسار في المجال الزراعي.",
+        "أهلاً بك! 🌾 أنا هنا للإجابة على أسئلتك حول التدريب الزراعي، البحث العلمي، أو المشاريع الرقمية. كيف أقدر أساعدك؟"
+      ];
+      return arGreets[Math.floor(Math.random() * arGreets.length)];
+
+    case 'greeting_fr':
+      const frGreets = [
+        "Bonjour ! 👋 Bienvenue sur l'assistant d'Abdelkader Atia. Comment puis-je vous aider ? N'hésitez pas à poser des questions sur la formation, la recherche ou les solutions agricoles numériques.",
+        "Salut ! 🌾 Je suis là pour vous aider avec des informations sur l'innovation agricole, les programmes de formation et la recherche. Que souhaitez-vous savoir ?"
+      ];
+      return frGreets[Math.floor(Math.random() * frGreets.length)];
 
     case 'about':
-      return "I'm Abdelkader Atia, a PhD researcher in animal sciences specializing in semen quality and reproductive performance. I combine scientific research with practical training (FBS, AgriSkills Academy) and digital innovation (kamel3lom platform, smart farming tools). My mission is to bridge the gap between agricultural science and practical application. 🌾 How can I assist you?";
+      return "I'm Abdelkader Atia, an agronomy professional with 12+ years of experience in agricultural engineering, vocational training, and project supervision. I am currently pursuing a PhD in Agronomy (Animal Production) and serve as a Specialized Teacher at Hassani Abdelkrim INSFP in EL-Oued. My work spans agricultural engineering, pedagogical design, and digital innovation. 🌾 How can I assist you?";
 
     case 'contact':
       return "You can reach me through the contact form on this website, email me at contact@abdelkader-atia.com, or connect on LinkedIn. I typically respond within 24-48 hours. I'm always open to collaboration opportunities in research, training, and digital agriculture! 📬";
@@ -80,14 +120,26 @@ function generateMockResponse(userMessage, context = {}) {
 
     case 'knowledge':
     default:
-      // Search knowledge base
+      // Search English knowledge base
       for (const entry of knowledgeBase) {
         if (entry.keywords.some(kw => message.includes(kw))) {
           return entry.response + " Would you like more details about this topic? Feel free to ask! 😊";
         }
       }
+      // Search Arabic knowledge base
+      for (const entry of knowledgeBaseAr) {
+        if (entry.keywords.some(kw => message.includes(kw))) {
+          return entry.response + " هل تريد المزيد من التفاصيل حول هذا الموضوع؟ اسألني بكل ثقة! 😊";
+        }
+      }
+      // Search French knowledge base
+      for (const entry of knowledgeBaseFr) {
+        if (entry.keywords.some(kw => message.includes(kw))) {
+          return entry.response + " Souhaitez-vous plus de détails sur ce sujet ? N'hésitez pas à demander ! 😊";
+        }
+      }
 
-      // Fallback with context awareness
+      // Fallback
       if (context.lastTopic) {
         return `That's an interesting follow-up about ${context.lastTopic}! To give you the most accurate information, could you please be more specific about what you'd like to know? You can also browse the projects or articles sections for detailed content. 😊`;
       }

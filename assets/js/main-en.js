@@ -177,7 +177,9 @@ function filterProjects(cat) {
 function renderTestimonials() {
   const container = document.getElementById('testimonialsContainer');
   container.innerHTML = '';
-  testimonials.forEach((t, i) => {
+  const userTestimonials = JSON.parse(localStorage.getItem('user_testimonials') || '[]');
+  const allTestimonials = [...userTestimonials, ...testimonials];
+  allTestimonials.forEach((t, i) => {
     const stars = '⭐'.repeat(t.rating);
     const card = document.createElement('div');
     card.className = 'glass-card rounded-2xl p-5 flex flex-col h-full anim-in';
@@ -205,6 +207,36 @@ function renderTestimonials() {
   });
 }
 
+let selectedRating = 5;
+function setRating(val) {
+  selectedRating = val;
+  for (let i = 1; i <= 5; i++) {
+    document.getElementById('star' + i).textContent = i <= val ? '★' : '☆';
+  }
+}
+function submitTestimonial(e) {
+  e.preventDefault();
+  const name = document.getElementById('tName').value.trim();
+  const role = document.getElementById('tRole').value.trim();
+  const text = document.getElementById('tText').value.trim();
+  if (!name || !role || !text) return;
+  const testimonial = { text, author: name, role, rating: selectedRating, initials: name.split(' ').map(w => w[0]).join('').substring(0,2).toUpperCase(), color: selectedRating >= 4 ? 'from-cyan-500 to-cyan-600' : 'from-amber-500 to-amber-600', date: new Date().toISOString() };
+  const saved = JSON.parse(localStorage.getItem('user_testimonials') || '[]');
+  saved.push(testimonial);
+  localStorage.setItem('user_testimonials', JSON.stringify(saved));
+  document.getElementById('testimonialForm').reset();
+  document.getElementById('testimonialSuccess').classList.remove('hidden');
+  // Re-render testimonials to include new one
+  setTimeout(() => {
+    document.getElementById('testimonialSuccess').classList.add('hidden');
+    if (typeof renderTestimonials === 'function') renderTestimonials();
+  }, 2000);
+  // Optional: submit to Formspree
+  fetch('https://formspree.io/f/{FORM_ID}', {
+    method: 'POST', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name, role, text, rating: selectedRating, type: 'testimonial' })
+  }).catch(() => {});
+}
 
 
 /**
@@ -398,6 +430,7 @@ function renderPublications(container) {
           <a href="https://doi.org/${p.doi}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-cyan-400 text-xs font-medium hover:text-cyan-300 transition-colors">
             <i data-lucide="external-link" style="width:12px;height:12px"></i> DOI: ${p.doi}
           </a>
+          <button onclick="copyCitation('${p.title}', '${p.journal}', ${p.year}, '${p.doi}')" class="inline-flex items-center gap-1 text-amber-400 text-xs font-medium hover:text-amber-300 transition-colors mt-1"><i data-lucide="quote" style="width:12px;height:12px"></i> Copy citation</button>
         </div>
         <span class="text-xs font-bold text-cyan-400 flex-shrink-0">${p.year}</span>
       </div>
@@ -407,7 +440,36 @@ function renderPublications(container) {
 }
 
 function renderSpeaking(container) {
-  container.innerHTML = `<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="speakingGrid"></div>`;
+  container.innerHTML = `
+    <div class="glass-card rounded-2xl p-6 mb-8 overflow-hidden">
+      <div class="text-center mb-4">
+        <h3 class="text-white font-bold text-lg">🗺️ Conference Map</h3>
+        <p class="text-gray-500 text-xs">Geographical footprint of international speaking engagements</p>
+      </div>
+      <div class="relative" style="max-width:600px;margin:0 auto;aspect-ratio:1.5;">
+        <!-- Simple Mediterranean region map (SVG-based) -->
+        <svg viewBox="-5 30 20 20" class="w-full h-full" style="opacity:0.4;">
+          <path d="M-5 30 L15 30 L15 50 L-5 50 Z" fill="#1a2340" stroke="#22d3ee" stroke-width="0.05"/>
+          <!-- Africa outline (simplified) -->
+          <path d="M-2 32 L-1 33 L0 34 L1 35 L2 36 L3 37 L2 38 L1 39 L0 40 L-1 41 L-2 42 L-3 43 L-4 44 L-3 45 L-2 46 L-1 47 L0 48 L1 47 L2 46 L3 45 L4 44 L5 43 L5 42 L4 41 L3 40 L2 39 L1 38 L0 37 L-1 36 L-2 35 L-2 34 L-1 33 Z" fill="none" stroke="#22d3ee" stroke-width="0.08" opacity="0.5"/>
+          <!-- Europe outline (simplified) -->
+          <path d="M-3 31 L-2 30 L-1 30 L0 31 L1 30 L2 30 L3 31 L4 30 L5 31 L6 32 L5 33 L4 34 L3 33 L2 34 L1 33 L0 34 L-1 33 L-2 34 L-3 33 L-4 32 Z" fill="none" stroke="#22d3ee" stroke-width="0.08" opacity="0.5"/>
+        </svg>
+        <!-- Map markers - each conference location -->
+        <div style="position:absolute;top:42%;left:48%;"><div class="w-3 h-3 rounded-full bg-cyan-400 shadow-lg" style="box-shadow:0 0 10px #22d3ee;" title="Tunis, Tunisia"></div><span class="text-[8px] text-cyan-400 absolute -bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap">Tunis</span></div>
+        <div style="position:absolute;top:38%;left:45%;"><div class="w-3 h-3 rounded-full bg-amber-400 shadow-lg" style="box-shadow:0 0 10px #fbbf24;" title="Algiers, Algeria"></div><span class="text-[8px] text-amber-400 absolute -bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap">Algiers</span></div>
+        <div style="position:absolute;top:35%;left:40%;"><div class="w-3 h-3 rounded-full bg-cyan-400 shadow-lg" style="box-shadow:0 0 10px #22d3ee;" title="Marrakech, Morocco"></div><span class="text-[8px] text-cyan-400 absolute -bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap">Marrakech</span></div>
+        <div style="position:absolute;top:44%;left:44%;"><div class="w-3 h-3 rounded-full bg-amber-400 shadow-lg" style="box-shadow:0 0 10px #fbbf24;" title="Ouargla, Algeria"></div><span class="text-[8px] text-amber-400 absolute -bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap">Ouargla</span></div>
+        <div style="position:absolute;top:42%;left:46%;"><div class="w-3 h-3 rounded-full bg-cyan-400 shadow-lg" style="box-shadow:0 0 10px #22d3ee;" title="Biskra, Algeria"></div><span class="text-[8px] text-cyan-400 absolute -bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap">Biskra</span></div>
+        <div style="position:absolute;top:43%;left:47%;"><div class="w-3 h-3 rounded-full bg-amber-400 shadow-lg" style="box-shadow:0 0 10px #fbbf24;" title="El Oued, Algeria"></div><span class="text-[8px] text-amber-400 absolute -bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap">El Oued</span></div>
+      </div>
+      <div class="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-500">
+        <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-cyan-400 inline-block"></span> ESNA, ICARP, ChAAB</span>
+        <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-amber-400 inline-block"></span> ICABRD, SOS, ISAEA</span>
+      </div>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="speakingGrid"></div>
+  `;
   const grid = document.getElementById('speakingGrid');
   speaking.forEach((s, i) => {
     const card = document.createElement('div');
@@ -430,6 +492,17 @@ function renderSpeaking(container) {
       </div>
     `;
     grid.appendChild(card);
+  });
+}
+
+function copyCitation(title, journal, year, doi) {
+  const apa = `${title}. (${year}). ${journal}. https://doi.org/${doi}`;
+  const mla = `"${title}." ${journal}, ${year}, doi:${doi}.`;
+  const text = `APA: ${apa}\n\nMLA: ${mla}`;
+  navigator.clipboard.writeText(apa).then(() => {
+    showToast('📋 APA citation copied!', 'success');
+  }).catch(() => {
+    showToast('📋 Citation: ' + apa, 'info');
   });
 }
 
@@ -691,6 +764,22 @@ document.addEventListener('DOMContentLoaded', () => {
 /**
  * Download CV PDF file
  */
+function openCV() {
+  document.getElementById('cvModal').classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
+}
+function closeCV() {
+  document.getElementById('cvModal').classList.add('hidden');
+  document.body.style.overflow = '';
+}
+document.addEventListener('DOMContentLoaded', () => {
+  const cvOverlay = document.getElementById('cvModal');
+  if (cvOverlay) {
+    cvOverlay.addEventListener('click', (e) => { if (e.target === cvOverlay) closeCV(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !cvOverlay.classList.contains('hidden')) closeCV(); });
+  }
+});
+
 function downloadCV() {
   const cvUrl = 'CV_AbdelkaderAtia.pdf';
   
@@ -715,8 +804,7 @@ function downloadCV() {
 // Theme toggle (per-language)
 let isDarkMode = true;
 function getThemeKey() {
-  const lang = document.documentElement.lang || 'en';
-  return `theme_${lang}`;
+  return 'theme';
 }
 function toggleTheme() {
   isDarkMode = !isDarkMode;

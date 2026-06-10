@@ -180,6 +180,10 @@ tailwind.config = {
       <div class="flex flex-wrap gap-3">
        <span class="px-4 py-2 rounded-lg glass text-cyan-400 text-sm">🔬 Production Animale</span> <span class="px-4 py-2 rounded-lg glass text-cyan-400 text-sm">🌾 Agronomie</span> <span class="px-4 py-2 rounded-lg glass text-cyan-400 text-sm">📊 Agriculture Numérique</span> <span class="px-4 py-2 rounded-lg glass text-cyan-400 text-sm">🎓 Formation Professionnelle</span> <span class="px-4 py-2 rounded-lg glass text-cyan-400 text-sm">💼 Agroalimentaire</span> <span class="px-4 py-2 rounded-lg glass text-cyan-400 text-sm">📖 Ingénierie Pédagogique</span>
       </div>
+      <div class="flex flex-wrap gap-3 mt-6">
+        <button onclick="openCV()" class="btn-outline text-cyan-400 px-5 py-2.5 rounded-xl text-sm font-semibold flex items-center gap-2 hover:bg-cyan-500/10 transition"><i data-lucide="eye" style="width:16px;height:16px"></i> Aperçu du CV</button>
+        <button onclick="downloadCV()" class="btn-primary text-white px-5 py-2.5 rounded-xl text-sm font-semibold flex items-center gap-2"><i data-lucide="download" style="width:16px;height:16px"></i> Télécharger le CV</button>
+      </div>
      </div><!-- Stats Grid -->
      <div class="grid grid-cols-2 gap-4">
       <div class="glass-card rounded-2xl p-6 text-center">
@@ -579,9 +583,42 @@ tailwind.config = {
     </div>
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="testimonialsContainer">
      <!-- Testimonials inserted by JS -->
+      </div>
+      <!-- Submit Testimonial -->
+      <div class="mt-12 max-w-lg mx-auto">
+        <div class="text-center mb-6">
+          <span class="text-cyan-400 text-sm font-semibold">PARTAGEZ VOTRE EXPÉRIENCE</span>
+          <h3 class="text-white font-bold text-xl mt-2">Soumettre un témoignage</h3>
+        </div>
+        <form id="testimonialForm" class="glass-card rounded-2xl p-6 space-y-4" onsubmit="submitTestimonial(event)">
+          <div>
+            <label class="block text-gray-400 text-xs mb-1">Votre nom</label>
+            <input id="tName" type="text" required class="w-full px-4 py-2.5 rounded-xl bg-navy-900 border border-gray-800 text-white text-sm focus:border-cyan-500 focus:outline-none transition-colors" placeholder="Votre nom">
+          </div>
+          <div>
+            <label class="block text-gray-400 text-xs mb-1">Votre fonction</label>
+            <input id="tRole" type="text" required class="w-full px-4 py-2.5 rounded-xl bg-navy-900 border border-gray-800 text-white text-sm focus:border-cyan-500 focus:outline-none transition-colors" placeholder="Ex: Ingénieur agronome">
+          </div>
+          <div>
+            <label class="block text-gray-400 text-xs mb-1">Votre témoignage</label>
+            <textarea id="tText" rows="3" required class="w-full px-4 py-2.5 rounded-xl bg-navy-900 border border-gray-800 text-white text-sm focus:border-cyan-500 focus:outline-none transition-colors resize-none" placeholder="Partagez votre expérience de travail avec moi..."></textarea>
+          </div>
+          <div class="flex gap-2">
+            <span class="text-xs text-gray-500">Note :</span>
+            <div class="flex gap-1" id="tRating">
+              <span onclick="setRating(1)" class="cursor-pointer text-xl hover:scale-110 transition-transform" id="star1">☆</span>
+              <span onclick="setRating(2)" class="cursor-pointer text-xl hover:scale-110 transition-transform" id="star2">☆</span>
+              <span onclick="setRating(3)" class="cursor-pointer text-xl hover:scale-110 transition-transform" id="star3">☆</span>
+              <span onclick="setRating(4)" class="cursor-pointer text-xl hover:scale-110 transition-transform" id="star4">☆</span>
+              <span onclick="setRating(5)" class="cursor-pointer text-xl hover:scale-110 transition-transform" id="star5">☆</span>
+            </div>
+          </div>
+          <button type="submit" class="w-full btn-primary text-white py-2.5 rounded-xl text-sm font-semibold flex items-center justify-center gap-2"><i data-lucide="message-square" style="width:16px;height:16px"></i> Envoyer le témoignage</button>
+          <div id="testimonialSuccess" class="hidden text-center py-2 rounded-xl text-sm font-semibold" style="background:rgba(34,211,238,0.1);color:#22d3ee;">✅ Merci ! Votre témoignage a été soumis.</div>
+        </form>
+      </div>
     </div>
-   </div>
-  </section><!-- BLOG PREVIEW -->
+   </section><!-- BLOG PREVIEW -->
   <section class="section-padding" style="background:linear-gradient(180deg,rgba(15,21,56,0.5),#0a0e27);">
    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
@@ -849,5 +886,24 @@ tailwind.config = {
   </div>
   <!-- Offline Toast -->
   <div id="offlineToast" class="glass px-5 py-3 rounded-xl text-sm font-semibold" style="background:rgba(245,158,11,0.95);color:#fff;">📡 Vous êtes hors ligne — certaines fonctionnalités peuvent ne pas fonctionner</div>
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/213792357443" target="_blank" rel="noopener noreferrer" id="whatsappBtn" class="fixed bottom-24 right-6 z-50 w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-transform hover:scale-110" style="background:#25D366;color:white;" title="Chatter sur WhatsApp">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+  <!-- CV Preview Modal -->
+  <div id="cvModal" class="hidden fixed inset-0 z-[9999] flex items-center justify-center p-4" style="background:rgba(0,0,0,0.85);backdrop-filter:blur(8px);">
+    <div class="glass-card rounded-2xl w-full max-w-3xl max-h-[90vh] flex flex-col overflow-hidden relative" style="background:rgba(15,21,56,0.97);">
+      <div class="flex items-center justify-between p-4 border-b border-gray-800">
+        <h3 class="text-white font-bold">📄 Aperçu du CV — Abdelkader Atia</h3>
+        <div class="flex items-center gap-2">
+          <a href="CV_AbdelkaderAtia.pdf" download class="text-cyan-400 text-sm font-semibold flex items-center gap-1 hover:text-cyan-300 transition-colors"><i data-lucide="download" style="width:14px;height:14px"></i> Télécharger</a>
+          <button onclick="closeCV()" class="text-gray-400 hover:text-white transition-colors"><i data-lucide="x" style="width:20px;height:20px"></i></button>
+        </div>
+      </div>
+      <div class="flex-1 overflow-hidden" style="min-height:60vh;">
+        <iframe src="CV_AbdelkaderAtia.pdf" class="w-full h-full" style="min-height:60vh;" title="CV Preview"></iframe>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
