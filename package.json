@@ -4,9 +4,9 @@
   "description": "Bilingual personal website for Abdelkader Atia - PhD Researcher & Agricultural Innovator with AI chatbot, analytics, and advanced PWA features",
   "main": "index.html",
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/tailwind.css -o ./assets/css/style.css --watch",
+    "dev": "npx tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind-built.css --watch",
     "dev:serve": "npx serve .",
-    "build:css": "npx tailwindcss -i ./src/tailwind.css -o ./assets/css/style.css --minify",
+    "build:css": "npx tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind-built.css --minify",
     "build": "npm run build:css && npm run minify-js && npm run build-evals && npm run validate && echo '✅ Build complete - all features ready for deployment'",
     "minify-js": "npm run minify-js-ar && npm run minify-js-en",
     "minify-js-ar": "npx terser assets/js/main-ar.js -o assets/js/main-ar.min.js -c passes=2 -m",
@@ -33,8 +33,11 @@
   "author": "Abdelkader Atia",
   "license": "MIT",
   "devDependencies": {
-    "cssnano": "^7.0.0",
+    "autoprefixer": "^10.5.0",
+    "cssnano": "^7.1.9",
+    "postcss": "^8.5.15",
     "serve": "^14.2.0",
+    "tailwindcss": "^3.4.19",
     "terser": "^5.47.1"
   },
   "engines": {
