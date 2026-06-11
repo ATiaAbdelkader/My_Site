@@ -46,10 +46,10 @@ export default function Hero() {
   const { t, language } = useLanguage();
 
   const stats = [
-    { value: 12, label: t.hero.stats.years, suffix: '+' },
-    { value: 25, label: t.hero.stats.projects, suffix: '+' },
+    { value: 15, label: t.hero.stats.years, suffix: '+' },
+    { value: 60, label: t.hero.stats.projects, suffix: '+' },
     { value: 500, label: t.hero.stats.trainees, suffix: '+' },
-    { value: 50, label: t.hero.stats.certs, suffix: '+' },
+    { value: 10, label: t.hero.stats.certs, suffix: '+' },
   ];
 
   return (

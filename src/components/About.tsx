@@ -17,8 +17,8 @@ export default function About() {
   ];
 
   const stats = [
-    { value: '+12', label: t.about.stats.years },
-    { value: '+25', label: t.about.stats.projects },
+    { value: '+15', label: t.about.stats.years },
+    { value: '+60', label: t.about.stats.projects },
     { value: '+50', label: t.about.stats.programs },
     { value: '+500', label: t.about.stats.trainees },
   ];

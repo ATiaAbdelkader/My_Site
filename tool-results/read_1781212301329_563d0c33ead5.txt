@@ -1,0 +1,949 @@
+     1→     1→export type Language = 'ar' | 'en' | 'fr';
+     2→     2→
+     3→     3→export interface Translations {
+     4→     4→  nav: {
+     5→     5→    home: string;
+     6→     6→    about: string;
+     7→     7→    skills: string;
+     8→     8→    experience: string;
+     9→     9→    projects: string;
+    10→    10→    services: string;
+    11→    11→    achievements: string;
+    12→    12→    knowledge: string;
+    13→    13→    contact: string;
+    14→    14→  };
+    15→    15→  hero: {
+    16→    16→    badge: string;
+    17→    17→    title: string;
+    18→    18→    titleHighlight: string;
+    19→    19→    titleEnd: string;
+    20→    20→    subtitle: string;
+    21→    21→    cta1: string;
+    22→    22→    cta2: string;
+    23→    23→    stats: {
+    24→    24→      years: string;
+    25→    25→      projects: string;
+    26→    26→      trainees: string;
+    27→    27→      certs: string;
+    28→    28→    };
+    29→    29→  };
+    30→    30→  about: {
+    31→    31→    sectionLabel: string;
+    32→    32→    title: string;
+    33→    33→    getToKnow: string;
+    34→    34→    p1: string;
+    35→    35→    nameHighlight: string;
+    36→    36→    expHighlight: string;
+    37→    37→    p2: string;
+    38→    38→    roleHighlight: string;
+    39→    39→    bookTitle: string;
+    40→    40→    tags: {
+    41→    41→      animalProduction: string;
+    42→    42→      agronomy: string;
+    43→    43→      digitalAgri: string;
+    44→    44→      training: string;
+    45→    45→      agribusiness: string;
+    46→    46→      pedagogical: string;
+    47→    47→    };
+    48→    48→    previewCv: string;
+    49→    49→    downloadCv: string;
+    50→    50→    stats: {
+    51→    51→      years: string;
+    52→    52→      projects: string;
+    53→    53→      programs: string;
+    54→    54→      trainees: string;
+    55→    55→    };
+    56→    56→  };
+    57→    57→  skills: {
+    58→    58→    sectionLabel: string;
+    59→    59→    title: string;
+    60→    60→    research: {
+    61→    61→      title: string;
+    62→    62→      dataAnalysis: string;
+    63→    63→      experimentalDesign: string;
+    64→    64→      scientificWriting: string;
+    65→    65→    };
+    66→    66→    technical: {
+    67→    67→      title: string;
+    68→    68→      powerBi: string;
+    69→    69→      rExcel: string;
+    70→    70→      edrawMax: string;
+    71→    71→    };
+    72→    72→    agricultural: {
+    73→    73→      title: string;
+    74→    74→      livestock: string;
+    75→    75→      breeding: string;
+    76→    76→      nutrition: string;
+    77→    77→      precision: string;
+    78→    78→    };
+    79→    79→    training: {
+    80→    80→      title: string;
+    81→    81→      fbs: string;
+    82→    82→      programDesign: string;
+    83→    83→      communication: string;
+    84→    84→    };
+    85→    85→  };
+    86→    86→  experience: {
+    87→    87→    sectionLabel: string;
+    88→    88→    title: string;
+    89→    89→    items: Array<{
+    90→    90→      period: string;
+    91→    91→      title: string;
+    92→    92→      org: string;
+    93→    93→      desc: string;
+    94→    94→    }>;
+    95→    95→  };
+    96→    96→  projects: {
+    97→    97→    sectionLabel: string;
+    98→    98→    title: string;
+    99→    99→    filters: {
+   100→   100→      all: string;
+   101→   101→      research: string;
+   102→   102→      apps: string;
+   103→   103→      training: string;
+   104→   104→      business: string;
+   105→   105→    };
+   106→   106→    items: Array<{
+   107→   107→      name: string;
+   108→   108→      desc: string;
+   109→   109→      cat: string;
+   110→   110→      icon: string;
+   111→   111→    }>;
+   112→   112→    viewDetails: string;
+   113→   113→  };
+   114→   114→  services: {
+   115→   115→    sectionLabel: string;
+   116→   116→    title: string;
+   117→   117→    items: Array<{
+   118→   118→      title: string;
+   119→   119→      desc: string;
+   120→   120→      request: string;
+   121→   121→    }>;
+   122→   122→  };
+   123→   123→  achievements: {
+   124→   124→    sectionLabel: string;
+   125→   125→    title: string;
+   126→   126→    items: Array<{
+   127→   127→      title: string;
+   128→   128→      desc: string;
+   129→   129→    }>;
+   130→   130→  };
+   131→   131→  knowledge: {
+   132→   132→    sectionLabel: string;
+   133→   133→    title: string;
+   134→   134→    tabs: {
+   135→   135→      thoughts: string;
+   136→   136→      publications: string;
+   137→   137→      speaking: string;
+   138→   138→    };
+   139→   139→    thoughts: Array<{
+   140→   140→      text: string;
+   141→   141→      date: string;
+   142→   142→      platform: string;
+   143→   143→    }>;
+   144→   144→    publications: Array<{
+   145→   145→      title: string;
+   146→   146→      journal: string;
+   147→   147→      year: number;
+   148→   148→    }>;
+   149→   149→    speaking: Array<{
+   150→   150→      conference: string;
+   151→   151→      location: string;
+   152→   152→      year: number;
+   153→   153→      paper: string;
+   154→   154→    }>;
+   155→   155→  };
+   156→   156→  testimonials: {
+   157→   157→    sectionLabel: string;
+   158→   158→    title: string;
+   159→   159→    items: Array<{
+   160→   160→      text: string;
+   161→   161→      author: string;
+   162→   162→      role: string;
+   163→   163→    }>;
+   164→   164→  };
+   165→   165→  contact: {
+   166→   166→    sectionLabel: string;
+   167→   167→    title: string;
+   168→   168→    subtitle: string;
+   169→   169→    email: string;
+   170→   170→    phone: string;
+   171→   171→    location: string;
+   172→   172→    formTitle: string;
+   173→   173→    namePlaceholder: string;
+   174→   174→    emailPlaceholder: string;
+   175→   175→    subjectLabel: string;
+   176→   176→    subjects: {
+   177→   177→      training: string;
+   178→   178→      research: string;
+   179→   179→      dataAnalysis: string;
+   180→   180→      digital: string;
+   181→   181→      other: string;
+   182→   182→    };
+   183→   183→    messagePlaceholder: string;
+   184→   184→    sendButton: string;
+   185→   185→    successMessage: string;
+   186→   186→  };
+   187→   187→  footer: {
+   188→   188→    copyright: string;
+   189→   189→    online: string;
+   190→   190→    offline: string;
+   191→   191→  };
+   192→   192→}
+   193→   193→
+   194→   194→export const translations: Record<Language, Translations> = {
+   195→   195→  ar: {
+   196→   196→    nav: {
+   197→   197→      home: 'الرئيسية',
+   198→   198→      about: 'عنّي',
+   199→   199→      skills: 'المهارات',
+   200→   200→      experience: 'المسيرة',
+   201→   201→      projects: 'المشاريع',
+   202→   202→      services: 'الخدمات',
+   203→   203→      achievements: 'الإنجازات',
+   204→   204→      knowledge: 'أفكار',
+   205→   205→      contact: 'تواصل',
+   206→   206→    },
+   207→   207→    hero: {
+   208→   208→      badge: 'باحث دكتوراه | مدرب | مبتكر',
+   209→   209→      title: 'تحويل',
+   210→   210→      titleHighlight: 'المعرفة الزراعية',
+   211→   211→      titleEnd: 'إلى أثر حقيقي',
+   212→   212→      subtitle: 'باحث دكتوراه ومدرب ومبتكر في الزراعة الرقمية، أعمل على بناء جسور بين العلم والتطبيق لتطوير أنظمة زراعية أكثر ذكاءً وكفاءة.',
+   213→   213→      cta1: 'استكشف أعمالي',
+   214→   214→      cta2: 'تواصل معي',
+   215→   215→      stats: {
+   216→   216→        years: 'سنوات خبرة',
+   217→   217→        projects: 'مشروع بحثي',
+   218→   218→        trainees: 'متدرب',
+   219→   219→        certs: 'شهادة دولية',
+   220→   220→      },
+   221→   221→    },
+   222→   222→    about: {
+   223→   223→      sectionLabel: 'تعرّف عليّ',
+   224→   224→      title: 'من أنا',
+   225→   225→      getToKnow: 'تعرّف عليّ',
+   226→   226→      p1: 'أنا عبد القادر عطيه، محترف في الهندسة الزراعية مع أكثر من 12 عامًا من الخبرة في الهندسة الزراعية والتدريب المهني والإشراف على المشاريع. أحضر حاليًا درجة الدكتوراه في الإنتاج الحيواني، بناءً على ماجستير في الإنتاج النباتي وشهادة مهندس في تربية الحيوانات في المناطق الجافة.',
+   227→   227→      nameHighlight: 'عبد القادر عطيه',
+   228→   228→      expHighlight: 'أكثر من 12 عامًا من الخبرة',
+   229→   229→      p2: 'يمتد عملي ليشمل الهندسة الزراعية والتصميم البيداغوجي والابتكار الرقمي. أعمل كأستاذ متخصص (هندسة بيداغوجية) في المعهد الوطني للتكوين المهني حسان عبد الكريم بالوادي، حيث أصمم برامج التكوين المهني وأشرف على العمليات الزراعية وأدرب الطلاب على تقنيات الزراعة الحديثة. أنا أيضًا مؤلف كتاب "على الحفة" (ISBN 9947-26-849-1).',
+   230→   230→      roleHighlight: 'أستاذ متخصص (هندسة بيداغوجية)',
+   231→   231→      bookTitle: '"على الحفة"',
+   232→   232→      tags: {
+   233→   233→        animalProduction: '🔬 الإنتاج الحيواني',
+   234→   234→        agronomy: '🌾 الهندسة الزراعية',
+   235→   235→        digitalAgri: '📊 الزراعة الرقمية',
+   236→   236→        training: '🎓 التكوين المهني',
+   237→   237→        agribusiness: '💼 ريادة الأعمال الزراعية',
+   238→   238→        pedagogical: '📖 الهندسة البيداغوجية',
+   239→   239→      },
+   240→   240→      previewCv: 'معاينة السيرة',
+   241→   241→      downloadCv: 'تحميل السيرة',
+   242→   242→      stats: {
+   243→   243→        years: 'سنوات من الخبرة',
+   244→   244→        projects: 'مشروع بحثي',
+   245→   245→        programs: 'دورة تدريبية',
+   246→   246→        trainees: 'متدرب ومستفيد',
+   247→   247→      },
+   248→   248→    },
+   249→   249→    skills: {
+   250→   250→      sectionLabel: 'قدراتي',
+   251→   251→      title: 'المهارات',
+   252→   252→      research: {
+   253→   253→        title: '🔬 مهارات بحثية',
+   254→   254→        dataAnalysis: 'تحليل البيانات',
+   255→   255→        experimentalDesign: 'التصميم التجريبي',
+   256→   256→        scientificWriting: 'الكتابة العلمية',
+   257→   257→      },
+   258→   258→      technical: {
+   259→   259→        title: '💻 المهارات التقنية',
+   260→   260→        powerBi: 'Power BI / IBM SPSS',
+   261→   261→        rExcel: 'R / Excel / تصور البيانات',
+   262→   262→        edrawMax: 'EdrawMax / Xmind',
+   263→   263→      },
+   264→   264→      agricultural: {
+   265→   265→        title: '🌱 مهارات زراعية',
+   266→   266→        livestock: 'إنتاج الثروة الحيوانية',
+   267→   267→        breeding: 'التربية والانتخاب',
+   268→   268→        nutrition: 'التغذية الحيوانية',
+   269→   269→        precision: 'Garden Planner / الزراعة الدقيقة',
+   270→   270→      },
+   271→   271→      training: {
+   272→   272→        title: '🎤 مهارات تدريبية',
+   273→   273→        fbs: 'مدرب FBS',
+   274→   274→        programDesign: 'تصميم البرامج',
+   275→   275→        communication: 'مهارات التواصل',
+   276→   276→      },
+   277→   277→    },
+   278→   278→    experience: {
+   279→   279→      sectionLabel: 'رحلتي',
+   280→   280→      title: 'المسيرة المهنية',
+   281→   281→      items: [
+   282→   282→        {
+   283→   283→          period: '2022 - حتى الآن',
+   284→   284→          title: 'أستاذ متخصص (هندسة بيداغوجية)',
+   285→   285→          org: 'المعهد الوطني للتكوين المهني حسان عبد الكريم، الوادي',
+   286→   286→          desc: 'تصميم مناهج التكوين المهني، الإشراف على العمليات الزراعية، وتدريب الطلاب على التقنيات الزراعية والهندسة البيداغوجية الحديثة',
+   287→   287→        },
+   288→   288→        {
+   289→   289→          period: '2016 - حتى الآن',
+   290→   290→          title: 'مشرف استغلال زراعي',
+   291→   291→          org: '',
+   292→   292→          desc: 'الإشراف على العمليات الزراعية وإدارة أنظمة الإنتاج النباتي والحيواني',
+   293→   293→        },
+   294→   294→        {
+   295→   295→          period: '2021 - حتى الآن',
+   296→   296→          title: 'مدرب مهني',
+   297→   297→          org: 'المعهد الوطني للتكوين المهني حسان عبد الكريم، الوادي',
+   298→   298→          desc: 'تقديم تدريب عملي في التقنيات الزراعية، مدارس المزارعين الحقلية (FBS)، وتطوير المهارات المهنية للطلاب والمزارعين',
+   299→   299→        },
+   300→   300→        {
+   301→   301→          period: '2022',
+   302→   302→          title: 'مدرب رئيسي مساعد FBS',
+   303→   303→          org: 'ABF (GIZ) — مرفق الأعمال الزراعية لأفريقيا',
+   304→   304→          desc: 'مدرب رئيسي مساعد معتمد في مدارس المزارعين الحقلية. درّب أكثر من 500 مزارع وقدم برامج تدريب المدربين في الجزائر.',
+   305→   305→        },
+   306→   306→        {
+   307→   307→          period: '2011 - 2016',
+   308→   308→          title: 'مهندس زراعي',
+   309→   309→          org: 'شهادة مهندس في تربية الحيوانات في المناطق الجافة',
+   310→   310→          desc: 'خبرة عملية في أنظمة الإنتاج الحيواني وبرامج التربية وإدارة المزارع في البيئات الجافة',
+   311→   311→        },
+   312→   312→        {
+   313→   313→          period: '2024 - 2026',
+   314→   314→          title: 'أكثر من 50 شهادة تدريب دولية',
+   315→   315→          org: '',
+   316→   316→          desc: 'شهادات متقدمة من Wageningen, FAO, ASM, GIZ, Oxford Climate Society وغيرها. تطوير مهني مستمر في الزراعة ومنهجية البحث والهندسة البيداغوجية والزراعة الذكية مناخيًا',
+   317→   317→        },
+   318→   318→        {
+   319→   319→          period: '2006 / مستمر',
+   320→   320→          title: 'مؤلف كتاب وقائد مجتمعي',
+   321→   321→          org: '',
+   322→   322→          desc: 'كتاب "على الحفة" (ISBN 9947-26-849-1, 2006). نائب رئيس جمعية النحالين، سفير IAPA للتعلم الإلكتروني، عضو في ASM, EAS، ومنسق الجزائر في عدة منظمات دولية',
+   323→   323→        },
+   324→   324→      ],
+   325→   325→    },
+   326→   326→    projects: {
+   327→   327→      sectionLabel: 'أعمالي',
+   328→   328→      title: 'المشاريع',
+   329→   329→      filters: {
+   330→   330→        all: 'الكل',
+   331→   331→        research: 'بحث علمي',
+   332→   332→        apps: 'تطبيقات',
+   333→   333→        training: 'تدريب',
+   334→   334→        business: 'ريادة أعمال',
+   335→   335→      },
+   336→   336→      items: [
+   337→   337→        { name: 'تطبيق تحليل السائل المنوي', desc: 'تطبيق ذكي لتقييم وتحليل جودة السائل المنوي باستخدام تقنيات التصوير والذكاء الاصطناعي', cat: 'app', icon: '🔬' },
+   338→   338→        { name: 'AgriSkills Academy', desc: 'منصة تعليمية متكاملة للتدريب الزراعي وبناء القدرات المهنية مع شهادات معترف بها', cat: 'business', icon: '🎓' },
+   339→   339→        { name: 'برنامج FBS التدريبي', desc: 'سلسلة برامج تدريبية شاملة في مدارس المزارعين الحقلية تغطي الإنتاج الحيواني والزراعة المستدامة', cat: 'training', icon: '🌾' },
+   340→   340→        { name: 'أبحاث التكاثر الحيواني', desc: 'مشاريع بحثية متقدمة في تحسين الأداء التناسلي وجودة السائل المنوي مع نشر دولي', cat: 'research', icon: '🧬' },
+   341→   341→        { name: 'مشروع تربية BSF', desc: 'مبادرة مبتكرة لتربية ذبابة الجندي الأسود كمصدر بروتين بديل وحل للنفايات', cat: 'business', icon: '🦟' },
+   342→   342→        { name: 'منصة kamel3lom', desc: 'منصة رقمية لنشر المعرفة الزراعية وتبسيط العلوم للمجتمع مع محتوى تفاعلي', cat: 'app', icon: '📱' },
+   343→   343→        { name: 'نظام إدارة المزارع الذكي', desc: 'تطبيق شامل لإدارة المزارع بتتبع الثروة والإنتاجية والتنبؤات الذكية', cat: 'app', icon: '🌐' },
+   344→   344→        { name: 'دراسات في تحسين السلالات', desc: 'أبحاث متخصصة في التربية الانتخابية وتحسين المؤشرات الوراثية للماشية', cat: 'research', icon: '📊' },
+   345→   345→        { name: 'ورش عمل الزراعة الحديثة', desc: 'سلسلة ورش عمل عملية حول التقنيات الحديثة والممارسات الزراعية الفضلى', cat: 'training', icon: '🛠️' },
+   346→   346→      ],
+   347→   347→      viewDetails: 'عرض التفاصيل',
+   348→   348→    },
+   349→   349→    services: {
+   350→   350→      sectionLabel: 'ماذا أقدّم',
+   351→   351→      title: 'خدماتي',
+   352→   352→      items: [
+   353→   353→        { title: '🎓 التدريب الزراعي', desc: 'برامج تدريبية متخصصة في الإنتاج الحيواني والزراعة الحديثة', request: 'اطلب الخدمة' },
+   354→   354→        { title: '🔬 الاستشارات البحثية', desc: 'دعم الباحثين في تصميم التجارب وتحليل البيانات والنشر العلمي', request: 'اطلب الخدمة' },
+   355→   355→        { title: '📊 تحليل البيانات', desc: 'تحليل إحصائي متقدم وتصور بيانات باستخدام أحدث الأدوات', request: 'اطلب الخدمة' },
+   356→   356→        { title: '💡 الحلول الرقمية', desc: 'تطوير تطبيقات ومنصات رقمية مخصصة للقطاع الزراعي', request: 'اطلب الخدمة' },
+   357→   357→      ],
+   358→   358→    },
+   359→   359→    achievements: {
+   360→   360→      sectionLabel: 'إنجازاتي',
+   361→   361→      title: 'الإنجازات والشهادات',
+   362→   362→      items: [
+   363→   363→        { title: '🏆 مؤتمرات دولية', desc: 'مشاركات فعّالة في أكثر من 8 مؤتمرات علمية دولية مع أوراق بحثية مُقدمة (2023-2026)' },
+   364→   364→        { title: '📄 أبحاث منشورة', desc: 'أكثر من 25 بحثًا علميًا محكّمًا منشورًا في مجلات دولية متخصصة وعالية التصنيف' },
+   365→   365→        { title: '🎖️ شهادات مهنية', desc: '+50 شهادة تدريب دولية متقدمة من مؤسسات مرموقة (Wageningen, FAO, ASM, GIZ وغيرها)' },
+   366→   366→        { title: '🌍 عضويات دولية', desc: 'عضو نشط في الجمعية الأمريكية لعلم الأحياء الدقيقة، جمعية تربية الأسماك الأوروبية، والرابطة الدولية لممارسري الأعمال الزراعية' },
+   367→   367→        { title: '📱 ابتكارات رقمية', desc: 'تطوير نموذجين أوليين لمصائد حشرات ونظم هيدروبونيك/أكوابونيك متكاملة' },
+   368→   368→        { title: '🤝 قيادة مجتمعية', desc: 'نائب رئيس جمعية النحالين، سفير IAPA للتعلم الإلكتروني، عضو في ASM, EAS، ومنسق الجزائر في عدة منظمات دولية' },
+   369→   369→      ],
+   370→   370→    },
+   371→   371→    knowledge: {
+   372→   372→      sectionLabel: 'مَنْصَة المعرفة',
+   373→   373→      title: 'أفكار وأبحاث',
+   374→   374→      tabs: {
+   375→   375→        thoughts: '💭 أفكاري',
+   376→   376→        publications: '📄 منشورات',
+   377→   377→        speaking: '🎤 مؤتمرات',
+   378→   378→      },
+   379→   379→      thoughts: [
+   380→   380→        { text: 'متشوق لمشاركة خبر قبول ورقي البحثية الجديدة حول تقييم جودة السائل المنوي في مجلة علمية محكمة. ممتن لدعم مشرفي وزملائي.', date: 'مايو 2026', platform: 'facebook' },
+   381→   381→        { text: 'اختتمت لتوي برنامج تدريبي مكثف لمدارس المزارعين الحقلية في المعهد الوطني للتكوين المهني بالوادي. تفاعل المتدربين وفضولهم يؤكد لماذا أحب هذا العمل.', date: 'أبريل 2026', platform: 'linkedin' },
+   382→   382→        { text: 'حضرت مؤتمر ESNA وقدمت أحدث أبحاثي حول الأداء التناسلي للكباش تحت الظروف الجافة. نقاشات مثمرة مع باحثين من جميع أنحاء المتوسط.', date: 'مارس 2026', platform: 'facebook' },
+   383→   383→        { text: 'إنجاز جديد: أكثر من 50 شهادة دولية! من Wageningen إلى FAO إلى Oxford Climate Society - التعلم المستمر هو مفتاح البقاء في طليعة الابتكار الزراعي.', date: 'فبراير 2026', platform: 'linkedin' },
+   384→   384→        { text: 'فخور بمشاركة التقدم في نظامنا النموذجي للزراعة المائية والأكوابونيك. دمج المعرفة التقليدية مع الهندسة الحديثة لإنتاج غذاء مستدام في المناطق الجافة.', date: 'يناير 2026', platform: 'facebook' },
+   385→   385→        { text: 'يشرفني العمل كنائب رئيس جمعية النحالين والمساهمة في تطوير تربية النحل في الجزائر. النحل شغف وركيزة أساسية في نظامنا الزراعي.', date: 'ديسمبر 2025', platform: 'linkedin' },
+   386→   386→      ],
+   387→   387→      publications: [
+   388→   388→        { title: 'تقييم معايير جودة السائل المنوي في الكباش تحت الظروف البيئية الجافة', journal: 'Journal of Animal Science', year: 2025 },
+   389→   389→        { title: 'تأثير المكملات الغذائية على الأداء التناسلي للسلالات البقرية المحلية في جنوب الجزائر', journal: 'Livestock Science', year: 2024 },
+   390→   390→        { title: 'تطبيق التحليل الرقمي للصور للتقييم الآلي لشكل الحيوانات المنوية', journal: 'Theriogenology', year: 2024 },
+   391→   391→        { title: 'دراسة مقارنة لأنظمة التربية التقليدية والحديثة في المناطق الجافة في الجزائر', journal: 'Animal Production Science', year: 2023 },
+   392→   392→        { title: 'يرقات ذبابة الجندي الأسود كمصدر بروتين بديل في تغذية الدواجن: مراجعة', journal: 'Journal of Insects as Food and Feed', year: 2025 },
+   393→   393→        { title: 'تأثير الإجهاد الحراري على المعايير التناسلية في الكباش: تحليل تلوي', journal: 'Small Ruminant Research', year: 2024 },
+   394→   394→        { title: 'أدوات الزراعة الدقيقة لإدارة الثروة الحيوانية في البيئات الجافة', journal: 'Computers and Electronics in Agriculture', year: 2025 },
+   395→   395→        { title: 'أنظمة الزراعة المائية والأكوابونيك للإنتاج الغذائي المستدام في مناطق الصحراء', journal: 'Agricultural Systems', year: 2023 },
+   396→   396→      ],
+   397→   397→      speaking: [
+   398→   398→        { conference: 'ESNA — الجمعية الأوروبية للطرق الحديثة في البحث الزراعي', location: 'تونس، تونس', year: 2024, paper: 'تقييم جودة السائل المنوي في الكباش: دراسة مقارنة بين الطرق التقليدية والرقمية' },
+   399→   399→        { conference: 'ICABRD — المؤتمر الدولي لتربية الحيوان والتطور التناسلي', location: 'الجزائر العاصمة، الجزائر', year: 2024, paper: 'تحسين الأداء التناسلي للسلالات البقرية المحلية من خلال الإدارة الغذائية' },
+   400→   400→        { conference: 'ICARP — المؤتمر الدولي للإنتاج في المناطق الجافة', location: 'مراكش، المغرب', year: 2025, paper: 'الأدوات الرقمية للزراعة الدقيقة للثروة الحيوانية في البيئات الجافة' },
+   401→   401→        { conference: 'SOS — مؤتمر استدامة النظم الزراعية الصحراوية', location: 'ورقلة، الجزائر', year: 2023, paper: 'نظم الإنتاج الحيواني المستدامة في الصحراء الجزائرية' },
+   402→   402→        { conference: 'ChAAB — تحديات تربية الحيوان في المناطق الجافة وشبه الجافة', location: 'بسكرة، الجزائر', year: 2024, paper: 'استراتيجيات التربية لتحسين الكفاءة التناسلية تحت ظروف الإجهاد الحراري' },
+   403→   403→        { conference: 'ISAEA — الندوة الدولية للزراعة في البيئات الجافة', location: 'الوادي، الجزائر', year: 2026, paper: 'تطبيقات الذكاء الاصطناعي وإنترنت الأشياء في الزراعة في المناطق الجافة: الفرص والتحديات' },
+   404→   404→      ],
+   405→   405→    },
+   406→   406→    testimonials: {
+   407→   407→      sectionLabel: 'ماذا يقولون',
+   408→   408→      title: 'آراء المتدربين والشركاء',
+   409→   409→      items: [
+   410→   410→        { text: 'تدريب ممتاز ومحتوى علمي رصين. استفدت كثيرًا من الجانب التطبيقي في برنامج FBS، والمدرب يشرح بطريقة مبسطة وواضحة.', author: 'م. أحمد', role: 'مهندس زراعي' },
+   411→   411→        { text: 'ساعدني الدكتور عبد القادر في تحليل بيانات رسالتي بطريقة احترافية ومبسّطة. مشرف ممتاز يتقن مجاله بشكل عميق.', author: 'سارة ك.', role: 'طالبة ماجستير' },
+   412→   412→        { text: 'شريك موثوق في مجال الابتكار الزراعي. يجمع بين الرؤية العلمية والتنفيذ العملي، وملتزم بجودة النتائج.', author: 'د. محمد', role: 'شريك أعمال' },
+   413→   413→        { text: 'برامج التدريب متخصصة وعملية جدًا. ساعدتني في تطوير مهارات التسيير الحديثة وتطبيق التقنيات الجديدة.', author: 'فاطمة ع.', role: 'مزارعة' },
+   414→   414→        { text: 'منصة kamel3lom غيرت طريقة فهمي للمفاهيم الزراعية المعقدة. محتوى غني وسهل الفهم وقيم جدًا.', author: 'إبراهيم ق.', role: 'طالب جامعي' },
+   415→   415→        { text: 'دعم احترافي في البحث العلمي والنشر الدولي. ساعدني على نشر بحثي في مجلة محترمة دوليًا.', author: 'د. ليلى', role: 'باحثة' },
+   416→   416→      ],
+   417→   417→    },
+   418→   418→    contact: {
+   419→   419→      sectionLabel: 'لنتواصل',
+   420→   420→      title: 'تواصل معي',
+   421→   421→      subtitle: 'أرحب بجميع فرص التعاون في البحث العلمي، التدريب، الاستشارات، وتطوير الحلول الرقمية الزراعية.',
+   422→   422→      email: 'البريد الإلكتروني',
+   423→   423→      phone: 'الهاتف',
+   424→   424→      location: 'الموقع',
+   425→   425→      formTitle: 'أرسل بريدًا إلكترونيًا',
+   426→   426→      namePlaceholder: 'الاسم الكامل',
+   427→   427→      emailPlaceholder: 'البريد الإلكتروني',
+   428→   428→      subjectLabel: 'الموضوع',
+   429→   429→      subjects: {
+   430→   430→        training: 'تدريب زراعي',
+   431→   431→        research: 'استشارة بحثية',
+   432→   432→        dataAnalysis: 'تحليل بيانات',
+   433→   433→        digital: 'حلول رقمية',
+   434→   434→        other: 'أخرى',
+   435→   435→      },
+   436→   436→      messagePlaceholder: 'الرسالة',
+   437→   437→      sendButton: 'إرسال الرسالة',
+   438→   438→      successMessage: 'تم إرسال رسالتك بنجاح! سأتواصل معك قريبًا.',
+   439→   439→    },
+   440→   440→    footer: {
+   441→   441→      copyright: '© 2026 عبد القادر عطيه. جميع الحقوق محفوظة.',
+   442→   442→      online: 'متصل',
+   443→   443→      offline: 'أنت غير متصل — بعض الميزات قد لا تعمل',
+   444→   444→    },
+   445→   445→  },
+   446→   446→  en: {
+   447→   447→    nav: {
+   448→   448→      home: 'Home',
+   449→   449→      about: 'About',
+   450→   450→      skills: 'Skills',
+   451→   451→      experience: 'Experience',
+   452→   452→      projects: 'Projects',
+   453→   453→      services: 'Services',
+   454→   454→      achievements: 'Achievements',
+   455→   455→      knowledge: 'Insights',
+   456→   456→      contact: 'Contact',
+   457→   457→    },
+   458→   458→    hero: {
+   459→   459→      badge: 'PhD Researcher | Trainer | Innovator',
+   460→   460→      title: 'Transforming',
+   461→   461→      titleHighlight: 'Agricultural Knowledge',
+   462→   462→      titleEnd: 'into Real Impact',
+   463→   463→      subtitle: 'PhD researcher, trainer, and innovator in digital agriculture, building bridges between science and practice for smarter, more efficient farming systems.',
+   464→   464→      cta1: 'Explore My Work',
+   465→   465→      cta2: 'Get in Touch',
+   466→   466→      stats: {
+   467→   467→        years: 'Years Experience',
+   468→   468→        projects: 'Research Projects',
+   469→   469→        trainees: 'Trainees',
+   470→   470→        certs: 'Certifications',
+   471→   471→      },
+   472→   472→    },
+   473→   473→    about: {
+   474→   474→      sectionLabel: 'GET TO KNOW ME',
+   475→   475→      title: 'About Me',
+   476→   476→      getToKnow: 'GET TO KNOW ME',
+   477→   477→      p1: "I'm Abdelkader Atia, an agronomy professional with 12+ years of experience in agricultural engineering, professional training, and project supervision. I am currently pursuing a PhD in Agronomy (Animal Production), building on a Master's in Plant Production and an Engineer's degree in Arid Region Animal Breeding.",
+   478→   478→      nameHighlight: 'Abdelkader Atia',
+   479→   479→      expHighlight: '12+ years of experience',
+   480→   480→      p2: 'My work spans agricultural engineering, pedagogical design, and digital innovation. I serve as a Specialized Teacher (Pedagogical Engineering) at Hassani Abdelkrim INSFP in EL-Oued, where I design vocational training programs, supervise agriculture operations, and mentor students in modern farming techniques. I am also the author of the book "On the Edge" (ISBN 9947-26-849-1).',
+   481→   481→      roleHighlight: 'Specialized Teacher',
+   482→   482→      bookTitle: '"On the Edge"',
+   483→   483→      tags: {
+   484→   484→        animalProduction: '🔬 Animal Production',
+   485→   485→        agronomy: '🌾 Agronomy',
+   486→   486→        digitalAgri: '📊 Digital Agriculture',
+   487→   487→        training: '🎓 Vocational Training',
+   488→   488→        agribusiness: '💼 Agribusiness',
+   489→   489→        pedagogical: '📖 Pedagogical Engineering',
+   490→   490→      },
+   491→   491→      previewCv: 'Preview CV',
+   492→   492→      downloadCv: 'Download CV',
+   493→   493→      stats: {
+   494→   494→        years: 'Years of Experience',
+   495→   495→        projects: 'Research Projects',
+   496→   496→        programs: 'Training Programs',
+   497→   497→        trainees: 'Trainees & Beneficiaries',
+   498→   498→      },
+   499→   499→    },
+   500→   500→    skills: {
+   501→   501→      sectionLabel: 'MY ABILITIES',
+   502→   502→      title: 'Skills',
+   503→   503→      research: {
+   504→   504→        title: '🔬 Research Skills',
+   505→   505→        dataAnalysis: 'Data Analysis',
+   506→   506→        experimentalDesign: 'Experimental Design',
+   507→   507→        scientificWriting: 'Scientific Writing',
+   508→   508→      },
+   509→   509→      technical: {
+   510→   510→        title: '💻 Technical Skills',
+   511→   511→        powerBi: 'Power BI / IBM SPSS',
+   512→   512→        rExcel: 'R / Excel / Data Viz',
+   513→   513→        edrawMax: 'EdrawMax / Xmind',
+   514→   514→      },
+   515→   515→      agricultural: {
+   516→   516→        title: '🌱 Agricultural Skills',
+   517→   517→        livestock: 'Livestock Production',
+   518→   518→        breeding: 'Breeding & Selection',
+   519→   519→        nutrition: 'Animal Nutrition',
+   520→   520→        precision: 'Garden Planner / Precision Ag',
+   521→   521→      },
+   522→   522→      training: {
+   523→   523→        title: '🎤 Training Skills',
+   524→   524→        fbs: 'FBS Trainer',
+   525→   525→        programDesign: 'Program Design',
+   526→   526→        communication: 'Communication',
+   527→   527→      },
+   528→   528→    },
+   529→   529→    experience: {
+   530→   530→      sectionLabel: 'MY JOURNEY',
+   531→   531→      title: 'Professional Experience',
+   532→   532→      items: [
+   533→   533→        {
+   534→   534→          period: '2022 - Present',
+   535→   535→          title: 'Specialized Teacher (Pedagogical Engineering)',
+   536→   536→          org: 'Hassani Abdelkrim INSFP, EL-Oued',
+   537→   537→          desc: 'Designing vocational training curricula, supervising agriculture operations, and mentoring students in modern farming and pedagogical techniques',
+   538→   538→        },
+   539→   539→        {
+   540→   540→          period: '2016 - Present',
+   541→   541→          title: 'Agriculture Exploitation Supervisor',
+   542→   542→          org: '',
+   543→   543→          desc: 'Overseeing agricultural operations, managing crop and livestock production systems, and implementing best practices in sustainable farming',
+   544→   544→        },
+   545→   545→        {
+   546→   546→          period: '2021 - Present',
+   547→   547→          title: 'Vocational Trainer',
+   548→   548→          org: 'Hassani Abdelkrim INSFP, EL-Oued',
+   549→   549→          desc: 'Delivering hands-on training in agricultural techniques, field farmer schools (FBS), and professional skill development for students and farmers',
+   550→   550→        },
+   551→   551→        {
+   552→   552→          period: '2022',
+   553→   553→          title: 'FBS Assistant Master Trainer',
+   554→   554→          org: 'ABF (GIZ) — Agri-Business Facility for Africa',
+   555→   555→          desc: 'Certified Assistant Master Trainer in Farmer Business School (FBS). Trained 500+ farmers and delivered Training of Trainers programs across Algeria.',
+   556→   556→        },
+   557→   557→        {
+   558→   558→          period: '2011 - 2016',
+   559→   559→          title: 'Agriculture Engineer',
+   560→   560→          org: "Engineer's degree in Arid Region Animal Breeding",
+   561→   561→          desc: 'Practical experience in animal production systems, breeding programs, and farm management in arid environments',
+   562→   562→        },
+   563→   563→        {
+   564→   564→          period: '2024 - 2026',
+   565→   565→          title: '50+ International Training Certifications',
+   566→   566→          org: '',
+   567→   567→          desc: 'Advanced certifications from Wageningen, FAO, ASM, GIZ, Oxford Climate Society, and other prestigious institutions. Continuous professional development in agriculture, research methodology, pedagogical engineering, and climate-smart farming',
+   568→   568→        },
+   569→   569→        {
+   570→   570→          period: '2006 / Ongoing',
+   571→   571→          title: 'Published Author & Community Leader',
+   572→   572→          org: '',
+   573→   573→          desc: 'Published book "On the Edge" (ISBN 9947-26-849-1, 2006). Vice President of Beekeeper Association, IAPA eLearning Ambassador, member of ASM, EAS, and Focal Point for Algeria in multiple international organizations',
+   574→   574→        },
+   575→   575→      ],
+   576→   576→    },
+   577→   577→    projects: {
+   578→   578→      sectionLabel: 'MY WORK',
+   579→   579→      title: 'Projects',
+   580→   580→      filters: {
+   581→   581→        all: 'All',
+   582→   582→        research: 'Research',
+   583→   583→        apps: 'Apps',
+   584→   584→        training: 'Training',
+   585→   585→        business: 'Business',
+   586→   586→      },
+   587→   587→      items: [
+   588→   588→        { name: 'Semen Analysis App', desc: 'Smart application for evaluating and analyzing semen quality using imaging and AI techniques', cat: 'app', icon: '🔬' },
+   589→   589→        { name: 'AgriSkills Academy', desc: 'Integrated educational platform for agricultural training and professional capacity building with recognized certifications', cat: 'business', icon: '🎓' },
+   590→   590→        { name: 'FBS Training Program', desc: 'Comprehensive training program series in Farmer Field Schools covering livestock production and sustainable agriculture', cat: 'training', icon: '🌾' },
+   591→   591→        { name: 'Animal Reproduction Research', desc: 'Advanced research projects in improving reproductive performance and semen quality with international publishing', cat: 'research', icon: '🧬' },
+   592→   592→        { name: 'BSF Breeding Project', desc: 'Innovative initiative for breeding Black Soldier Fly as alternative protein source and waste management solution', cat: 'business', icon: '🦟' },
+   593→   593→        { name: 'kamel3lom Platform', desc: 'Digital platform for disseminating agricultural knowledge and simplifying sciences for the community with interactive content', cat: 'app', icon: '📱' },
+   594→   594→        { name: 'Smart Farm Management System', desc: 'Comprehensive application for farm management with asset tracking, productivity, and smart predictions', cat: 'app', icon: '🌐' },
+   595→   595→        { name: 'Breeding & Genetics Studies', desc: 'Specialized research in selective breeding and genetic improvement indicators for cattle', cat: 'research', icon: '📊' },
+   596→   596→        { name: 'Modern Agriculture Workshops', desc: 'Series of practical workshops on modern techniques and best practices in agricultural production', cat: 'training', icon: '🛠️' },
+   597→   597→      ],
+   598→   598→      viewDetails: 'View Details',
+   599→   599→    },
+   600→   600→    services: {
+   601→   601→      sectionLabel: 'WHAT I OFFER',
+   602→   602→      title: 'Services',
+   603→   603→      items: [
+   604→   604→        { title: '🎓 Agricultural Training', desc: 'Specialized training programs in livestock production and modern agriculture', request: 'Request Service' },
+   605→   605→        { title: '🔬 Research Consulting', desc: 'Support for researchers in experimental design, data analysis, and scientific publishing', request: 'Request Service' },
+   606→   606→        { title: '📊 Data Analysis', desc: 'Advanced statistical analysis and data visualization using latest tools', request: 'Request Service' },
+   607→   607→        { title: '💡 Digital Solutions', desc: 'Custom application and digital platform development for agriculture', request: 'Request Service' },
+   608→   608→      ],
+   609→   609→    },
+   610→   610→    achievements: {
+   611→   611→      sectionLabel: 'MY ACHIEVEMENTS',
+   612→   612→      title: 'Achievements & Certificates',
+   613→   613→      items: [
+   614→   614→        { title: '🏆 International Conferences', desc: 'Active participation in 8+ international scientific conferences including ESNA, ICABRD, ICARP, SOS, ChAAB, and ISAEA with research papers presented (2023-2026)' },
+   615→   615→        { title: '📄 Published Research', desc: '25+ peer-reviewed scientific papers published in specialized high-impact international journals' },
+   616→   616→        { title: '🎖️ Professional Certifications', desc: '50+ advanced international training certifications from prestigious institutions (Wageningen, FAO, ASM, GIZ, Oxford Climate Society, etc.)' },
+   617→   617→        { title: '🌍 International Memberships', desc: 'Active member of American Society for Microbiology, European Aquaculture Society, and International Association of Agribusiness Practitioners' },
+   618→   618→        { title: '📱 Digital Innovations', desc: 'Developed 2 insect trap prototypes and an integrated hydroponic/aquaponic system prototype for sustainable agriculture' },
+   619→   619→        { title: '🤝 Community Leadership', desc: 'Vice President of Beekeeper Association, IAPA eLearning Ambassador, member of ASM, EAS, and Focal Point for Algeria in multiple international organizations' },
+   620→   620→      ],
+   621→   621→    },
+   622→   622→    knowledge: {
+   623→   623→      sectionLabel: 'KNOWLEDGE HUB',
+   624→   624→      title: 'Thoughts & Research',
+   625→   625→      tabs: {
+   626→   626→        thoughts: '💭 Thoughts',
+   627→   627→        publications: '📄 Publications',
+   628→   628→        speaking: '🎤 Speaking',
+   629→   629→      },
+   630→   630→      thoughts: [
+   631→   631→        { text: 'Excited to share that my latest paper on semen quality assessment has been accepted in a peer-reviewed journal. Grateful to my supervisors and collaborators for their support.', date: 'May 2026', platform: 'facebook' },
+   632→   632→        { text: 'Just wrapped up an intensive FBS training program at INSFP EL-Oued. The engagement and curiosity from the trainees reaffirm why I love this work — practical agriculture education changes lives.', date: 'Apr 2026', platform: 'linkedin' },
+   633→   633→        { text: 'Attended the ESNA conference and presented my latest research on reproductive performance in rams under arid conditions. Productive discussions with fellow researchers from across the Mediterranean.', date: 'Mar 2026', platform: 'facebook' },
+   634→   634→        { text: 'New milestone: 50+ international certifications completed! From Wageningen to FAO to Oxford Climate Society — continuous learning is the key to staying at the forefront of agricultural innovation.', date: 'Feb 2026', platform: 'linkedin' },
+   635→   635→        { text: 'Proud to share progress on our hydroponic/aquaponic prototype system. Combining traditional knowledge with modern engineering for sustainable food production in arid regions.', date: 'Jan 2026', platform: 'facebook' },
+   636→   636→        { text: 'Honored to serve as Vice President of the Beekeeper Association and contribute to the development of apiculture in Algeria. Beekeeping is both a passion and a critical pillar of our agricultural ecosystem.', date: 'Dec 2025', platform: 'linkedin' },
+   637→   637→      ],
+   638→   638→      publications: [
+   639→   639→        { title: 'Assessment of semen quality parameters in rams under arid environmental conditions', journal: 'Journal of Animal Science', year: 2025 },
+   640→   640→        { title: 'Impact of nutritional supplementation on reproductive performance of local cattle breeds in southern Algeria', journal: 'Livestock Science', year: 2024 },
+   641→   641→        { title: 'Application of digital image analysis for automated sperm morphology evaluation', journal: 'Theriogenology', year: 2024 },
+   642→   642→        { title: 'Comparative study of traditional and modern breeding systems in arid regions of Algeria', journal: 'Animal Production Science', year: 2023 },
+   643→   643→        { title: 'Black Soldier Fly larvae as alternative protein source in poultry nutrition: a review', journal: 'Journal of Insects as Food and Feed', year: 2025 },
+   644→   644→        { title: 'Effect of heat stress on reproductive parameters in rams: a meta-analysis', journal: 'Small Ruminant Research', year: 2024 },
+   645→   645→        { title: 'Precision agriculture tools for livestock management in arid environments', journal: 'Computers and Electronics in Agriculture', year: 2025 },
+   646→   646→        { title: 'Hydroponic and aquaponic systems for sustainable food production in Sahara regions', journal: 'Agricultural Systems', year: 2023 },
+   647→   647→      ],
+   648→   648→      speaking: [
+   649→   649→        { conference: 'ESNA — European Society for New Methods in Agricultural Research', location: 'Tunis, Tunisia', year: 2024, paper: 'Semen quality assessment in rams: a comparative study of conventional and digital methods' },
+   650→   650→        { conference: 'ICABRD — International Conference on Animal Breeding and Reproductive Development', location: 'Algiers, Algeria', year: 2024, paper: 'Reproductive performance enhancement in local cattle breeds through nutritional management' },
+   651→   651→        { conference: 'ICARP — International Conference on Arid Region Production', location: 'Marrakech, Morocco', year: 2025, paper: 'Digital tools for precision livestock farming in arid environments' },
+   652→   652→        { conference: 'SOS Conference — Sustainability of Saharan Agricultural Systems', location: 'Ouargla, Algeria', year: 2023, paper: 'Sustainable livestock production systems in the Algerian Sahara' },
+   653→   653→        { conference: 'ChAAB — Challenges in Arid and Semi-Arid Animal Breeding', location: 'Biskra, Algeria', year: 2024, paper: 'Breeding strategies for improved reproductive efficiency under heat stress conditions' },
+   654→   654→        { conference: 'ISAEA — International Symposium on Agriculture in Arid Environments', location: 'El Oued, Algeria', year: 2026, paper: 'AI and IoT applications in arid region agriculture: opportunities and challenges' },
+   655→   655→      ],
+   656→   656→    },
+   657→   657→    testimonials: {
+   658→   658→      sectionLabel: 'WHAT THEY SAY',
+   659→   659→      title: 'Client Testimonials',
+   660→   660→      items: [
+   661→   661→        { text: 'Excellent training with solid scientific content. I learned a lot from the practical aspects of the FBS program. The trainer explains concepts clearly and simply.', author: 'Eng. Ahmed', role: 'Agricultural Engineer' },
+   662→   662→        { text: "Dr. Abdelkader helped me analyze my thesis data professionally and clearly. He is an excellent supervisor who deeply masters his field.", author: 'Sarah K.', role: "Master's Student" },
+   663→   663→        { text: 'A reliable partner in agricultural innovation. He combines scientific vision with practical implementation perfectly committed to quality results.', author: 'Dr. Mohamed', role: 'Business Partner' },
+   664→   664→        { text: 'Training programs are specialized and very practical. They helped me develop modern farm management skills and apply new technologies.', author: 'Fatima A.', role: 'Farmer' },
+   665→   665→        { text: 'The kamel3lom platform changed how I understand complex agricultural concepts. Rich content, easy to understand, and very valuable.', author: 'Ibrahim Q.', role: 'University Student' },
+   666→   666→        { text: 'Professional support in scientific research and international publishing. He helped me publish my research in a reputable international journal.', author: 'Dr. Leila', role: 'Researcher' },
+   667→   667→      ],
+   668→   668→    },
+   669→   669→    contact: {
+   670→   670→      sectionLabel: 'GET IN TOUCH',
+   671→   671→      title: 'Contact Me',
+   672→   672→      subtitle: 'I welcome all opportunities for collaboration in scientific research, training, consulting, and developing agricultural digital solutions.',
+   673→   673→      email: 'Email Address',
+   674→   674→      phone: 'Phone',
+   675→   675→      location: 'Location',
+   676→   676→      formTitle: 'Send Email Directly',
+   677→   677→      namePlaceholder: 'Full Name',
+   678→   678→      emailPlaceholder: 'Email Address',
+   679→   679→      subjectLabel: 'Subject',
+   680→   680→      subjects: {
+   681→   681→        training: 'Agricultural Training',
+   682→   682→        research: 'Research Consulting',
+   683→   683→        dataAnalysis: 'Data Analysis',
+   684→   684→        digital: 'Digital Solutions',
+   685→   685→        other: 'Other',
+   686→   686→      },
+   687→   687→      messagePlaceholder: 'Message',
+   688→   688→      sendButton: 'Send Message',
+   689→   689→      successMessage: "Message sent successfully! I'll be in touch soon.",
+   690→   690→    },
+   691→   691→    footer: {
+   692→   692→      copyright: '© 2026 Abdelkader Atia. All rights reserved.',
+   693→   693→      online: 'Online',
+   694→   694→      offline: 'You are offline — some features may not work',
+   695→   695→    },
+   696→   696→  },
+   697→   697→  fr: {
+   698→   698→    nav: {
+   699→   699→      home: 'Accueil',
+   700→   700→      about: 'À propos',
+   701→   701→      skills: 'Compétences',
+   702→   702→      experience: 'Parcours',
+   703→   703→      projects: 'Projets',
+   704→   704→      services: 'Services',
+   705→   705→      achievements: 'Réalisations',
+   706→   706→      knowledge: 'Savoir',
+   707→   707→      contact: 'Contact',
+   708→   708→    },
+   709→   709→    hero: {
+   710→   710→      badge: 'Doctorant | Formateur | Innovateur',
+   711→   711→      title: 'Transformer la',
+   712→   712→      titleHighlight: 'Connaissance Agricole',
+   713→   713→      titleEnd: 'en Impact Réel',
+   714→   714→      subtitle: 'Doctorant et formateur spécialisé en agriculture numérique, construisant des ponts entre la science et l\'application pratique pour développer des systèmes agricoles plus intelligents et plus efficaces.',
+   715→   715→      cta1: 'Explorer mes travaux',
+   716→   716→      cta2: 'Me contacter',
+   717→   717→      stats: {
+   718→   718→        years: "Ans d'expérience",
+   719→   719→        projects: 'Projets de recherche',
+   720→   720→        trainees: 'Formés',
+   721→   721→        certs: 'Certifications',
+   722→   722→      },
+   723→   723→    },
+   724→   724→    about: {
+   725→   725→      sectionLabel: 'À PROPOS',
+   726→   726→      title: 'À Propos de Moi',
+   727→   727→      getToKnow: 'À PROPOS',
+   728→   728→      p1: "Je suis Abdelkader Atia, un professionnel en agronomie avec plus de 12 ans d'expérience en génie agricole, formation professionnelle et supervision de projets. Je prépare actuellement un doctorat en Agronomie (Production Animale), avec un Master en Production Végétale et un diplôme d'Ingénieur en Élevage en Régions Arides.",
+   729→   729→      nameHighlight: 'Abdelkader Atia',
+   730→   730→      expHighlight: "plus de 12 ans d'expérience",
+   731→   731→      p2: "Mon travail couvre le génie agricole, la conception pédagogique et l'innovation numérique. Je suis Enseignant Spécialisé (Ingénierie Pédagogique) à l'INSFP Hassani Abdelkrim à EL-Oued, où je conçois des programmes de formation professionnelle, supervise les opérations agricoles et forme les étudiants aux techniques agricoles modernes. Je suis également l'auteur du livre \"Sur le fil\" (ISBN 9947-26-849-1).",
+   732→   732→      roleHighlight: 'Enseignant Spécialisé',
+   733→   733→      bookTitle: '"Sur le fil"',
+   734→   734→      tags: {
+   735→   735→        animalProduction: '🔬 Production Animale',
+   736→   736→        agronomy: '🌾 Agronomie',
+   737→   737→        digitalAgri: '📊 Agriculture Numérique',
+   738→   738→        training: '🎓 Formation Professionnelle',
+   739→   739→        agribusiness: '💼 Agroalimentaire',
+   740→   740→        pedagogical: '📖 Ingénierie Pédagogique',
+   741→   741→      },
+   742→   742→      previewCv: 'Aperçu du CV',
+   743→   743→      downloadCv: 'Télécharger le CV',
+   744→   744→      stats: {
+   745→   745→        years: "Années d'Expérience",
+   746→   746→        projects: 'Projets de Recherche',
+   747→   747→        programs: 'Programmes de Formation',
+   748→   748→        trainees: 'Stagiaires & Bénéficiaires',
+   749→   749→      },
+   750→   750→    },
+   751→   751→    skills: {
+   752→   752→      sectionLabel: 'MES COMPÉTENCES',
+   753→   753→      title: 'Compétences',
+   754→   754→      research: {
+   755→   755→        title: '🔬 Compétences en Recherche',
+   756→   756→        dataAnalysis: 'Analyse de Données',
+   757→   757→        experimentalDesign: 'Conception Expérimentale',
+   758→   758→        scientificWriting: 'Rédaction Scientifique',
+   759→   759→      },
+   760→   760→      technical: {
+   761→   761→        title: '💻 Compétences Techniques',
+   762→   762→        powerBi: 'Power BI / IBM SPSS',
+   763→   763→        rExcel: 'R / Excel / Data Viz',
+   764→   764→        edrawMax: 'EdrawMax / Xmind',
+   765→   765→      },
+   766→   766→      agricultural: {
+   767→   767→        title: '🌱 Compétences Agricoles',
+   768→   768→        livestock: 'Production Animale',
+   769→   769→        breeding: 'Élevage & Sélection',
+   770→   770→        nutrition: 'Nutrition Animale',
+   771→   771→        precision: 'Garden Planner / Agriculture de Précision',
+   772→   772→      },
+   773→   773→      training: {
+   774→   774→        title: '🎤 Compétences en Formation',
+   775→   775→        fbs: 'Formateur FBS',
+   776→   776→        programDesign: 'Conception de Programmes',
+   777→   777→        communication: 'Communication',
+   778→   778→      },
+   779→   779→    },
+   780→   780→    experience: {
+   781→   781→      sectionLabel: 'MON PARCOURS',
+   782→   782→      title: 'Expérience Professionnelle',
+   783→   783→      items: [
+   784→   784→        {
+   785→   785→          period: '2022 - Présent',
+   786→   786→          title: 'Enseignant Spécialisé (Ingénierie Pédagogique)',
+   787→   787→          org: 'INSFP Hassani Abdelkrim, EL-Oued',
+   788→   788→          desc: "Conception de programmes de formation professionnelle, supervision des opérations agricoles et formation des étudiants aux techniques pédagogiques modernes",
+   789→   789→        },
+   790→   790→        {
+   791→   791→          period: '2016 - Présent',
+   792→   792→          title: 'Superviseur d\'Exploitation Agricole',
+   793→   793→          org: '',
+   794→   794→          desc: "Supervision des opérations agricoles et gestion des systèmes de production végétale et animale",
+   795→   795→        },
+   796→   796→        {
+   797→   797→          period: '2021 - Présent',
+   798→   798→          title: 'Formateur Professionnel',
+   799→   799→          org: 'INSFP Hassani Abdelkrim, EL-Oued',
+   800→   800→          desc: "Formation pratique en techniques agricoles, écoles pratiques agricoles (FBS) et développement des compétences professionnelles pour les étudiants et les agriculteurs",
+   801→   801→        },
+   802→   802→        {
+   803→   803→          period: '2022',
+   804→   804→          title: 'Formateur Maître Assistant FBS',
+   805→   805→          org: 'ABF (GIZ) — Facilité Agri-Business pour l\'Afrique',
+   806→   806→          desc: "Formateur Maître Assistant certifié en Farmer Business School (FBS). A formé plus de 500 agriculteurs et animé des programmes de Formation des Formateurs en Algérie.",
+   807→   807→        },
+   808→   808→        {
+   809→   809→          period: '2011 - 2016',
+   810→   810→          title: 'Ingénieur Agricole',
+   811→   811→          org: "Diplôme d'Ingénieur en Élevage en Régions Arides",
+   812→   812→          desc: "Expérience pratique en systèmes de production animale, programmes d'élevage et gestion d'exploitations agricoles en environnements arides",
+   813→   813→        },
+   814→   814→        {
+   815→   815→          period: '2024 - 2026',
+   816→   816→          title: '50+ Certifications Internationales',
+   817→   817→          org: '',
+   818→   818→          desc: "Certifications avancées de Wageningen, FAO, ASM, GIZ, Oxford Climate Society et d'autres institutions prestigieuses. Développement professionnel continu en agriculture, méthodologie de recherche, ingénierie pédagogique et agriculture climato-intelligente",
+   819→   819→        },
+   820→   820→        {
+   821→   821→          period: '2006 / En cours',
+   822→   822→          title: 'Auteur Publié & Leader Communautaire',
+   823→   823→          org: '',
+   824→   824→          desc: "Livre \"Sur le fil\" (ISBN 9947-26-849-1, 2006). Vice-Président de l'Association des Apiculteurs, Ambassadeur eLearning IAPA, membre de ASM, EAS, et Point Focal pour l'Algérie dans plusieurs organisations internationales",
+   825→   825→        },
+   826→   826→      ],
+   827→   827→    },
+   828→   828→    projects: {
+   829→   829→      sectionLabel: 'MES PROJETS',
+   830→   830→      title: 'Projets',
+   831→   831→      filters: {
+   832→   832→        all: 'Tous',
+   833→   833→        research: 'Recherche',
+   834→   834→        apps: 'Applications',
+   835→   835→        training: 'Formation',
+   836→   836→        business: 'Entreprise',
+   837→   837→      },
+   838→   838→      items: [
+   839→   839→        { name: 'Application Analyse Semence', desc: "Application intelligente pour évaluer et analyser la qualité du sperme à l'aide de l'imagerie et de l'IA", cat: 'app', icon: '🔬' },
+   840→   840→        { name: 'AgriSkills Academy', desc: "Plateforme éducative intégrée pour la formation agricole et le renforcement des capacités avec certifications reconnues", cat: 'business', icon: '🎓' },
+   841→   841→        { name: 'Programme FBS', desc: "Série complète de programmes de formation dans les écoles pratiques agricoles couvrant la production animale et l'agriculture durable", cat: 'training', icon: '🌾' },
+   842→   842→        { name: 'Recherche Reproduction Animale', desc: "Projets de recherche avancés pour améliorer les performances reproductives et la qualité du sperme avec publications internationales", cat: 'research', icon: '🧬' },
+   843→   843→        { name: 'Projet Élevage BSF', desc: "Initiative innovante d'élevage de mouche soldat noire comme source de protéines alternative et solution de gestion des déchets", cat: 'business', icon: '🦟' },
+   844→   844→        { name: 'Plateforme kamel3lom', desc: "Plateforme numérique pour diffuser les connaissances agricoles et simplifier les sciences avec du contenu interactif", cat: 'app', icon: '📱' },
+   845→   845→        { name: 'Système Gestion Ferme Intelligente', desc: "Application complète de gestion agricole avec suivi des actifs, productivité et prévisions intelligentes", cat: 'app', icon: '🌐' },
+   846→   846→        { name: 'Études Amélioration Génétique', desc: "Recherche spécialisée en sélection génétique et amélioration des indicateurs pour les bovins", cat: 'research', icon: '📊' },
+   847→   847→        { name: 'Ateliers Agriculture Moderne', desc: "Série d'ateliers pratiques sur les techniques modernes et les bonnes pratiques en production agricole", cat: 'training', icon: '🛠️' },
+   848→   848→      ],
+   849→   849→      viewDetails: 'Voir les détails',
+   850→   850→    },
+   851→   851→    services: {
+   852→   852→      sectionLabel: 'MES SERVICES',
+   853→   853→      title: 'Services',
+   854→   854→      items: [
+   855→   855→        { title: '🎓 Formation Agricole', desc: 'Programmes de formation spécialisés en production animale et agriculture moderne', request: 'Demander ce Service' },
+   856→   856→        { title: '🔬 Conseil en Recherche', desc: 'Soutien aux chercheurs en conception expérimentale, analyse de données et publication scientifique', request: 'Demander ce Service' },
+   857→   857→        { title: '📊 Analyse de Données', desc: "Analyse statistique avancée et visualisation de données avec les outils les plus récents", request: 'Demander ce Service' },
+   858→   858→        { title: '💡 Solutions Numériques', desc: "Développement d'applications sur mesure et de plateformes numériques pour l'agriculture", request: 'Demander ce Service' },
+   859→   859→      ],
+   860→   860→    },
+   861→   861→    achievements: {
+   862→   862→      sectionLabel: 'MES RÉALISATIONS',
+   863→   863→      title: 'Réalisations & Certificats',
+   864→   864→      items: [
+   865→   865→        { title: '🏆 Conférences Internationales', desc: "Participation active à plus de 8 conférences scientifiques internationales avec présentation d'articles de recherche (2023-2026)" },
+   866→   866→        { title: '📄 Recherche Publiée', desc: "Plus de 25 articles scientifiques évalués par des pairs publiés dans des revues internationales spécialisées à fort impact" },
+   867→   867→        { title: '🎖️ Certifications Professionnelles', desc: 'Plus de 50 certifications avancées de formation internationale provenant d\'institutions prestigieuses (Wageningen, FAO, ASM, GIZ, Oxford Climate Society, etc.)' },
+   868→   868→        { title: '🌍 Adhésions Internationales', desc: "Membre actif de l'American Society for Microbiology, European Aquaculture Society, Oxford Climate Society et de l'International Association of Agribusiness Practitioners" },
+   869→   869→        { title: '📱 Innovations Numériques', desc: "Développement de 2 prototypes de pièges à insectes et de systèmes intégrés hydroponiques/aquaponiques" },
+   870→   870→        { title: '🤝 Leadership Communautaire', desc: "Vice-Président de l'Association des Apiculteurs, Ambassadeur eLearning IAPA, et Point Focal pour l'Algérie dans plusieurs organisations internationales" },
+   871→   871→      ],
+   872→   872→    },
+   873→   873→    knowledge: {
+   874→   874→      sectionLabel: 'PLATEFORME SAVOIR',
+   875→   875→      title: 'Idées & Recherche',
+   876→   876→      tabs: {
+   877→   877→        thoughts: '💭 Réflexions',
+   878→   878→        publications: '📄 Publications',
+   879→   879→        speaking: '🎤 Conférences',
+   880→   880→      },
+   881→   881→      thoughts: [
+   882→   882→        { text: "Ravi de partager que mon dernier article sur l'évaluation de la qualité du sperme a été accepté dans une revue à comité de lecture. Reconnaissant envers mes superviseurs et collaborateurs pour leur soutien.", date: 'Mai 2026', platform: 'facebook' },
+   883→   883→        { text: "Je viens de terminer un programme de formation intensive FBS à l'INSFP EL-Oued. L'engagement et la curiosité des stagiaires me rappellent pourquoi j'aime ce travail — l'éducation agricole pratique transforme des vies.", date: 'Avr 2026', platform: 'linkedin' },
+   884→   884→        { text: "Participé à la conférence ESNA et présenté mes dernières recherches sur les performances reproductives des béliers en conditions arides. Échanges enrichissants avec des chercheurs de toute la Méditerranée.", date: 'Mar 2026', platform: 'facebook' },
+   885→   885→        { text: "Nouveau cap franchi : plus de 50 certifications internationales ! De Wageningen à la FAO en passant par l'Oxford Climate Society — l'apprentissage continu est la clé pour rester à la pointe de l'innovation agricole.", date: 'Fév 2026', platform: 'linkedin' },
+   886→   886→        { text: "Fier de partager l'avancement de notre prototype de système hydroponique/aquaponique. Alliance du savoir traditionnel et de l'ingénierie moderne pour une production alimentaire durable en régions arides.", date: 'Jan 2026', platform: 'facebook' },
+   887→   887→        { text: "Honoré de servir en tant que Vice-Président de l'Association des Apiculteurs et de contribuer au développement de l'apiculture en Algérie. L'apiculture est à la fois une passion et un pilier essentiel de notre écosystème agricole.", date: 'Déc 2025', platform: 'linkedin' },
+   888→   888→      ],
+   889→   889→      publications: [
+   890→   890→        { title: 'Évaluation des paramètres de qualité du sperme chez les béliers en conditions environnementales arides', journal: 'Journal of Animal Science', year: 2025 },
+   891→   891→        { title: "Impact de la supplémentation nutritionnelle sur les performances reproductives des races bovines locales du sud algérien", journal: 'Livestock Science', year: 2024 },
+   892→   892→        { title: "Application de l'analyse d'images numériques pour l'évaluation automatisée de la morphologie du sperme", journal: 'Theriogenology', year: 2024 },
+   893→   893→        { title: "Étude comparative des systèmes d'élevage traditionnels et modernes dans les régions arides d'Algérie", journal: 'Animal Production Science', year: 2023 },
+   894→   894→        { title: "Larves de la mouche soldat noire comme source alternative de protéines dans l'alimentation des volailles : une revue", journal: 'Journal of Insects as Food and Feed', year: 2025 },
+   895→   895→        { title: 'Effet du stress thermique sur les paramètres reproductifs chez les béliers : une méta-analyse', journal: 'Small Ruminant Research', year: 2024 },
+   896→   896→        { title: "Outils d'agriculture de précision pour la gestion du bétail en environnements arides", journal: 'Computers and Electronics in Agriculture', year: 2025 },
+   897→   897→        { title: 'Systèmes hydroponiques et aquaponiques pour une production alimentaire durable dans les régions sahariennes', journal: 'Agricultural Systems', year: 2023 },
+   898→   898→      ],
+   899→   899→      speaking: [
+   900→   900→        { conference: 'ESNA — Société Européenne pour les Nouvelles Méthodes en Recherche Agricole', location: 'Tunis, Tunisie', year: 2024, paper: "Évaluation de la qualité du sperme chez les béliers : étude comparative des méthodes conventionnelles et numériques" },
+   901→   901→        { conference: "ICABRD — Conférence Internationale sur l'Élevage et le Développement de la Reproduction", location: 'Alger, Algérie', year: 2024, paper: 'Amélioration des performances reproductives des races bovines locales par la gestion nutritionnelle' },
+   902→   902→        { conference: 'ICARP — Conférence Internationale sur la Production en Régions Arides', location: 'Marrakech, Maroc', year: 2025, paper: "Outils numériques pour l'élevage de précision en environnements arides" },
+   903→   903→        { conference: 'SOS — Conférence sur la Durabilité des Systèmes Agricoles Sahariens', location: 'Ouargla, Algérie', year: 2023, paper: 'Systèmes de production animale durables dans le Sahara algérien' },
+   904→   904→        { conference: "ChAAB — Défis de l'Élevage Animal en Zones Arides et Semi-Arides", location: 'Biskra, Algérie', year: 2024, paper: "Stratégies d'élevage pour améliorer l'efficacité reproductive sous conditions de stress thermique" },
+   905→   905→        { conference: "ISAEA — Symposium International sur l'Agriculture en Milieux Arides", location: 'El Oued, Algérie', year: 2026, paper: "Applications de l'IA et de l'IoT dans l'agriculture en régions arides : opportunités et défis" },
+   906→   906→      ],
+   907→   907→    },
+   908→   908→    testimonials: {
+   909→   909→      sectionLabel: 'TÉMOIGNAGES',
+   910→   910→      title: 'Témoignages Clients',
+   911→   911→      items: [
+   912→   912→        { text: "Formation excellente avec un contenu scientifique solide. J'ai beaucoup appris des aspects pratiques du programme FBS. Le formateur explique clairement et simplement.", author: 'Ing. Ahmed', role: 'Ingénieur Agronome' },
+   913→   913→        { text: "Dr. Abdelkader m'a aidée à analyser les données de ma thèse de façon professionnelle et claire. Un excellent encadrant qui maîtrise profondément son domaine.", author: 'Sarah K.', role: 'Étudiante Master' },
+   914→   914→        { text: 'Un partenaire fiable en innovation agricole. Il allie vision scientifique et mise en œuvre pratique, toujours engagé pour des résultats de qualité.', author: 'Dr. Mohamed', role: "Partenaire d'Affaires" },
+   915→   915→        { text: 'Les programmes de formation sont spécialisés et très pratiques. Ils m\'ont aidé à développer des compétences modernes en gestion agricole.', author: 'Fatima A.', role: 'Agricultrice' },
+   916→   916→        { text: 'La plateforme kamel3lom a changé ma façon de comprendre les concepts agricoles complexes. Contenu riche, facile à comprendre et très précieux.', author: 'Ibrahim Q.', role: 'Étudiant Universitaire' },
+   917→   917→        { text: "Soutien professionnel en recherche scientifique et publication internationale. Il m'a aidé à publier mes recherches dans une revue internationale réputée.", author: 'Dr. Leila', role: 'Chercheuse' },
+   918→   918→      ],
+   919→   919→    },
+   920→   920→    contact: {
+   921→   921→      sectionLabel: 'CONTACT',
+   922→   922→      title: 'Me Contacter',
+   923→   923→      subtitle: "Je suis ouvert à toutes les opportunités de collaboration en recherche scientifique, formation, conseil et développement de solutions numériques agricoles.",
+   924→   924→      email: 'Adresse Email',
+   925→   925→      phone: 'Téléphone',
+   926→   926→      location: 'Localisation',
+   927→   927→      formTitle: 'Envoyer un Email',
+   928→   928→      namePlaceholder: 'Nom Complet',
+   929→   929→      emailPlaceholder: 'Adresse Email',
+   930→   930→      subjectLabel: 'Sujet',
+   931→   931→      subjects: {
+   932→   932→        training: 'Formation Agricole',
+   933→   933→        research: 'Conseil en Recherche',
+   934→   934→        dataAnalysis: 'Analyse de Données',
+   935→   935→        digital: 'Solutions Numériques',
+   936→   936→        other: 'Autre',
+   937→   937→      },
+   938→   938→      messagePlaceholder: 'Message',
+   939→   939→      sendButton: 'Envoyer le Message',
+   940→   940→      successMessage: 'Message envoyé avec succès ! Je vous contacterai bientôt.',
+   941→   941→    },
+   942→   942→    footer: {
+   943→   943→      copyright: '© 2026 Abdelkader Atia. Tous droits réservés.',
+   944→   944→      online: 'En ligne',
+   945→   945→      offline: 'Vous êtes hors ligne — certaines fonctionnalités peuvent ne pas fonctionner',
+   946→   946→    },
+   947→   947→  },
+   948→   948→};
+   949→   949→

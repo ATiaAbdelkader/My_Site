@@ -46,9 +46,9 @@ export default function Contact() {
   };
 
   const contactInfo = [
-    { icon: Mail, label: t.contact.email, value: 'atia.abdelkader@univ-eloued.dz', href: 'mailto:atia.abdelkader@univ-eloued.dz' },
+    { icon: Mail, label: t.contact.email, value: 'atia.abdelkader@gmail.com', href: 'mailto:atia.abdelkader@gmail.com' },
     { icon: Phone, label: t.contact.phone, value: '+213 792 35 74 43', href: 'tel:+213792357443' },
-    { icon: MapPin, label: t.contact.location, value: 'El Oued, Algeria', href: '#' },
+    { icon: MapPin, label: t.contact.location, value: 'Mohamed Boudiaf St, Hassani Abdelkrim, EL-Oued, Algeria', href: '#' },
   ];
 
   const subjects = [
