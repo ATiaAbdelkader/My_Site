@@ -1,0 +1,764 @@
+     1→- generic
+     2→  - generic
+     3→    - button "العربية" [ref=e3]
+     4→    - button "English" [ref=e4]
+     5→    - button "Français" [ref=e5]
+     6→  - Iframe "Abdelkader Atia - العربية" [ref=e2]
+     7→    - generic
+     8→      - link "انتقل إلى المحتوى الرئيسي" [ref=e7]
+     9→      - navigation
+    10→        - link "ع عبد القادر عطيه Abdelkader Atia" [ref=e9]
+    11→          - StaticText "ع"
+    12→          - StaticText "عبد القادر عطيه"
+    13→          - StaticText "Abdelkader Atia"
+    14→        - button "Switch to Arabic" [ref=e10]
+    15→          - StaticText "AR"
+    16→        - button "Switch to English" [ref=e11]
+    17→          - StaticText "EN"
+    18→        - button "Switch to French" [ref=e12]
+    19→          - StaticText "FR"
+    20→        - button "Toggle dark/light theme" [ref=e13]
+    21→          - image
+    22→        - link "الرئيسية" [ref=e14]
+    23→        - link "عنّي" [ref=e15]
+    24→        - link "المهارات" [ref=e16]
+    25→        - link "المسيرة" [ref=e17]
+    26→        - link "المشاريع" [ref=e18]
+    27→        - link "الخدمات" [ref=e19]
+    28→        - link "الإنجازات" [ref=e20]
+    29→        - link "أفكار" [ref=e21]
+    30→        - link "تواصل" [ref=e22]
+    31→        - link "تواصل معي" [ref=e23]
+    32→        - generic
+    33→          - StaticText "القائمة"
+    34→          - button "Close mobile menu" [ref=e60]
+    35→            - image
+    36→          - link "الرئيسية" [ref=e61]
+    37→          - link "عنّي" [ref=e62]
+    38→          - link "المهارات" [ref=e63]
+    39→          - link "المسيرة" [ref=e64]
+    40→          - link "المشاريع" [ref=e65]
+    41→          - link "الخدمات" [ref=e66]
+    42→          - link "الإنجازات" [ref=e67]
+    43→          - link "أفكار" [ref=e68]
+    44→          - link "تواصل" [ref=e69]
+    45→          - link "تواصل معي" [ref=e70]
+    46→      - generic
+    47→        - image
+    48→        - StaticText "باحث دكتوراه | مدرب | مبتكر"
+    49→      - heading "تحويل المعرفة الزراعية إلى أثر حقيقي" [level=1, ref=e24]
+    50→        - StaticText "تحويل المعرفة الزراعية إلى أثر حقيقي"
+    51→      - paragraph
+    52→        - StaticText "باحث دكتوراه ومدرب ومبتكر في الزراعة الرقمية، أعمل على بناء جسور بين العلم والتطبيق لتطوير أنظمة زراعية أكثر ذكاءً وكفاءة."
+    53→      - link "استكشف أعمالي" [ref=e25]
+    54→        - StaticText "استكشف أعمالي"
+    55→        - image
+    56→      - link "تواصل معي" [ref=e26]
+    57→      - StaticText "12+"
+    58→      - StaticText "سنوات خبرة"
+    59→      - StaticText "25+"
+    60→      - StaticText "مشروع بحثي"
+    61→      - StaticText "500+"
+    62→      - StaticText "متدرب"
+    63→      - StaticText "🌾"
+    64→      - StaticText "عبد القادر عطيه"
+    65→      - StaticText "PhD Researcher"
+    66→      - generic
+    67→        - StaticText "تعرّف عليّ"
+    68→        - heading "من أنا" [level=2, ref=e71]
+    69→          - StaticText "من أنا"
+    70→      - paragraph
+    71→        - StaticText "أنا "
+    72→        - strong
+    73→          - StaticText "عبد القادر عطيه"
+    74→        - StaticText "، محترف في الهندسة الزراعية مع "
+    75→        - strong
+    76→          - StaticText "أكثر من 12 عامًا من الخبرة"
+    77→        - StaticText " في الهندسة الزراعية والتدريب المهني والإشراف على المشاريع. أحضر حاليًا درجة الدكتوراه في الإنتاج الحيواني (Agronomy)، بناءً على ماجستير في الإنتاج النباتي وشهادة مهندس في تربية الحيوانات في المناطق الجافة."
+    78→      - paragraph
+    79→        - StaticText "يمتد عملي ليشمل الهندسة الزراعية والتصميم البيداغوجي والابتكار الرقمي. أعمل كـ "
+    80→        - strong
+    81→          - StaticText "أستاذ متخصص (هندسة بيداغوجية)"
+    82→        - StaticText " في المعهد الوطني للتكوين المهني حسان عبد الكريم بالوادي، حيث أصمم برامج التكوين المهني وأشرف على العمليات الزراعية وأدرب الطلاب على تقنيات الزراعة الحديثة. أنا أيضًا مؤلف كتاب "
+    83→        - emphasis
+    84→          - StaticText "\"على الحافة\""
+    85→        - StaticText " (ISBN 9947-26-849-1)."
+    86→      - StaticText "🔬 الإنتاج الحيواني"
+    87→      - StaticText "🌾 الهندسة الزراعية"
+    88→      - StaticText "📊 الزراعة الرقمية"
+    89→      - StaticText "🎓 التكوين المهني"
+    90→      - StaticText "💼 ريادة الأعمال الزراعية"
+    91→      - StaticText "📖 الهندسة البيداغوجية"
+    92→      - button "معاينة السيرة" [ref=e27]
+    93→        - image
+    94→        - StaticText "معاينة السيرة"
+    95→      - button "تحميل السيرة" [ref=e28]
+    96→        - image
+    97→        - StaticText "تحميل السيرة"
+    98→      - StaticText "+12"
+    99→      - StaticText "سنوات من الخبرة"
+   100→      - StaticText "+25"
+   101→      - StaticText "مشروع بحثي"
+   102→      - StaticText "+50"
+   103→      - StaticText "دورة تدريبية"
+   104→      - StaticText "+500"
+   105→      - StaticText "متدرب ومستفيد"
+   106→      - generic
+   107→        - StaticText "قدراتي"
+   108→        - heading "المهارات" [level=2, ref=e72]
+   109→          - StaticText "المهارات"
+   110→      - StaticText "🔬"
+   111→      - heading "مهارات بحثية" [level=3, ref=e29]
+   112→      - StaticText "تحليل البيانات"
+   113→      - StaticText "95%"
+   114→      - StaticText "التصميم التجريبي"
+   115→      - StaticText "90%"
+   116→      - StaticText "الكتابة العلمية"
+   117→      - StaticText "92%"
+   118→      - StaticText "💻"
+   119→      - heading "المهارات التقنية" [level=3, ref=e30]
+   120→      - StaticText "Power BI / IBM SPSS"
+   121→      - StaticText "90%"
+   122→      - StaticText "R / Excel / تصور البيانات"
+   123→      - StaticText "88%"
+   124→      - StaticText "EdrawMax / Xmind"
+   125→      - StaticText "85%"
+   126→      - StaticText "🌱"
+   127→      - heading "مهارات زراعية" [level=3, ref=e31]
+   128→      - StaticText "إنتاج الثروة الحيوانية"
+   129→      - StaticText "96%"
+   130→      - StaticText "التربية والانتخاب"
+   131→      - StaticText "93%"
+   132→      - StaticText "التغذية الحيوانية"
+   133→      - StaticText "90%"
+   134→      - StaticText "Garden Planner / الزراعة الدقيقة"
+   135→      - StaticText "88%"
+   136→      - StaticText "🎤"
+   137→      - heading "مهارات تدريبية" [level=3, ref=e32]
+   138→      - StaticText "مدرب FBS"
+   139→      - StaticText "95%"
+   140→      - StaticText "تصميم البرامج"
+   141→      - StaticText "88%"
+   142→      - StaticText "مهارات التواصل"
+   143→      - StaticText "92%"
+   144→      - generic
+   145→        - StaticText "رحلتي"
+   146→        - heading "المسيرة المهنية" [level=2, ref=e73]
+   147→          - StaticText "المسيرة المهنية"
+   148→      - generic
+   149→        - StaticText "2022 - حتى الآن"
+   150→        - heading "أستاذ متخصص (هندسة بيداغوجية)" [level=3, ref=e74]
+   151→        - paragraph
+   152→          - StaticText "المعهد الوطني للتكوين المهني حسان عبد الكريم، الوادي"
+   153→        - paragraph
+   154→          - StaticText "تصميم مناهج التكوين المهني، الإشراف على العمليات الزراعية، وتدريب الطلاب على التقنيات الزراعية والهندسة البيداغوجية الحديثة"
+   155→        - image
+   156→        - image
+   157→        - StaticText "2016 - حتى الآن"
+   158→        - heading "مشرف استغلال زراعي" [level=3, ref=e75]
+   159→        - paragraph
+   160→          - StaticText "الإشراف على العمليات الزراعية وإدارة أنظمة الإنتاج النباتي والحيواني"
+   161→        - StaticText "2021 - حتى الآن"
+   162→        - heading "مدرب مهني" [level=3, ref=e76]
+   163→        - paragraph
+   164→          - StaticText "المعهد الوطني للتكوين المهني حسان عبد الكريم، الوادي"
+   165→        - paragraph
+   166→          - StaticText "تقديم تدريب عملي في التقنيات الزراعية، مدارس المزارعين الحقلية (FBS)، وتطوير المهارات المهنية للطلاب والمزارعين"
+   167→        - image
+   168→        - image
+   169→        - StaticText "2022"
+   170→        - heading "مدرب رئيسي مساعد FBS" [level=3, ref=e77]
+   171→        - paragraph
+   172→          - StaticText "ABF (GIZ) — مرفق الأعمال الزراعية لأفريقيا"
+   173→        - paragraph
+   174→          - StaticText "مدرب رئيسي مساعد معتمد في مدارس المزارعين الحقلية (FBS). درّب أكثر من 500 مزارع وقدم برامج تدريب المدربين في الجزائر."
+   175→        - image
+   176→        - StaticText "2011 - 2016"
+   177→        - heading "مهندس زراعي" [level=3, ref=e78]
+   178→        - paragraph
+   179→          - StaticText "شهادة مهندس في تربية الحيوانات في المناطق الجافة"
+   180→        - paragraph
+   181→          - StaticText "خبرة عملية في أنظمة الإنتاج الحيواني وبرامج التربية وإدارة المزارع في البيئات الجافة"
+   182→        - StaticText "2024 - 2026"
+   183→        - heading "أكثر من 50 شهادة تدريب دولية" [level=3, ref=e79]
+   184→        - paragraph
+   185→          - StaticText "شهادات متقدمة من Wageningen, FAO, ASM, GIZ, Oxford Climate Society وغيرها"
+   186→        - paragraph
+   187→          - StaticText "تطوير مهني مستمر في الزراعة ومنهجية البحث والهندسة البيداغوجية والزراعة الذكية مناخيًا"
+   188→        - image
+   189→        - image
+   190→        - StaticText "2006 / مستمر"
+   191→        - heading "مؤلف كتاب وقائد مجتمعي" [level=3, ref=e80]
+   192→        - paragraph
+   193→          - StaticText "كتاب "
+   194→          - emphasis
+   195→            - StaticText "\"على الحافة\""
+   196→          - StaticText " (ISBN 9947-26-849-1, 2006)"
+   197→        - paragraph
+   198→          - StaticText "نائب رئيس جمعية النحالين، سفير IAPA للتعلم الإلكتروني، عضو في ASM, EAS، ومنسق الجزائر في عدة منظمات دولية"
+   199→      - generic
+   200→        - StaticText "أعمالي"
+   201→        - heading "المشاريع" [level=2, ref=e81]
+   202→          - StaticText "المشاريع"
+   203→      - generic
+   204→        - button "الكل" [ref=e82]
+   205→        - button "بحث علمي" [ref=e83]
+   206→        - button "تطبيقات" [ref=e84]
+   207→        - button "تدريب" [ref=e85]
+   208→        - button "ريادة أعمال" [ref=e86]
+   209→      - generic
+   210→        - StaticText "🔬"
+   211→        - StaticText "تطبيق"
+   212→        - heading "تطبيق تحليل السائل المنوي" [level=3, ref=e87]
+   213→        - paragraph
+   214→          - StaticText "تطبيق ذكي لتقييم وتحليل جودة السائل المنوي باستخدام تقنيات التصوير والذكاء الاصطناعي"
+   215→        - link "عرض التفاصيل" [ref=e88]
+   216→          - StaticText "عرض التفاصيل"
+   217→          - image
+   218→        - StaticText "🎓"
+   219→        - StaticText "ريادة أعمال"
+   220→        - heading "AgriSkills Academy" [level=3, ref=e89]
+   221→        - paragraph
+   222→          - StaticText "منصة تعليمية متكاملة للتدريب الزراعي وبناء القدرات المهنية مع شهادات معترف بها"
+   223→        - link "عرض التفاصيل" [ref=e90]
+   224→          - StaticText "عرض التفاصيل"
+   225→          - image
+   226→        - StaticText "🌾"
+   227→        - StaticText "تدريب"
+   228→        - heading "برنامج FBS التدريبي" [level=3, ref=e91]
+   229→        - paragraph
+   230→          - StaticText "سلسلة برامج تدريبية شاملة في مدارس المزارعين الحقلية تغطي الإنتاج الحيواني والزراعة المستدامة"
+   231→        - link "عرض التفاصيل" [ref=e92]
+   232→          - StaticText "عرض التفاصيل"
+   233→          - image
+   234→        - StaticText "🧬"
+   235→        - StaticText "بحث"
+   236→        - heading "أبحاث التكاثر الحيواني" [level=3, ref=e93]
+   237→        - paragraph
+   238→          - StaticText "مشاريع بحثية متقدمة في تحسين الأداء التناسلي وجودة السائل المنوي مع نشر دولي"
+   239→        - link "عرض التفاصيل" [ref=e94]
+   240→          - StaticText "عرض التفاصيل"
+   241→          - image
+   242→        - StaticText "🦟"
+   243→        - StaticText "ريادة أعمال"
+   244→        - heading "مشروع تربية BSF" [level=3, ref=e95]
+   245→        - paragraph
+   246→          - StaticText "مبادرة مبتكرة لتربية ذبابة الجندي الأسود كمصدر بروتين بديل وحل للنفايات"
+   247→        - link "عرض التفاصيل" [ref=e96]
+   248→          - StaticText "عرض التفاصيل"
+   249→          - image
+   250→        - StaticText "📱"
+   251→        - StaticText "تطبيق"
+   252→        - heading "منصة kamel3lom" [level=3, ref=e97]
+   253→        - paragraph
+   254→          - StaticText "منصة رقمية لنشر المعرفة الزراعية وتبسيط العلوم للمجتمع مع محتوى تفاعلي"
+   255→        - link "عرض التفاصيل" [ref=e98]
+   256→          - StaticText "عرض التفاصيل"
+   257→          - image
+   258→        - StaticText "🌐"
+   259→        - StaticText "تطبيق"
+   260→        - heading "نظام إدارة المزارع الذكي" [level=3, ref=e99]
+   261→        - paragraph
+   262→          - StaticText "تطبيق شامل لإدارة المزارع بتتبع الثروة والإنتاجية والتنبؤات الذكية"
+   263→        - link "عرض التفاصيل" [ref=e100]
+   264→          - StaticText "عرض التفاصيل"
+   265→          - image
+   266→        - StaticText "📊"
+   267→        - StaticText "بحث"
+   268→        - heading "دراسات في تحسين السلالات" [level=3, ref=e101]
+   269→        - paragraph
+   270→          - StaticText "أبحاث متخصصة في التربية الانتخابية وتحسين المؤشرات الوراثية للماشية"
+   271→        - link "عرض التفاصيل" [ref=e102]
+   272→          - StaticText "عرض التفاصيل"
+   273→          - image
+   274→        - StaticText "🛠️"
+   275→        - StaticText "تدريب"
+   276→        - heading "ورش عمل الزراعة الحديثة" [level=3, ref=e103]
+   277→        - paragraph
+   278→          - StaticText "سلسلة ورش عمل عملية حول التقنيات الحديثة والممارسات الزراعية الفضلى"
+   279→        - link "عرض التفاصيل" [ref=e104]
+   280→          - StaticText "عرض التفاصيل"
+   281→          - image
+   282→      - generic
+   283→        - StaticText "ماذا أقدّم"
+   284→        - heading "خدماتي" [level=2, ref=e105]
+   285→          - StaticText "خدماتي"
+   286→      - StaticText "🎓"
+   287→      - heading "التدريب الزراعي" [level=3, ref=e33]
+   288→      - paragraph
+   289→        - StaticText "برامج تدريبية متخصصة في الإنتاج الحيواني والزراعة الحديثة"
+   290→      - link "اطلب الخدمة" [ref=e34]
+   291→        - StaticText "اطلب الخدمة"
+   292→        - image
+   293→      - StaticText "🔬"
+   294→      - heading "الاستشارات البحثية" [level=3, ref=e35]
+   295→      - paragraph
+   296→        - StaticText "دعم الباحثين في تصميم التجارب وتحليل البيانات والنشر العلمي"
+   297→      - link "اطلب الخدمة" [ref=e36]
+   298→        - StaticText "اطلب الخدمة"
+   299→        - image
+   300→      - StaticText "📊"
+   301→      - heading "تحليل البيانات" [level=3, ref=e37]
+   302→      - paragraph
+   303→        - StaticText "تحليل إحصائي متقدم وتصور بيانات باستخدام أحدث الأدوات"
+   304→      - link "اطلب الخدمة" [ref=e38]
+   305→        - StaticText "اطلب الخدمة"
+   306→        - image
+   307→      - StaticText "💡"
+   308→      - heading "الحلول الرقمية" [level=3, ref=e39]
+   309→      - paragraph
+   310→        - StaticText "تطوير تطبيقات ومنصات رقمية مخصصة للقطاع الزراعي"
+   311→      - link "اطلب الخدمة" [ref=e40]
+   312→        - StaticText "اطلب الخدمة"
+   313→        - image
+   314→      - generic
+   315→        - generic
+   316→          - StaticText "إنجازاتي"
+   317→          - heading "الإنجازات والشهادات" [level=2, ref=e106]
+   318→            - StaticText "الإنجازات والشهادات"
+   319→        - StaticText "🏆"
+   320→        - heading "مؤتمرات دولية" [level=3, ref=e41]
+   321→        - paragraph
+   322→          - StaticText "مشاركات فعّالة في أكثر من 8 مؤتمرات علمية دولية مع أوراق بحثية مُقدمة (2023-2026)"
+   323→        - StaticText "📄"
+   324→        - heading "أبحاث منشورة" [level=3, ref=e42]
+   325→        - paragraph
+   326→          - StaticText "أكثر من 25 بحثًا علميًا محكّمًا منشورًا في مجلات دولية متخصصة وعالية التصنيف"
+   327→        - StaticText "🎖️"
+   328→        - heading "شهادات مهنية" [level=3, ref=e43]
+   329→        - paragraph
+   330→          - StaticText "+50 شهادة تدريب دولية متقدمة من مؤسسات مرموقة (Wageningen, FAO, ASM, GIZ وغيرها)"
+   331→        - StaticText "🌍"
+   332→        - heading "عضويات دولية" [level=3, ref=e44]
+   333→        - paragraph
+   334→          - StaticText "عضو نشط في الجمعية الأمريكية لعلم الأحياء الدقيقة، جمعية تربية الأسماك الأوروبية، والرابطة الدولية لممارسري الأعمال الزراعية"
+   335→        - StaticText "📱"
+   336→        - heading "ابتكارات رقمية" [level=3, ref=e45]
+   337→        - paragraph
+   338→          - StaticText "تطوير نموذجين أوليين لمصائد حشرات ونظم هيدروبونيك/أكوابونيك متكاملة"
+   339→        - StaticText "🤝"
+   340→        - heading "قيادة مجتمعية" [level=3, ref=e46]
+   341→        - paragraph
+   342→          - StaticText "نائب رئيس جمعية النحالين، سفير IAPA للتعلم الإلكتروني، عضو في ASM, EAS، ومنسق الجزائر في عدة منظمات دولية"
+   343→      - generic
+   344→        - StaticText "مَنْصَة المعرفة"
+   345→        - heading "أفكار وأبحاث" [level=2, ref=e107]
+   346→          - StaticText "أفكار وأبحاث"
+   347→      - generic
+   348→        - button "💭 أفكاري" [ref=e108]
+   349→        - button "📄 منشورات" [ref=e109]
+   350→        - button "🎤 مؤتمرات" [ref=e110]
+   351→      - generic
+   352→        - link "تابعني على فيسبوك" [ref=e111]
+   353→          - image
+   354→          - StaticText "تابعني على فيسبوك"
+   355→        - link "تابعني على لينكد إن" [ref=e112]
+   356→          - image
+   357→          - StaticText "تابعني على لينكد إن"
+   358→        - generic
+   359→          - image
+   360→          - StaticText "Facebook"
+   361→          - StaticText "مايو 2026"
+   362→          - paragraph
+   363→            - StaticText "\"متشوق لمشاركة خبر قبول ورقي البحثية الجديدة حول تقييم جودة السائل المنوي في مجلة علمية محكمة. ممتن لدعم مشرفي وزملائي.\""
+   364→          - link "اقرأ المزيد" [ref=e170]
+   365→            - StaticText "اقرأ المزيد"
+   366→            - image
+   367→          - image
+   368→          - StaticText "LinkedIn"
+   369→          - StaticText "أبريل 2026"
+   370→          - paragraph
+   371→            - StaticText "\"اختتمت لتوي برنامج تدريبي مكثف لمدارس المزارعين الحقلية في المعهد الوطني للتكوين المهني بالوادي. تفاعل المتدربين وفضولهم يؤكد لماذا أحب هذا العمل - التعليم الزراعي التطبيقي يغير حياة الناس.\""
+   372→          - link "اقرأ المزيد" [ref=e171]
+   373→            - StaticText "اقرأ المزيد"
+   374→            - image
+   375→          - image
+   376→          - StaticText "Facebook"
+   377→          - StaticText "مارس 2026"
+   378→          - paragraph
+   379→            - StaticText "\"حضرت مؤتمر ESNA وقدمت أحدث أبحاثي حول الأداء التناسلي للكباش تحت الظروف الجافة. نقاشات مثمرة مع باحثين من جميع أنحاء المتوسط.\""
+   380→          - link "اقرأ المزيد" [ref=e172]
+   381→            - StaticText "اقرأ المزيد"
+   382→            - image
+   383→          - image
+   384→          - StaticText "LinkedIn"
+   385→          - StaticText "فبراير 2026"
+   386→          - paragraph
+   387→            - StaticText "\"إنجاز جديد: أكثر من 50 شهادة دولية! من Wageningen إلى FAO إلى Oxford Climate Society - التعلم المستمر هو مفتاح البقاء في طليعة الابتكار الزراعي.\""
+   388→          - link "اقرأ المزيد" [ref=e173]
+   389→            - StaticText "اقرأ المزيد"
+   390→            - image
+   391→          - image
+   392→          - StaticText "Facebook"
+   393→          - StaticText "يناير 2026"
+   394→          - paragraph
+   395→            - StaticText "\"فخور بمشاركة التقدم في نظامنا النموذجي للزراعة المائية والأكوابونيك. دمج المعرفة التقليدية مع الهندسة الحديثة لإنتاج غذاء مستدام في المناطق الجافة.\""
+   396→          - link "اقرأ المزيد" [ref=e174]
+   397→            - StaticText "اقرأ المزيد"
+   398→            - image
+   399→          - image
+   400→          - StaticText "LinkedIn"
+   401→          - StaticText "ديسمبر 2025"
+   402→          - paragraph
+   403→            - StaticText "\"يشرفني العمل كنائب رئيس جمعية النحالين والمساهمة في تطوير تربية النحل في الجزائر. النحل شغف وركيزة أساسية في نظامنا الزراعي.\""
+   404→          - link "اقرأ المزيد" [ref=e175]
+   405→            - StaticText "اقرأ المزيد"
+   406→            - image
+   407→      - generic
+   408→        - StaticText "ماذا يقولون"
+   409→        - heading "آراء المتدربين والشركاء" [level=2, ref=e113]
+   410→          - StaticText "آراء المتدربين والشركاء"
+   411→      - generic
+   412→        - StaticText "⭐⭐⭐⭐⭐"
+   413→        - paragraph
+   414→          - StaticText "\"تدريب ممتاز ومحتوى علمي رصين. استفدت كثيرًا من الجانب التطبيقي في برنامج FBS، والمدرب يشرح بطريقة مبسطة وواضحة.\""
+   415→        - StaticText "م.أ"
+   416→        - StaticText "م. أحمد"
+   417→        - StaticText "مهندس زراعي"
+   418→        - StaticText "⭐⭐⭐⭐⭐"
+   419→        - paragraph
+   420→          - StaticText "\"ساعدني الدكتور عبد القادر في تحليل بيانات رسالتي بطريقة احترافية ومبسّطة. مشرف ممتاز يتقن مجاله بشكل عميق.\""
+   421→        - StaticText "س.ك"
+   422→        - StaticText "سارة ك."
+   423→        - StaticText "طالبة ماجستير"
+   424→        - StaticText "⭐⭐⭐⭐⭐"
+   425→        - paragraph
+   426→          - StaticText "\"شريك موثوق في مجال الابتكار الزراعي. يجمع بين الرؤية العلمية والتنفيذ العملي، وملتزم بجودة النتائج.\""
+   427→        - StaticText "د.م"
+   428→        - StaticText "د. محمد"
+   429→        - StaticText "شريك أعمال"
+   430→        - StaticText "⭐⭐⭐⭐⭐"
+   431→        - paragraph
+   432→          - StaticText "\"برامج التدريب متخصصة وعملية جدًا. ساعدتني في تطوير مهارات التسيير الحديثة وتطبيق التقنيات الجديدة.\""
+   433→        - StaticText "ف.ع"
+   434→        - StaticText "فاطمة ع."
+   435→        - StaticText "مزارعة"
+   436→        - StaticText "⭐⭐⭐⭐⭐"
+   437→        - paragraph
+   438→          - StaticText "\"منصة kamel3lom غيرت طريقة فهمي للمفاهيم الزراعية المعقدة. محتوى غني وسهل الفهم وقيم جدًا.\""
+   439→        - StaticText "إ.ق"
+   440→        - StaticText "إبراهيم ق."
+   441→        - StaticText "طالب جامعي"
+   442→        - StaticText "⭐⭐⭐⭐⭐"
+   443→        - paragraph
+   444→          - StaticText "\"دعم احترافي في البحث العلمي والنشر الدولي. ساعدني على نشر بحثي في مجلة محترمة دوليًا.\""
+   445→        - StaticText "د.ل"
+   446→        - StaticText "د. ليلى"
+   447→        - StaticText "باحثة"
+   448→      - StaticText "شارك تجربتك"
+   449→      - heading "أضف توصية" [level=3, ref=e47]
+   450→      - form
+   451→        - LabelText
+   452→          - StaticText "الاسم"
+   453→        - textbox "اسمك" [required, ref=e114]
+   454→        - LabelText
+   455→          - StaticText "المسمى/الوظيفة"
+   456→        - textbox "مثال: مهندس زراعي" [required, ref=e115]
+   457→        - LabelText
+   458→          - StaticText "توصيتك"
+   459→        - textbox "شارك تجربتك في العمل معي..." [required, ref=e116]
+   460→        - StaticText "التقييم:"
+   461→        - generic
+   462→          - StaticText "☆"
+   463→          - StaticText "☆"
+   464→          - StaticText "☆"
+   465→          - StaticText "☆"
+   466→          - StaticText "☆"
+   467→        - button "إرسال التوصية" [ref=e117]
+   468→          - image
+   469→          - StaticText "إرسال التوصية"
+   470→      - generic
+   471→        - StaticText "مشاركة المعرفة"
+   472→        - heading "أحدث المقالات" [level=2, ref=e118]
+   473→          - StaticText "أحدث المقالات"
+   474→      - generic
+   475→        - StaticText "🐄"
+   476→        - StaticText "علوم الحيوان"
+   477→        - heading "تحسين جودة السائل المنوي: أحدث التقنيات" [level=3, ref=e119]
+   478→        - paragraph
+   479→          - StaticText "نظرة شاملة على أحدث الأبحاث والتقنيات المستخدمة في تقييم وتحسين جودة السائل المنوي والأداء التناسلي للحيوانات."
+   480→        - StaticText "2026-01-15 · 8 دقائق"
+   481→        - button "اقرأ المزيد" [ref=e120]
+   482→          - StaticText "اقرأ المزيد"
+   483→          - image
+   484→        - StaticText "📊"
+   485→        - StaticText "تحليل بيانات"
+   486→        - heading "استخدام R في تحليل البيانات الزراعية" [level=3, ref=e121]
+   487→        - paragraph
+   488→          - StaticText "دليل عملي لاستخدام لغة R في معالجة وتحليل وتصور البيانات الزراعية بكفاءة واحترافية."
+   489→        - StaticText "2026-02-20 · 10 دقائق"
+   490→        - button "اقرأ المزيد" [ref=e122]
+   491→          - StaticText "اقرأ المزيد"
+   492→          - image
+   493→        - StaticText "🌾"
+   494→        - StaticText "تدريب"
+   495→        - heading "مدارس المزارعين الحقلية: منهجية فعّالة" [level=3, ref=e123]
+   496→        - paragraph
+   497→          - StaticText "كيف تساهم مدارس FBS في تمكين المزارعين وتحسين الإنتاجية الزراعية والممارسات الحديثة."
+   498→        - StaticText "2026-03-10 · 7 دقائق"
+   499→        - button "اقرأ المزيد" [ref=e124]
+   500→          - StaticText "اقرأ المزيد"
+   501→          - image
+   502→        - StaticText "💡"
+   503→        - StaticText "ابتكار"
+   504→        - heading "الذكاء الاصطناعي في الزراعة: التطبيقات العملية" [level=3, ref=e125]
+   505→        - paragraph
+   506→          - StaticText "استكشاف استخدامات الذكاء الاصطناعي والتعلم الآلي في تحسين القرارات الزراعية والإنتاجية."
+   507→        - StaticText "2026-04-05 · 9 دقائق"
+   508→        - button "اقرأ المزيد" [ref=e126]
+   509→          - StaticText "اقرأ المزيد"
+   510→          - image
+   511→        - StaticText "🔬"
+   512→        - StaticText "بحث"
+   513→        - heading "النشر العلمي الدولي: دليل البداية" [level=3, ref=e127]
+   514→        - paragraph
+   515→          - StaticText "خطوات عملية لنشر بحثك في المجلات العلمية الدولية المحكّمة والعالية التصنيف."
+   516→        - StaticText "2026-05-01 · 11 دقائق"
+   517→        - button "اقرأ المزيد" [ref=e128]
+   518→          - StaticText "اقرأ المزيد"
+   519→          - image
+   520→        - StaticText "🚀"
+   521→        - StaticText "ريادة أعمال"
+   522→        - heading "بدء مشروع زراعي: من الفكرة إلى التنفيذ" [level=3, ref=e129]
+   523→        - paragraph
+   524→          - StaticText "دليل شامل لرواد الأعمال الزراعيين حول كيفية بدء وتطوير مشروع زراعي ناجح."
+   525→        - StaticText "2026-05-20 · 8 دقائق"
+   526→        - button "اقرأ المزيد" [ref=e130]
+   527→          - StaticText "اقرأ المزيد"
+   528→          - image
+   529→      - generic
+   530→        - StaticText "أسئلة شائعة"
+   531→        - heading "الأسئلة المتكررة" [level=2, ref=e131]
+   532→          - StaticText "الأسئلة المتكررة"
+   533→      - heading "ما هي تخصصاتك الرئيسية؟" [level=3, ref=e132]
+   534→      - image
+   535→      - heading "كيف يمكنني حجز دورة تدريبية؟" [level=3, ref=e133]
+   536→      - image
+   537→      - heading "هل تقدم استشارات بحثية؟" [level=3, ref=e134]
+   538→      - image
+   539→      - heading "ما هي المنصات الرقمية التي طورتها؟" [level=3, ref=e135]
+   540→      - image
+   541→      - generic
+   542→        - StaticText "لنتواصل"
+   543→        - heading "تواصل معي" [level=2, ref=e136]
+   544→          - StaticText "تواصل معي"
+   545→      - paragraph
+   546→        - StaticText "أرحب بجميع فرص التعاون في البحث العلمي، التدريب، الاستشارات، وتطوير الحلول الرقمية الزراعية."
+   547→      - image
+   548→      - StaticText "البريد الإلكتروني"
+   549→      - StaticText "اضغط للكشف"
+   550→      - image
+   551→      - StaticText "الهاتف"
+   552→      - StaticText "+213 XXX XXX XXX"
+   553→      - image
+   554→      - StaticText "الموقع"
+   555→      - StaticText "الجزائر"
+   556→      - link "LinkedIn" [ref=e48]
+   557→        - image
+   558→      - link "Twitter" [ref=e49]
+   559→        - image
+   560→      - link "Facebook" [ref=e50]
+   561→        - image
+   562→      - link "GitHub" [ref=e51]
+   563→        - image
+   564→      - link "أرسل بريدًا إلكترونيًا" [ref=e52]
+   565→        - image
+   566→        - StaticText "أرسل بريدًا إلكترونيًا"
+   567→      - form
+   568→        - LabelText
+   569→          - StaticText "الاسم الكامل"
+   570→        - textbox "الاسم الكامل" [required, ref=e137]
+   571→        - LabelText
+   572→          - StaticText "البريد الإلكتروني"
+   573→        - textbox "البريد الإلكتروني" [required, ref=e138]
+   574→        - LabelText
+   575→          - StaticText "الموضوع"
+   576→        - combobox "الموضوع" [expanded=false, ref=e139]: تدريب زراعي
+   577→          - MenuListPopup
+   578→            - option "تدريب زراعي" [selected, ref=e184]
+   579→            - option "استشارة بحثية" [ref=e185]
+   580→            - option "تحليل بيانات" [ref=e186]
+   581→            - option "حلول رقمية" [ref=e187]
+   582→            - option "أخرى" [ref=e188]
+   583→        - LabelText
+   584→          - StaticText "الرسالة"
+   585→        - textbox "الرسالة" [required, ref=e140]
+   586→        - button "إرسال الرسالة" [ref=e141]
+   587→          - StaticText "إرسال الرسالة"
+   588→          - image
+   589→      - heading "ابق على اطّلاع" [level=2, ref=e53]
+   590→      - paragraph
+   591→        - StaticText "اشترك في النشرة البريدية لتلقي أحدث المقالات والدورات التدريبية والأبحاث"
+   592→      - textbox "أدخل بريدك الإلكتروني" [ref=e54]
+   593→      - button "اشترك الآن" [ref=e55]
+   594→        - StaticText "اشترك الآن"
+   595→        - image
+   596→      - paragraph
+   597→        - StaticText "🔒 بريدك آمن معنا - لن نرسل رسائل بريدية عشوائية"
+   598→      - generic
+   599→        - StaticText "معرض أعمالي"
+   600→        - heading "معرض الصور" [level=2, ref=e142]
+   601→          - StaticText "معرض الصور"
+   602→      - generic
+   603→        - button "الكل" [ref=e143]
+   604→        - button "بحث" [ref=e144]
+   605→        - button "تدريب" [ref=e145]
+   606→        - button "العمل الميداني" [ref=e146]
+   607→        - button "الفعاليات" [ref=e147]
+   608→      - generic
+   609→        - StaticText "🧪"
+   610→        - StaticText "RESEARCH"
+   611→        - heading "مختبر البحث الحقلي" [level=3, ref=e148]
+   612→        - paragraph
+   613→          - StaticText "مجموعة معدات متقدمة لتحليل جودة السائل المنوي"
+   614→        - StaticText "🎓"
+   615→        - StaticText "TRAINING"
+   616→        - heading "جلسة تدريبية" [level=3, ref=e149]
+   617→        - paragraph
+   618→          - StaticText "برنامج FBS التدريبي مع المزارعين"
+   619→        - StaticText "🚜"
+   620→        - StaticText "FARM"
+   621→        - heading "الزيارة الميدانية" [level=3, ref=e150]
+   622→        - paragraph
+   623→          - StaticText "العمل الميداني ومراقبة الثروة الحيوانية"
+   624→        - StaticText "🌍"
+   625→        - StaticText "EVENT"
+   626→        - heading "عرض المؤتمر الدولي" [level=3, ref=e151]
+   627→        - paragraph
+   628→          - StaticText "المشاركة في المؤتمرات الزراعية الدولية"
+   629→        - StaticText "📈"
+   630→        - StaticText "RESEARCH"
+   631→        - heading "بيانات البحث" [level=3, ref=e152]
+   632→        - paragraph
+   633→          - StaticText "التعاون البحثي والتحليل الإحصائي"
+   634→        - StaticText "🌱"
+   635→        - StaticText "TRAINING"
+   636→        - heading "ورشة عمل للمزارعين" [level=3, ref=e153]
+   637→        - paragraph
+   638→          - StaticText "جلسة تدريبية عملية مكثفة"
+   639→        - StaticText "✅"
+   640→        - StaticText "FARM"
+   641→        - heading "تقييم الثروة الحيوانية" [level=3, ref=e154]
+   642→        - paragraph
+   643→          - StaticText "تقييم صحة وإنتاجية الحيوانات"
+   644→        - StaticText "🏆"
+   645→        - StaticText "EVENT"
+   646→        - heading "فعالية الندوة" [level=3, ref=e155]
+   647→        - paragraph
+   648→          - StaticText "ندوة تعليمية مع الخبراء"
+   649→        - StaticText "📱"
+   650→        - StaticText "RESEARCH"
+   651→        - heading "منصة رقمية" [level=3, ref=e156]
+   652→        - paragraph
+   653→          - StaticText "عرض منصة kamel3lom"
+   654→      - generic
+   655→        - StaticText "النتائج الحقيقية"
+   656→        - heading "دراسات الحالة" [level=2, ref=e157]
+   657→          - StaticText "دراسات الحالة"
+   658→      - generic
+   659→        - heading "نمو AgriSkills Academy" [level=3, ref=e158]
+   660→        - paragraph
+   661→          - StaticText "بناء التميز التعليمي"
+   662→        - StaticText "🎓"
+   663→        - paragraph
+   664→          - strong
+   665→            - StaticText "التحدي:"
+   666→          - StaticText " الحاجة إلى إنشاء منصة تدريب زراعي شاملة تخدم المزارعين والباحثين"
+   667→        - paragraph
+   668→          - strong
+   669→            - StaticText "الحل:"
+   670→          - StaticText " تطوير أكاديمية متكاملة ببرامج أونلاين وأوفلاين وشهادات وشراكات صناعية"
+   671→        - paragraph
+   672→          - StaticText "النتائج: 500+ متدرب | 40+ برنامج | 95% معدل الرضا"
+   673→        - StaticText "تدريب"
+   674→        - StaticText "منصة"
+   675→        - StaticText "تعليم"
+   676→        - heading "أبحاث جودة السائل المنوي" [level=3, ref=e159]
+   677→        - paragraph
+   678→          - StaticText "الابتكار العلمي"
+   679→        - StaticText "🧬"
+   680→        - paragraph
+   681→          - strong
+   682→            - StaticText "التحدي:"
+   683→          - StaticText " تحسين التربية الحيوانية من خلال تقييم أفضل لجودة السائل المنوي"
+   684→        - paragraph
+   685→          - strong
+   686→            - StaticText "الحل:"
+   687→          - StaticText " تقنيات معملية متقدمة مع نظام تحليل معتمد على الذكاء الاصطناعي"
+   688→        - paragraph
+   689→          - StaticText "النتائج: 20+ منشور | تعاون دولي | براءة اختراع قيد الانتظار"
+   690→        - StaticText "بحث"
+   691→        - StaticText "ابتكار"
+   692→        - StaticText "علم"
+   693→        - heading "تأثير برنامج FBS" [level=3, ref=e160]
+   694→        - paragraph
+   695→          - StaticText "تمكين المجتمع"
+   696→        - StaticText "🌾"
+   697→        - paragraph
+   698→          - strong
+   699→            - StaticText "التحدي:"
+   700→          - StaticText " المزارعون يفتقرون للمعرفة والتقنيات الزراعية الحديثة"
+   701→        - paragraph
+   702→          - strong
+   703→            - StaticText "الحل:"
+   704→          - StaticText " برنامج مدارس المزارعين الحقلية البنائي والعملي"
+   705→        - paragraph
+   706→          - StaticText "النتائج: 500+ مزارع مدرب | زيادة الإنتاجية 40% | تطبيق ممارسات مستدامة"
+   707→        - StaticText "تدريب"
+   708→        - StaticText "تأثير"
+   709→        - StaticText "استدامة"
+   710→      - generic
+   711→        - StaticText "أسئلة شائعة"
+   712→        - heading "الأسئلة الشائعة" [level=2, ref=e161]
+   713→          - StaticText "الأسئلة الشائعة"
+   714→      - generic
+   715→        - button "ما هي خلفيتك الأكاديمية والمهنية؟" [ref=e162]
+   716→          - image
+   717→          - heading "ما هي خلفيتك الأكاديمية والمهنية؟" [level=3, ref=e176]
+   718→        - button "ما هي برامج التدريب التي تقدمها؟" [ref=e163]
+   719→          - image
+   720→          - heading "ما هي برامج التدريب التي تقدمها؟" [level=3, ref=e177]
+   721→        - button "هل تقدم خدمات استشارة بحثية؟" [ref=e164]
+   722→          - image
+   723→          - heading "هل تقدم خدمات استشارة بحثية؟" [level=3, ref=e178]
+   724→        - button "كيف يمكن الوصول إلى منصة kamel3lom؟" [ref=e165]
+   725→          - image
+   726→          - heading "كيف يمكن الوصول إلى منصة kamel3lom؟" [level=3, ref=e179]
+   727→        - button "هل تمنح شهادات للبرامج التدريبية؟" [ref=e166]
+   728→          - image
+   729→          - heading "هل تمنح شهادات للبرامج التدريبية؟" [level=3, ref=e180]
+   730→        - button "ما هو توفري الاستشاري؟" [ref=e167]
+   731→          - image
+   732→          - heading "ما هو توفري الاستشاري؟" [level=3, ref=e181]
+   733→        - button "كيف يمكن التواصل معي للتعاون؟" [ref=e168]
+   734→          - image
+   735→          - heading "كيف يمكن التواصل معي للتعاون؟" [level=3, ref=e182]
+   736→        - button "هل تعمل بشكل دولي؟" [ref=e169]
+   737→          - image
+   738→          - heading "هل تعمل بشكل دولي؟" [level=3, ref=e183]
+   739→      - contentinfo
+   740→        - StaticText "ع"
+   741→        - StaticText "© 2026 عبد القادر عطيه. جميع الحقوق محفوظة."
+   742→        - generic
+   743→          - StaticText "متصل"
+   744→        - link "البريد" [ref=e56]
+   745→          - image
+   746→          - StaticText "البريد"
+   747→        - button "الإشعارات" [ref=e57]
+   748→          - image
+   749→          - StaticText "الإشعارات"
+   750→      - generic
+   751→        - image
+   752→        - image
+   753→      - StaticText "📡 أنت غير متصل — بعض الميزات قد لا تعمل"
+   754→      - paragraph
+   755→        - StaticText "🍪 هذا الموقع يستخدم ملفات تعريف الارتباط لتحليل الزيارات وتخصيص المحتوى. باستمرارك في التصفح، فإنك توافق على استخدامنا لملفات تعريف الارتباط."
+   756→      - button "قبول" [ref=e58]
+   757→      - button "رفض" [ref=e59]
+   758→      - link "راسلني على واتساب" [ref=e8]
+   759→        - image
+   760→- region "Notifications (F8)" [ref=e1]
+   761→  - list
+   762→- button "Open Next.js Dev Tools" [expanded=false, ref=e6]
+   763→  - image
+   764→- alert

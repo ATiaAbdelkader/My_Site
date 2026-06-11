@@ -1,0 +1,1296 @@
+     1→// Projects data (French)
+     2→const projects = [
+     3→  { name: 'Application Analyse Semence', desc: 'Application intelligente pour évaluer et analyser la qualité du sperme à l\'aide de l\'imagerie et de l\'IA', cat: 'app', icon: '🔬', link: '#' },
+     4→  { name: 'AgriSkills Academy', desc: 'Plateforme éducative intégrée pour la formation agricole et le renforcement des capacités avec certifications reconnues', cat: 'business', icon: '🎓', link: '#' },
+     5→  { name: 'Programme FBS', desc: 'Série complète de programmes de formation dans les écoles pratiques agricoles couvrant la production animale et l\'agriculture durable', cat: 'training', icon: '🌾', link: '#' },
+     6→  { name: 'Recherche Reproduction Animale', desc: 'Projets de recherche avancés pour améliorer les performances reproductives et la qualité du sperme avec publications internationales', cat: 'research', icon: '🧬', link: '#' },
+     7→  { name: 'Projet Élevage BSF', desc: 'Initiative innovante d\'élevage de mouche soldat noire comme source de protéines alternative et solution de gestion des déchets', cat: 'business', icon: '🦟', link: '#' },
+     8→  { name: 'Plateforme kamel3lom', desc: 'Plateforme numérique pour diffuser les connaissances agricoles et simplifier les sciences avec du contenu interactif', cat: 'app', icon: '📱', link: '#' },
+     9→  { name: 'Système Gestion Ferme Intelligente', desc: 'Application complète de gestion agricole avec suivi des actifs, productivité et prévisions intelligentes', cat: 'app', icon: '🌐', link: '#' },
+    10→  { name: 'Études Amélioration Génétique', desc: 'Recherche spécialisée en sélection génétique et amélioration des indicateurs pour les bovins', cat: 'research', icon: '📊', link: '#' },
+    11→  { name: 'Ateliers Agriculture Moderne', desc: 'Série d\'ateliers pratiques sur les techniques modernes et les bonnes pratiques en production agricole', cat: 'training', icon: '🛠️', link: '#' },
+    12→];
+    13→
+    14→// Testimonials data (French)
+    15→const testimonials = [
+    16→  { text: 'Formation excellente avec un contenu scientifique solide. J\'ai beaucoup appris des aspects pratiques du programme FBS. Le formateur explique clairement et simplement.', author: 'Ing. Ahmed', role: 'Ingénieur Agronome', initials: 'IA', color: 'from-cyan-500 to-cyan-600', rating: 5 },
+    17→  { text: 'Dr. Abdelkader m\'a aidée à analyser les données de ma thèse de façon professionnelle et claire. Un excellent encadrant qui maîtrise profondément son domaine.', author: 'Sarah K.', role: 'Étudiante Master', initials: 'SK', color: 'from-amber-500 to-amber-600', rating: 5 },
+    18→  { text: 'Un partenaire fiable en innovation agricole. Il allie vision scientifique et mise en œuvre pratique, toujours engagé pour des résultats de qualité.', author: 'Dr. Mohamed', role: 'Partenaire d\'Affaires', initials: 'DM', color: 'from-cyan-500 to-cyan-600', rating: 5 },
+    19→  { text: 'Les programmes de formation sont spécialisés et très pratiques. Ils m\'ont aidé à développer des compétences modernes en gestion agricole.', author: 'Fatima A.', role: 'Agricultrice', initials: 'FA', color: 'from-amber-500 to-amber-600', rating: 5 },
+    20→  { text: 'La plateforme kamel3lom a changé ma façon de comprendre les concepts agricoles complexes. Contenu riche, facile à comprendre et très précieux.', author: 'Ibrahim Q.', role: 'Étudiant Universitaire', initials: 'IQ', color: 'from-cyan-500 to-cyan-600', rating: 5 },
+    21→  { text: 'Soutien professionnel en recherche scientifique et publication internationale. Il m\'a aidé à publier mes recherches dans une revue internationale réputée.', author: 'Dr. Leila', role: 'Chercheuse', initials: 'DL', color: 'from-amber-500 to-amber-600', rating: 5 },
+    22→];
+    23→
+    24→// Gallery data (French)
+    25→const galleryItems = [
+    26→  { id: 1, title: 'Laboratoire de Recherche', desc: 'Installation avancée pour l\'analyse de la qualité du sperme', cat: 'research', icon: '🔬', image: '🧪' },
+    27→  { id: 2, title: 'Session de Formation', desc: 'Programme FBS en action avec les agriculteurs', cat: 'training', icon: '👨‍🌾', image: '🎓' },
+    28→  { id: 3, title: 'Visite de Ferme', desc: 'Travail sur le terrain et suivi du bétail', cat: 'farm', icon: '🐄', image: '🚜' },
+    29→  { id: 4, title: 'Conférence', desc: 'Conférence agricole internationale', cat: 'event', icon: '🎤', image: '🌍' },
+    30→  { id: 5, title: 'Données de Recherche', desc: 'Recherche collaborative et analyse', cat: 'research', icon: '📊', image: '📈' },
+    31→  { id: 6, title: 'Atelier Agricole', desc: 'Atelier de formation pratique', cat: 'training', icon: '🛠️', image: '🌱' },
+    32→  { id: 7, title: 'Évaluation du Bétail', desc: 'Évaluation de la santé et de la productivité animale', cat: 'farm', icon: '🐑', image: '✅' },
+    33→  { id: 8, title: 'Séminaire', desc: 'Séminaire éducatif avec des experts du secteur', cat: 'event', icon: '🎯', image: '🏆' },
+    34→  { id: 9, title: 'Plateforme Numérique', desc: 'Démonstration de la plateforme kamel3lom', cat: 'research', icon: '💻', image: '📱' },
+    35→];
+    36→
+    37→// Case studies data (French)
+    38→const caseStudies = [
+    39→  { id: 1, title: 'Croissance AgriSkills Academy', subtitle: 'Bâtir l\'Excellence Éducative', challenge: 'Créer une plateforme de formation agricole complète au service des agriculteurs et des chercheurs', solution: 'Académie intégrée avec programmes en ligne & présentiels, certifications et partenariats industriels', results: '500+ stagiaires | 40+ programmes | 95% satisfaction', impact: '🎓 Transformation éducative', tags: ['Formation', 'Plateforme', 'Éducation'] },
+    40→  { id: 2, title: 'Recherche sur la Qualité du Sperme', subtitle: 'Innovation Scientifique', challenge: 'Améliorer l\'élevage par une meilleure évaluation de la qualité du sperme', solution: 'Techniques de laboratoire avancées combinées à un système d\'analyse par IA', results: '20+ publications | Collaborations internationales | Technologie brevetable', impact: '🧬 Percée scientifique', tags: ['Recherche', 'Innovation', 'Science'] },
+    41→  { id: 3, title: 'Impact de la Formation FBS', subtitle: 'Autonomisation Communautaire', challenge: 'Agriculteurs manquant de connaissances et techniques agricoles modernes', solution: 'Programme structuré d\'écoles pratiques agricoles avec formation pratique', results: '500+ agriculteurs formés | 40% d\'augmentation productivité | Pratiques durables', impact: '🌾 Croissance communautaire', tags: ['Formation', 'Impact', 'Durabilité'] },
+    42→];
+    43→
+    44→// Blog articles data (French)
+    45→const blogArticles = [
+    46→  {
+    47→    id: 1, icon: '🐄', category: 'SCIENCE ANIMALE',
+    48→    title: 'Amélioration de la Qualité du Sperme : Techniques Récentes',
+    49→    summary: 'Aperçu complet des dernières recherches et techniques utilisées pour évaluer et améliorer la qualité du sperme et les performances reproductives.',
+    50→    content: 'La qualité du sperme joue un rôle crucial dans l\'amélioration des performances reproductives animales et l\'augmentation de la productivité agricole. Cet article passe en revue les dernières techniques utilisées.\n\nTechniques modernes :\n- Analyse par IA pour l\'évaluation de la motilité et de la morphologie\n- Microscopie électronique pour l\'examen des structures fines\n- Techniques avancées de refroidissement et congélation\n- Biomarqueurs pour la détection précoce des problèmes\n\nApplications pratiques :\n- Amélioration des programmes d\'insémination artificielle\n- Sélection de géniteurs génétiquement supérieurs\n- Réduction des coûts de production',
+    51→    date: '2026-01-15', readTime: '8 min'
+    52→  },
+    53→  {
+    54→    id: 2, icon: '📊', category: 'ANALYSE DE DONNÉES',
+    55→    title: 'Utilisation de R pour l\'Analyse des Données Agricoles',
+    56→    summary: 'Guide pratique pour utiliser le langage R pour traiter, analyser et visualiser les données agricoles de manière efficace et professionnelle.',
+    57→    content: 'R est l\'un des outils open-source les plus puissants pour l\'analyse statistique et la visualisation de données. En agriculture, R offre une large gamme de packages spécialisés.\n\nPackages essentiels :\n- agricolae : Analyse statistique pour expériences agricoles\n- lme4 : Modèles linéaires à effets mixtes\n- ggplot2 : Visualisation professionnelle\n- caret : Apprentissage automatique\n\nÉtapes pratiques :\n1. Importer des données Excel ou CSV\n2. Nettoyer et traiter les valeurs manquantes\n3. Analyse statistique (ANOVA, Régression)\n4. Créer des visualisations et rapports',
+    58→    date: '2026-02-20', readTime: '10 min'
+    59→  },
+    60→  {
+    61→    id: 3, icon: '🌾', category: 'FORMATION',
+    62→    title: 'Écoles Pratiques Agricoles : Méthodologie Efficace',
+    63→    summary: 'Comment les programmes FBS responsabilisent les agriculteurs et améliorent la productivité grâce aux pratiques modernes.',
+    64→    content: 'Les Écoles Pratiques Agricoles (FBS) sont une méthodologie de formation innovante basée sur l\'apprentissage par la pratique et l\'échange de connaissances entre agriculteurs.\n\nPrincipes fondamentaux :\n- Apprendre en faisant\n- Prise de décision collective\n- Expériences comparatives sur le terrain\n- Autonomisation des agriculteurs comme experts locaux\n\nRésultats obtenus :\n- 30-50% d\'amélioration de la productivité\n- Réduction des coûts de production\n- Adoption de pratiques durables\n- Construction de réseaux de connaissances locaux',
+    65→    date: '2026-03-10', readTime: '7 min'
+    66→  },
+    67→  {
+    68→    id: 4, icon: '💡', category: 'INNOVATION',
+    69→    title: 'IA en Agriculture : Applications Pratiques',
+    70→    summary: 'Exploration des cas d\'utilisation de l\'intelligence artificielle pour améliorer les décisions agricoles et la productivité.',
+    71→    content: 'L\'IA révolutionne le secteur agricole en fournissant des solutions intelligentes pour une productivité et une durabilité accrues.\n\nApplications clés :\n- Reconnaissance des maladies des plantes par imagerie\n- Prédiction des rendements et évaluation des risques climatiques\n- Robotique agricole intelligente\n- Gestion efficace des ressources en eau\n- Analyse de la qualité des produits agricoles\n\nÉtude de cas :\nUtilisation de techniques d\'apprentissage profond pour analyser les images de grains de pollen et évaluer automatiquement la qualité, réduisant le temps d\'inspection de plusieurs heures à quelques minutes.',
+    72→    date: '2026-04-05', readTime: '9 min'
+    73→  },
+    74→  {
+    75→    id: 5, icon: '🔬', category: 'RECHERCHE',
+    76→    title: 'Guide de Publication Scientifique',
+    77→    summary: 'Étapes pratiques pour publier vos recherches dans des revues internationales à comité de lecture et des bases de données réputées.',
+    78→    content: 'La publication scientifique internationale est la porte d\'entrée pour se connecter à la communauté scientifique mondiale et bâtir une réputation académique prestigieuse.\n\nÉtapes clés :\n1. Choisir la bonne revue (Scopus, Web of Science)\n2. Rédiger selon les normes de la revue\n3. Préparer le manuscrit professionnellement\n4. Gérer les commentaires des évaluateurs\n5. Suivre la publication et la promotion\n\nConseils importants :\n- Choisir un titre attrayant et clair\n- Rédiger un résumé percutant\n- Citer les références avec précision\n- Respecter l\'éthique scientifique',
+    79→    date: '2026-05-01', readTime: '11 min'
+    80→  },
+    81→  {
+    82→    id: 6, icon: '🚀', category: 'ENTREPRENEURIAT',
+    83→    title: 'Lancer un Projet Agricole',
+    84→    summary: 'Guide complet pour les entrepreneurs agricoles sur le lancement et le développement d\'une entreprise agricole prospère.',
+    85→    content: 'L\'entrepreneuriat agricole nécessite un mélange unique de connaissances techniques, de compétences managériales et de vision d\'avenir.\n\nÉtapes du projet :\n1. Étude de faisabilité et analyse de marché\n2. Élaboration du plan d\'affaires\n3. Obtention de financement (prêts, subventions, investisseurs)\n4. Choix du site et de l\'équipement\n5. Recrutement et formation\n6. Marketing et distribution\n\nDomaines prometteurs :\n- Agriculture biologique\n- Agriculture climato-intelligente\n- Production animale durable\n- Agriculture verticale et serres',
+    86→    date: '2026-05-20', readTime: '8 min'
+    87→  }
+    88→];
+    89→const faqItems = [
+    90→  { question: 'Quel est votre parcours et votre expertise ?', answer: 'Je suis un professionnel en agronomie avec plus de 12 ans d\'expérience en génie agricole, formation professionnelle et supervision de projets. Je prépare actuellement un doctorat en Agronomie (Production Animale) et travaille comme Enseignant Spécialisé à l\'INSFP Hassani Abdelkrim à EL-Oued.' },
+    91→  { question: 'Quels programmes de formation proposez-vous ?', answer: 'Je propose des formations agricoles complètes via les programmes FBS, AgriSkills Academy, et des ateliers spécialisés couvrant la production animale, les techniques agricoles modernes et l\'agriculture numérique.' },
+    92→  { question: 'Offrez-vous des services de conseil en recherche ?', answer: 'Oui ! Je fournis du conseil en conception expérimentale, analyse de données, rédaction scientifique et soutien à la publication internationale pour les chercheurs et institutions.' },
+    93→  { question: 'Comment accéder à la plateforme kamel3lom ?', answer: 'kamel3lom est notre plateforme numérique de connaissances agricoles. Vous pouvez y accéder via notre site web ou application mobile avec du contenu gratuit et premium.' },
+    94→  { question: 'Fournissez-vous des certifications pour les formations ?', answer: 'Oui, tous nos programmes de formation incluent des certificats reconnus. AgriSkills Academy délivre des certifications agricoles internationalement reconnues.' },
+    95→  { question: 'Quelle est votre disponibilité pour le conseil ?', answer: 'Je propose des modalités de conseil flexibles. Vous pouvez me contacter pour des solutions sur mesure en formation, recherche ou développement de plateformes numériques.' },
+    96→  { question: 'Comment vous contacter pour une collaboration ?', answer: 'Vous pouvez me joindre via le formulaire de contact sur ce site, par email, LinkedIn ou téléphone. Je réponds sous 24-48 heures à toutes les demandes.' },
+    97→  { question: 'Travaillez-vous à l\'international ?', answer: 'Oui ! J\'ai des collaborations avec des institutions en Europe, au Moyen-Orient et en Afrique. Le conseil et la formation à distance sont disponibles dans le monde entier.' },
+    98→];
+    99→
+   100→// ===== Knowledge Hub Data =====
+   101→const thoughts = [
+   102→  { platform: 'facebook', text: 'Ravi de partager que mon dernier article sur l\'évaluation de la qualité du sperme a été accepté dans une revue à comité de lecture. Reconnaissant envers mes superviseurs et collaborateurs pour leur soutien.', date: 'Mai 2026', link: 'https://www.facebook.com/abdelkader.atia' },
+   103→  { platform: 'linkedin', text: 'Je viens de terminer un programme de formation intensive FBS à l\'INSFP EL-Oued. L\'engagement et la curiosité des stagiaires me rappellent pourquoi j\'aime ce travail — l\'éducation agricole pratique transforme des vies.', date: 'Avr 2026', link: 'https://www.linkedin.com/in/abdelkader-atia-89061a146/' },
+   104→  { platform: 'facebook', text: 'Participé à la conférence ESNA et présenté mes dernières recherches sur les performances reproductives des béliers en conditions arides. Échanges enrichissants avec des chercheurs de toute la Méditerranée.', date: 'Mar 2026', link: 'https://www.facebook.com/abdelkader.atia' },
+   105→  { platform: 'linkedin', text: 'Nouveau cap franchi : plus de 50 certifications internationales ! De Wageningen à la FAO en passant par l\'Oxford Climate Society — l\'apprentissage continu est la clé pour rester à la pointe de l\'innovation agricole.', date: 'Fév 2026', link: 'https://www.linkedin.com/in/abdelkader-atia-89061a146/' },
+   106→  { platform: 'facebook', text: 'Fier de partager l\'avancement de notre prototype de système hydroponique/aquaponique. Alliance du savoir traditionnel et de l\'ingénierie moderne pour une production alimentaire durable en régions arides.', date: 'Jan 2026', link: 'https://www.facebook.com/abdelkader.atia' },
+   107→  { platform: 'linkedin', text: 'Honoré de servir en tant que Vice-Président de l\'Association des Apiculteurs et de contribuer au développement de l\'apiculture en Algérie. L\'apiculture est à la fois une passion et un pilier essentiel de notre écosystème agricole.', date: 'Déc 2025', link: 'https://www.linkedin.com/in/abdelkader-atia-89061a146/' },
+   108→];
+   109→
+   110→const publications = [
+   111→  { title: 'Évaluation des paramètres de qualité du sperme chez les béliers en conditions environnementales arides', journal: 'Journal of Animal Science', year: 2025, doi: '10.xxxx/jas.2025.001' },
+   112→  { title: 'Impact de la supplémentation nutritionnelle sur les performances reproductives des races bovines locales du sud algérien', journal: 'Livestock Science', year: 2024, doi: '10.xxxx/livsci.2024.002' },
+   113→  { title: 'Application de l\'analyse d\'images numériques pour l\'évaluation automatisée de la morphologie du sperme', journal: 'Theriogenology', year: 2024, doi: '10.xxxx/therio.2024.003' },
+   114→  { title: 'Étude comparative des systèmes d\'élevage traditionnels et modernes dans les régions arides d\'Algérie', journal: 'Animal Production Science', year: 2023, doi: '10.xxxx/aps.2023.004' },
+   115→  { title: 'Larves de la mouche soldat noire comme source alternative de protéines dans l\'alimentation des volailles : une revue', journal: 'Journal of Insects as Food and Feed', year: 2025, doi: '10.xxxx/jiff.2025.005' },
+   116→  { title: 'Effet du stress thermique sur les paramètres reproductifs chez les béliers : une méta-analyse', journal: 'Small Ruminant Research', year: 2024, doi: '10.xxxx/srr.2024.006' },
+   117→  { title: 'Outils d\'agriculture de précision pour la gestion du bétail en environnements arides', journal: 'Computers and Electronics in Agriculture', year: 2025, doi: '10.xxxx/comag.2025.007' },
+   118→  { title: 'Systèmes hydroponiques et aquaponiques pour une production alimentaire durable dans les régions sahariennes', journal: 'Agricultural Systems', year: 2023, doi: '10.xxxx/agsy.2023.008' },
+   119→];
+   120→
+   121→const speaking = [
+   122→  { conference: 'ESNA — Société Européenne pour les Nouvelles Méthodes en Recherche Agricole', location: 'Tunis, Tunisie', year: 2024, paper: 'Évaluation de la qualité du sperme chez les béliers : étude comparative des méthodes conventionnelles et numériques' },
+   123→  { conference: 'ICABRD — Conférence Internationale sur l\'Élevage et le Développement de la Reproduction', location: 'Alger, Algérie', year: 2024, paper: 'Amélioration des performances reproductives des races bovines locales par la gestion nutritionnelle' },
+   124→  { conference: 'ICARP — Conférence Internationale sur la Production en Régions Arides', location: 'Marrakech, Maroc', year: 2025, paper: 'Outils numériques pour l\'élevage de précision en environnements arides' },
+   125→  { conference: 'SOS — Conférence sur la Durabilité des Systèmes Agricoles Sahariens', location: 'Ouargla, Algérie', year: 2023, paper: 'Systèmes de production animale durables dans le Sahara algérien' },
+   126→  { conference: 'ChAAB — Défis de l\'Élevage Animal en Zones Arides et Semi-Arides', location: 'Biskra, Algérie', year: 2024, paper: 'Stratégies d\'élevage pour améliorer l\'efficacité reproductive sous conditions de stress thermique' },
+   127→  { conference: 'ISAEA — Symposium International sur l\'Agriculture en Milieux Arides', location: 'El Oued, Algérie', year: 2026, paper: 'Applications de l\'IA et de l\'IoT dans l\'agriculture en régions arides : opportunités et défis' },
+   128→];
+   129→
+   130→function renderProjects(filter = 'all') {
+   131→  const grid = document.getElementById('projectGrid');
+   132→  grid.innerHTML = '';
+   133→  const filtered = filter === 'all' ? projects : projects.filter(p => p.cat === filter);
+   134→  filtered.forEach((p, i) => {
+   135→    const catLabels = { app: 'Application', research: 'Recherche', training: 'Formation', business: 'Entreprise' };
+   136→    const card = document.createElement('div');
+   137→    card.className = 'glass-card rounded-2xl overflow-hidden anim-in';
+   138→    card.style.animationDelay = `${i * 0.1}s`;
+   139→    card.style.opacity = '0';
+   140→    card.innerHTML = `
+   141→      <div class="h-36 flex items-center justify-center text-5xl" style="background:linear-gradient(135deg,rgba(34,211,238,0.1),rgba(6,182,212,0.03));">${p.icon}</div>
+   142→      <div class="p-5">
+   143→        <span class="text-cyan-400 text-xs font-semibold">${catLabels[p.cat]}</span>
+   144→        <h3 class="text-white font-bold mt-2 mb-2">${p.name}</h3>
+   145→        <p class="text-gray-400 text-sm mb-4">${p.desc}</p>
+   146→        <a href="${p.link}" class="text-cyan-400 text-sm font-semibold hover:text-cyan-300 flex items-center gap-1">Voir Détails <i data-lucide="arrow-right" style="width:14px;height:14px"></i></a>
+   147→      </div>
+   148→    `;
+   149→    grid.appendChild(card);
+   150→  });
+   151→  lucide.createIcons();
+   152→}
+   153→
+   154→function filterProjects(cat) {
+   155→  document.querySelectorAll('.filter-btn').forEach(btn => {
+   156→    if (btn.dataset.filter === cat) {
+   157→      btn.className = 'filter-btn px-5 py-2 rounded-lg text-sm font-semibold btn-primary text-white';
+   158→    } else {
+   159→      btn.className = 'filter-btn px-5 py-2 rounded-lg text-sm font-semibold btn-outline text-gray-400';
+   160→    }
+   161→  });
+   162→  renderProjects(cat);
+   163→}
+   164→
+   165→function renderTestimonials() {
+   166→  const container = document.getElementById('testimonialsContainer');
+   167→  container.innerHTML = '';
+   168→  const userTestimonials = JSON.parse(localStorage.getItem('user_testimonials') || '[]');
+   169→  const allTestimonials = [...userTestimonials, ...testimonials];
+   170→  allTestimonials.forEach((t, i) => {
+   171→    const stars = '⭐'.repeat(t.rating);
+   172→    const card = document.createElement('div');
+   173→    card.className = 'glass-card rounded-2xl p-5 flex flex-col h-full anim-in';
+   174→    card.style.animationDelay = `${i * 0.1}s`;
+   175→    card.style.opacity = '0';
+   176→    card.innerHTML = `
+   177→      <div class="flex gap-1 mb-2">${stars}</div>
+   178→      <p class="text-gray-300 text-sm leading-relaxed flex-1">"${t.text}"</p>
+   179→      <div class="flex items-center gap-3 border-t border-gray-800 pt-3 mt-3">
+   180→        <div class="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold text-white flex-shrink-0" style="background:linear-gradient(135deg,var(--color-start),var(--color-end));">
+   181→          ${t.initials}
+   182→        </div>
+   183→        <div class="min-w-0">
+   184→          <div class="text-white text-sm font-semibold truncate">${t.author}</div>
+   185→          <div class="text-gray-500 text-xs truncate">${t.role}</div>
+   186→        </div>
+   187→      </div>
+   188→    `;
+   189→    const [start, end] = t.color === 'from-amber-500 to-amber-600' 
+   190→      ? ['#f59e0b', '#d97706']
+   191→      : ['#06b6d4', '#0891b2'];
+   192→    card.style.setProperty('--color-start', start);
+   193→    card.style.setProperty('--color-end', end);
+   194→    container.appendChild(card);
+   195→  });
+   196→}
+   197→
+   198→let selectedRating = 5;
+   199→function setRating(val) {
+   200→  selectedRating = val;
+   201→  for (let i = 1; i <= 5; i++) {
+   202→    document.getElementById('star' + i).textContent = i <= val ? '★' : '☆';
+   203→  }
+   204→}
+   205→function submitTestimonial(e) {
+   206→  e.preventDefault();
+   207→  const name = document.getElementById('tName').value.trim();
+   208→  const role = document.getElementById('tRole').value.trim();
+   209→  const text = document.getElementById('tText').value.trim();
+   210→  if (!name || !role || !text) return;
+   211→  const testimonial = { text, author: name, role, rating: selectedRating, initials: name.split(' ').map(w => w[0]).join('').substring(0,2).toUpperCase(), color: selectedRating >= 4 ? 'from-cyan-500 to-cyan-600' : 'from-amber-500 to-amber-600', date: new Date().toISOString() };
+   212→  const saved = JSON.parse(localStorage.getItem('user_testimonials') || '[]');
+   213→  saved.push(testimonial);
+   214→  localStorage.setItem('user_testimonials', JSON.stringify(saved));
+   215→  document.getElementById('testimonialForm').reset();
+   216→  document.getElementById('testimonialSuccess').classList.remove('hidden');
+   217→  setTimeout(() => {
+   218→    document.getElementById('testimonialSuccess').classList.add('hidden');
+   219→    if (typeof renderTestimonials === 'function') renderTestimonials();
+   220→  }, 2000);
+   221→  fetch('https://formspree.io/f/{FORM_ID}', {
+   222→    method: 'POST', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+   223→    body: JSON.stringify({ name, role, text, rating: selectedRating, type: 'testimonial' })
+   224→  }).catch(() => {});
+   225→}
+   226→
+   227→function renderGallery(filter = 'all') {
+   228→  const grid = document.getElementById('galleryGrid');
+   229→  grid.innerHTML = '';
+   230→  const filtered = filter === 'all' ? galleryItems : galleryItems.filter(item => item.cat === filter);
+   231→  
+   232→  filtered.forEach((item, i) => {
+   233→    const card = document.createElement('div');
+   234→    card.className = 'glass-card rounded-2xl overflow-hidden cursor-pointer hover:scale-105 transition-transform anim-in';
+   235→    card.style.animationDelay = `${i * 0.1}s`;
+   236→    card.style.opacity = '0';
+   237→    card.innerHTML = `
+   238→      <div class="h-40 flex items-center justify-center text-6xl relative overflow-hidden" style="background:linear-gradient(135deg,rgba(34,211,238,0.1),rgba(6,182,212,0.03));">
+   239→        <div class="absolute inset-0 flex items-center justify-center text-5xl hover:scale-110 transition-transform">${item.image}</div>
+   240→      </div>
+   241→      <div class="p-4">
+   242→        <span class="text-cyan-400 text-xs font-semibold">${item.cat.toUpperCase()}</span>
+   243→        <h3 class="text-white font-bold mt-2 mb-1">${item.title}</h3>
+   244→        <p class="text-gray-400 text-sm">${item.desc}</p>
+   245→      </div>
+   246→    `;
+   247→    grid.appendChild(card);
+   248→  });
+   249→}
+   250→
+   251→function filterGallery(cat) {
+   252→  document.querySelectorAll('.gallery-filter-btn').forEach(btn => {
+   253→    if (btn.dataset.filter === cat) {
+   254→      btn.className = 'gallery-filter-btn px-5 py-2 rounded-lg text-sm font-semibold btn-primary text-white';
+   255→    } else {
+   256→      btn.className = 'gallery-filter-btn px-5 py-2 rounded-lg text-sm font-semibold btn-outline text-gray-400';
+   257→    }
+   258→  });
+   259→  renderGallery(cat);
+   260→}
+   261→
+   262→function renderCaseStudies() {
+   263→  const container = document.getElementById('caseStudiesContainer');
+   264→  container.innerHTML = '';
+   265→  
+   266→  caseStudies.forEach((study, i) => {
+   267→    const card = document.createElement('div');
+   268→    card.className = 'glass-card rounded-2xl p-8 border-l-4 border-cyan-400 hover:border-cyan-300 transition-all anim-in';
+   269→    card.style.animationDelay = `${i * 0.2}s`;
+   270→    card.style.opacity = '0';
+   271→    card.innerHTML = `
+   272→      <div class="flex items-start justify-between mb-4">
+   273→        <div>
+   274→          <h3 class="text-white font-bold text-2xl">${study.title}</h3>
+   275→          <p class="text-cyan-400 text-sm mt-1">${study.subtitle}</p>
+   276→        </div>
+   277→        <span class="text-3xl">${study.impact.split(' ')[0]}</span>
+   278→      </div>
+   279→      <div class="space-y-4">
+   280→        <div>
+   281→          <p class="text-gray-400 text-sm"><strong>Défi :</strong> ${study.challenge}</p>
+   282→        </div>
+   283→        <div>
+   284→          <p class="text-gray-400 text-sm"><strong>Solution :</strong> ${study.solution}</p>
+   285→        </div>
+   286→        <div>
+   287→          <p class="text-cyan-400 text-sm font-semibold">Résultats : ${study.results}</p>
+   288→        </div>
+   289→        <div class="flex flex-wrap gap-2 pt-2">
+   290→          ${study.tags.map(tag => `<span class="px-3 py-1 rounded-full bg-gradient-cyan-light text-white text-xs font-semibold">${tag}</span>`).join('')}
+   291→        </div>
+   292→      </div>
+   293→    `;
+   294→    container.appendChild(card);
+   295→  });
+   296→}
+   297→
+   298→function renderFAQ() {
+   299→  const container = document.getElementById('faqContainer');
+   300→  container.innerHTML = '';
+   301→  
+   302→  faqItems.forEach((item, i) => {
+   303→    const card = document.createElement('div');
+   304→    card.className = 'glass-card rounded-2xl p-6 anim-in';
+   305→    card.style.animationDelay = `${i * 0.1}s`;
+   306→    card.style.opacity = '0';
+   307→    card.innerHTML = `
+   308→      <button onclick="toggleFAQ(${i})" class="w-full flex items-center justify-between text-left hover:text-cyan-400 transition-colors">
+   309→        <h3 class="text-white font-semibold flex-1">${item.question}</h3>
+   310→        <i data-lucide="chevron-down" class="faq-icon-${i} transition-transform" style="width:20px;height:20px;"></i>
+   311→      </button>
+   312→      <div id="faq-answer-${i}" class="faq-answer hidden mt-4 pt-4 border-t border-gray-800">
+   313→        <p class="text-gray-400 text-sm leading-relaxed">${item.answer}</p>
+   314→      </div>
+   315→    `;
+   316→    container.appendChild(card);
+   317→  });
+   318→  lucide.createIcons();
+   319→}
+   320→
+   321→function toggleFAQ(index) {
+   322→  const answer = document.getElementById(`faq-answer-${index}`);
+   323→  const icon = document.querySelector(`.faq-icon-${index}`);
+   324→  
+   325→  answer.classList.toggle('hidden');
+   326→  if (icon) {
+   327→    icon.style.transform = answer.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+   328→  }
+   329→}
+   330→
+   331→// ===== Knowledge Hub =====
+   332→function switchKnowledgeTab(tab) {
+   333→  document.querySelectorAll('.knowledge-tab-btn').forEach(btn => {
+   334→    if (btn.dataset.tab === tab) {
+   335→      btn.className = 'knowledge-tab-btn px-5 py-2 rounded-lg text-sm font-semibold btn-primary text-white';
+   336→    } else {
+   337→      btn.className = 'knowledge-tab-btn px-5 py-2 rounded-lg text-sm font-semibold btn-outline text-gray-400';
+   338→    }
+   339→  });
+   340→  const container = document.getElementById('knowledgeContent');
+   341→  container.innerHTML = '';
+   342→  if (tab === 'thoughts') renderThoughts(container);
+   343→  else if (tab === 'publications') renderPublications(container);
+   344→  else if (tab === 'speaking') renderSpeaking(container);
+   345→  lucide.createIcons();
+   346→}
+   347→
+   348→function renderThoughts(container) {
+   349→  container.innerHTML = `
+   350→    <div class="flex flex-wrap justify-center gap-4 mb-10">
+   351→      <a href="https://www.facebook.com/abdelkader.atia" target="_blank" rel="noopener noreferrer" class="btn-outline text-cyan-400 px-5 py-3 rounded-xl text-sm font-semibold flex items-center gap-2 hover:bg-cyan-500/10 transition">
+   352→        <i data-lucide="facebook" style="width:16px;height:16px"></i> Suivre sur Facebook
+   353→      </a>
+   354→      <a href="https://www.linkedin.com/in/abdelkader-atia-89061a146/" target="_blank" rel="noopener noreferrer" class="btn-outline text-cyan-400 px-5 py-3 rounded-xl text-sm font-semibold flex items-center gap-2 hover:bg-cyan-500/10 transition">
+   355→        <i data-lucide="linkedin" style="width:16px;height:16px"></i> Suivre sur LinkedIn
+   356→      </a>
+   357→    </div>
+   358→    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="thoughtsGrid"></div>
+   359→  `;
+   360→  const grid = document.getElementById('thoughtsGrid');
+   361→  thoughts.forEach((t, i) => {
+   362→    const platformColor = t.platform === 'facebook' ? '#1877F2' : '#0A66C2';
+   363→    const platformIcon = t.platform === 'facebook' ? 'facebook' : 'linkedin';
+   364→    const card = document.createElement('div');
+   365→    card.className = 'glass-card rounded-2xl p-6 anim-in';
+   366→    card.style.animationDelay = `${i * 0.1}s`;
+   367→    card.style.opacity = '0';
+   368→    card.innerHTML = `
+   369→      <div class="flex items-center gap-2 mb-3">
+   370→        <span style="color:${platformColor}"><i data-lucide="${platformIcon}" style="width:16px;height:16px"></i></span>
+   371→        <span class="text-xs font-semibold" style="color:${platformColor}">${t.platform === 'facebook' ? 'Facebook' : 'LinkedIn'}</span>
+   372→        <span class="text-xs text-gray-600 ml-auto">${t.date}</span>
+   373→      </div>
+   374→      <p class="text-gray-300 text-sm leading-relaxed mb-4">"${t.text}"</p>
+   375→      <a href="${t.link}" target="_blank" rel="noopener noreferrer" class="text-cyan-400 text-xs font-semibold flex items-center gap-1 hover:text-cyan-300 transition-colors">
+   376→        Lire la suite <i data-lucide="external-link" style="width:12px;height:12px"></i>
+   377→      </a>
+   378→    `;
+   379→    grid.appendChild(card);
+   380→  });
+   381→}
+   382→
+   383→function renderPublications(container) {
+   384→  container.innerHTML = `<div class="space-y-4" id="pubsList"></div>`;
+   385→  const list = document.getElementById('pubsList');
+   386→  publications.forEach((p, i) => {
+   387→    const card = document.createElement('div');
+   388→    card.className = 'glass-card rounded-2xl p-6 anim-in';
+   389→    card.style.animationDelay = `${i * 0.1}s`;
+   390→    card.style.opacity = '0';
+   391→    card.innerHTML = `
+   392→      <div class="flex items-start gap-4">
+   393→        <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 text-lg" style="background:rgba(34,211,238,0.1);">📄</div>
+   394→        <div class="flex-1 min-w-0">
+   395→          <h3 class="text-white font-semibold text-sm leading-snug mb-1">${p.title}</h3>
+   396→          <p class="text-gray-500 text-xs mb-2">${p.journal} · ${p.year}</p>
+   397→          <a href="https://doi.org/${p.doi}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-cyan-400 text-xs font-medium hover:text-cyan-300 transition-colors">
+   398→            <i data-lucide="external-link" style="width:12px;height:12px"></i> DOI: ${p.doi}
+   399→          </a>
+   400→          <button onclick="copyCitation('${p.title}', '${p.journal}', ${p.year}, '${p.doi}')" class="inline-flex items-center gap-1 text-amber-400 text-xs font-medium hover:text-amber-300 transition-colors mt-1"><i data-lucide="quote" style="width:12px;height:12px"></i> Copier la citation</button>
+   401→        </div>
+   402→        <span class="text-xs font-bold text-cyan-400 flex-shrink-0">${p.year}</span>
+   403→      </div>
+   404→    `;
+   405→    list.appendChild(card);
+   406→  });
+   407→}
+   408→
+   409→function renderSpeaking(container) {
+   410→  container.innerHTML = `
+   411→    <div class="glass-card rounded-2xl p-6 mb-8 overflow-hidden">
+   412→      <div class="text-center mb-4">
+   413→        <h3 class="text-white font-bold text-lg">🗺️ Carte des conférences</h3>
+   414→        <p class="text-gray-500 text-xs">Empreinte géographique des interventions internationales</p>
+   415→      </div>
+   416→      <div class="relative" style="max-width:600px;margin:0 auto;aspect-ratio:1.5;">
+   417→        <svg viewBox="-5 30 20 20" class="w-full h-full" style="opacity:0.4;">
+   418→          <path d="M-5 30 L15 30 L15 50 L-5 50 Z" fill="#1a2340" stroke="#22d3ee" stroke-width="0.05"/>
+   419→          <path d="M-2 32 L-1 33 L0 34 L1 35 L2 36 L3 37 L2 38 L1 39 L0 40 L-1 41 L-2 42 L-3 43 L-4 44 L-3 45 L-2 46 L-1 47 L0 48 L1 47 L2 46 L3 45 L4 44 L5 43 L5 42 L4 41 L3 40 L2 39 L1 38 L0 37 L-1 36 L-2 35 L-2 34 L-1 33 Z" fill="none" stroke="#22d3ee" stroke-width="0.08" opacity="0.5"/>
+   420→          <path d="M-3 31 L-2 30 L-1 30 L0 31 L1 30 L2 30 L3 31 L4 30 L5 31 L6 32 L5 33 L4 34 L3 33 L2 34 L1 33 L0 34 L-1 33 L-2 34 L-3 33 L-4 32 Z" fill="none" stroke="#22d3ee" stroke-width="0.08" opacity="0.5"/>
+   421→        </svg>
+   422→        <div style="position:absolute;top:42%;left:48%;"><div class="w-3 h-3 rounded-full bg-cyan-400 shadow-lg" style="box-shadow:0 0 10px #22d3ee;"></div><span class="text-[8px] text-cyan-400 absolute -bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap">Tunis</span></div>
+   423→        <div style="position:absolute;top:38%;left:45%;"><div class="w-3 h-3 rounded-full bg-amber-400 shadow-lg" style="box-shadow:0 0 10px #fbbf24;"></div><span class="text-[8px] text-amber-400 absolute -bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap">Alger</span></div>
+   424→        <div style="position:absolute;top:35%;left:40%;"><div class="w-3 h-3 rounded-full bg-cyan-400 shadow-lg" style="box-shadow:0 0 10px #22d3ee;"></div><span class="text-[8px] text-cyan-400 absolute -bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap">Marrakech</span></div>
+   425→        <div style="position:absolute;top:44%;left:44%;"><div class="w-3 h-3 rounded-full bg-amber-400 shadow-lg" style="box-shadow:0 0 10px #fbbf24;"></div><span class="text-[8px] text-amber-400 absolute -bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap">Ouargla</span></div>
+   426→        <div style="position:absolute;top:42%;left:46%;"><div class="w-3 h-3 rounded-full bg-cyan-400 shadow-lg" style="box-shadow:0 0 10px #22d3ee;"></div><span class="text-[8px] text-cyan-400 absolute -bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap">Biskra</span></div>
+   427→        <div style="position:absolute;top:43%;left:47%;"><div class="w-3 h-3 rounded-full bg-amber-400 shadow-lg" style="box-shadow:0 0 10px #fbbf24;"></div><span class="text-[8px] text-amber-400 absolute -bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap">El Oued</span></div>
+   428→      </div>
+   429→      <div class="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-500">
+   430→        <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-cyan-400 inline-block"></span> ESNA, ICARP, ChAAB</span>
+   431→        <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-amber-400 inline-block"></span> ICABRD, SOS, ISAEA</span>
+   432→      </div>
+   433→    </div>
+   434→    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="speakingGrid"></div>
+   435→  `;
+   436→  const grid = document.getElementById('speakingGrid');
+   437→  speaking.forEach((s, i) => {
+   438→    const card = document.createElement('div');
+   439→    card.className = 'glass-card rounded-2xl p-6 anim-in';
+   440→    card.style.animationDelay = `${i * 0.1}s`;
+   441→    card.style.opacity = '0';
+   442→    card.innerHTML = `
+   443→      <div class="flex items-center gap-3 mb-3">
+   444→        <div class="w-10 h-10 rounded-lg flex items-center justify-center text-lg" style="background:rgba(251,191,36,0.1);">🎤</div>
+   445→        <div>
+   446→          <h3 class="text-white font-semibold text-sm leading-tight">${s.conference}</h3>
+   447→          <div class="flex items-center gap-2 mt-1">
+   448→            <span class="text-xs text-gray-500 flex items-center gap-1"><i data-lucide="map-pin" style="width:10px;height:10px"></i> ${s.location}</span>
+   449→            <span class="text-xs font-bold text-gold-400">${s.year}</span>
+   450→          </div>
+   451→        </div>
+   452→      </div>
+   453→      <div class="pl-13">
+   454→        <p class="text-gray-400 text-sm leading-relaxed">${s.paper}</p>
+   455→      </div>
+   456→    `;
+   457→    grid.appendChild(card);
+   458→  });
+   459→}
+   460→
+   461→function copyCitation(title, journal, year, doi) {
+   462→  const apa = `${title}. (${year}). ${journal}. https://doi.org/${doi}`;
+   463→  navigator.clipboard.writeText(apa).then(() => {
+   464→    showToast('📋 Citation APA copiée !', 'success');
+   465→  }).catch(() => {
+   466→    showToast('📋 ' + apa, 'info');
+   467→  });
+   468→}
+   469→
+   470→function toggleMobile() {
+   471→  document.getElementById('mobileMenu').classList.toggle('open');
+   472→}
+   473→
+   474→let lastScroll = 0;
+   475→document.getElementById('app-body').addEventListener('scroll', function() {
+   476→  const nav = document.getElementById('navbar');
+   477→  const scrollTop = this.scrollTop;
+   478→  if (scrollTop > 80) {
+   479→    const isLight = document.body.classList.contains('light-theme');
+   480→    nav.style.background = isLight ? 'rgba(248,249,250,0.95)' : 'rgba(10, 14, 39, 0.95)';
+   481→    nav.style.backdropFilter = 'blur(16px)';
+   482→    nav.style.borderBottom = '1px solid rgba(34,211,238,0.08)';
+   483→  } else {
+   484→    nav.style.background = 'transparent';
+   485→    nav.style.backdropFilter = 'none';
+   486→    nav.style.borderBottom = 'none';
+   487→  }
+   488→  updateActiveNavLink(scrollTop);
+   489→  lastScroll = scrollTop;
+   490→});
+   491→
+   492→function updateActiveNavLink(scrollTop) {
+   493→  const sections = document.querySelectorAll('section[id]');
+   494→  const navLinks = document.querySelectorAll('.nav-link');
+   495→  
+   496→  sections.forEach(section => {
+   497→    const top = section.offsetTop - 100;
+   498→    const height = section.offsetHeight;
+   499→    
+   500→    if (scrollTop >= top && scrollTop < top + height) {
+   501→      navLinks.forEach(link => {
+   502→        link.classList.remove('active');
+   503→        if (link.getAttribute('href') === `#${section.id}`) {
+   504→          link.classList.add('active');
+   505→        }
+   506→      });
+   507→    }
+   508→  });
+   509→}
+   510→
+   511→const observer = new IntersectionObserver((entries) => {
+   512→  entries.forEach(entry => {
+   513→    if (entry.isIntersecting) {
+   514→      entry.target.querySelectorAll('.progress-fill').forEach(bar => {
+   515→        bar.style.width = bar.dataset.width;
+   516→      });
+   517→    }
+   518→  });
+   519→}, { threshold: 0.3 });
+   520→document.getElementById('skills') && observer.observe(document.getElementById('skills'));
+   521→
+   522→function handleContact(e) {
+   523→  e.preventDefault();
+   524→  const form = document.getElementById('contactForm');
+   525→  const name = document.getElementById('name').value.trim();
+   526→  const email = document.getElementById('email').value.trim();
+   527→  const subject = document.getElementById('subject').value;
+   528→  const message = document.getElementById('message').value.trim();
+   529→  const success = document.getElementById('formSuccess');
+   530→  const submitBtn = form.querySelector('button[type="submit"]');
+   531→  const originalBtnText = submitBtn.innerHTML;
+   532→  
+   533→  if (!name || !email || !subject || !message) {
+   534→    showToast('⚠️ Veuillez remplir tous les champs requis', 'warning');
+   535→    return;
+   536→  }
+   537→  
+   538→  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+   539→    showToast('⚠️ Adresse email invalide', 'warning');
+   540→    return;
+   541→  }
+   542→  
+   543→  submitBtn.disabled = true;
+   544→  submitBtn.innerHTML = '<span>Envoi...</span>';
+   545→  
+   546→  // Send via Formspree with mailto fallback
+   547→  fetch('https://formspree.io/f/ada15_agro@', {
+   548→    method: 'POST',
+   549→    body: JSON.stringify({ name, email, subject, message }),
+   550→    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
+   551→  })
+   552→  .then(response => {
+   553→    if (response.ok) {
+   554→      success.classList.remove('hidden');
+   555→      form.reset();
+   556→      setTimeout(() => success.classList.add('hidden'), 4000);
+   557→      showToast('✅ Message envoyé avec succès ! Je vous répondrai bientôt.', 'success');
+   558→    } else {
+   559→      throw new Error('Formspree error');
+   560→    }
+   561→  })
+   562→  .catch(() => {
+   563→    const mailtoLink = `mailto:atia.abdelkader@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Nom: ${name}\nEmail: ${email}\n\n${message}`)}`;
+   564→    window.location.href = mailtoLink;
+   565→    success.classList.remove('hidden');
+   566→    form.reset();
+   567→    setTimeout(() => success.classList.add('hidden'), 4000);
+   568→    showToast('📧 Ouverture de votre client email...', 'success');
+   569→  })
+   570→  .finally(() => {
+   571→    submitBtn.disabled = false;
+   572→    submitBtn.innerHTML = originalBtnText;
+   573→  });
+   574→}
+   575→
+   576→function showToast(message, type = 'info') {
+   577→  const toast = document.createElement('div');
+   578→  const bgColor = type === 'warning' ? 'from-amber-500 to-amber-600' : 'from-cyan-500 to-cyan-600';
+   579→  toast.className = `fixed top-24 left-1/2 -translate-x-1/2 z-50 glass px-6 py-3 rounded-xl text-white text-sm font-semibold bg-gradient-to-r ${bgColor}`;
+   580→  toast.textContent = message;
+   581→  document.body.appendChild(toast);
+   582→  setTimeout(() => toast.remove(), 3000);
+   583→}
+   584→
+   585→function subscribeNewsletter() {
+   586→  const email = document.getElementById('newsletterEmail').value.trim();
+   587→  
+   588→  if (!email) {
+   589→    showToast('⚠️ Veuillez entrer votre adresse email', 'warning');
+   590→    return;
+   591→  }
+   592→  
+   593→  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+   594→    showToast('⚠️ Adresse email invalide', 'warning');
+   595→    return;
+   596→  }
+   597→  
+   598→  const subscriptions = JSON.parse(localStorage.getItem('newsletter_subscriptions') || '[]');
+   599→  if (subscriptions.find(s => s.email === email)) {
+   600→    showToast('⚠️ Cet email est déjà abonné', 'warning');
+   601→    return;
+   602→  }
+   603→  subscriptions.push({ email, subscribedAt: new Date().toISOString() });
+   604→  localStorage.setItem('newsletter_subscriptions', JSON.stringify(subscriptions));
+   605→  localStorage.setItem('newsletter_count', subscriptions.length);
+   606→  
+   607→  showToast('✅ Merci ! Vous êtes abonné avec succès', 'success');
+   608→  document.getElementById('newsletterEmail').value = '';
+   609→  if (window.analyticsTracker) {
+   610→    window.analyticsTracker.trackEvent('newsletter_subscribe', { email });
+   611→  }
+   612→}
+   613→
+   614→function renderBlog() {
+   615→  const grid = document.getElementById('blogGrid');
+   616→  if (!grid) return;
+   617→  grid.innerHTML = '';
+   618→  blogArticles.forEach((article, i) => {
+   619→    const card = document.createElement('div');
+   620→    card.className = 'glass-card rounded-2xl overflow-hidden hover:scale-105 transition-transform anim-in';
+   621→    card.style.animationDelay = `${i * 0.1}s`;
+   622→    card.style.opacity = '0';
+   623→    const bgGrad = i % 2 === 0
+   624→      ? 'linear-gradient(135deg,rgba(34,211,238,0.15),rgba(6,182,212,0.05))'
+   625→      : 'linear-gradient(135deg,rgba(251,191,36,0.15),rgba(245,158,11,0.05))';
+   626→    card.innerHTML = `
+   627→      <div class="h-40 flex items-center justify-center text-5xl" style="background:${bgGrad};">${article.icon}</div>
+   628→      <div class="p-6">
+   629→        <span class="${i % 2 === 0 ? 'text-cyan-400' : 'text-gold-400'} text-xs font-semibold">${article.category}</span>
+   630→        <h3 class="text-white font-bold mt-2 mb-2">${article.title}</h3>
+   631→        <p class="text-gray-400 text-sm mb-4">${article.summary}</p>
+   632→        <div class="flex items-center justify-between">
+   633→          <span class="text-gray-500 text-xs">${article.date} · ${article.readTime}</span>
+   634→          <button onclick="openArticle(${article.id})" class="text-cyan-400 text-sm font-semibold hover:text-cyan-300 flex items-center gap-1">Lire Plus <i data-lucide="arrow-right" style="width:14px;height:14px"></i></button>
+   635→        </div>
+   636→      </div>
+   637→    `;
+   638→    grid.appendChild(card);
+   639→  });
+   640→  lucide.createIcons();
+   641→}
+   642→
+   643→function openArticle(id) {
+   644→  const article = blogArticles.find(a => a.id === id);
+   645→  if (!article) return;
+   646→  const overlay = document.getElementById('articleModal');
+   647→  if (!overlay) return;
+   648→  document.getElementById('articleContent').innerHTML = `
+   649→    <span class="${id % 2 === 0 ? 'text-gold-400' : 'text-cyan-400'} text-xs font-semibold">${article.category}</span>
+   650→    <h3 class="text-2xl font-800 text-white mt-2 mb-2">${article.title}</h3>
+   651→    <div class="flex items-center gap-3 text-gray-500 text-xs mb-6">
+   652→      <span>${article.date}</span>
+   653→      <span>·</span>
+   654→      <span>${article.readTime}</span>
+   655→    </div>
+   656→    <div class="text-6xl mb-6 text-center">${article.icon}</div>
+   657→    <div class="text-gray-300 text-sm leading-relaxed space-y-4" style="white-space:pre-line">${article.content}</div>
+   658→  `;
+   659→  overlay.classList.remove('hidden');
+   660→  document.body.style.overflow = 'hidden';
+   661→}
+   662→
+   663→function closeArticle() {
+   664→  const overlay = document.getElementById('articleModal');
+   665→  if (overlay) {
+   666→    overlay.classList.add('hidden');
+   667→    document.body.style.overflow = '';
+   668→  }
+   669→}
+   670→
+   671→document.addEventListener('DOMContentLoaded', () => {
+   672→  const overlay = document.getElementById('articleModal');
+   673→  if (overlay) {
+   674→    overlay.addEventListener('click', (e) => {
+   675→      if (e.target === overlay) closeArticle();
+   676→    });
+   677→  }
+   678→  document.addEventListener('keydown', (e) => {
+   679→    if (e.key === 'Escape') closeArticle();
+   680→  });
+   681→});
+   682→
+   683→function openCV() {
+   684→  document.getElementById('cvModal').classList.remove('hidden');
+   685→  document.body.style.overflow = 'hidden';
+   686→}
+   687→function closeCV() {
+   688→  document.getElementById('cvModal').classList.add('hidden');
+   689→  document.body.style.overflow = '';
+   690→}
+   691→document.addEventListener('DOMContentLoaded', () => {
+   692→  const cvOverlay = document.getElementById('cvModal');
+   693→  if (cvOverlay) {
+   694→    cvOverlay.addEventListener('click', (e) => { if (e.target === cvOverlay) closeCV(); });
+   695→    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !cvOverlay.classList.contains('hidden')) closeCV(); });
+   696→  }
+   697→});
+   698→
+   699→function downloadCV() {
+   700→  const cvUrl = 'CV_AbdelkaderAtia.pdf';
+   701→  
+   702→  fetch(cvUrl, { method: 'HEAD' }).then(response => {
+   703→    if (response.ok) {
+   704→      const link = document.createElement('a');
+   705→      link.href = cvUrl;
+   706→      link.download = 'CV_AbdelkaderAtia.pdf';
+   707→      document.body.appendChild(link);
+   708→      link.click();
+   709→      document.body.removeChild(link);
+   710→      showToast('✅ Téléchargement du CV...', 'success');
+   711→    } else {
+   712→      showToast('📄 CV non disponible actuellement', 'warning');
+   713→    }
+   714→  }).catch(() => {
+   715→    showToast('📄 CV non disponible actuellement', 'warning');
+   716→  });
+   717→}
+   718→
+   719→// Theme toggle (per-language)
+   720→let isDarkMode = true;
+   721→function getThemeKey() {
+   722→  return 'theme';
+   723→}
+   724→function toggleTheme() {
+   725→  isDarkMode = !isDarkMode;
+   726→  const body = document.body;
+   727→  const icon = document.getElementById('themeIcon');
+   728→  
+   729→  if (isDarkMode) {
+   730→    body.classList.remove('light-theme');
+   731→    icon.setAttribute('data-lucide', 'moon');
+   732→  } else {
+   733→    body.classList.add('light-theme');
+   734→    icon.setAttribute('data-lucide', 'sun');
+   735→  }
+   736→  
+   737→  localStorage.setItem(getThemeKey(), isDarkMode ? 'dark' : 'light');
+   738→  lucide.createIcons();
+   739→}
+   740→
+   741→window.addEventListener('load', () => {
+   742→  const savedTheme = localStorage.getItem(getThemeKey());
+   743→  if (savedTheme === 'light') {
+   744→    isDarkMode = true;
+   745→    toggleTheme();
+   746→  }
+   747→});
+   748→
+   749→// Keyboard navigation & shortcuts
+   750→document.addEventListener('keydown', (e) => {
+   751→  const tag = document.activeElement?.tagName;
+   752→  const isInput = tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT';
+   753→  
+   754→  // Escape: close all modals
+   755→  if (e.key === 'Escape') {
+   756→    const menu = document.getElementById('mobileMenu');
+   757→    if (menu.classList.contains('open')) { toggleMobile(); return; }
+   758→    const search = document.getElementById('searchModal');
+   759→    if (!search?.classList.contains('hidden')) { closeSearch(); return; }
+   760→    const article = document.getElementById('articleModal');
+   761→    if (!article?.classList.contains('hidden')) { closeArticle(); return; }
+   762→  }
+   763→  
+   764→  // Scroll to top with Ctrl+Home or Cmd+Home
+   765→  if ((e.ctrlKey || e.metaKey) && e.key === 'Home') {
+   766→    e.preventDefault();
+   767→    window.scrollTo({ top: 0, behavior: 'smooth' });
+   768→  }
+   769→  
+   770→  // Skip shortcuts when typing in inputs
+   771→  if (isInput) return;
+   772→  
+   773→  // / or Ctrl+K: open search
+   774→  if (e.key === '/' || ((e.ctrlKey || e.metaKey) && e.key === 'k')) {
+   775→    e.preventDefault();
+   776→    openSearch();
+   777→  }
+   778→  
+   779→  // t: toggle theme
+   780→  if (e.key === 't' && !e.ctrlKey && !e.metaKey) { toggleTheme(); }
+   781→  // b: scroll to blog
+   782→  if (e.key === 'b' && !e.ctrlKey && !e.metaKey) {
+   783→    e.preventDefault();
+   784→    const el = document.getElementById('blogGrid');
+   785→    if (el) el.closest('section')?.scrollIntoView({ behavior: 'smooth' });
+   786→  }
+   787→  // p: scroll to projects
+   788→  if (e.key === 'p' && !e.ctrlKey && !e.metaKey) {
+   789→    e.preventDefault();
+   790→    const el = document.getElementById('projectGrid');
+   791→    if (el) el.closest('section')?.scrollIntoView({ behavior: 'smooth' });
+   792→  }
+   793→  // c: toggle chat
+   794→  if (e.key === 'c' && !e.ctrlKey && !e.metaKey) {
+   795→    const chat = document.querySelector('.chatbot-toggle-btn');
+   796→    if (chat) chat.click();
+   797→  }
+   798→});
+   799→
+   800→function loadLanguage(lang) {
+   801→  localStorage.setItem('language', lang);
+   802→  
+   803→  if (lang === 'ar') {
+   804→    window.location.href = 'index.html';
+   805→  } else if (lang === 'fr') {
+   806→    window.location.href = 'index-fr.html';
+   807→  } else {
+   808→    window.location.href = 'index-en.html';
+   809→  }
+   810→}
+   811→
+   812→window.addEventListener('DOMContentLoaded', () => {
+   813→  const savedLang = localStorage.getItem('language') || 'fr';
+   814→  const frBtn = document.getElementById('langFr');
+   815→  const enBtn = document.getElementById('langEn');
+   816→  const arBtn = document.getElementById('langAr');
+   817→  
+   818→  if (savedLang === 'fr') {
+   819→    if (frBtn) frBtn.style.background = 'rgba(34,211,238,0.2)';
+   820→    if (enBtn) enBtn.style.background = 'transparent';
+   821→    if (arBtn) arBtn.style.background = 'transparent';
+   822→  } else if (savedLang === 'en') {
+   823→    if (enBtn) enBtn.style.background = 'rgba(34,211,238,0.2)';
+   824→    if (frBtn) frBtn.style.background = 'transparent';
+   825→    if (arBtn) arBtn.style.background = 'transparent';
+   826→  } else {
+   827→    if (arBtn) arBtn.style.background = 'rgba(34,211,238,0.2)';
+   828→    if (frBtn) frBtn.style.background = 'transparent';
+   829→    if (enBtn) enBtn.style.background = 'transparent';
+   830→  }
+   831→});
+   832→
+   833→document.querySelectorAll('a[href^="#"]').forEach(a => {
+   834→  a.addEventListener('click', function(e) {
+   835→    e.preventDefault();
+   836→    const target = document.querySelector(this.getAttribute('href'));
+   837→    if (target) target.scrollIntoView({ behavior: 'smooth' });
+   838→  });
+   839→});
+   840→
+   841→renderProjects();
+   842→renderTestimonials();
+   843→renderGallery();
+   844→renderCaseStudies();
+   845→renderFAQ();
+   846→renderBlog();
+   847→switchKnowledgeTab('thoughts');
+   848→
+   849→lucide.createIcons();
+   850→
+   851→document.addEventListener('DOMContentLoaded', () => {
+   852→  if (typeof AOS !== 'undefined') {
+   853→    AOS.init({
+   854→      duration: 800,
+   855→      easing: 'ease-in-out-cubic',
+   856→      once: true,
+   857→      offset: 120,
+   858→      disable: window.innerWidth < 768 ? 'phone' : false
+   859→    });
+   860→  }
+   861→  
+   862→  startCounterAnimation();
+   863→  initLazyLoading();
+   864→  initProgressBar();
+   865→  initCookieBanner();
+   866→  initSearch();
+   867→  
+   868→  const modal = document.getElementById('searchModal');
+   869→  if (modal) {
+   870→    modal.addEventListener('click', (e) => { if (e.target === modal) closeSearch(); });
+   871→  }
+   872→});
+   873→
+   874→function startCounterAnimation() {
+   875→  const counters = document.querySelectorAll('.stat-number');
+   876→  
+   877→  const runCounters = () => {
+   878→    counters.forEach(counter => {
+   879→      const target = parseInt(counter.dataset.target);
+   880→      const increment = target / 50;
+   881→      let current = 0;
+   882→      
+   883→      const updateCounter = () => {
+   884→        current += increment;
+   885→        if (current < target) {
+   886→          counter.textContent = Math.ceil(current);
+   887→          requestAnimationFrame(updateCounter);
+   888→        } else {
+   889→          counter.textContent = target + (target >= 10 ? '+' : '');
+   890→        }
+   891→      };
+   892→      
+   893→      const observer = new IntersectionObserver((entries) => {
+   894→        if (entries[0].isIntersecting && !counter.classList.contains('animated')) {
+   895→          counter.classList.add('animated');
+   896→          updateCounter();
+   897→          observer.unobserve(counter);
+   898→        }
+   899→      }, { threshold: 0.5 });
+   900→      
+   901→      observer.observe(counter);
+   902→    });
+   903→  };
+   904→  
+   905→  runCounters();
+   906→}
+   907→
+   908→function shareToSocial(text) {
+   909→  const url = encodeURIComponent(window.location.href);
+   910→  const shareText = encodeURIComponent(text || document.title);
+   911→  const modal = document.getElementById('shareModal');
+   912→  if (!modal) return;
+   913→  document.getElementById('shareUrl').value = window.location.href;
+   914→  document.getElementById('shareContent').innerHTML = `
+   915→    <button onclick="window.open('https://twitter.com/intent/tweet?text=${shareText}&url=${url}','_blank','width=600,height=400')"
+   916→      class="flex items-center gap-3 w-full p-4 rounded-xl hover:bg-gray-700 transition text-left">
+   917→      <span class="text-2xl">🐦</span><div><div class="text-white font-semibold">Twitter / X</div><div class="text-gray-400 text-xs">Partager sur Twitter</div></div>
+   918→    </button>
+   919→    <button onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url=${url}','_blank','width=600,height=400')"
+   920→      class="flex items-center gap-3 w-full p-4 rounded-xl hover:bg-gray-700 transition text-left">
+   921→      <span class="text-2xl">💼</span><div><div class="text-white font-semibold">LinkedIn</div><div class="text-gray-400 text-xs">Partager sur LinkedIn</div></div>
+   922→    </button>
+   923→    <button onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=${url}','_blank','width=600,height=400')"
+   924→      class="flex items-center gap-3 w-full p-4 rounded-xl hover:bg-gray-700 transition text-left">
+   925→      <span class="text-2xl">📘</span><div><div class="text-white font-semibold">Facebook</div><div class="text-gray-400 text-xs">Partager sur Facebook</div></div>
+   926→    </button>
+   927→    <button onclick="navigator.clipboard.writeText(window.location.href).then(()=>{showToast('✅ Lien copié !','success');closeShareModal();})"
+   928→      class="flex items-center gap-3 w-full p-4 rounded-xl hover:bg-gray-700 transition text-left">
+   929→      <span class="text-2xl">🔗</span><div><div class="text-white font-semibold">Copier le Lien</div><div class="text-gray-400 text-xs">Copier le lien dans le presse-papier</div></div>
+   930→    </button>
+   931→  `;
+   932→  modal.classList.remove('hidden');
+   933→  document.body.style.overflow = 'hidden';
+   934→}
+   935→
+   936→function closeShareModal() {
+   937→  const modal = document.getElementById('shareModal');
+   938→  if (modal) {
+   939→    modal.classList.add('hidden');
+   940→    document.body.style.overflow = '';
+   941→  }
+   942→}
+   943→
+   944→function initLazyLoading() {
+   945→  const images = document.querySelectorAll('img[data-src]');
+   946→  
+   947→  const imageObserver = new IntersectionObserver((entries) => {
+   948→    entries.forEach(entry => {
+   949→      if (entry.isIntersecting) {
+   950→        const img = entry.target;
+   951→        img.src = img.dataset.src;
+   952→        img.classList.add('loaded');
+   953→        imageObserver.unobserve(img);
+   954→      }
+   955→    });
+   956→  }, { rootMargin: '50px' });
+   957→  
+   958→  images.forEach(img => imageObserver.observe(img));
+   959→}
+   960→
+   961→window.addEventListener('resize', () => {
+   962→  if (typeof AOS !== 'undefined') {
+   963→    AOS.refresh();
+   964→  }
+   965→});
+   966→
+   967→async function subscribePushNotifications() {
+   968→  if (!('Notification' in window) || !('serviceWorker' in navigator)) {
+   969→    showToast('⚠️ Notifications non supportées par ce navigateur', 'warning');
+   970→    return false;
+   971→  }
+   972→  try {
+   973→    const permission = await Notification.requestPermission();
+   974→    if (permission !== 'granted') {
+   975→      showToast('⚠️ Permission de notification refusée', 'warning');
+   976→      return false;
+   977→    }
+   978→    const registration = await navigator.serviceWorker.ready;
+   979→    const subscription = await registration.pushManager.subscribe({
+   980→      userVisibleOnly: true
+   981→    });
+   982→    localStorage.setItem('push_subscription', JSON.stringify(subscription));
+   983→    showToast('✅ Notifications activées avec succès', 'success');
+   984→    return true;
+   985→  } catch (err) {
+   986→    console.error('Push subscription failed:', err);
+   987→    showToast('❌ Échec d\'activation des notifications', 'warning');
+   988→    return false;
+   989→  }
+   990→}
+   991→
+   992→async function unsubscribePushNotifications() {
+   993→  try {
+   994→    const registration = await navigator.serviceWorker.ready;
+   995→    const subscription = await registration.pushManager.getSubscription();
+   996→    if (subscription) {
+   997→      await subscription.unsubscribe();
+   998→      localStorage.removeItem('push_subscription');
+   999→      showToast('✅ Notifications désactivées', 'success');
+  1000→    }
+  1001→  } catch (err) {
+  1002→    console.error('Unsubscribe failed:', err);
+  1003→  }
+  1004→}
+  1005→
+  1006→window.addEventListener('load', async () => {
+  1007→  if ('serviceWorker' in navigator && 'PushManager' in window) {
+  1008→    try {
+  1009→      const registration = await navigator.serviceWorker.ready;
+  1010→      const subscription = await registration.pushManager.getSubscription();
+  1011→      if (subscription) {
+  1012→        localStorage.setItem('push_subscription', JSON.stringify(subscription));
+  1013→      }
+  1014→    } catch {}
+  1015→  }
+  1016→});
+  1017→
+  1018→// Reading Progress Bar
+  1019→function initProgressBar() {
+  1020→  const bar = document.getElementById('readingProgress');
+  1021→  if (!bar) return;
+  1022→  document.getElementById('app-body').addEventListener('scroll', () => {
+  1023→    const scrollTop = document.getElementById('app-body').scrollTop;
+  1024→    const scrollHeight = document.getElementById('app-body').scrollHeight - window.innerHeight;
+  1025→    const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+  1026→    bar.style.width = Math.min(progress, 100) + '%';
+  1027→  });
+  1028→}
+  1029→
+  1030→// Cookie Consent
+  1031→function acceptCookies() {
+  1032→  localStorage.setItem('cookie_consent', 'accepted');
+  1033→  document.getElementById('cookieBanner').classList.remove('show');
+  1034→}
+  1035→function declineCookies() {
+  1036→  localStorage.setItem('cookie_consent', 'declined');
+  1037→  document.getElementById('cookieBanner').classList.remove('show');
+  1038→}
+  1039→function initCookieBanner() {
+  1040→  const consent = localStorage.getItem('cookie_consent');
+  1041→  if (!consent) {
+  1042→    setTimeout(() => document.getElementById('cookieBanner')?.classList.add('show'), 500);
+  1043→  }
+  1044→}
+  1045→
+  1046→// Search Modal
+  1047→let searchIndex = [];
+  1048→function buildSearchIndex() {
+  1049→  searchIndex = [];
+  1050→  projects.forEach(p => searchIndex.push({
+  1051→    type: 'Project', title: p.name, desc: p.desc, url: '#projects', icon: p.icon, tags: [p.cat]
+  1052→  }));
+  1053→  blogArticles.forEach(a => searchIndex.push({
+  1054→    type: 'Article', title: a.title, desc: a.summary, url: '#', icon: a.icon, tags: [a.category], action: `openArticle(${a.id})`
+  1055→  }));
+  1056→  faqItems.forEach((f, i) => searchIndex.push({
+  1057→    type: 'FAQ', title: f.question, desc: f.answer.slice(0, 120) + '...', url: '#faq', icon: '❓'
+  1058→  }));
+  1059→  const skillNames = ['Analyse de Données', 'Conception Expérimentale', 'Rédaction Scientifique', 'R / Excel / Power BI', 'Développement d\'Applications', 'Visualisation de Données', 'Production Animale', 'Sélection & Amélioration', 'Nutrition Animale', 'Formateur FBS', 'Conception de Programmes', 'Communication'];
+  1060→  skillNames.forEach(s => searchIndex.push({
+  1061→    type: 'Skill', title: s, desc: 'Professional skill', url: '#skills', icon: '⚡'
+  1062→  }));
+  1063→}
+  1064→function openSearch() {
+  1065→  const modal = document.getElementById('searchModal');
+  1066→  if (!modal) return;
+  1067→  if (searchIndex.length === 0) buildSearchIndex();
+  1068→  modal.classList.remove('hidden');
+  1069→  document.body.style.overflow = 'hidden';
+  1070→  setTimeout(() => {
+  1071→    const input = document.getElementById('searchInput');
+  1072→    input.value = ''; input.focus();
+  1073→    renderSearchResults('');
+  1074→  }, 100);
+  1075→}
+  1076→function closeSearch() {
+  1077→  const modal = document.getElementById('searchModal');
+  1078→  if (modal) { modal.classList.add('hidden'); document.body.style.overflow = ''; }
+  1079→}
+  1080→function renderSearchResults(query) {
+  1081→  const container = document.getElementById('searchResults');
+  1082→  const q = query.toLowerCase().trim();
+  1083→  let results = q ? searchIndex.filter(item =>
+  1084→    item.title.toLowerCase().includes(q) || item.desc.toLowerCase().includes(q) ||
+  1085→    item.tags?.some(t => t.toLowerCase().includes(q))
+  1086→  ) : searchIndex;
+  1087→  results = results.slice(0, 12);
+  1088→  if (!results.length) {
+  1089→    container.innerHTML = '<div class="p-6 text-center text-gray-500 text-sm">No results found</div>';
+  1090→    return;
+  1091→  }
+  1092→  container.innerHTML = results.map((item, i) => `
+  1093→    <button onclick="navigateSearchResult(${i})" class="search-result-item w-full flex items-center gap-3 p-3 rounded-xl hover:bg-gray-800/50 transition text-left ${i === 0 ? 'search-highlight' : ''}"
+  1094→      data-index="${i}" onmouseenter="highlightSearchItem(${i})">
+  1095→      <span class="text-xl flex-shrink-0">${item.icon}</span>
+  1096→      <div class="flex-1 min-w-0">
+  1097→        <div class="text-white text-sm font-semibold truncate">${highlightMatch(item.title, q)}</div>
+  1098→        <div class="text-gray-500 text-xs truncate">${item.type} · ${highlightMatch(item.desc.slice(0, 80), q)}</div>
+  1099→      </div>
+  1100→      <span class="text-gray-600 text-xs flex-shrink-0">${item.type}</span>
+  1101→    </button>
+  1102→  `).join('');
+  1103→  container.dataset.results = JSON.stringify(results);
+  1104→}
+  1105→function highlightMatch(text, query) {
+  1106→  if (!query) return text;
+  1107→  const idx = text.toLowerCase().indexOf(query);
+  1108→  if (idx === -1) return text;
+  1109→  return text.slice(0, idx) + '<strong class="text-cyan-400">' + text.slice(idx, idx + query.length) + '</strong>' + text.slice(idx + query.length);
+  1110→}
+  1111→let searchSelectedIndex = 0;
+  1112→function highlightSearchItem(idx) { searchSelectedIndex = idx; }
+  1113→function navigateSearchResult(idx) {
+  1114→  const results = JSON.parse(document.getElementById('searchResults').dataset.results || '[]');
+  1115→  const item = results[idx];
+  1116→  if (!item) return;
+  1117→  closeSearch();
+  1118→  if (item.action) { eval(item.action); }
+  1119→  else if (item.url && item.url !== '#') { document.querySelector(item.url)?.scrollIntoView({ behavior: 'smooth' }); }
+  1120→}
+  1121→function initSearch() {
+  1122→  buildSearchIndex();
+  1123→  const input = document.getElementById('searchInput');
+  1124→  if (!input) return;
+  1125→  input.addEventListener('input', (e) => renderSearchResults(e.target.value));
+  1126→  input.addEventListener('keydown', (e) => {
+  1127→    const items = document.querySelectorAll('.search-result-item');
+  1128→    if (e.key === 'ArrowDown') {
+  1129→      e.preventDefault();
+  1130→      searchSelectedIndex = Math.min(searchSelectedIndex + 1, items.length - 1);
+  1131→      items.forEach((el, i) => el.classList.toggle('search-highlight', i === searchSelectedIndex));
+  1132→      items[searchSelectedIndex]?.scrollIntoView({ block: 'nearest' });
+  1133→    }
+  1134→    if (e.key === 'ArrowUp') {
+  1135→      e.preventDefault();
+  1136→      searchSelectedIndex = Math.max(searchSelectedIndex - 1, 0);
+  1137→      items.forEach((el, i) => el.classList.toggle('search-highlight', i === searchSelectedIndex));
+  1138→      items[searchSelectedIndex]?.scrollIntoView({ block: 'nearest' });
+  1139→    }
+  1140→    if (e.key === 'Enter') { e.preventDefault(); navigateSearchResult(searchSelectedIndex); }
+  1141→  });
+  1142→}
+  1143→
+  1144→// Init all features
+  1145→document.addEventListener('DOMContentLoaded', () => {
+  1146→  initProgressBar();
+  1147→  initCookieBanner();
+  1148→  initSearch();
+  1149→  initScrollProgress();
+  1150→  initNetworkStatus();
+  1151→  initOfflineIndicator();
+  1152→});
+  1153→
+  1154→// Close search on overlay click
+  1155→document.addEventListener('DOMContentLoaded', () => {
+  1156→  const modal = document.getElementById('searchModal');
+  1157→  if (modal) {
+  1158→    modal.addEventListener('click', (e) => { if (e.target === modal) closeSearch(); });
+  1159→  }
+  1160→});
+  1161→
+  1162→// Scroll Progress Ring
+  1163→function initScrollProgress() {
+  1164→  const ring = document.getElementById('scrollProgress');
+  1165→  const circle = ring?.querySelector('.fg-circle');
+  1166→  if (!circle) return;
+  1167→  const circumference = 2 * Math.PI * 18;
+  1168→  circle.style.strokeDasharray = circumference;
+  1169→  circle.style.strokeDashoffset = circumference;
+  1170→  
+  1171→  document.getElementById('app-body').addEventListener('scroll', () => {
+  1172→    const scrollTop = document.getElementById('app-body').scrollTop;
+  1173→    const scrollHeight = document.getElementById('app-body').scrollHeight - window.innerHeight;
+  1174→    const progress = scrollHeight > 0 ? scrollTop / scrollHeight : 0;
+  1175→    circle.style.strokeDashoffset = circumference - progress * circumference;
+  1176→    ring.classList.toggle('visible', scrollTop > 200);
+  1177→  });
+  1178→  lucide.createIcons();
+  1179→}
+  1180→
+  1181→// Network Status Dot
+  1182→function initNetworkStatus() {
+  1183→  const dot = document.getElementById('networkDot');
+  1184→  if (!dot) return;
+  1185→  const update = () => {
+  1186→    const online = navigator.onLine;
+  1187→    const dotEl = dot.querySelector('.dot');
+  1188→    const text = dot.querySelector('.status-text');
+  1189→    dotEl.className = `dot ${online ? 'online' : 'offline'}`;
+  1190→    text.textContent = online ? 'En ligne' : 'Hors ligne';
+  1191→  };
+  1192→  window.addEventListener('online', update);
+  1193→  window.addEventListener('offline', update);
+  1194→  update();
+  1195→}
+  1196→
+  1197→// Offline Indicator Toast
+  1198→function initOfflineIndicator() {
+  1199→  const toast = document.getElementById('offlineToast');
+  1200→  if (!toast) return;
+  1201→  window.addEventListener('offline', () => toast.classList.add('show'));
+  1202→  window.addEventListener('online', () => toast.classList.remove('show'));
+  1203→  if (!navigator.onLine) toast.classList.add('show');
+  1204→}
+  1205→
+  1206→// Email Obfuscation
+  1207→function revealEmail(el) {
+  1208→  const user = el.dataset.user;
+  1209→  const domain = el.dataset.domain;
+  1210→  const tld = el.dataset.tld;
+  1211→  const email = `${user}@${domain}.${tld}`;
+  1212→  el.innerHTML = `<a href="mailto:${email}" class="hover:text-cyan-400 transition-colors">${email}</a>`;
+  1213→  el.style.cursor = 'default';
+  1214→  el.onclick = null;
+  1215→  el.style.textDecoration = 'none';
+  1216→}
+  1217→
+  1218→// Element SDK for visual editor (French version)
+  1219→const defaultConfigFr = {
+  1220→  hero_title: 'Transformer les Connaissances Agricoles en Impact Réel',
+  1221→  hero_subtitle: 'Doctorant et formateur spécialisé en agriculture numérique, construisant des ponts entre la science et l\'application pratique.',
+  1222→  about_title: 'À Propos de Moi',
+  1223→  services_title: 'Mes Services',
+  1224→  contact_email: 'atia.abdelkader@gmail.com',
+  1225→  background_color: '#0a0e27',
+  1226→  surface_color: '#0f1538',
+  1227→  text_color: '#e2e8f0',
+  1228→  primary_action_color: '#06b6d4',
+  1229→  secondary_action_color: '#f59e0b',
+  1230→  font_family: 'Cairo',
+  1231→  font_size: 16
+  1232→};
+  1233→
+  1234→async function initSDK() {
+  1235→  if (!window.elementSdk) return;
+  1236→  await window.elementSdk.init({
+  1237→    defaultConfig: defaultConfigFr,
+  1238→    onConfigChange: async (config) => {
+  1239→      const c = { ...defaultConfigFr, ...config };
+  1240→      const heroEl = document.getElementById('heroTitle');
+  1241→      if (heroEl) heroEl.innerHTML = c.hero_title.replace(/(Connaissances Agricoles)/g, '<span class="gradient-text">$1</span>');
+  1242→      const heroSub = document.getElementById('heroSubtitle');
+  1243→      if (heroSub) heroSub.textContent = c.hero_subtitle;
+  1244→      const aboutEl = document.getElementById('aboutTitle');
+  1245→      if (aboutEl) aboutEl.textContent = c.about_title;
+  1246→      const servEl = document.getElementById('servicesTitle');
+  1247→      if (servEl) servEl.textContent = c.services_title;
+  1248→      const emailEl = document.getElementById('contactEmail');
+  1249→      if (emailEl) emailEl.textContent = c.contact_email;
+  1250→      document.body.style.background = c.background_color;
+  1251→      document.querySelectorAll('.glass-card').forEach(el => {
+  1252→        el.style.background = c.surface_color + '80';
+  1253→      });
+  1254→      document.body.style.color = c.text_color;
+  1255→      const fontStack = `${c.font_family}, 'Poppins', sans-serif`;
+  1256→      document.body.style.fontFamily = fontStack;
+  1257→      const base = c.font_size;
+  1258→      document.querySelectorAll('p').forEach(el => el.style.fontSize = `${base}px`);
+  1259→      document.querySelectorAll('h2').forEach(el => el.style.fontSize = `${base * 2}px`);
+  1260→      document.querySelectorAll('h3').forEach(el => el.style.fontSize = `${base * 1.15}px`);
+  1261→    },
+  1262→    mapToCapabilities: (config) => {
+  1263→      const c = { ...defaultConfigFr, ...config };
+  1264→      return {
+  1265→        recolorables: [
+  1266→          { get: () => c.background_color, set: (v) => { c.background_color = v; window.elementSdk.setConfig({ background_color: v }); } },
+  1267→          { get: () => c.surface_color, set: (v) => { c.surface_color = v; window.elementSdk.setConfig({ surface_color: v }); } },
+  1268→          { get: () => c.text_color, set: (v) => { c.text_color = v; window.elementSdk.setConfig({ text_color: v }); } },
+  1269→          { get: () => c.primary_action_color, set: (v) => { c.primary_action_color = v; window.elementSdk.setConfig({ primary_action_color: v }); } },
+  1270→          { get: () => c.secondary_action_color, set: (v) => { c.secondary_action_color = v; window.elementSdk.setConfig({ secondary_action_color: v }); } },
+  1271→        ],
+  1272→        borderables: [],
+  1273→        fontEditable: {
+  1274→          get: () => c.font_family,
+  1275→          set: (v) => { c.font_family = v; window.elementSdk.setConfig({ font_family: v }); }
+  1276→        },
+  1277→        fontSizeable: {
+  1278→          get: () => c.font_size,
+  1279→          set: (v) => { c.font_size = v; window.elementSdk.setConfig({ font_size: v }); }
+  1280→        }
+  1281→      };
+  1282→    },
+  1283→    mapToEditPanelValues: (config) => {
+  1284→      const c = { ...defaultConfigFr, ...config };
+  1285→      return new Map([
+  1286→        ['hero_title', c.hero_title],
+  1287→        ['hero_subtitle', c.hero_subtitle],
+  1288→        ['about_title', c.about_title],
+  1289→        ['services_title', c.services_title],
+  1290→        ['contact_email', c.contact_email],
+  1291→      ]);
+  1292→    }
+  1293→  });
+  1294→}
+  1295→initSDK();
+  1296→

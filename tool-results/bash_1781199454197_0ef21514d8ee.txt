@@ -1,0 +1,733 @@
+- generic
+  - generic
+    - button "العربية" [ref=e3]
+    - button "English" [ref=e4]
+    - button "Français" [ref=e5]
+  - Iframe "Abdelkader Atia - English" [ref=e2]
+    - generic
+      - link "Skip to main content" [ref=e7]
+      - navigation
+        - link "AA Abdelkader Atia Ph.D Researcher" [ref=e9]
+          - StaticText "AA"
+          - StaticText "Abdelkader Atia"
+          - StaticText "Ph.D Researcher"
+        - button "Switch to English" [ref=e10]
+          - StaticText "EN"
+        - button "Switch to Arabic" [ref=e11]
+          - StaticText "AR"
+        - button "Switch to French" [ref=e12]
+          - StaticText "FR"
+        - button "Toggle dark/light theme" [ref=e13]
+          - image
+        - link "Home" [ref=e14]
+        - link "About" [ref=e15]
+        - link "Skills" [ref=e16]
+        - link "Experience" [ref=e17]
+        - link "Projects" [ref=e18]
+        - link "Services" [ref=e19]
+        - link "Achievements" [ref=e20]
+        - link "Insights" [ref=e21]
+        - link "Contact" [ref=e22]
+        - link "Contact Me" [ref=e23]
+        - generic
+          - StaticText "Menu"
+          - button "Close mobile menu" [ref=e60]
+          - link "Home" [ref=e61]
+          - link "About" [ref=e62]
+          - link "Skills" [ref=e63]
+          - link "Experience" [ref=e64]
+          - link "Projects" [ref=e65]
+          - link "Services" [ref=e66]
+          - link "Achievements" [ref=e67]
+          - link "Insights" [ref=e68]
+          - link "Contact" [ref=e69]
+          - link "Contact Me" [ref=e70]
+      - generic
+        - image
+        - StaticText "Ph.D Student | Trainer | Innovator"
+      - heading "Transforming Agricultural Knowledge into Real Impact" [level=1, ref=e24]
+        - StaticText "Transforming Agricultural Knowledge into Real Impact"
+      - paragraph
+        - StaticText "PhD student and trainer specializing in digital agriculture, building bridges between science and practical application to develop smarter, more efficient agricultural systems."
+      - link "Explore My Work" [ref=e25]
+        - StaticText "Explore My Work"
+        - image
+      - link "Get in Touch" [ref=e26]
+      - StaticText "12+"
+      - StaticText "Years Experience"
+      - StaticText "25+"
+      - StaticText "Research Projects"
+      - StaticText "500+"
+      - StaticText "Trainees"
+      - StaticText "🌾"
+      - StaticText "Abdelkader Atia"
+      - StaticText "PhD Researcher"
+      - generic
+        - StaticText "GET TO KNOW ME"
+        - heading "About Me" [level=2, ref=e71]
+          - StaticText "About Me"
+      - paragraph
+        - StaticText "I'm "
+        - strong
+          - StaticText "Abdelkader Atia"
+        - StaticText ", an agronomy professional with "
+        - strong
+          - StaticText "12+ years of experience"
+        - StaticText " in agricultural engineering, professional training, and project supervision, I am currently pursuing a PhD in Agronomy (Animal Production), building on a Master's in Plant Production and an Engineer's degree in Arid Region Animal Breeding."
+      - paragraph
+        - StaticText "My work spans agricultural engineering, pedagogical design, and digital innovation. I serve as a "
+        - strong
+          - StaticText "Specialized Teacher"
+        - StaticText " at Hassani Abdelkrim INSFP in EL-Oued, where I design vocational training programs, supervise agriculture operations, and mentor students in modern farming techniques. I am also the author of the book "
+        - emphasis
+          - StaticText "\"On the Edge\""
+        - StaticText " (ISBN 9947-26-849-1)."
+      - StaticText "🔬 Animal Production"
+      - StaticText "🌾 Agronomy"
+      - StaticText "📊 Digital Agriculture"
+      - StaticText "🎓 Vocational Training"
+      - StaticText "💼 Agribusiness"
+      - StaticText "📖 Pedagogical Engineering"
+      - button "Preview CV" [ref=e27]
+        - image
+        - StaticText "Preview CV"
+      - button "Download CV" [ref=e28]
+        - image
+        - StaticText "Download CV"
+      - StaticText "+12"
+      - StaticText "Years of Experience"
+      - StaticText "+25"
+      - StaticText "Research Projects"
+      - StaticText "+50"
+      - StaticText "Training Programs"
+      - StaticText "+500"
+      - StaticText "Trainees & Beneficiaries"
+      - generic
+        - StaticText "MY ABILITIES"
+        - heading "Skills" [level=2, ref=e72]
+          - StaticText "Skills"
+      - StaticText "🔬"
+      - heading "Research Skills" [level=3, ref=e29]
+      - StaticText "Data Analysis"
+      - StaticText "95%"
+      - StaticText "Experimental Design"
+      - StaticText "90%"
+      - StaticText "Scientific Writing"
+      - StaticText "92%"
+      - StaticText "💻"
+      - heading "Technical Skills" [level=3, ref=e30]
+      - StaticText "Power BI / IBM SPSS"
+      - StaticText "90%"
+      - StaticText "R / Excel / Data Viz"
+      - StaticText "88%"
+      - StaticText "EdrawMax / Xmind"
+      - StaticText "85%"
+      - StaticText "🌱"
+      - heading "Agricultural Skills" [level=3, ref=e31]
+      - StaticText "Livestock Production"
+      - StaticText "96%"
+      - StaticText "Breeding & Selection"
+      - StaticText "93%"
+      - StaticText "Animal Nutrition"
+      - StaticText "90%"
+      - StaticText "Garden Planner / Precision Ag"
+      - StaticText "88%"
+      - StaticText "🎤"
+      - heading "Training Skills" [level=3, ref=e32]
+      - StaticText "FBS Trainer"
+      - StaticText "95%"
+      - StaticText "Program Design"
+      - StaticText "88%"
+      - StaticText "Communication"
+      - StaticText "92%"
+      - generic
+        - StaticText "MY JOURNEY"
+        - heading "Professional Experience" [level=2, ref=e73]
+          - StaticText "Professional Experience"
+      - generic
+        - StaticText "2022 - Present"
+        - heading "Specialized Teacher (Pedagogical Engineering)" [level=3, ref=e74]
+        - paragraph
+          - StaticText "Hassani Abdelkrim INSFP, EL-Oued"
+        - paragraph
+          - StaticText "Designing vocational training curricula, supervising agriculture operations, and mentoring students in modern farming and pedagogical techniques"
+        - image
+        - image
+        - StaticText "2016 - Present"
+        - heading "Agriculture Exploitation Supervisor" [level=3, ref=e75]
+        - paragraph
+          - StaticText "Overseeing agricultural operations, managing crop and livestock production systems, and implementing best practices in sustainable farming"
+        - StaticText "2021 - Present"
+        - heading "Vocational Trainer" [level=3, ref=e76]
+        - paragraph
+          - StaticText "Hassani Abdelkrim INSFP, EL-Oued"
+        - paragraph
+          - StaticText "Delivering hands-on training in agricultural techniques, field farmer schools (FBS), and professional skill development for students and farmers"
+        - image
+        - image
+        - StaticText "2022"
+        - heading "FBS Assistant Master Trainer" [level=3, ref=e77]
+        - paragraph
+          - StaticText "ABF (GIZ) — Agri-Business Facility for Africa"
+        - paragraph
+          - StaticText "Certified Assistant Master Trainer in Farmer Business School (FBS). Trained 500+ farmers and delivered Training of Trainers programs across Algeria."
+        - image
+        - StaticText "2011 - 2016"
+        - heading "Agriculture Engineer" [level=3, ref=e78]
+        - paragraph
+          - StaticText "Engineer's degree in Arid Region Animal Breeding"
+        - paragraph
+          - StaticText "Practical experience in animal production systems, breeding programs, and farm management in arid environments"
+        - StaticText "2024 - 2026"
+        - heading "50+ International Training Certifications" [level=3, ref=e79]
+        - paragraph
+          - StaticText "Advanced certifications from Wageningen, FAO, ASM, GIZ, Oxford Climate Society, and other prestigious institutions"
+        - paragraph
+          - StaticText "Continuous professional development in agriculture, research methodology, pedagogical engineering, and climate-smart farming"
+        - image
+        - image
+        - StaticText "2006 / Ongoing"
+        - heading "Published Author & Community Leader" [level=3, ref=e80]
+        - paragraph
+          - StaticText "Published book "
+          - emphasis
+          - StaticText " (ISBN 9947-26-849-1, 2006)"
+        - paragraph
+          - StaticText "Vice President of Beekeeper Association, IAPA eLearning Ambassador, member of ASM, EAS, and Focal Point for Algeria in multiple international organizations"
+      - generic
+        - StaticText "MY WORK"
+        - heading "Projects" [level=2, ref=e81]
+          - StaticText "Projects"
+      - generic
+        - button "All" [ref=e82]
+        - button "Research" [ref=e83]
+        - button "Apps" [ref=e84]
+        - button "Training" [ref=e85]
+        - button "Business" [ref=e86]
+      - generic
+        - StaticText "🔬"
+        - StaticText "Application"
+        - heading "Semen Analysis App" [level=3, ref=e87]
+        - paragraph
+          - StaticText "Smart application for evaluating and analyzing semen quality using imaging and AI techniques"
+        - link "View Details" [ref=e88]
+          - StaticText "View Details"
+          - image
+        - StaticText "🎓"
+        - StaticText "Business"
+        - heading "AgriSkills Academy" [level=3, ref=e89]
+        - paragraph
+          - StaticText "Integrated educational platform for agricultural training and professional capacity building with recognized certifications"
+        - link "View Details" [ref=e90]
+          - StaticText "View Details"
+          - image
+        - StaticText "🌾"
+        - StaticText "Training"
+        - heading "FBS Training Program" [level=3, ref=e91]
+        - paragraph
+          - StaticText "Comprehensive training program series in Farmer Field Schools covering livestock production and sustainable agriculture"
+        - link "View Details" [ref=e92]
+          - StaticText "View Details"
+          - image
+        - StaticText "🧬"
+        - StaticText "Research"
+        - heading "Animal Reproduction Research" [level=3, ref=e93]
+        - paragraph
+          - StaticText "Advanced research projects in improving reproductive performance and semen quality with international publishing"
+        - link "View Details" [ref=e94]
+          - StaticText "View Details"
+          - image
+        - StaticText "🦟"
+        - StaticText "Business"
+        - heading "BSF Breeding Project" [level=3, ref=e95]
+        - paragraph
+          - StaticText "Innovative initiative for breeding Black Soldier Fly as alternative protein source and waste management solution"
+        - link "View Details" [ref=e96]
+          - StaticText "View Details"
+          - image
+        - StaticText "📱"
+        - StaticText "Application"
+        - heading "kamel3lom Platform" [level=3, ref=e97]
+        - paragraph
+          - StaticText "Digital platform for disseminating agricultural knowledge and simplifying sciences for the community with interactive content"
+        - link "View Details" [ref=e98]
+          - StaticText "View Details"
+          - image
+        - StaticText "🌐"
+        - StaticText "Application"
+        - heading "Smart Farm Management System" [level=3, ref=e99]
+        - paragraph
+          - StaticText "Comprehensive application for farm management with asset tracking, productivity, and smart predictions"
+        - link "View Details" [ref=e100]
+          - StaticText "View Details"
+          - image
+        - StaticText "📊"
+        - StaticText "Research"
+        - heading "Breeding & Genetics Studies" [level=3, ref=e101]
+        - paragraph
+          - StaticText "Specialized research in selective breeding and genetic improvement indicators for cattle"
+        - link "View Details" [ref=e102]
+          - StaticText "View Details"
+          - image
+        - StaticText "🛠️"
+        - StaticText "Training"
+        - heading "Modern Agriculture Workshops" [level=3, ref=e103]
+        - paragraph
+          - StaticText "Series of practical workshops on modern techniques and best practices in agricultural production"
+        - link "View Details" [ref=e104]
+          - StaticText "View Details"
+          - image
+      - generic
+        - StaticText "WHAT I OFFER"
+        - heading "Services" [level=2, ref=e105]
+          - StaticText "Services"
+      - StaticText "🎓"
+      - heading "Agricultural Training" [level=3, ref=e33]
+      - paragraph
+        - StaticText "Specialized training programs in livestock production and modern agriculture"
+      - link "Request Service" [ref=e34]
+        - StaticText "Request Service"
+        - image
+      - StaticText "🔬"
+      - heading "Research Consulting" [level=3, ref=e35]
+      - paragraph
+        - StaticText "Support for researchers in experimental design, data analysis, and scientific publishing"
+      - link "Request Service" [ref=e36]
+        - StaticText "Request Service"
+        - image
+      - StaticText "📊"
+      - heading "Data Analysis" [level=3, ref=e37]
+      - paragraph
+        - StaticText "Advanced statistical analysis and data visualization using latest tools"
+      - link "Request Service" [ref=e38]
+        - StaticText "Request Service"
+        - image
+      - StaticText "💡"
+      - heading "Digital Solutions" [level=3, ref=e39]
+      - paragraph
+        - StaticText "Custom application and digital platform development for agriculture"
+      - link "Request Service" [ref=e40]
+        - StaticText "Request Service"
+        - image
+      - generic
+        - StaticText "MY ACHIEVEMENTS"
+        - heading "Achievements & Certificates" [level=2, ref=e106]
+          - StaticText "Achievements & Certificates"
+      - StaticText "🏆"
+      - heading "International Conferences" [level=3, ref=e41]
+      - paragraph
+        - StaticText "Active participation in 8+ international scientific conferences including ESNA, ICABRD, ICARP, SOS, ChAAB, and ISAEA with research papers presented (2023-2026)"
+      - StaticText "📄"
+      - heading "Published Research" [level=3, ref=e42]
+      - paragraph
+        - StaticText "25+ peer-reviewed scientific papers published in specialized high-impact international journals"
+      - StaticText "🎖️"
+      - heading "Professional Certifications" [level=3, ref=e43]
+      - paragraph
+        - StaticText "50+ advanced international training certifications from prestigious institutions (Wageningen, FAO, ASM, GIZ, Oxford Climate Society, etc.)"
+      - StaticText "🌍"
+      - heading "International Memberships" [level=3, ref=e44]
+      - paragraph
+        - StaticText "Active member of American Society for Microbiology, European Aquaculture Society, and International Association of Agribusiness Practitioners"
+      - StaticText "📱"
+      - heading "Digital Innovations" [level=3, ref=e45]
+      - paragraph
+        - StaticText "Developed 2 insect trap prototypes and an integrated hydroponic/aquaponic system prototype for sustainable agriculture"
+      - StaticText "🤝"
+      - heading "Community Leadership" [level=3, ref=e46]
+      - paragraph
+        - StaticText "Vice President of Beekeeper Association, IAPA eLearning Ambassador, member of ASM, EAS, and Focal Point for Algeria in multiple international organizations"
+      - generic
+        - StaticText "KNOWLEDGE HUB"
+        - heading "Thoughts & Research" [level=2, ref=e107]
+          - StaticText "Thoughts & Research"
+      - generic
+        - button "💭 Thoughts" [ref=e108]
+        - button "📄 Publications" [ref=e109]
+        - button "🎤 Speaking" [ref=e110]
+      - generic
+        - link "Follow on Facebook" [ref=e111]
+          - image
+          - StaticText "Follow on Facebook"
+        - link "Follow on LinkedIn" [ref=e112]
+          - image
+          - StaticText "Follow on LinkedIn"
+        - generic
+          - image
+          - StaticText "Facebook"
+          - StaticText "May 2026"
+          - paragraph
+          - link "Read more" [ref=e170]
+          - image
+          - StaticText "LinkedIn"
+          - StaticText "Apr 2026"
+          - paragraph
+          - link "Read more" [ref=e171]
+          - image
+          - StaticText "Facebook"
+          - StaticText "Mar 2026"
+          - paragraph
+          - link "Read more" [ref=e172]
+          - image
+          - StaticText "LinkedIn"
+          - StaticText "Feb 2026"
+          - paragraph
+          - link "Read more" [ref=e173]
+          - image
+          - StaticText "Facebook"
+          - StaticText "Jan 2026"
+          - paragraph
+          - link "Read more" [ref=e174]
+          - image
+          - StaticText "LinkedIn"
+          - StaticText "Dec 2025"
+          - paragraph
+          - link "Read more" [ref=e175]
+      - generic
+        - StaticText "WHAT THEY SAY"
+        - heading "Client Testimonials" [level=2, ref=e113]
+          - StaticText "Client Testimonials"
+      - generic
+        - StaticText "⭐⭐⭐⭐⭐"
+        - paragraph
+          - StaticText "\"Excellent training with solid scientific content. I learned a lot from the practical aspects of the FBS program. The trainer explains concepts clearly and simply.\""
+        - StaticText "EA"
+        - StaticText "Eng. Ahmed"
+        - StaticText "Agricultural Engineer"
+        - StaticText "⭐⭐⭐⭐⭐"
+        - paragraph
+          - StaticText "\"Dr. Abdelkader helped me analyze my thesis data professionally and clearly. He is an excellent supervisor who deeply masters his field.\""
+        - StaticText "SK"
+        - StaticText "Sarah K."
+        - StaticText "Master's Student"
+        - StaticText "⭐⭐⭐⭐⭐"
+        - paragraph
+          - StaticText "\"A reliable partner in agricultural innovation. He combines scientific vision with practical implementation perfectly committed to quality results.\""
+        - StaticText "DM"
+        - StaticText "Dr. Mohamed"
+        - StaticText "Business Partner"
+        - StaticText "⭐⭐⭐⭐⭐"
+        - paragraph
+          - StaticText "\"Training programs are specialized and very practical. They helped me develop modern farm management skills and apply new technologies.\""
+        - StaticText "FA"
+        - StaticText "Fatima A."
+        - StaticText "Farmer"
+        - StaticText "⭐⭐⭐⭐⭐"
+        - paragraph
+          - StaticText "\"The kamel3lom platform changed how I understand complex agricultural concepts. Rich content, easy to understand, and very valuable.\""
+        - StaticText "IQ"
+        - StaticText "Ibrahim Q."
+        - StaticText "University Student"
+        - StaticText "⭐⭐⭐⭐⭐"
+        - paragraph
+          - StaticText "\"Professional support in scientific research and international publishing. He helped me publish my research in a reputable international journal.\""
+        - StaticText "DL"
+        - StaticText "Dr. Leila"
+        - StaticText "Researcher"
+      - StaticText "SHARE YOUR EXPERIENCE"
+      - heading "Submit a Testimonial" [level=3, ref=e47]
+      - form
+        - LabelText
+          - StaticText "Your Name"
+        - textbox "Your name" [required, ref=e114]
+        - LabelText
+          - StaticText "Your Role / Title"
+        - textbox "e.g. Agricultural Engineer" [required, ref=e115]
+        - LabelText
+          - StaticText "Your Testimonial"
+        - textbox "Share your experience working with me..." [required, ref=e116]
+        - StaticText "Rating:"
+        - generic
+          - StaticText "☆"
+          - StaticText "☆"
+          - StaticText "☆"
+          - StaticText "☆"
+          - StaticText "☆"
+        - button "Submit Testimonial" [ref=e117]
+          - image
+          - StaticText "Submit Testimonial"
+      - generic
+        - StaticText "SHARING KNOWLEDGE"
+        - heading "Latest Articles" [level=2, ref=e118]
+          - StaticText "Latest Articles"
+      - generic
+        - StaticText "🐄"
+        - StaticText "ANIMAL SCIENCE"
+        - heading "Improving Semen Quality: Latest Techniques" [level=3, ref=e119]
+        - paragraph
+          - StaticText "Comprehensive overview of latest research and techniques used in assessing and improving semen quality and reproductive performance."
+        - StaticText "2026-01-15 · 8 min read"
+        - button "Read More" [ref=e120]
+          - StaticText "Read More"
+          - image
+        - StaticText "📊"
+        - StaticText "DATA ANALYSIS"
+        - heading "Using R for Agricultural Data Analysis" [level=3, ref=e121]
+        - paragraph
+          - StaticText "Practical guide to using R language for processing, analyzing, and visualizing agricultural data efficiently and professionally."
+        - StaticText "2026-02-20 · 10 min read"
+        - button "Read More" [ref=e122]
+          - StaticText "Read More"
+          - image
+        - StaticText "🌾"
+        - StaticText "TRAINING"
+        - heading "Field Farmer Schools: Effective Methodology" [level=3, ref=e123]
+        - paragraph
+          - StaticText "How FBS programs empower farmers and improve agricultural productivity through modern practices and knowledge sharing."
+        - StaticText "2026-03-10 · 7 min read"
+        - button "Read More" [ref=e124]
+          - StaticText "Read More"
+          - image
+        - StaticText "💡"
+        - StaticText "INNOVATION"
+        - heading "AI in Agriculture: Practical Applications" [level=3, ref=e125]
+        - paragraph
+          - StaticText "Exploring use cases of artificial intelligence and machine learning in improving agricultural decisions and productivity."
+        - StaticText "2026-04-05 · 9 min read"
+        - button "Read More" [ref=e126]
+          - StaticText "Read More"
+          - image
+        - StaticText "🔬"
+        - StaticText "RESEARCH"
+        - heading "Scientific Publishing Guide" [level=3, ref=e127]
+        - paragraph
+          - StaticText "Practical steps for publishing your research in peer-reviewed international journals and reputable databases."
+        - StaticText "2026-05-01 · 11 min read"
+        - button "Read More" [ref=e128]
+          - StaticText "Read More"
+          - image
+        - StaticText "🚀"
+        - StaticText "ENTREPRENEURSHIP"
+        - heading "Starting an Agricultural Project" [level=3, ref=e129]
+        - paragraph
+          - StaticText "Comprehensive guide for agricultural entrepreneurs on launching and developing a successful agricultural business."
+        - StaticText "2026-05-20 · 8 min read"
+        - button "Read More" [ref=e130]
+          - StaticText "Read More"
+          - image
+      - generic
+        - StaticText "FAQ"
+        - heading "Frequently Asked Questions" [level=2, ref=e131]
+          - StaticText "Frequently Asked Questions"
+      - heading "What are your main specializations?" [level=3, ref=e132]
+      - image
+      - heading "How can I book a training course?" [level=3, ref=e133]
+      - image
+      - heading "Do you provide research consulting?" [level=3, ref=e134]
+      - image
+      - heading "What digital platforms have you developed?" [level=3, ref=e135]
+      - image
+      - heading "Stay Updated" [level=2, ref=e48]
+      - paragraph
+        - StaticText "Subscribe to receive the latest articles, training courses, and research updates"
+      - textbox "Enter your email address" [ref=e49]
+      - button "Subscribe Now" [ref=e50]
+        - StaticText "Subscribe Now"
+        - image
+      - paragraph
+        - StaticText "🔒 Your email is safe with us - no spam"
+      - generic
+        - StaticText "GET IN TOUCH"
+        - heading "Contact Me" [level=2, ref=e136]
+          - StaticText "Contact Me"
+      - paragraph
+        - StaticText "I welcome all opportunities for collaboration in scientific research, training, consulting, and developing agricultural digital solutions."
+      - image
+      - StaticText "Email Address"
+      - StaticText "Click to reveal"
+      - image
+      - StaticText "Phone"
+      - StaticText "+213 792 35 74 43"
+      - image
+      - StaticText "Location"
+      - StaticText "El Oued, Algeria"
+      - link "LinkedIn" [ref=e51]
+        - image
+      - link "Twitter" [ref=e52]
+        - image
+      - link "Facebook" [ref=e53]
+        - image
+      - link "GitHub" [ref=e54]
+        - image
+      - link "Send Email Directly" [ref=e55]
+        - image
+        - StaticText "Send Email Directly"
+      - form
+        - LabelText
+          - StaticText "Full Name"
+        - textbox "Full Name" [required, ref=e137]
+        - LabelText
+          - StaticText "Email Address"
+        - textbox "Email Address" [required, ref=e138]
+        - LabelText
+          - StaticText "Subject"
+        - combobox "Subject" [expanded=false, ref=e139]: Agricultural Training
+          - MenuListPopup
+        - LabelText
+          - StaticText "Message"
+        - textbox "Message" [required, ref=e140]
+        - button "Send Message" [ref=e141]
+          - StaticText "Send Message"
+          - image
+      - generic
+        - StaticText "MY PORTFOLIO"
+        - heading "Portfolio Gallery" [level=2, ref=e142]
+          - StaticText "Portfolio Gallery"
+      - generic
+        - button "All" [ref=e143]
+        - button "Research" [ref=e144]
+        - button "Training" [ref=e145]
+        - button "Farm Work" [ref=e146]
+        - button "Events" [ref=e147]
+      - generic
+        - StaticText "🧪"
+        - StaticText "RESEARCH"
+        - heading "Field Research Lab" [level=3, ref=e148]
+        - paragraph
+          - StaticText "Advanced laboratory setup for semen quality analysis"
+        - StaticText "🎓"
+        - StaticText "TRAINING"
+        - heading "Training Session" [level=3, ref=e149]
+        - paragraph
+          - StaticText "FBS training program in action with farmers"
+        - StaticText "🚜"
+        - StaticText "FARM"
+        - heading "Farm Visit" [level=3, ref=e150]
+        - paragraph
+          - StaticText "Field work and livestock monitoring"
+        - StaticText "🌍"
+        - StaticText "EVENT"
+        - heading "Conference Presentation" [level=3, ref=e151]
+        - paragraph
+          - StaticText "International agricultural conference"
+        - StaticText "📈"
+        - StaticText "RESEARCH"
+        - heading "Research Data" [level=3, ref=e152]
+        - paragraph
+          - StaticText "Collaborative research and analysis"
+        - StaticText "🌱"
+        - StaticText "TRAINING"
+        - heading "Farmer Workshop" [level=3, ref=e153]
+        - paragraph
+          - StaticText "Hands-on practical training workshop"
+        - StaticText "✅"
+        - StaticText "FARM"
+        - heading "Livestock Assessment" [level=3, ref=e154]
+        - paragraph
+          - StaticText "Animal health and productivity evaluation"
+        - StaticText "🏆"
+        - StaticText "EVENT"
+        - heading "Seminar Event" [level=3, ref=e155]
+        - paragraph
+          - StaticText "Educational seminar with industry experts"
+        - StaticText "📱"
+        - StaticText "RESEARCH"
+        - heading "Digital Platform" [level=3, ref=e156]
+        - paragraph
+          - StaticText "kamel3lom platform demonstration"
+      - generic
+        - StaticText "REAL RESULTS"
+        - heading "Case Studies" [level=2, ref=e157]
+          - StaticText "Case Studies"
+      - generic
+        - heading "AgriSkills Academy Growth" [level=3, ref=e158]
+        - paragraph
+          - StaticText "Building Educational Excellence"
+        - StaticText "🎓"
+        - paragraph
+          - strong
+          - StaticText " Needed to create a comprehensive agricultural training platform that serves farmers and researchers"
+        - paragraph
+          - strong
+          - StaticText " Developed integrated academy with online & offline programs, certifications, and industry partnerships"
+        - paragraph
+          - StaticText "Results: 500+ trainees | 40+ programs | 95% satisfaction rate"
+        - StaticText "Training"
+        - StaticText "Platform"
+        - StaticText "Education"
+        - heading "Semen Quality Research" [level=3, ref=e159]
+        - paragraph
+          - StaticText "Scientific Innovation"
+        - StaticText "🧬"
+        - paragraph
+          - strong
+          - StaticText " Improving livestock breeding through better semen quality assessment"
+        - paragraph
+          - strong
+          - StaticText " Advanced laboratory techniques combined with AI-powered analysis system"
+        - paragraph
+          - StaticText "Results: 20+ publications | International collaborations | Patent-pending technology"
+        - StaticText "Research"
+        - StaticText "Innovation"
+        - StaticText "Science"
+        - heading "FBS Training Impact" [level=3, ref=e160]
+        - paragraph
+          - StaticText "Community Empowerment"
+        - StaticText "🌾"
+        - paragraph
+          - strong
+          - StaticText " Farmers lacking modern agricultural knowledge and techniques"
+        - paragraph
+          - strong
+          - StaticText " Structured Field Farmer Schools program with hands-on training"
+        - paragraph
+          - StaticText "Results: 500+ farmers trained | 40% productivity increase | Sustainable practices adopted"
+        - StaticText "Training"
+        - StaticText "Impact"
+        - StaticText "Sustainability"
+      - generic
+        - StaticText "COMMON QUESTIONS"
+        - heading "FAQ" [level=2, ref=e161]
+          - StaticText "FAQ"
+      - generic
+        - button "What is your background and expertise?" [ref=e162]
+          - heading "What is your background and expertise?" [level=3, ref=e176]
+          - image
+        - button "What training programs do you offer?" [ref=e163]
+          - heading "What training programs do you offer?" [level=3, ref=e177]
+          - image
+        - button "Do you offer research consulting services?" [ref=e164]
+          - heading "Do you offer research consulting services?" [level=3, ref=e178]
+          - image
+        - button "How can I access the kamel3lom platform?" [ref=e165]
+          - heading "How can I access the kamel3lom platform?" [level=3, ref=e179]
+          - image
+        - button "Do you provide certification for training?" [ref=e166]
+          - heading "Do you provide certification for training?" [level=3, ref=e180]
+          - image
+        - button "What is your consulting availability?" [ref=e167]
+          - heading "What is your consulting availability?" [level=3, ref=e181]
+          - image
+        - button "How do I contact you for collaboration?" [ref=e168]
+          - heading "How do I contact you for collaboration?" [level=3, ref=e182]
+          - image
+        - button "Do you work internationally?" [ref=e169]
+          - heading "Do you work internationally?" [level=3, ref=e183]
+          - image
+      - contentinfo
+        - StaticText "AA"
+        - StaticText "© 2026 Abdelkader Atia. All rights reserved."
+        - button "Notifications" [ref=e56]
+          - image
+          - StaticText "Notifications"
+        - link "Email" [ref=e57]
+          - image
+          - StaticText "Email"
+        - generic
+          - StaticText "Online"
+        - StaticText "AgriSkills Academy"
+      - generic
+        - image
+        - image
+      - StaticText "📡 You are offline — some features may not work"
+      - paragraph
+        - StaticText "🍪 This site uses cookies for analytics and personalized content. By continuing, you agree to our use of cookies."
+      - button "Accept" [ref=e58]
+      - button "Decline" [ref=e59]
+      - link "Chat on WhatsApp" [ref=e8]
+        - image
+- region "Notifications (F8)" [ref=e1]
+  - list
+- button "Open Next.js Dev Tools" [expanded=false, ref=e6]
+  - image
+- alert
