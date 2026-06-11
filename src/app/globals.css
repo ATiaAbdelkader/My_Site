@@ -88,7 +88,7 @@
 .dark {
   --background: #0a0e27;
   --foreground: #f1f5f9;
-  --card: rgba(15, 21, 56, 0.6);
+  --card: rgba(8, 25, 58, 0.75);
   --card-foreground: #f1f5f9;
   --popover: #0f1538;
   --popover-foreground: #f1f5f9;
@@ -146,32 +146,33 @@
   background: rgba(6, 182, 212, 0.5);
 }
 
-/* Glass card */
+/* Glass card - default is deep blue with cyan tint (dark theme) */
 .glass-card {
-  background: rgba(15, 21, 56, 0.5);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(8, 25, 58, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(6, 182, 212, 0.25);
   transition: all 0.3s ease;
 }
 .glass-card:hover {
-  border-color: rgba(6, 182, 212, 0.2);
+  border-color: rgba(6, 182, 212, 0.5);
   transform: translateY(-2px);
-  box-shadow: 0 8px 32px rgba(6, 182, 212, 0.1);
+  box-shadow: 0 8px 32px rgba(6, 182, 212, 0.18);
+  background: rgba(8, 25, 58, 0.85);
 }
 
-/* Light theme glass card */
-:root .glass-card,
-.light .glass-card {
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+/* Light theme glass card - override when NOT in dark mode */
+:root:not(.dark) .glass-card {
+  background: rgba(255, 255, 255, 0.85) !important;
+  border-color: rgba(6, 182, 212, 0.15) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
-:root .glass-card:hover,
-.light .glass-card:hover {
-  border-color: rgba(6, 182, 212, 0.3);
-  box-shadow: 0 8px 32px rgba(6, 182, 212, 0.08);
+:root:not(.dark) .glass-card:hover {
+  border-color: rgba(6, 182, 212, 0.35) !important;
+  box-shadow: 0 8px 32px rgba(6, 182, 212, 0.1);
+  background: rgba(255, 255, 255, 0.95) !important;
+  transform: translateY(-2px);
 }
 
 /* Gradient text */
@@ -203,12 +204,46 @@
   padding-bottom: 5rem;
 }
 
-/* RTL support for Arabic */
+/* Cairo font for all languages - better readability */
+html {
+  font-family: var(--font-cairo), 'Cairo', sans-serif;
+}
 [dir="rtl"] {
-  font-family: var(--font-cairo), sans-serif;
+  font-family: var(--font-cairo), 'Cairo', sans-serif;
 }
 [dir="ltr"] {
-  font-family: var(--font-inter), sans-serif;
+  font-family: var(--font-cairo), 'Cairo', sans-serif;
+}
+
+/* Justified text for better readability */
+p, li, td, th {
+  text-align: justify;
+}
+/* Keep centered elements centered */
+.text-center, .text-center * {
+  text-align: center !important;
+}
+/* Keep right-aligned elements */
+.text-right, .text-right * {
+  text-align: right !important;
+}
+/* Keep left-aligned elements */
+.text-left, .text-left * {
+  text-align: left !important;
+}
+/* Better text contrast inside cards */
+.dark .glass-card p,
+.dark .glass-card span,
+.dark .glass-card li {
+  color: #cbd5e1;
+}
+.dark .glass-card h1,
+.dark .glass-card h2,
+.dark .glass-card h3,
+.dark .glass-card h4,
+.dark .glass-card h5,
+.dark .glass-card h6 {
+  color: #e2e8f0;
 }
 
 /* Animated progress bar */

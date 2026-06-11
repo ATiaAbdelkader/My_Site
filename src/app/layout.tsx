@@ -56,6 +56,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${inter.variable} ${cairo.variable} antialiased bg-background text-foreground`}
+        style={{ fontFamily: "'Cairo', sans-serif" }}
       >
         <ThemeProvider
           attribute="class"
