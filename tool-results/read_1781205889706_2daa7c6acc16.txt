@@ -1,0 +1,917 @@
+     1→<!doctype html>
+     2→<html lang="en" dir="ltr" class="h-full">
+     3→ <head>
+     4→  <meta charset="UTF-8">
+     5→  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     6→  <meta name="description" content="Abdelkader Atia - PhD Researcher, Agricultural Trainer, and Digital Innovation Expert. Specializing in semen quality and sustainable livestock production.">
+     7→  <meta name="keywords" content="smart agriculture, PhD researcher, agricultural training, digital innovation, livestock production, semen quality">
+     8→  <meta name="author" content="Abdelkader Atia">
+     9→  <meta property="og:title" content="Abdelkader Atia - Ph.D Researcher & Agricultural Innovator">
+    10→  <meta property="og:description" content="Professional specializing in scientific research, training, and digital innovation in agriculture">
+    11→  <meta property="og:image" content="/og-image.svg">
+    12→  <meta property="og:type" content="website">
+    13→  <meta name="twitter:card" content="summary_large_image">
+    14→  <meta name="twitter:title" content="Abdelkader Atia - Ph.D Researcher & Agricultural Innovator">
+    15→  <meta name="twitter:description" content="Professional specializing in scientific research, training, and digital innovation in agriculture">
+    16→  <meta name="twitter:image" content="/og-image.svg">
+    17→  <link rel="canonical" href="https://abdelkader-atia.com/index-en.html">
+    18→  <link rel="manifest" href="/manifest.json">
+    19→  <title>Abdelkader Atia - Agricultural Researcher & Trainer</title>
+    20→  <!-- Google Analytics: Replace G-XXXXXXXXXX with your actual Measurement ID -->
+    21→  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    22→  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script> -->
+    23→  <link href="assets/css/tailwind-built.css" rel="stylesheet">
+    24→  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+    25→  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    26→  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    27→  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
+    28→  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
+    29→  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌾</text></svg>">
+    30→  <script type="application/ld+json">
+    31→  {
+    32→    "@context": "https://schema.org",
+    33→    "@type": "Person",
+    34→    "name": "Abdelkader Atia",
+    35→    "alternateName": "عبد القادر عطيه",
+    36→    "jobTitle": "PhD Researcher & Agricultural Innovator",
+    37→    "description": "PhD Researcher, Agricultural Trainer, and Digital Innovation Expert. Specializing in semen quality and sustainable livestock production.",
+    38→    "email": "contact@abdelkader-atia.com",
+    39→    "address": {
+    40→      "@type": "PostalAddress",
+    41→      "addressCountry": "Algeria"
+    42→    },
+    43→    "sameAs": [
+    44→      "https://www.linkedin.com/in/abdelkader-atia-89061a146/",
+    45→      "https://twitter.com/abdelkader_atia",
+    46→      "https://www.facebook.com/abdelkader.atia",
+    47→      "https://github.com/abdelkader-atia"
+    48→    ],
+    49→    "knowsAbout": [
+    50→      "Animal Sciences",
+    51→      "Semen Quality",
+    52→      "Digital Agriculture",
+    53→      "Agricultural Training",
+    54→      "Agribusiness"
+    55→    ]
+    56→  }
+    57→  </script>
+    58→  <link rel="stylesheet" href="assets/css/style.css">
+    59→  <script src="assets/js/main-en.js" defer></script>
+    60→ </head>
+    61→ <body class="h-full overflow-auto" id="app-body">
+    62→   <!-- Reading Progress Bar --> <div id="readingProgress"></div>
+    63→   <a href="#home" class="sr-only skip-link-focus">Skip to main content</a>
+    64→  <!-- NAVBAR -->
+    65→  <nav id="navbar" class="fixed top-0 right-0 left-0 z-50 transition-all duration-300 navbar-transparent">
+    66→   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    67→    <div class="flex items-center justify-between h-16 lg:h-20">
+    68→     <!-- Logo --> <a href="#home" class="flex items-center gap-3">
+    69→      <div class="w-10 h-10 rounded-lg flex items-center justify-center text-white font-bold text-lg bg-gradient-cyan">
+    70→       AA
+    71→      </div>
+    72→      <div class="hidden sm:block">
+    73→       <div class="text-white font-bold text-sm leading-tight" id="logoName">
+    74→        Abdelkader Atia
+    75→       </div>
+    76→       <div class="text-cyan-400 text-xs">
+    77→        Ph.D Researcher
+    78→       </div>
+    79→      </div></a><!-- Language Toggle -->
+    80→     <div class="hidden sm:flex items-center gap-2 px-3 py-1 rounded-lg glass"><button onclick="loadLanguage('en')" id="langEn" class="px-2 py-1 rounded text-xs font-semibold text-cyan-400 bg-gradient-cyan-light" aria-label="Switch to English">EN</button>
+    81→      <div class="w-px h-4 bg-gray-700"></div><button onclick="loadLanguage('ar')" id="langAr" class="px-2 py-1 rounded text-xs font-semibold text-gray-400 hover:text-cyan-400" aria-label="Switch to Arabic">AR</button><div class="w-px h-4 bg-gray-700"></div><button onclick="loadLanguage('fr')" id="langFr" class="px-2 py-1 rounded text-xs font-semibold text-gray-400 hover:text-cyan-400" aria-label="Switch to French">FR</button>
+    82→     </div><!-- Theme Toggle -->
+    83→     <button id="themeToggle" class="hidden sm:flex items-center justify-center w-10 h-10 rounded-lg glass text-gray-400 hover:text-cyan-400 transition-colors" onclick="toggleTheme()" title="Toggle Theme" aria-label="Toggle dark/light theme">
+    84→      <i id="themeIcon" data-lucide="moon" class="icon-sm"></i>
+    85→     </button><!-- Desktop Nav -->
+    86→     <div class="hidden lg:flex items-center gap-8">
+    87→      <a href="#home" class="nav-link text-gray-300 hover:text-white text-sm font-medium active">Home</a> <a href="#about" class="nav-link text-gray-300 hover:text-white text-sm font-medium">About</a> <a href="#skills" class="nav-link text-gray-300 hover:text-white text-sm font-medium">Skills</a> <a href="#experience" class="nav-link text-gray-300 hover:text-white text-sm font-medium">Experience</a> <a href="#projects" class="nav-link text-gray-300 hover:text-white text-sm font-medium">Projects</a> <a href="#services" class="nav-link text-gray-300 hover:text-white text-sm font-medium">Services</a> <a href="#achievements" class="nav-link text-gray-300 hover:text-white text-sm font-medium">Achievements</a> <a href="#knowledge" class="nav-link text-gray-300 hover:text-white text-sm font-medium">Insights</a> <a href="#contact" class="nav-link text-gray-300 hover:text-white text-sm font-medium">Contact</a>
+    88→     </div><!-- CTA + Mobile Toggle -->
+    89→     <div class="flex items-center gap-3">
+    90→      <a href="#contact" class="hidden sm:inline-flex btn-primary text-white px-5 py-2 rounded-lg text-sm font-semibold">Contact Me</a> <button id="mobileToggle" class="lg:hidden text-white p-2" onclick="toggleMobile()" aria-label="Open mobile menu"> <i data-lucide="menu" style="width:24px;height:24px"></i> </button>
+    91→     </div>
+    92→    </div>
+    93→   </div><!-- Mobile Menu -->
+    94→   <div id="mobileMenu" class="mobile-menu fixed top-0 left-0 h-full w-72 glass z-50 p-6">
+    95→    <div class="flex justify-between items-center mb-8">
+    96→     <span class="text-white font-bold">Menu</span> <button onclick="toggleMobile()" class="text-gray-400 hover:text-white" aria-label="Close mobile menu"><i data-lucide="x" style="width:24px;height:24px"></i></button>
+    97→    </div>
+    98→    <div class="flex flex-col gap-4">
+    99→     <a href="#home" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">Home</a> <a href="#about" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">About</a> <a href="#skills" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">Skills</a> <a href="#experience" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">Experience</a> <a href="#projects" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">Projects</a> <a href="#services" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">Services</a> <a href="#achievements" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">Achievements</a> <a href="#knowledge" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">Insights</a> <a href="#contact" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">Contact</a> <a href="#contact" class="btn-primary text-white text-center px-5 py-3 rounded-lg text-sm font-semibold mt-4">Contact Me</a>
+   100→    </div>
+   101→   </div>
+   102→  </nav><!-- HERO SECTION -->
+   103→  <section id="home" class="hero-bg relative min-h-full flex items-center overflow-hidden">
+   104→
+   105→   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 lg:py-0 w-full">
+   106→    <div class="grid lg:grid-cols-2 gap-12 items-center">
+   107→     <div class="text-left">
+   108→      <div class="anim-in inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-cyan-400 text-sm mb-6">
+   109→       <i data-lucide="sparkles" style="width:14px;height:14px"></i> <span>Ph.D Student | Trainer | Innovator</span>
+   110→      </div>
+   111→      <h1 id="heroTitle" class="anim-in text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-900 leading-tight mb-6">Transforming <span class="gradient-text">Agricultural Knowledge</span> into Real Impact</h1>
+   112→      <p id="heroSubtitle" class="anim-in text-gray-400 text-base sm:text-lg leading-relaxed mb-8 max-w-xl">PhD student and trainer specializing in digital agriculture, building bridges between science and practical application to develop smarter, more efficient agricultural systems.</p>
+   113→      <div class="anim-in flex flex-wrap gap-4">
+   114→        <a href="#projects" class="btn-primary text-white px-7 py-3 rounded-xl font-semibold text-sm flex items-center gap-2"> <span>Explore My Work</span> <i data-lucide="arrow-right" style="width:16px;height:16px"></i> </a> <a href="#contact" class="btn-outline text-cyan-400 px-7 py-3 rounded-xl font-semibold text-sm">Get in Touch</a>
+   115→      </div><!-- Quick Stats -->
+   116→      <div class="anim-in flex gap-8 mt-10">
+   117→       <div>
+   118→        <div class="stat-number gradient-text" data-target="12">0</div>
+   119→        <div class="text-gray-500 text-xs mt-1">
+   120→         Years Experience
+   121→        </div>
+   122→       </div>
+   123→       <div>
+   124→        <div class="stat-number gradient-text" data-target="25">0</div>
+   125→        <div class="text-gray-500 text-xs mt-1">
+   126→         Research Projects
+   127→        </div>
+   128→       </div>
+   129→       <div>
+   130→        <div class="stat-number gradient-text" data-target="500">0</div>
+   131→        <div class="text-gray-500 text-xs mt-1">
+   132→         Trainees
+   133→        </div>
+   134→       </div>
+   135→      </div>
+   136→     </div><!-- Hero Visual -->
+   137→     <div class="hidden lg:flex justify-center items-center relative">
+   138→      <div class="w-80 h-80 rounded-full relative" style="background:radial-gradient(circle,rgba(34,211,238,0.1),transparent 70%);">
+   139→       <div class="absolute inset-8 rounded-full glass flex items-center justify-center" style="border:2px solid rgba(34,211,238,0.15);">
+   140→        <div class="text-center">
+   141→         <div class="text-6xl mb-3">
+   142→          🌾
+   143→         </div>
+   144→         <div class="text-white font-bold text-xl">
+   145→          Abdelkader Atia
+   146→         </div>
+   147→         <div class="text-cyan-400 text-sm">
+   148→          PhD Researcher
+   149→         </div>
+   150→        </div>
+   151→
+   152→      </div>
+   153→     </div>
+   154→    </div>
+   155→   </div>
+   156→  </div>
+   157→
+   158→  </section><!-- ABOUT SECTION -->
+   159→  <section id="about" class="section-padding relative">
+   160→   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+   161→    <div class="text-center mb-16">
+   162→     <span class="text-cyan-400 text-sm font-semibold tracking-wider">GET TO KNOW ME</span>
+   163→     <h2 id="aboutTitle" class="text-3xl sm:text-4xl font-800 text-white mt-3 gradient-border inline-block pb-3">About Me</h2>
+   164→    </div>
+   165→    <div class="grid lg:grid-cols-2 gap-12 items-start">
+   166→     <div>
+   167→      <p class="text-gray-300 text-lg leading-loose mb-6">I'm <strong class="text-white">Abdelkader Atia</strong>, an agronomy professional with <strong>12+ years of experience</strong> in agricultural engineering, professional training, and project supervision, I am currently pursuing a PhD in Agronomy (Animal Production), building on a Master's in Plant Production and an Engineer's degree in Arid Region Animal Breeding.</p>
+   168→      <p class="text-gray-400 leading-loose mb-8">My work spans agricultural engineering, pedagogical design, and digital innovation. I serve as a <strong>Specialized Teacher</strong> at Hassani Abdelkrim INSFP in EL-Oued, where I design vocational training programs, supervise agriculture operations, and mentor students in modern farming techniques. I am also the author of the book <em>"On the Edge"</em> (ISBN 9947-26-849-1).</p><!-- Expertise Tags -->
+   169→      <div class="flex flex-wrap gap-3">
+   170→       <span class="px-4 py-2 rounded-lg glass text-cyan-400 text-sm">🔬 Animal Production</span> <span class="px-4 py-2 rounded-lg glass text-cyan-400 text-sm">🌾 Agronomy</span> <span class="px-4 py-2 rounded-lg glass text-cyan-400 text-sm">📊 Digital Agriculture</span> <span class="px-4 py-2 rounded-lg glass text-cyan-400 text-sm">🎓 Vocational Training</span> <span class="px-4 py-2 rounded-lg glass text-cyan-400 text-sm">💼 Agribusiness</span> <span class="px-4 py-2 rounded-lg glass text-cyan-400 text-sm">📖 Pedagogical Engineering</span>
+   171→      </div>
+   172→      <div class="flex flex-wrap gap-3 mt-6">
+   173→        <button onclick="openCV()" class="btn-outline text-cyan-400 px-5 py-2.5 rounded-xl text-sm font-semibold flex items-center gap-2 hover:bg-cyan-500/10 transition"><i data-lucide="eye" style="width:16px;height:16px"></i> Preview CV</button>
+   174→        <button onclick="downloadCV()" class="btn-primary text-white px-5 py-2.5 rounded-xl text-sm font-semibold flex items-center gap-2"><i data-lucide="download" style="width:16px;height:16px"></i> Download CV</button>
+   175→      </div>
+   176→     </div><!-- Stats Grid -->
+   177→     <div class="grid grid-cols-2 gap-4">
+   178→      <div class="glass-card rounded-2xl p-6 text-center">
+   179→       <div class="text-4xl font-900 gradient-text mb-2">
+   180→        +12
+   181→       </div>
+   182→       <div class="text-gray-400 text-sm">
+   183→        Years of Experience
+   184→       </div>
+   185→      </div>
+   186→      <div class="glass-card rounded-2xl p-6 text-center">
+   187→       <div class="text-4xl font-900 gradient-text mb-2">
+   188→        +25
+   189→       </div>
+   190→       <div class="text-gray-400 text-sm">
+   191→        Research Projects
+   192→       </div>
+   193→      </div>
+   194→      <div class="glass-card rounded-2xl p-6 text-center">
+   195→       <div class="text-4xl font-900 gradient-text mb-2">
+   196→        +50
+   197→       </div>
+   198→       <div class="text-gray-400 text-sm">
+   199→        Training Programs
+   200→       </div>
+   201→      </div>
+   202→      <div class="glass-card rounded-2xl p-6 text-center">
+   203→       <div class="text-4xl font-900 gradient-text mb-2">
+   204→        +500
+   205→       </div>
+   206→       <div class="text-gray-400 text-sm">
+   207→        Trainees & Beneficiaries
+   208→       </div>
+   209→      </div>
+   210→     </div>
+   211→    </div>
+   212→   </div>
+   213→  </section><!-- SKILLS SECTION -->
+   214→  <section id="skills" class="section-padding" style="background:linear-gradient(180deg,rgba(15,21,56,0.5),#0a0e27);">
+   215→   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+   216→    <div class="text-center mb-16">
+   217→     <span class="text-cyan-400 text-sm font-semibold">MY ABILITIES</span>
+   218→     <h2 class="text-3xl sm:text-4xl font-800 text-white mt-3 gradient-border inline-block pb-3">Skills</h2>
+   219→    </div>
+   220→    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+   221→     <!-- Research -->
+   222→     <div class="glass-card rounded-2xl p-6">
+   223→      <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl mb-4" style="background:rgba(34,211,238,0.1);">
+   224→       🔬
+   225→      </div>
+   226→      <h3 class="text-white font-bold text-lg mb-4">Research Skills</h3>
+   227→      <div class="space-y-3">
+   228→       <div>
+   229→        <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">Data Analysis</span><span class="text-cyan-400">95%</span>
+   230→        </div>
+   231→        <div class="progress-bar">
+   232→         <div class="progress-fill" style="width:0%" data-width="95%"></div>
+   233→        </div>
+   234→       </div>
+   235→       <div>
+   236→        <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">Experimental Design</span><span class="text-cyan-400">90%</span>
+   237→        </div>
+   238→        <div class="progress-bar">
+   239→         <div class="progress-fill" style="width:0%" data-width="90%"></div>
+   240→        </div>
+   241→       </div>
+   242→       <div>
+   243→        <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">Scientific Writing</span><span class="text-cyan-400">92%</span>
+   244→        </div>
+   245→        <div class="progress-bar">
+   246→         <div class="progress-fill" style="width:0%" data-width="92%"></div>
+   247→        </div>
+   248→       </div>
+   249→      </div>
+   250→     </div><!-- Technical -->
+   251→     <div class="glass-card rounded-2xl p-6">
+   252→      <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl mb-4" style="background:rgba(251,191,36,0.1);">
+   253→       💻
+   254→      </div>
+   255→       <h3 class="text-white font-bold text-lg mb-4">Technical Skills</h3>
+   256→       <div class="space-y-3">
+   257→        <div>
+   258→         <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">Power BI / IBM SPSS</span><span class="text-cyan-400">90%</span>
+   259→         </div>
+   260→         <div class="progress-bar">
+   261→          <div class="progress-fill" style="width:0%" data-width="90%"></div>
+   262→         </div>
+   263→        </div>
+   264→        <div>
+   265→         <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">R / Excel / Data Viz</span><span class="text-cyan-400">88%</span>
+   266→         </div>
+   267→         <div class="progress-bar">
+   268→          <div class="progress-fill" style="width:0%" data-width="88%"></div>
+   269→         </div>
+   270→        </div>
+   271→        <div>
+   272→         <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">EdrawMax / Xmind</span><span class="text-cyan-400">85%</span>
+   273→         </div>
+   274→         <div class="progress-bar">
+   275→          <div class="progress-fill" style="width:0%" data-width="85%"></div>
+   276→         </div>
+   277→        </div>
+   278→       </div>
+   279→     </div><!-- Agricultural -->
+   280→     <div class="glass-card rounded-2xl p-6">
+   281→      <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl mb-4" style="background:rgba(34,211,238,0.1);">
+   282→       🌱
+   283→      </div>
+   284→      <h3 class="text-white font-bold text-lg mb-4">Agricultural Skills</h3>
+   285→      <div class="space-y-3">
+   286→       <div>
+   287→        <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">Livestock Production</span><span class="text-cyan-400">96%</span>
+   288→        </div>
+   289→        <div class="progress-bar">
+   290→         <div class="progress-fill" style="width:0%" data-width="96%"></div>
+   291→        </div>
+   292→       </div>
+   293→       <div>
+   294→        <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">Breeding & Selection</span><span class="text-cyan-400">93%</span>
+   295→        </div>
+   296→        <div class="progress-bar">
+   297→         <div class="progress-fill" style="width:0%" data-width="93%"></div>
+   298→        </div>
+   299→       </div>
+   300→        <div>
+   301→         <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">Animal Nutrition</span><span class="text-cyan-400">90%</span>
+   302→         </div>
+   303→         <div class="progress-bar">
+   304→          <div class="progress-fill" style="width:0%" data-width="90%"></div>
+   305→         </div>
+   306→        </div>
+   307→        <div>
+   308→         <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">Garden Planner / Precision Ag</span><span class="text-cyan-400">88%</span>
+   309→         </div>
+   310→         <div class="progress-bar">
+   311→          <div class="progress-fill" style="width:0%" data-width="88%"></div>
+   312→         </div>
+   313→        </div>
+   314→       </div>
+   315→      </div><!-- Training -->
+   316→     <div class="glass-card rounded-2xl p-6">
+   317→      <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl mb-4" style="background:rgba(251,191,36,0.1);">
+   318→       🎤
+   319→      </div>
+   320→      <h3 class="text-white font-bold text-lg mb-4">Training Skills</h3>
+   321→      <div class="space-y-3">
+   322→       <div>
+   323→        <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">FBS Trainer</span><span class="text-cyan-400">95%</span>
+   324→        </div>
+   325→        <div class="progress-bar">
+   326→         <div class="progress-fill" style="width:0%" data-width="95%"></div>
+   327→        </div>
+   328→       </div>
+   329→       <div>
+   330→        <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">Program Design</span><span class="text-cyan-400">88%</span>
+   331→        </div>
+   332→        <div class="progress-bar">
+   333→         <div class="progress-fill" style="width:0%" data-width="88%"></div>
+   334→        </div>
+   335→       </div>
+   336→       <div>
+   337→        <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">Communication</span><span class="text-cyan-400">92%</span>
+   338→        </div>
+   339→        <div class="progress-bar">
+   340→         <div class="progress-fill" style="width:0%" data-width="92%"></div>
+   341→        </div>
+   342→       </div>
+   343→      </div>
+   344→     </div>
+   345→    </div>
+   346→   </div>
+   347→  </section><!-- EXPERIENCE / TIMELINE -->
+   348→  <section id="experience" class="section-padding">
+   349→   <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+   350→    <div class="text-center mb-16">
+   351→     <span class="text-cyan-400 text-sm font-semibold">MY JOURNEY</span>
+   352→     <h2 class="text-3xl sm:text-4xl font-800 text-white mt-3 gradient-border inline-block pb-3">Professional Experience</h2>
+   353→    </div>
+   354→    <div class="relative">
+   355→     <div class="timeline-line hidden md:block"></div>
+   356→     <div class="space-y-12">
+   357→       <!-- Item 1 -->
+   358→       <div class="md:flex items-center">
+   359→        <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+   360→         <div class="glass-card rounded-2xl p-6">
+   361→          <span class="text-gold-400 text-sm font-bold">2022 - Present</span>
+   362→          <h3 class="text-white font-bold text-lg mt-2">Specialized Teacher (Pedagogical Engineering)</h3>
+   363→          <p class="text-gray-400 text-sm mt-1">Hassani Abdelkrim INSFP, EL-Oued</p>
+   364→          <p class="text-gray-500 text-sm mt-1">Designing vocational training curricula, supervising agriculture operations, and mentoring students in modern farming and pedagogical techniques</p>
+   365→         </div>
+   366→        </div>
+   367→        <div class="hidden md:flex w-8 h-8 rounded-full items-center justify-center z-10 mx-auto" style="background:linear-gradient(135deg,#06b6d4,#22d3ee);flex-shrink:0;">
+   368→         <i data-lucide="graduation-cap" style="width:14px;height:14px;color:white"></i>
+   369→        </div>
+   370→        <div class="md:w-1/2 md:pl-12"></div>
+   371→       </div><!-- Item 2 -->
+   372→      <div class="md:flex items-center">
+   373→       <div class="md:w-1/2 md:pr-12"></div>
+   374→       <div class="hidden md:flex w-8 h-8 rounded-full items-center justify-center z-10 mx-auto" style="background:linear-gradient(135deg,#f59e0b,#fbbf24);flex-shrink:0;">
+   375→        <i data-lucide="users" style="width:14px;height:14px;color:#0a0e27"></i>
+   376→       </div>
+   377→        <div class="md:w-1/2 md:pl-12 mb-4 md:mb-0">
+   378→         <div class="glass-card rounded-2xl p-6">
+   379→          <span class="text-gold-400 text-sm font-bold">2016 - Present</span>
+   380→          <h3 class="text-white font-bold text-lg mt-2">Agriculture Exploitation Supervisor</h3>
+   381→          <p class="text-gray-500 text-sm mt-1">Overseeing agricultural operations, managing crop and livestock production systems, and implementing best practices in sustainable farming</p>
+   382→         </div>
+   383→        </div>
+   384→       </div><!-- Item 3 -->
+   385→      <div class="md:flex items-center">
+   386→        <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+   387→         <div class="glass-card rounded-2xl p-6">
+   388→          <span class="text-gold-400 text-sm font-bold">2021 - Present</span>
+   389→          <h3 class="text-white font-bold text-lg mt-2">Vocational Trainer</h3>
+   390→          <p class="text-gray-500 text-sm mt-1">Hassani Abdelkrim INSFP, EL-Oued</p>
+   391→          <p class="text-gray-400 text-sm mt-1">Delivering hands-on training in agricultural techniques, field farmer schools (FBS), and professional skill development for students and farmers</p>
+   392→         </div>
+   393→        </div>
+   394→        <div class="hidden md:flex w-8 h-8 rounded-full items-center justify-center z-10 mx-auto" style="background:linear-gradient(135deg,#06b6d4,#22d3ee);flex-shrink:0;">
+   395→         <i data-lucide="users" style="width:14px;height:14px;color:white"></i>
+   396→        </div>
+   397→        <div class="md:w-1/2 md:pl-12"></div>
+   398→        </div><!-- Item 4 - FBS -->
+   399→       <div class="md:flex items-center">
+   400→        <div class="md:w-1/2 md:pr-12"></div>
+   401→        <div class="hidden md:flex w-8 h-8 rounded-full items-center justify-center z-10 mx-auto" style="background:linear-gradient(135deg,#f59e0b,#fbbf24);flex-shrink:0;">
+   402→         <i data-lucide="badge-check" style="width:14px;height:14px;color:#0a0e27"></i>
+   403→        </div>
+   404→         <div class="md:w-1/2 md:pl-12 mb-4 md:mb-0">
+   405→          <div class="glass-card rounded-2xl p-6">
+   406→           <span class="text-gold-400 text-sm font-bold">2022</span>
+   407→           <h3 class="text-white font-bold text-lg mt-2">FBS Assistant Master Trainer</h3>
+   408→           <p class="text-gray-400 text-sm mt-1">ABF (GIZ) — Agri-Business Facility for Africa</p>
+   409→           <p class="text-gray-500 text-sm mt-1">Certified Assistant Master Trainer in Farmer Business School (FBS). Trained 500+ farmers and delivered Training of Trainers programs across Algeria.</p>
+   410→          </div>
+   411→         </div>
+   412→        </div><!-- Item 5 -->
+   413→       <div class="md:flex items-center">
+   414→        <div class="md:w-1/2 md:pr-12"></div>
+   415→        <div class="hidden md:flex w-8 h-8 rounded-full items-center justify-center z-10 mx-auto" style="background:linear-gradient(135deg,#f59e0b,#fbbf24);flex-shrink:0;">
+   416→         <i data-lucide="code" style="width:14px;height:14px;color:#0a0e27"></i>
+   417→        </div>
+   418→         <div class="md:w-1/2 md:pl-12 mb-4 md:mb-0">
+   419→          <div class="glass-card rounded-2xl p-6">
+   420→           <span class="text-gold-400 text-sm font-bold">2011 - 2016</span>
+   421→           <h3 class="text-white font-bold text-lg mt-2">Agriculture Engineer</h3>
+   422→           <p class="text-gray-500 text-sm mt-1">Engineer's degree in Arid Region Animal Breeding</p>
+   423→           <p class="text-gray-400 text-sm mt-1">Practical experience in animal production systems, breeding programs, and farm management in arid environments</p>
+   424→          </div>
+   425→         </div>
+   426→        </div><!-- Item 6 - Certifications -->
+   427→       <div class="md:flex items-center">
+   428→         <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+   429→          <div class="glass-card rounded-2xl p-6">
+   430→           <span class="text-gold-400 text-sm font-bold">2024 - 2026</span>
+   431→           <h3 class="text-white font-bold text-lg mt-2">50+ International Training Certifications</h3>
+   432→           <p class="text-gray-500 text-sm mt-1">Advanced certifications from Wageningen, FAO, ASM, GIZ, Oxford Climate Society, and other prestigious institutions</p>
+   433→           <p class="text-gray-400 text-sm mt-1">Continuous professional development in agriculture, research methodology, pedagogical engineering, and climate-smart farming</p>
+   434→          </div>
+   435→         </div>
+   436→         <div class="hidden md:flex w-8 h-8 rounded-full items-center justify-center z-10 mx-auto" style="background:linear-gradient(135deg,#06b6d4,#22d3ee);flex-shrink:0;">
+   437→          <i data-lucide="award" style="width:14px;height:14px;color:white"></i>
+   438→         </div>
+   439→         <div class="md:w-1/2 md:pl-12"></div>
+   440→        </div><!-- Item 7 - Book & Leadership -->
+   441→      <div class="md:flex items-center">
+   442→       <div class="md:w-1/2 md:pr-12"></div>
+   443→       <div class="hidden md:flex w-8 h-8 rounded-full items-center justify-center z-10 mx-auto" style="background:linear-gradient(135deg,#f59e0b,#fbbf24);flex-shrink:0;">
+   444→        <i data-lucide="trophy" style="width:14px;height:14px;color:#0a0e27"></i>
+   445→       </div>
+   446→        <div class="md:w-1/2 md:pl-12 mb-4 md:mb-0">
+   447→         <div class="glass-card rounded-2xl p-6">
+   448→          <span class="text-gold-400 text-sm font-bold">2006 / Ongoing</span>
+   449→          <h3 class="text-white font-bold text-lg mt-2">Published Author & Community Leader</h3>
+   450→          <p class="text-gray-400 text-sm mt-1">Published book <em>"On the Edge"</em> (ISBN 9947-26-849-1, 2006)</p>
+   451→          <p class="text-gray-500 text-sm mt-1">Vice President of Beekeeper Association, IAPA eLearning Ambassador, member of ASM, EAS, and Focal Point for Algeria in multiple international organizations</p>
+   452→         </div>
+   453→        </div>
+   454→       </div>
+   455→      </div>
+   456→     </div>
+   457→    </div>
+   458→   </section><!-- PROJECTS SECTION -->
+   459→  <section id="projects" class="section-padding" style="background:linear-gradient(180deg,rgba(15,21,56,0.5),#0a0e27);">
+   460→   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+   461→    <div class="text-center mb-16">
+   462→     <span class="text-cyan-400 text-sm font-semibold">MY WORK</span>
+   463→     <h2 class="text-3xl sm:text-4xl font-800 text-white mt-3 gradient-border inline-block pb-3">Projects</h2>
+   464→    </div><!-- Filter Tabs -->
+   465→    <div class="flex flex-wrap justify-center gap-3 mb-10" id="projectFilters">
+   466→     <button onclick="filterProjects('all')" class="filter-btn px-5 py-2 rounded-lg text-sm font-semibold btn-primary text-white" data-filter="all">All</button> <button onclick="filterProjects('research')" class="filter-btn px-5 py-2 rounded-lg text-sm font-semibold btn-outline text-gray-400" data-filter="research">Research</button> <button onclick="filterProjects('app')" class="filter-btn px-5 py-2 rounded-lg text-sm font-semibold btn-outline text-gray-400" data-filter="app">Apps</button> <button onclick="filterProjects('training')" class="filter-btn px-5 py-2 rounded-lg text-sm font-semibold btn-outline text-gray-400" data-filter="training">Training</button> <button onclick="filterProjects('business')" class="filter-btn px-5 py-2 rounded-lg text-sm font-semibold btn-outline text-gray-400" data-filter="business">Business</button>
+   467→    </div>
+   468→    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="projectGrid">
+   469→     <!-- Project cards inserted by JS -->
+   470→    </div>
+   471→   </div>
+   472→  </section><!-- SERVICES SECTION -->
+   473→  <section id="services" class="section-padding">
+   474→   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+   475→    <div class="text-center mb-16">
+   476→     <span class="text-cyan-400 text-sm font-semibold">WHAT I OFFER</span>
+   477→     <h2 id="servicesTitle" class="text-3xl sm:text-4xl font-800 text-white mt-3 gradient-border inline-block pb-3">Services</h2>
+   478→    </div>
+   479→    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+   480→     <div class="glass-card rounded-2xl p-6 text-center">
+   481→      <div class="w-14 h-14 mx-auto rounded-2xl flex items-center justify-center text-2xl mb-4" style="background:rgba(34,211,238,0.1);">
+   482→       🎓
+   483→      </div>
+   484→      <h3 class="text-white font-bold text-lg mb-3">Agricultural Training</h3>
+   485→      <p class="text-gray-400 text-sm mb-5">Specialized training programs in livestock production and modern agriculture</p><a href="#contact" class="text-cyan-400 text-sm font-semibold hover:text-cyan-300 flex items-center justify-center gap-1">Request Service <i data-lucide="arrow-right" style="width:14px;height:14px"></i></a>
+   486→     </div>
+   487→     <div class="glass-card rounded-2xl p-6 text-center">
+   488→      <div class="w-14 h-14 mx-auto rounded-2xl flex items-center justify-center text-2xl mb-4" style="background:rgba(251,191,36,0.1);">
+   489→       🔬
+   490→      </div>
+   491→      <h3 class="text-white font-bold text-lg mb-3">Research Consulting</h3>
+   492→      <p class="text-gray-400 text-sm mb-5">Support for researchers in experimental design, data analysis, and scientific publishing</p><a href="#contact" class="text-cyan-400 text-sm font-semibold hover:text-cyan-300 flex items-center justify-center gap-1">Request Service <i data-lucide="arrow-right" style="width:14px;height:14px"></i></a>
+   493→     </div>
+   494→     <div class="glass-card rounded-2xl p-6 text-center">
+   495→      <div class="w-14 h-14 mx-auto rounded-2xl flex items-center justify-center text-2xl mb-4" style="background:rgba(34,211,238,0.1);">
+   496→       📊
+   497→      </div>
+   498→      <h3 class="text-white font-bold text-lg mb-3">Data Analysis</h3>
+   499→      <p class="text-gray-400 text-sm mb-5">Advanced statistical analysis and data visualization using latest tools</p><a href="#contact" class="text-cyan-400 text-sm font-semibold hover:text-cyan-300 flex items-center justify-center gap-1">Request Service <i data-lucide="arrow-right" style="width:14px;height:14px"></i></a>
+   500→     </div>
+   501→     <div class="glass-card rounded-2xl p-6 text-center">
+   502→      <div class="w-14 h-14 mx-auto rounded-2xl flex items-center justify-center text-2xl mb-4" style="background:rgba(251,191,36,0.1);">
+   503→       💡
+   504→      </div>
+   505→      <h3 class="text-white font-bold text-lg mb-3">Digital Solutions</h3>
+   506→      <p class="text-gray-400 text-sm mb-5">Custom application and digital platform development for agriculture</p><a href="#contact" class="text-cyan-400 text-sm font-semibold hover:text-cyan-300 flex items-center justify-center gap-1">Request Service <i data-lucide="arrow-right" style="width:14px;height:14px"></i></a>
+   507→     </div>
+   508→    </div>
+   509→   </div>
+   510→  </section><!-- ACHIEVEMENTS -->
+   511→  <section id="achievements" class="section-padding" style="background:linear-gradient(180deg,rgba(15,21,56,0.5),#0a0e27);">
+   512→   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+   513→    <div class="text-center mb-16">
+   514→     <span class="text-cyan-400 text-sm font-semibold">MY ACHIEVEMENTS</span>
+   515→     <h2 class="text-3xl sm:text-4xl font-800 text-white mt-3 gradient-border inline-block pb-3">Achievements & Certificates</h2>
+   516→    </div>
+   517→    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+   518→     <div class="glass-card rounded-2xl p-6 cursor-pointer">
+   519→      <div class="flex items-center gap-3 mb-3">
+   520→       <div class="w-10 h-10 rounded-lg flex items-center justify-center " style="background:rgba(251,191,36,0.15);"><span class="text-xl">🏆</span>
+   521→       </div>
+   522→       <h3 class="text-white font-bold">International Conferences</h3>
+   523→      </div>
+   524→       <p class="text-gray-400 text-sm">Active participation in 8+ international scientific conferences including ESNA, ICABRD, ICARP, SOS, ChAAB, and ISAEA with research papers presented (2023-2026)</p>
+   525→     </div>
+   526→     <div class="glass-card rounded-2xl p-6 cursor-pointer">
+   527→      <div class="flex items-center gap-3 mb-3">
+   528→       <div class="w-10 h-10 rounded-lg flex items-center justify-center " style="background:rgba(34,211,238,0.15);"><span class="text-xl">📄</span>
+   529→       </div>
+   530→       <h3 class="text-white font-bold">Published Research</h3>
+   531→      </div>
+   532→      <p class="text-gray-400 text-sm">25+ peer-reviewed scientific papers published in specialized high-impact international journals</p>
+   533→     </div>
+   534→     <div class="glass-card rounded-2xl p-6 cursor-pointer">
+   535→      <div class="flex items-center gap-3 mb-3">
+   536→       <div class="w-10 h-10 rounded-lg flex items-center justify-center " style="background:rgba(251,191,36,0.15);"><span class="text-xl">🎖️</span>
+   537→       </div>
+   538→       <h3 class="text-white font-bold">Professional Certifications</h3>
+   539→      </div>
+   540→       <p class="text-gray-400 text-sm">50+ advanced international training certifications from prestigious institutions (Wageningen, FAO, ASM, GIZ, Oxford Climate Society, etc.)</p>
+   541→     </div>
+   542→     <div class="glass-card rounded-2xl p-6 cursor-pointer">
+   543→      <div class="flex items-center gap-3 mb-3">
+   544→       <div class="w-10 h-10 rounded-lg flex items-center justify-center " style="background:rgba(34,211,238,0.15);"><span class="text-xl">🌍</span>
+   545→       </div>
+   546→       <h3 class="text-white font-bold">International Memberships</h3>
+   547→      </div>
+   548→      <p class="text-gray-400 text-sm">Active member of American Society for Microbiology, European Aquaculture Society, and International Association of Agribusiness Practitioners</p>
+   549→     </div>
+   550→     <div class="glass-card rounded-2xl p-6 cursor-pointer">
+   551→      <div class="flex items-center gap-3 mb-3">
+   552→       <div class="w-10 h-10 rounded-lg flex items-center justify-center " style="background:rgba(251,191,36,0.15);"><span class="text-xl">📱</span>
+   553→       </div>
+   554→       <h3 class="text-white font-bold">Digital Innovations</h3>
+   555→      </div>
+   556→       <p class="text-gray-400 text-sm">Developed 2 insect trap prototypes and an integrated hydroponic/aquaponic system prototype for sustainable agriculture</p>
+   557→     </div>
+   558→     <div class="glass-card rounded-2xl p-6 cursor-pointer">
+   559→      <div class="flex items-center gap-3 mb-3">
+   560→       <div class="w-10 h-10 rounded-lg flex items-center justify-center " style="background:rgba(34,211,238,0.15);"><span class="text-xl">🤝</span>
+   561→       </div>
+   562→       <h3 class="text-white font-bold">Community Leadership</h3>
+   563→      </div>
+   564→       <p class="text-gray-400 text-sm">Vice President of Beekeeper Association, IAPA eLearning Ambassador, member of ASM, EAS, and Focal Point for Algeria in multiple international organizations</p>
+   565→     </div>
+   566→    </div>
+   567→   </div>
+   568→   </section><!-- KNOWLEDGE HUB -->
+   569→   <section id="knowledge" class="section-padding">
+   570→    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+   571→     <div class="text-center mb-16">
+   572→      <span class="text-cyan-400 text-sm font-semibold">KNOWLEDGE HUB</span>
+   573→      <h2 class="text-3xl sm:text-4xl font-800 text-white mt-3 gradient-border inline-block pb-3">Thoughts &amp; Research</h2>
+   574→     </div>
+   575→     <div class="flex flex-wrap justify-center gap-3 mb-10" id="knowledgeTabs">
+   576→      <button onclick="switchKnowledgeTab('thoughts')" class="knowledge-tab-btn px-5 py-2 rounded-lg text-sm font-semibold btn-primary text-white" data-tab="thoughts">💭 Thoughts</button>
+   577→      <button onclick="switchKnowledgeTab('publications')" class="knowledge-tab-btn px-5 py-2 rounded-lg text-sm font-semibold btn-outline text-gray-400" data-tab="publications">📄 Publications</button>
+   578→      <button onclick="switchKnowledgeTab('speaking')" class="knowledge-tab-btn px-5 py-2 rounded-lg text-sm font-semibold btn-outline text-gray-400" data-tab="speaking">🎤 Speaking</button>
+   579→     </div>
+   580→     <div id="knowledgeContent" class="min-h-[200px]">
+   581→      <!-- Rendered by JS -->
+   582→     </div>
+   583→    </div>
+   584→   </section><!-- TESTIMONIALS -->
+   585→   <section class="section-padding">
+   586→   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+   587→    <div class="text-center mb-16">
+   588→     <span class="text-cyan-400 text-sm font-semibold">WHAT THEY SAY</span>
+   589→     <h2 class="text-3xl sm:text-4xl font-800 text-white mt-3 gradient-border inline-block pb-3">Client Testimonials</h2>
+   590→    </div>
+   591→    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="testimonialsContainer">
+   592→     <!-- Testimonials inserted by JS -->
+   593→     </div>
+   594→      <!-- Submit Testimonial -->
+   595→      <div class="mt-12 max-w-lg mx-auto">
+   596→        <div class="text-center mb-6">
+   597→          <span class="text-cyan-400 text-sm font-semibold">SHARE YOUR EXPERIENCE</span>
+   598→          <h3 class="text-white font-bold text-xl mt-2">Submit a Testimonial</h3>
+   599→        </div>
+   600→        <form id="testimonialForm" class="glass-card rounded-2xl p-6 space-y-4" onsubmit="submitTestimonial(event)">
+   601→          <div>
+   602→            <label class="block text-gray-400 text-xs mb-1">Your Name</label>
+   603→            <input id="tName" type="text" required class="w-full px-4 py-2.5 rounded-xl bg-navy-900 border border-gray-800 text-white text-sm focus:border-cyan-500 focus:outline-none transition-colors" placeholder="Your name">
+   604→          </div>
+   605→          <div>
+   606→            <label class="block text-gray-400 text-xs mb-1">Your Role / Title</label>
+   607→            <input id="tRole" type="text" required class="w-full px-4 py-2.5 rounded-xl bg-navy-900 border border-gray-800 text-white text-sm focus:border-cyan-500 focus:outline-none transition-colors" placeholder="e.g. Agricultural Engineer">
+   608→          </div>
+   609→          <div>
+   610→            <label class="block text-gray-400 text-xs mb-1">Your Testimonial</label>
+   611→            <textarea id="tText" rows="3" required class="w-full px-4 py-2.5 rounded-xl bg-navy-900 border border-gray-800 text-white text-sm focus:border-cyan-500 focus:outline-none transition-colors resize-none" placeholder="Share your experience working with me..."></textarea>
+   612→          </div>
+   613→          <div class="flex gap-2">
+   614→            <span class="text-xs text-gray-500">Rating:</span>
+   615→            <div class="flex gap-1" id="tRating">
+   616→              <span onclick="setRating(1)" class="cursor-pointer text-xl hover:scale-110 transition-transform" id="star1">☆</span>
+   617→              <span onclick="setRating(2)" class="cursor-pointer text-xl hover:scale-110 transition-transform" id="star2">☆</span>
+   618→              <span onclick="setRating(3)" class="cursor-pointer text-xl hover:scale-110 transition-transform" id="star3">☆</span>
+   619→              <span onclick="setRating(4)" class="cursor-pointer text-xl hover:scale-110 transition-transform" id="star4">☆</span>
+   620→              <span onclick="setRating(5)" class="cursor-pointer text-xl hover:scale-110 transition-transform" id="star5">☆</span>
+   621→            </div>
+   622→          </div>
+   623→          <button type="submit" class="w-full btn-primary text-white py-2.5 rounded-xl text-sm font-semibold flex items-center justify-center gap-2"><i data-lucide="message-square" style="width:16px;height:16px"></i> Submit Testimonial</button>
+   624→          <div id="testimonialSuccess" class="hidden text-center py-2 rounded-xl text-sm font-semibold" style="background:rgba(34,211,238,0.1);color:#22d3ee;">✅ Thank you! Your testimonial has been submitted.</div>
+   625→        </form>
+   626→      </div>
+   627→    </div>
+   628→   </section><!-- BLOG PREVIEW -->
+   629→  <section class="section-padding" style="background:linear-gradient(180deg,rgba(15,21,56,0.5),#0a0e27);">
+   630→   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+   631→    <div class="text-center mb-16">
+   632→     <span class="text-cyan-400 text-sm font-semibold">SHARING KNOWLEDGE</span>
+   633→     <h2 class="text-3xl sm:text-4xl font-800 text-white mt-3 gradient-border inline-block pb-3">Latest Articles</h2>
+   634→    </div>
+   635→    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="blogGrid">
+   636→     <!-- Blog articles rendered by JS -->
+   637→    </div>
+   638→   </div>
+   639→  </section><!-- FAQ SECTION -->
+   640→  <section class="section-padding" style="background:linear-gradient(180deg,rgba(15,21,56,0.5),#0a0e27);">
+   641→   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+   642→    <div class="text-center mb-16">
+   643→     <span class="text-cyan-400 text-sm font-semibold">FAQ</span>
+   644→     <h2 class="text-3xl sm:text-4xl font-800 text-white mt-3 gradient-border inline-block pb-3">Frequently Asked Questions</h2>
+   645→    </div>
+   646→    <div class="space-y-4">
+   647→     <div class="glass-card rounded-2xl p-6 cursor-pointer" onclick="this.querySelector('.faq-answer').classList.toggle('hidden')">
+   648→      <div class="flex justify-between items-center">
+   649→       <h3 class="text-white font-bold">What are your main specializations?</h3>
+   650→       <i data-lucide="chevron-down" style="width:20px;height:20px"></i>
+   651→      </div>
+   652→       <p class="faq-answer hidden text-gray-400 mt-4 leading-relaxed">I specialize in agronomy with a focus on animal production and arid region agriculture. With 12+ years of experience in agricultural engineering, vocational training, and project supervision, I work as a Specialized Teacher at Hassani Abdelkrim INSFP in EL-Oued.</p>
+   653→     </div>
+   654→     <div class="glass-card rounded-2xl p-6 cursor-pointer" onclick="this.querySelector('.faq-answer').classList.toggle('hidden')">
+   655→      <div class="flex justify-between items-center">
+   656→       <h3 class="text-white font-bold">How can I book a training course?</h3>
+   657→       <i data-lucide="chevron-down" style="width:20px;height:20px"></i>
+   658→      </div>
+   659→      <p class="faq-answer hidden text-gray-400 mt-4 leading-relaxed">You can contact me through the contact form or email to inquire about available courses and book your seat.</p>
+   660→     </div>
+   661→     <div class="glass-card rounded-2xl p-6 cursor-pointer" onclick="this.querySelector('.faq-answer').classList.toggle('hidden')">
+   662→      <div class="flex justify-between items-center">
+   663→       <h3 class="text-white font-bold">Do you provide research consulting?</h3>
+   664→       <i data-lucide="chevron-down" style="width:20px;height:20px"></i>
+   665→      </div>
+   666→      <p class="faq-answer hidden text-gray-400 mt-4 leading-relaxed">Yes, I provide consulting in research data analysis, experimental design, and international scientific publishing. Contact me to discuss your needs.</p>
+   667→     </div>
+   668→     <div class="glass-card rounded-2xl p-6 cursor-pointer" onclick="this.querySelector('.faq-answer').classList.toggle('hidden')">
+   669→      <div class="flex justify-between items-center">
+   670→       <h3 class="text-white font-bold">What digital platforms have you developed?</h3>
+   671→       <i data-lucide="chevron-down" style="width:20px;height:20px"></i>
+   672→      </div>
+   673→      <p class="faq-answer hidden text-gray-400 mt-4 leading-relaxed">I have developed several platforms including kamel3lom for agricultural education, and applications to help farmers and researchers manage and analyze data.</p>
+   674→     </div>
+   675→    </div>
+   676→   </div>
+   677→  </section><!-- NEWSLETTER SECTION -->
+   678→  <section class="py-16 px-4 sm:px-6 lg:px-8" style="background:linear-gradient(135deg,rgba(34,211,238,0.05),rgba(251,191,36,0.05));">
+   679→   <div class="max-w-3xl mx-auto text-center">
+   680→    <h2 class="text-3xl sm:text-4xl font-800 text-white mb-4">Stay Updated</h2>
+   681→    <p class="text-gray-300 mb-8">Subscribe to receive the latest articles, training courses, and research updates</p>
+   682→    <div class="flex gap-3 flex-col sm:flex-row">
+   683→     <input type="email" id="newsletterEmail" placeholder="Enter your email address" class="flex-1 px-4 py-3 rounded-xl bg-navy-900 border border-gray-800 text-white text-sm focus:border-cyan-500 focus:outline-none transition-colors" dir="ltr">
+   684→     <button onclick="subscribeNewsletter()" class="btn-primary text-white px-7 py-3 rounded-xl font-semibold text-sm flex items-center justify-center gap-2 whitespace-nowrap"> <span>Subscribe Now</span> <i data-lucide="send" style="width:16px;height:16px"></i> </button>
+   685→    </div>
+   686→    <p class="text-gray-500 text-xs mt-3">🔒 Your email is safe with us - no spam</p>
+   687→   </div>
+   688→  </section><!-- CONTACT SECTION -->
+   689→  <section id="contact" class="section-padding">
+   690→   <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+   691→    <div class="text-center mb-16">
+   692→     <span class="text-cyan-400 text-sm font-semibold">GET IN TOUCH</span>
+   693→     <h2 class="text-3xl sm:text-4xl font-800 text-white mt-3 gradient-border inline-block pb-3">Contact Me</h2>
+   694→    </div>
+   695→    <div class="grid lg:grid-cols-2 gap-8">
+   696→     <!-- Contact Info -->
+   697→     <div class="space-y-6">
+   698→      <p class="text-gray-300 text-lg leading-relaxed">I welcome all opportunities for collaboration in scientific research, training, consulting, and developing agricultural digital solutions.</p>
+   699→      <div class="space-y-4">
+   700→       <div class="flex items-center gap-4">
+   701→        <div class="w-12 h-12 rounded-xl glass flex items-center justify-center text-cyan-400"><i data-lucide="mail" style="width:20px;height:20px"></i>
+   702→        </div>
+   703→        <div>
+   704→         <div class="text-gray-500 text-xs">
+   705→          Email Address
+   706→         </div>
+   707→          <div id="contactEmail" class="text-white text-sm">
+   708→           <span class="email-obfuscated" onclick="revealEmail(this)" data-user="atia.abdelkader" data-domain="gmail" data-tld="com">Click to reveal</span>
+   709→          </div>
+   710→        </div>
+   711→       </div>
+   712→       <div class="flex items-center gap-4">
+   713→        <div class="w-12 h-12 rounded-xl glass flex items-center justify-center text-cyan-400"><i data-lucide="phone" style="width:20px;height:20px"></i>
+   714→        </div>
+   715→        <div>
+   716→         <div class="text-gray-500 text-xs">
+   717→          Phone
+   718→         </div>
+   719→         <div class="text-white text-sm" dir="ltr">
+   720→          +213 792 35 74 43
+   721→         </div>
+   722→        </div>
+   723→       </div>
+   724→       <div class="flex items-center gap-4">
+   725→        <div class="w-12 h-12 rounded-xl glass flex items-center justify-center text-cyan-400"><i data-lucide="map-pin" style="width:20px;height:20px"></i>
+   726→        </div>
+   727→        <div>
+   728→         <div class="text-gray-500 text-xs">
+   729→          Location
+   730→         </div>
+   731→         <div class="text-white text-sm">
+   732→          El Oued, Algeria
+   733→         </div>
+   734→        </div>
+   735→       </div>
+   736→      </div><!-- Social -->
+   737→       <div class="flex gap-3 pt-4">
+   738→        <a href="https://www.linkedin.com/in/abdelkader-atia-89061a146/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg glass flex items-center justify-center text-gray-400 hover:text-cyan-400 transition-colors" title="LinkedIn"><i data-lucide="linkedin" style="width:18px;height:18px"></i></a> <a href="https://twitter.com/abdelkader_atia" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg glass flex items-center justify-center text-gray-400 hover:text-cyan-400 transition-colors" title="Twitter"><i data-lucide="twitter" style="width:18px;height:18px"></i></a> <a href="https://www.facebook.com/abdelkader.atia" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg glass flex items-center justify-center text-gray-400 hover:text-cyan-400 transition-colors" title="Facebook"><i data-lucide="facebook" style="width:18px;height:18px"></i></a> <a href="https://github.com/abdelkader-atia" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg glass flex items-center justify-center text-gray-400 hover:text-cyan-400 transition-colors" title="GitHub"><i data-lucide="github" style="width:18px;height:18px"></i></a>
+   739→       </div>
+   740→       <a href="mailto:atia.abdelkader@gmail.com" class="btn-outline text-cyan-400 w-full px-4 py-3 rounded-xl text-sm font-semibold flex items-center justify-center gap-2 mt-4 hover:bg-cyan-500/10 transition">
+   741→        <i data-lucide="mail" style="width:16px;height:16px"></i> <span>Send Email Directly</span>
+   742→       </a>
+   743→      </div><!-- Contact Form -->
+   744→     <form id="contactForm" class="glass-card rounded-2xl p-8 space-y-5" onsubmit="handleContact(event)">
+   745→      <div>
+   746→       <label for="name" class="block text-gray-400 text-sm mb-2">Full Name</label> <input id="name" type="text" required class="w-full px-4 py-3 rounded-xl bg-navy-900 border border-gray-800 text-white text-sm focus:border-cyan-500 focus:outline-none transition-colors" placeholder="Enter your name">
+   747→      </div>
+   748→      <div>
+   749→       <label for="email" class="block text-gray-400 text-sm mb-2">Email Address</label> <input id="email" type="email" required class="w-full px-4 py-3 rounded-xl bg-navy-900 border border-gray-800 text-white text-sm focus:border-cyan-500 focus:outline-none transition-colors" placeholder="example@email.com" dir="ltr">
+   750→      </div>
+   751→      <div>
+   752→       <label for="subject" class="block text-gray-400 text-sm mb-2">Subject</label> <select id="subject" class="w-full px-4 py-3 rounded-xl bg-navy-900 border border-gray-800 text-white text-sm focus:border-cyan-500 focus:outline-none transition-colors"> <option value="training">Agricultural Training</option> <option value="research">Research Consulting</option> <option value="data">Data Analysis</option> <option value="digital">Digital Solutions</option> <option value="other">Other</option> </select>
+   753→      </div>
+   754→      <div>
+   755→       <label for="message" class="block text-gray-400 text-sm mb-2">Message</label> <textarea id="message" rows="4" required class="w-full px-4 py-3 rounded-xl bg-navy-900 border border-gray-800 text-white text-sm focus:border-cyan-500 focus:outline-none transition-colors resize-none" placeholder="Write your message here..."></textarea>
+   756→      </div><button type="submit" class="w-full btn-primary text-white py-3 rounded-xl font-semibold text-sm flex items-center justify-center gap-2"> <span>Send Message</span> <i data-lucide="send" style="width:16px;height:16px"></i> </button>
+   757→      <div id="formSuccess" class="hidden text-center py-3 rounded-xl text-sm font-semibold" style="background:rgba(34,211,238,0.1);color:#22d3ee;">
+   758→       ✅ Message sent successfully! I'll be in touch soon.
+   759→      </div>
+   760→     </form>
+   761→    </div>
+   762→   </div>
+   763→  </section><!-- PORTFOLIO GALLERY -->
+   764→  <section id="gallery" class="section-padding" style="background:linear-gradient(180deg,rgba(15,21,56,0.5),#0a0e27);">
+   765→   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+   766→    <div class="text-center mb-16" data-aos="fade-up">
+   767→     <span class="text-cyan-400 text-sm font-semibold">MY PORTFOLIO</span>
+   768→     <h2 class="text-3xl sm:text-4xl font-800 text-white mt-3 gradient-border inline-block pb-3">Portfolio Gallery</h2>
+   769→    </div>
+   770→    <div class="flex flex-wrap justify-center gap-3 mb-10" id="galleryFilters">
+   771→     <button onclick="filterGallery('all')" class="gallery-filter-btn px-5 py-2 rounded-lg text-sm font-semibold btn-primary text-white" data-filter="all">All</button>
+   772→     <button onclick="filterGallery('research')" class="gallery-filter-btn px-5 py-2 rounded-lg text-sm font-semibold btn-outline text-gray-400" data-filter="research">Research</button>
+   773→     <button onclick="filterGallery('training')" class="gallery-filter-btn px-5 py-2 rounded-lg text-sm font-semibold btn-outline text-gray-400" data-filter="training">Training</button>
+   774→     <button onclick="filterGallery('farm')" class="gallery-filter-btn px-5 py-2 rounded-lg text-sm font-semibold btn-outline text-gray-400" data-filter="farm">Farm Work</button>
+   775→     <button onclick="filterGallery('event')" class="gallery-filter-btn px-5 py-2 rounded-lg text-sm font-semibold btn-outline text-gray-400" data-filter="event">Events</button>
+   776→    </div>
+   777→    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="galleryGrid">
+   778→     <!-- Gallery items inserted by JS -->
+   779→    </div>
+   780→   </div>
+   781→  </section><!-- CASE STUDIES -->
+   782→  <section id="case-studies" class="section-padding">
+   783→   <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+   784→    <div class="text-center mb-16" data-aos="fade-up">
+   785→     <span class="text-cyan-400 text-sm font-semibold">REAL RESULTS</span>
+   786→     <h2 class="text-3xl sm:text-4xl font-800 text-white mt-3 gradient-border inline-block pb-3">Case Studies</h2>
+   787→    </div>
+   788→    <div class="space-y-8" id="caseStudiesContainer">
+   789→     <!-- Case studies inserted by JS -->
+   790→    </div>
+   791→   </div>
+   792→  </section><!-- FAQ SECTION -->
+   793→  <section id="faq" class="section-padding" style="background:linear-gradient(180deg,rgba(15,21,56,0.5),#0a0e27);">
+   794→   <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+   795→    <div class="text-center mb-16" data-aos="fade-up">
+   796→     <span class="text-cyan-400 text-sm font-semibold">COMMON QUESTIONS</span>
+   797→     <h2 class="text-3xl sm:text-4xl font-800 text-white mt-3 gradient-border inline-block pb-3">FAQ</h2>
+   798→    </div>
+   799→    <div class="space-y-4" id="faqContainer">
+   800→     <!-- FAQ items inserted by JS -->
+   801→    </div>
+   802→   </div>
+   803→  </section>
+   804→  <footer class="py-8 border-t border-gray-800">
+   805→   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+   806→    <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+   807→     <div class="flex items-center gap-3">
+   808→      <div class="w-8 h-8 rounded-lg flex items-center justify-center text-white font-bold text-sm" style="background:linear-gradient(135deg,#06b6d4,#0891b2);">
+   809→       AA
+   810→      </div><span class="text-gray-400 text-sm">© 2026 Abdelkader Atia. All rights reserved.</span>
+   811→     </div>
+   812→      <div class="flex items-center gap-4">
+   813→        <button onclick="subscribePushNotifications()" class="text-gray-500 hover:text-cyan-400 text-xs flex items-center gap-1 transition-colors" title="Enable notifications"><i data-lucide="bell" style="width:14px;height:14px"></i> Notifications</button>
+   814→        <a href="mailto:atia.abdelkader@gmail.com" class="text-gray-500 hover:text-cyan-400 text-xs flex items-center gap-1 transition-colors" title="Send email"><i data-lucide="mail" style="width:14px;height:14px"></i> Email</a>
+   815→        <span id="networkDot" title="Network status"><span class="dot online"></span><span class="status-text">Online</span></span>
+   816→        <span class="text-gray-600 text-xs">AgriSkills Academy</span>
+   817→      </div>
+   818→    </div>
+   819→   </div>
+   820→  </footer>
+   821→  <!-- Article Modal -->
+   822→  <div id="articleModal" class="hidden fixed inset-0 z-[9998] flex items-center justify-center p-4" style="background:rgba(0,0,0,0.8);backdrop-filter:blur(8px);">
+   823→    <div class="glass-card rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-8 relative" style="background:rgba(15,21,56,0.95);">
+   824→      <button onclick="closeArticle()" class="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors"><i data-lucide="x" style="width:24px;height:24px"></i></button>
+   825→      <div id="articleContent"></div>
+   826→    </div>
+   827→  </div>
+   828→  <!-- Share Modal -->
+   829→  <div id="shareModal" class="hidden fixed inset-0 z-[9998] flex items-center justify-center p-4" style="background:rgba(0,0,0,0.8);backdrop-filter:blur(8px);">
+   830→    <div class="glass-card rounded-2xl max-w-md w-full p-6 relative" style="background:rgba(15,21,56,0.95);">
+   831→      <div class="flex justify-between items-center mb-4">
+   832→        <h3 class="text-white font-bold text-lg">Share</h3>
+   833→        <button onclick="closeShareModal()" class="text-gray-400 hover:text-white transition-colors"><i data-lucide="x" style="width:20px;height:20px"></i></button>
+   834→      </div>
+   835→      <div id="shareContent" class="space-y-2"></div>
+   836→      <div class="mt-4">
+   837→        <label class="text-gray-400 text-xs block mb-1">Page URL</label>
+   838→        <div class="flex gap-2">
+   839→          <input id="shareUrl" type="text" readonly class="flex-1 bg-gray-800 text-gray-300 rounded-lg px-3 py-2 text-xs border border-gray-700" onclick="this.select()">
+   840→          <button onclick="navigator.clipboard.writeText(document.getElementById('shareUrl').value).then(()=>{showToast('✅ Link copied!','success')})" class="bg-cyan-600 hover:bg-cyan-700 text-white px-3 py-2 rounded-lg text-xs">Copy</button>
+   841→        </div>
+   842→      </div>
+   843→    </div>
+   844→  </div>
+   845→  <script>
+   846→   if ('serviceWorker' in navigator) {
+   847→    navigator.serviceWorker.register('/sw.js').then(registration => {
+   848→     console.log('Service Worker registered with scope:', registration.scope);
+   849→    }).catch(error => {
+   850→     console.log('Service Worker registration failed:', error);
+   851→    });
+   852→   }
+   853→  </script>
+   854→  <!-- AI Chatbot & Analytics Features -->
+   855→  <script src="/api/chat.js" defer></script>
+   856→  <script src="/api/rag-search.js" defer></script>
+   857→  <script src="/api/analytics.js" defer></script>
+   858→  <script src="/assets/js/chatbot-widget.js" defer></script>
+   859→  <script src="/assets/js/analytics-tracker.js" defer></script>
+   860→  <script src="/assets/js/structured-data.js" defer></script>
+   861→   <script src="/evals/runner.js" defer></script>
+   862→  <!-- Search Modal -->
+   863→  <div id="searchModal" class="hidden fixed inset-0 flex items-start justify-center pt-[15vh] p-4" style="background:rgba(0,0,0,0.85);backdrop-filter:blur(8px);">
+   864→   <div class="glass-card rounded-2xl w-full max-w-lg max-h-[70vh] flex flex-col overflow-hidden" style="background:rgba(15,21,56,0.97);">
+   865→    <div class="p-4 border-b border-gray-800 flex items-center gap-3">
+   866→     <i data-lucide="search" style="width:18px;height:18px;color:#22d3ee;flex-shrink:0;"></i>
+   867→     <input id="searchInput" type="text" class="flex-1 bg-transparent text-white text-base focus:outline-none placeholder-gray-500" placeholder="Search projects, articles, skills..." autocomplete="off">
+   868→     <span class="shortcut-hint flex-shrink-0">ESC</span>
+   869→    </div>
+   870→    <div id="searchResults" class="flex-1 overflow-y-auto p-2 space-y-1"></div>
+   871→    <div class="p-3 border-t border-gray-800 text-gray-600 text-xs text-center">
+   872→     Press <span class="shortcut-hint">↑</span> <span class="shortcut-hint">↓</span> to navigate · <span class="shortcut-hint">Enter</span> to open · <span class="shortcut-hint">Esc</span> to close
+   873→    </div>
+   874→   </div>
+   875→  </div>
+   876→  <!-- Scroll Progress Ring -->
+   877→  <div id="scrollProgress" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Scroll to top" style="cursor:pointer;">
+   878→    <svg width="44" height="44" viewBox="0 0 44 44">
+   879→      <circle class="bg-circle" cx="22" cy="22" r="18"></circle>
+   880→      <circle class="fg-circle" cx="22" cy="22" r="18" stroke-dasharray="113.1" stroke-dashoffset="113.1"></circle>
+   881→    </svg>
+   882→    <span class="scroll-icon"><i data-lucide="chevron-up" style="width:16px;height:16px"></i></span>
+   883→  </div>
+   884→  <!-- Offline Toast -->
+   885→  <div id="offlineToast" class="glass px-5 py-3 rounded-xl text-sm font-semibold" style="background:rgba(245,158,11,0.95);color:#fff;">📡 You are offline — some features may not work</div>
+   886→  <!-- Cookie Consent Banner -->
+   887→  <div id="cookieBanner" class="glass" style="background:rgba(10,14,39,0.97);backdrop-filter:blur(16px);border-top:1px solid rgba(34,211,238,0.1);">
+   888→   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+   889→    <p class="text-gray-400 text-sm">🍪 This site uses cookies for analytics and personalized content. By continuing, you agree to our use of cookies.</p>
+   890→    <div class="flex gap-3 flex-shrink-0">
+   891→     <button onclick="acceptCookies()" class="btn-primary text-white px-5 py-2 rounded-lg text-sm font-semibold">Accept</button>
+   892→     <button onclick="declineCookies()" class="btn-outline text-gray-400 px-5 py-2 rounded-lg text-sm font-semibold">Decline</button>
+   893→    </div>
+   894→   </div>
+   895→  </div>
+   896→  <!-- WhatsApp Floating Button -->
+   897→  <a href="https://wa.me/213792357443" target="_blank" rel="noopener noreferrer" id="whatsappBtn" class="fixed bottom-24 right-6 z-50 w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-transform hover:scale-110" style="background:#25D366;color:white;" title="Chat on WhatsApp">
+   898→    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+   899→  </a>
+   900→  <!-- CV Preview Modal -->
+   901→  <div id="cvModal" class="hidden fixed inset-0 z-[9999] flex items-center justify-center p-4" style="background:rgba(0,0,0,0.85);backdrop-filter:blur(8px);">
+   902→    <div class="glass-card rounded-2xl w-full max-w-3xl max-h-[90vh] flex flex-col overflow-hidden relative" style="background:rgba(15,21,56,0.97);">
+   903→      <div class="flex items-center justify-between p-4 border-b border-gray-800">
+   904→        <h3 class="text-white font-bold">📄 CV Preview — Abdelkader Atia</h3>
+   905→        <div class="flex items-center gap-2">
+   906→          <a href="CV_AbdelkaderAtia.pdf" download class="text-cyan-400 text-sm font-semibold flex items-center gap-1 hover:text-cyan-300 transition-colors"><i data-lucide="download" style="width:14px;height:14px"></i> Download</a>
+   907→          <button onclick="closeCV()" class="text-gray-400 hover:text-white transition-colors"><i data-lucide="x" style="width:20px;height:20px"></i></button>
+   908→        </div>
+   909→      </div>
+   910→      <div class="flex-1 overflow-hidden" style="min-height:60vh;">
+   911→        <iframe src="CV_AbdelkaderAtia.pdf" class="w-full h-full" style="min-height:60vh;" title="CV Preview"></iframe>
+   912→      </div>
+   913→    </div>
+   914→  </div>
+   915→</body>
+   916→</html>
+   917→

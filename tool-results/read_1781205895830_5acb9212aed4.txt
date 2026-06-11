@@ -1,0 +1,502 @@
+     1→     1→<!doctype html>
+     2→     2→<html lang="ar" dir="rtl" class="h-full">
+     3→     3→ <head>
+     4→     4→  <meta charset="UTF-8">
+     5→     5→  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     6→     6→  <meta name="description" content="عبد القادر عطيه - باحث دكتوراه، مدرب زراعي، ومبتكر في الزراعة الرقمية. متخصص في جودة السائل المنوي والإنتاج الحيواني المستدام.">
+     7→     7→  <meta name="keywords" content="زراعة ذكية، باحث دكتوراه، تدريب زراعي، ابتكار رقمي، الإنتاج الحيواني، جودة السائل المنوي">
+     8→     8→  <meta name="author" content="عبد القادر عطيه">
+     9→     9→  <meta property="og:title" content="عبد القادر عطيه | Abdelkader Atia - Ph.D Researcher & Agricultural Innovator">
+    10→    10→  <meta property="og:description" content="محترف متخصص في البحث العلمي والتدريب والابتكار الرقمي في مجال الزراعة">
+    11→    11→  <meta property="og:image" content="/og-image.svg">
+    12→    12→  <meta property="og:type" content="website">
+    13→    13→  <meta name="twitter:card" content="summary_large_image">
+    14→    14→  <meta name="twitter:title" content="عبد القادر عطيه | Abdelkader Atia - Ph.D Researcher & Agricultural Innovator">
+    15→    15→  <meta name="twitter:description" content="محترف متخصص في البحث العلمي والتدريب والابتكار الرقمي في مجال الزراعة">
+    16→    16→  <meta name="twitter:image" content="/og-image.svg">
+    17→    17→  <link rel="canonical" href="https://abdelkader-atia.com/">
+    18→    18→  <link rel="manifest" href="/manifest.json">
+    19→    19→  <title>عبد القادر عطيه | Abdelkader Atia - Agricultural Researcher & Trainer</title>
+    20→    20→  <!-- Google Analytics: Replace G-XXXXXXXXXX with your actual Measurement ID -->
+    21→    21→  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    22→    22→  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script> -->
+    23→    23→  <link href="assets/css/tailwind-built.css" rel="stylesheet">
+    24→    24→  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+    25→    25→  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    26→    26→  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    27→    27→  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
+    28→    28→  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌾</text></svg>">
+    29→    29→  <script type="application/ld+json">
+    30→    30→  {
+    31→    31→    "@context": "https://schema.org",
+    32→    32→    "@type": "Person",
+    33→    33→    "name": "عبد القادر عطيه",
+    34→    34→    "alternateName": "Abdelkader Atia",
+    35→    35→    "jobTitle": "PhD Researcher & Agricultural Innovator",
+    36→    36→    "description": "باحث دكتوراه، مدرب زراعي، ومبتكر في الزراعة الرقمية. متخصص في جودة السائل المنوي والإنتاج الحيواني المستدام.",
+    37→    37→    "email": "contact@abdelkader-atia.com",
+    38→    38→    "address": {
+    39→    39→      "@type": "PostalAddress",
+    40→    40→      "addressCountry": "Algeria"
+    41→    41→    },
+    42→    42→    "sameAs": [
+    43→    43→      "https://www.linkedin.com/in/abdelkader-atia-89061a146/",
+    44→    44→      "https://twitter.com/abdelkader_atia",
+    45→    45→      "https://www.facebook.com/abdelkader.atia",
+    46→    46→      "https://github.com/abdelkader-atia"
+    47→    47→    ],
+    48→    48→    "knowsAbout": [
+    49→    49→      "Animal Sciences",
+    50→    50→      "Semen Quality",
+    51→    51→      "Digital Agriculture",
+    52→    52→      "Agricultural Training",
+    53→    53→      "Agribusiness"
+    54→    54→    ]
+    55→    55→  }
+    56→    56→  </script>
+    57→    57→  <link rel="stylesheet" href="assets/css/style.css">
+    58→    58→  <script src="assets/js/main-ar.js" defer></script>
+    59→    59→ </head>
+    60→    60→ <body class="h-full overflow-auto" id="app-body">
+    61→    61→  <a href="#home" class="sr-only skip-link-focus">انتقل إلى المحتوى الرئيسي</a>
+    62→    62→  <!-- Reading Progress Bar --> <div id="readingProgress"></div>
+    63→    63→  <!-- NAVBAR -->
+    64→    64→  <nav id="navbar" class="fixed top-0 right-0 left-0 z-50 transition-all duration-300 navbar-transparent">
+    65→    65→   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    66→    66→    <div class="flex items-center justify-between h-16 lg:h-20">
+    67→    67→     <!-- Logo --> <a href="#home" class="flex items-center gap-3">
+    68→    68→      <div class="w-10 h-10 rounded-lg flex items-center justify-center text-white font-bold text-lg bg-gradient-cyan">
+    69→    69→       ع
+    70→    70→      </div>
+    71→    71→      <div class="hidden sm:block">
+    72→    72→       <div class="text-white font-bold text-sm leading-tight" id="logoName">
+    73→    73→        عبد القادر عطيه
+    74→    74→       </div>
+    75→    75→       <div class="text-cyan-400 text-xs">
+    76→    76→        Abdelkader Atia
+    77→    77→       </div>
+    78→    78→      </div></a><!-- Language Toggle -->
+    79→    79→     <div class="hidden sm:flex items-center gap-2 px-3 py-1 rounded-lg glass"><button onclick="setLanguage('ar')" id="langAr" class="px-2 py-1 rounded text-xs font-semibold text-cyan-400 bg-gradient-cyan-light" aria-label="Switch to Arabic">AR</button>
+    80→    80→      <div class="w-px h-4 bg-gray-700"></div><button onclick="setLanguage('en')" id="langEn" class="px-2 py-1 rounded text-xs font-semibold text-gray-400 hover:text-cyan-400" aria-label="Switch to English">EN</button><div class="w-px h-4 bg-gray-700"></div><button onclick="setLanguage('fr')" id="langFr" class="px-2 py-1 rounded text-xs font-semibold text-gray-400 hover:text-cyan-400" aria-label="Switch to French">FR</button>
+    81→    81→     </div><!-- Theme Toggle -->
+    82→    82→     <button id="themeToggle" class="hidden sm:flex items-center justify-center w-10 h-10 rounded-lg glass text-gray-400 hover:text-cyan-400 transition-colors" onclick="toggleTheme()" title="تبديل المظهر" aria-label="Toggle dark/light theme">
+    83→    83→      <i id="themeIcon" data-lucide="moon" class="icon-sm"></i>
+    84→    84→     </button><!-- Desktop Nav -->
+    85→    85→     <div class="hidden lg:flex items-center gap-8">
+    86→    86→      <a href="#home" class="nav-link text-gray-300 hover:text-white text-sm font-medium active">الرئيسية</a> <a href="#about" class="nav-link text-gray-300 hover:text-white text-sm font-medium">عنّي</a> <a href="#skills" class="nav-link text-gray-300 hover:text-white text-sm font-medium">المهارات</a> <a href="#experience" class="nav-link text-gray-300 hover:text-white text-sm font-medium">المسيرة</a> <a href="#projects" class="nav-link text-gray-300 hover:text-white text-sm font-medium">المشاريع</a> <a href="#services" class="nav-link text-gray-300 hover:text-white text-sm font-medium">الخدمات</a> <a href="#achievements" class="nav-link text-gray-300 hover:text-white text-sm font-medium">الإنجازات</a> <a href="#knowledge" class="nav-link text-gray-300 hover:text-white text-sm font-medium">أفكار</a> <a href="#contact" class="nav-link text-gray-300 hover:text-white text-sm font-medium">تواصل</a>
+    87→    87→     </div><!-- CTA + Mobile Toggle -->
+    88→    88→     <div class="flex items-center gap-3">
+    89→    89→      <a href="#contact" class="hidden sm:inline-flex btn-primary text-white px-5 py-2 rounded-lg text-sm font-semibold">تواصل معي</a> <button id="mobileToggle" class="lg:hidden text-white p-2" onclick="toggleMobile()" aria-label="Open mobile menu"> <i data-lucide="menu" class="icon-lg"></i> </button>
+    90→    90→     </div>
+    91→    91→    </div>
+    92→    92→   </div><!-- Mobile Menu -->
+    93→    93→   <div id="mobileMenu" class="mobile-menu fixed top-0 right-0 h-full w-72 glass z-50 p-6">
+    94→    94→    <div class="flex justify-between items-center mb-8">
+    95→    95→     <span class="text-white font-bold">القائمة</span> <button onclick="toggleMobile()" class="text-gray-400 hover:text-white" aria-label="Close mobile menu"><i data-lucide="x" style="width:24px;height:24px"></i></button>
+    96→    96→    </div>
+    97→    97→    <div class="flex flex-col gap-4">
+    98→    98→     <a href="#home" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">الرئيسية</a> <a href="#about" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">عنّي</a> <a href="#skills" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">المهارات</a> <a href="#experience" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">المسيرة</a> <a href="#projects" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">المشاريع</a> <a href="#services" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">الخدمات</a> <a href="#achievements" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">الإنجازات</a> <a href="#knowledge" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">أفكار</a> <a href="#contact" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">تواصل</a> <a href="#contact" class="btn-primary text-white text-center px-5 py-3 rounded-lg text-sm font-semibold mt-4">تواصل معي</a>
+    99→    99→    </div>
+   100→   100→   </div>
+   101→   101→  </nav><!-- HERO SECTION -->
+   102→   102→  <section id="home" class="hero-bg relative min-h-full flex items-center overflow-hidden">
+   103→   103→
+   104→   104→   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 lg:py-0 w-full">
+   105→   105→    <div class="grid lg:grid-cols-2 gap-12 items-center">
+   106→   106→     <div class="text-right">
+   107→   107→      <div class="anim-in inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-cyan-400 text-sm mb-6">
+   108→   108→       <i data-lucide="sparkles" style="width:14px;height:14px"></i> <span>باحث دكتوراه | مدرب | مبتكر</span>
+   109→   109→      </div>
+   110→   110→      <h1 id="heroTitle" class="anim-in text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-900 leading-tight mb-6">تحويل <span class="gradient-text">المعرفة الزراعية</span> إلى أثر حقيقي</h1>
+   111→   111→      <p id="heroSubtitle" class="anim-in text-gray-400 text-base sm:text-lg leading-relaxed mb-8 max-w-xl">باحث دكتوراه ومدرب ومبتكر في الزراعة الرقمية، أعمل على بناء جسور بين العلم والتطبيق لتطوير أنظمة زراعية أكثر ذكاءً وكفاءة.</p>
+   112→   112→      <div class="anim-in flex flex-wrap gap-4">
+   113→   113→        <a href="#projects" class="btn-primary text-white px-7 py-3 rounded-xl font-semibold text-sm flex items-center gap-2"> <span>استكشف أعمالي</span> <i data-lucide="arrow-left" style="width:16px;height:16px"></i> </a> <a href="#contact" class="btn-outline text-cyan-400 px-7 py-3 rounded-xl font-semibold text-sm">تواصل معي</a>
+   114→   114→      </div><!-- Quick Stats -->
+   115→   115→      <div class="anim-in flex gap-8 mt-10">
+   116→   116→       <div>
+   117→   117→        <div class="stat-number gradient-text" data-target="12">0</div>
+   118→   118→        <div class="text-gray-500 text-xs mt-1">
+   119→   119→         سنوات خبرة
+   120→   120→        </div>
+   121→   121→       </div>
+   122→   122→       <div>
+   123→   123→        <div class="stat-number gradient-text" data-target="25">0</div>
+   124→   124→        <div class="text-gray-500 text-xs mt-1">
+   125→   125→         مشروع بحثي
+   126→   126→        </div>
+   127→   127→       </div>
+   128→   128→       <div>
+   129→   129→        <div class="stat-number gradient-text" data-target="500">0</div>
+   130→   130→        <div class="text-gray-500 text-xs mt-1">
+   131→   131→         متدرب
+   132→   132→        </div>
+   133→   133→       </div>
+   134→   134→      </div>
+   135→   135→     </div><!-- Hero Visual -->
+   136→   136→     <div class="hidden lg:flex justify-center items-center relative">
+   137→   137→      <div class="w-80 h-80 rounded-full relative" style="background:radial-gradient(circle,rgba(34,211,238,0.1),transparent 70%);">
+   138→   138→       <div class="absolute inset-8 rounded-full glass flex items-center justify-center" style="border:2px solid rgba(34,211,238,0.15);">
+   139→   139→        <div class="text-center">
+   140→   140→         <div class="text-6xl mb-3">
+   141→   141→          🌾
+   142→   142→         </div>
+   143→   143→         <div class="text-white font-bold text-xl">
+   144→   144→          عبد القادر عطيه
+   145→   145→         </div>
+   146→   146→         <div class="text-cyan-400 text-sm">
+   147→   147→          PhD Researcher
+   148→   148→         </div>
+   149→   149→        </div>
+   150→   150→
+   151→   151→      </div>
+   152→   152→     </div>
+   153→   153→    </div>
+   154→   154→   </div>
+   155→   155→  </div>
+   156→   156→
+   157→   157→  </section><!-- ABOUT SECTION -->
+   158→   158→  <section id="about" class="section-padding relative">
+   159→   159→   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+   160→   160→    <div class="text-center mb-16">
+   161→   161→     <span class="text-cyan-400 text-sm font-semibold tracking-wider">تعرّف عليّ</span>
+   162→   162→     <h2 id="aboutTitle" class="text-3xl sm:text-4xl font-800 text-white mt-3 gradient-border inline-block pb-3">من أنا</h2>
+   163→   163→    </div>
+   164→   164→    <div class="grid lg:grid-cols-2 gap-12 items-start">
+   165→   165→     <div>
+   166→   166→      <p class="text-gray-300 text-lg leading-loose mb-6">أنا <strong class="text-white">عبد القادر عطيه</strong>، محترف في الهندسة الزراعية مع <strong>أكثر من 12 عامًا من الخبرة</strong> في الهندسة الزراعية والتدريب المهني والإشراف على المشاريع. أحضر حاليًا درجة الدكتوراه في الإنتاج الحيواني (Agronomy)، بناءً على ماجستير في الإنتاج النباتي وشهادة مهندس في تربية الحيوانات في المناطق الجافة.</p>
+   167→   167→       <p class="text-gray-400 leading-loose mb-8">يمتد عملي ليشمل الهندسة الزراعية والتصميم البيداغوجي والابتكار الرقمي. أعمل كـ <strong>أستاذ متخصص (هندسة بيداغوجية)</strong> في المعهد الوطني للتكوين المهني حسان عبد الكريم بالوادي، حيث أصمم برامج التكوين المهني وأشرف على العمليات الزراعية وأدرب الطلاب على تقنيات الزراعة الحديثة. أنا أيضًا مؤلف كتاب <em>"على الحافة"</em> (ISBN 9947-26-849-1).</p><!-- Expertise Tags -->
+   168→   168→      <div class="flex flex-wrap gap-3">
+   169→   169→        <span class="px-4 py-2 rounded-lg glass text-cyan-400 text-sm">🔬 الإنتاج الحيواني</span> <span class="px-4 py-2 rounded-lg glass text-cyan-400 text-sm">🌾 الهندسة الزراعية</span> <span class="px-4 py-2 rounded-lg glass text-cyan-400 text-sm">📊 الزراعة الرقمية</span> <span class="px-4 py-2 rounded-lg glass text-cyan-400 text-sm">🎓 التكوين المهني</span> <span class="px-4 py-2 rounded-lg glass text-cyan-400 text-sm">💼 ريادة الأعمال الزراعية</span> <span class="px-4 py-2 rounded-lg glass text-cyan-400 text-sm">📖 الهندسة البيداغوجية</span>
+   170→   170→      </div>
+   171→   171→      <div class="flex flex-wrap gap-3 mt-6">
+   172→   172→        <button onclick="openCV()" class="btn-outline text-cyan-400 px-5 py-2.5 rounded-xl text-sm font-semibold flex items-center gap-2 hover:bg-cyan-500/10 transition"><i data-lucide="eye" style="width:16px;height:16px"></i> معاينة السيرة</button>
+   173→   173→        <button onclick="downloadCV()" class="btn-primary text-white px-5 py-2.5 rounded-xl text-sm font-semibold flex items-center gap-2"><i data-lucide="download" style="width:16px;height:16px"></i> تحميل السيرة</button>
+   174→   174→      </div>
+   175→   175→     </div><!-- Stats Grid -->
+   176→   176→     <div class="grid grid-cols-2 gap-4">
+   177→   177→      <div class="glass-card rounded-2xl p-6 text-center">
+   178→   178→       <div class="text-4xl font-900 gradient-text mb-2">
+   179→   179→         +12
+   180→   180→        </div>
+   181→   181→        <div class="text-gray-400 text-sm">
+   182→   182→         سنوات من الخبرة
+   183→   183→       </div>
+   184→   184→      </div>
+   185→   185→      <div class="glass-card rounded-2xl p-6 text-center">
+   186→   186→       <div class="text-4xl font-900 gradient-text mb-2">
+   187→   187→        +25
+   188→   188→       </div>
+   189→   189→       <div class="text-gray-400 text-sm">
+   190→   190→        مشروع بحثي
+   191→   191→       </div>
+   192→   192→      </div>
+   193→   193→      <div class="glass-card rounded-2xl p-6 text-center">
+   194→   194→       <div class="text-4xl font-900 gradient-text mb-2">
+   195→   195→         +50
+   196→   196→        </div>
+   197→   197→        <div class="text-gray-400 text-sm">
+   198→   198→         دورة تدريبية
+   199→   199→       </div>
+   200→   200→      </div>
+   201→   201→      <div class="glass-card rounded-2xl p-6 text-center">
+   202→   202→       <div class="text-4xl font-900 gradient-text mb-2">
+   203→   203→        +500
+   204→   204→       </div>
+   205→   205→       <div class="text-gray-400 text-sm">
+   206→   206→        متدرب ومستفيد
+   207→   207→       </div>
+   208→   208→      </div>
+   209→   209→     </div>
+   210→   210→    </div>
+   211→   211→   </div>
+   212→   212→  </section><!-- SKILLS SECTION -->
+   213→   213→  <section id="skills" class="section-padding" style="background:linear-gradient(180deg,rgba(15,21,56,0.5),#0a0e27);">
+   214→   214→   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+   215→   215→    <div class="text-center mb-16">
+   216→   216→     <span class="text-cyan-400 text-sm font-semibold">قدراتي</span>
+   217→   217→     <h2 class="text-3xl sm:text-4xl font-800 text-white mt-3 gradient-border inline-block pb-3">المهارات</h2>
+   218→   218→    </div>
+   219→   219→    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+   220→   220→     <!-- Research -->
+   221→   221→     <div class="glass-card rounded-2xl p-6">
+   222→   222→      <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl mb-4" style="background:rgba(34,211,238,0.1);">
+   223→   223→       🔬
+   224→   224→      </div>
+   225→   225→      <h3 class="text-white font-bold text-lg mb-4">مهارات بحثية</h3>
+   226→   226→      <div class="space-y-3">
+   227→   227→       <div>
+   228→   228→        <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">تحليل البيانات</span><span class="text-cyan-400">95%</span>
+   229→   229→        </div>
+   230→   230→        <div class="progress-bar">
+   231→   231→         <div class="progress-fill" style="width:0%" data-width="95%"></div>
+   232→   232→        </div>
+   233→   233→       </div>
+   234→   234→       <div>
+   235→   235→        <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">التصميم التجريبي</span><span class="text-cyan-400">90%</span>
+   236→   236→        </div>
+   237→   237→        <div class="progress-bar">
+   238→   238→         <div class="progress-fill" style="width:0%" data-width="90%"></div>
+   239→   239→        </div>
+   240→   240→       </div>
+   241→   241→       <div>
+   242→   242→        <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">الكتابة العلمية</span><span class="text-cyan-400">92%</span>
+   243→   243→        </div>
+   244→   244→        <div class="progress-bar">
+   245→   245→         <div class="progress-fill" style="width:0%" data-width="92%"></div>
+   246→   246→        </div>
+   247→   247→       </div>
+   248→   248→      </div>
+   249→   249→     </div><!-- Technical -->
+   250→   250→     <div class="glass-card rounded-2xl p-6">
+   251→   251→      <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl mb-4" style="background:rgba(251,191,36,0.1);">
+   252→   252→       💻
+   253→   253→      </div>
+   254→   254→       <h3 class="text-white font-bold text-lg mb-4">المهارات التقنية</h3>
+   255→   255→       <div class="space-y-3">
+   256→   256→        <div>
+   257→   257→         <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">Power BI / IBM SPSS</span><span class="text-cyan-400">90%</span>
+   258→   258→         </div>
+   259→   259→         <div class="progress-bar">
+   260→   260→          <div class="progress-fill" style="width:0%" data-width="90%"></div>
+   261→   261→         </div>
+   262→   262→        </div>
+   263→   263→        <div>
+   264→   264→         <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">R / Excel / تصور البيانات</span><span class="text-cyan-400">88%</span>
+   265→   265→         </div>
+   266→   266→         <div class="progress-bar">
+   267→   267→          <div class="progress-fill" style="width:0%" data-width="88%"></div>
+   268→   268→         </div>
+   269→   269→        </div>
+   270→   270→        <div>
+   271→   271→         <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">EdrawMax / Xmind</span><span class="text-cyan-400">85%</span>
+   272→   272→         </div>
+   273→   273→         <div class="progress-bar">
+   274→   274→          <div class="progress-fill" style="width:0%" data-width="85%"></div>
+   275→   275→         </div>
+   276→   276→        </div>
+   277→   277→       </div>
+   278→   278→      </div><!-- Agricultural -->
+   279→   279→     <div class="glass-card rounded-2xl p-6">
+   280→   280→      <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl mb-4" style="background:rgba(34,211,238,0.1);">
+   281→   281→       🌱
+   282→   282→      </div>
+   283→   283→      <h3 class="text-white font-bold text-lg mb-4">مهارات زراعية</h3>
+   284→   284→      <div class="space-y-3">
+   285→   285→       <div>
+   286→   286→        <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">إنتاج الثروة الحيوانية</span><span class="text-cyan-400">96%</span>
+   287→   287→        </div>
+   288→   288→        <div class="progress-bar">
+   289→   289→         <div class="progress-fill" style="width:0%" data-width="96%"></div>
+   290→   290→        </div>
+   291→   291→       </div>
+   292→   292→       <div>
+   293→   293→        <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">التربية والانتخاب</span><span class="text-cyan-400">93%</span>
+   294→   294→        </div>
+   295→   295→        <div class="progress-bar">
+   296→   296→         <div class="progress-fill" style="width:0%" data-width="93%"></div>
+   297→   297→        </div>
+   298→   298→       </div>
+   299→   299→        <div>
+   300→   300→         <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">التغذية الحيوانية</span><span class="text-cyan-400">90%</span>
+   301→   301→         </div>
+   302→   302→         <div class="progress-bar">
+   303→   303→          <div class="progress-fill" style="width:0%" data-width="90%"></div>
+   304→   304→         </div>
+   305→   305→        </div>
+   306→   306→        <div>
+   307→   307→         <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">Garden Planner / الزراعة الدقيقة</span><span class="text-cyan-400">88%</span>
+   308→   308→         </div>
+   309→   309→         <div class="progress-bar">
+   310→   310→          <div class="progress-fill" style="width:0%" data-width="88%"></div>
+   311→   311→         </div>
+   312→   312→        </div>
+   313→   313→       </div>
+   314→   314→      </div><!-- Training -->
+   315→   315→     <div class="glass-card rounded-2xl p-6">
+   316→   316→      <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl mb-4" style="background:rgba(251,191,36,0.1);">
+   317→   317→       🎤
+   318→   318→      </div>
+   319→   319→      <h3 class="text-white font-bold text-lg mb-4">مهارات تدريبية</h3>
+   320→   320→      <div class="space-y-3">
+   321→   321→       <div>
+   322→   322→        <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">مدرب FBS</span><span class="text-cyan-400">95%</span>
+   323→   323→        </div>
+   324→   324→        <div class="progress-bar">
+   325→   325→         <div class="progress-fill" style="width:0%" data-width="95%"></div>
+   326→   326→        </div>
+   327→   327→       </div>
+   328→   328→       <div>
+   329→   329→        <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">تصميم البرامج</span><span class="text-cyan-400">88%</span>
+   330→   330→        </div>
+   331→   331→        <div class="progress-bar">
+   332→   332→         <div class="progress-fill" style="width:0%" data-width="88%"></div>
+   333→   333→        </div>
+   334→   334→       </div>
+   335→   335→       <div>
+   336→   336→        <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">مهارات التواصل</span><span class="text-cyan-400">92%</span>
+   337→   337→        </div>
+   338→   338→        <div class="progress-bar">
+   339→   339→         <div class="progress-fill" style="width:0%" data-width="92%"></div>
+   340→   340→        </div>
+   341→   341→       </div>
+   342→   342→      </div>
+   343→   343→     </div>
+   344→   344→    </div>
+   345→   345→   </div>
+   346→   346→  </section><!-- EXPERIENCE / TIMELINE -->
+   347→   347→  <section id="experience" class="section-padding">
+   348→   348→   <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+   349→   349→    <div class="text-center mb-16">
+   350→   350→     <span class="text-cyan-400 text-sm font-semibold">رحلتي</span>
+   351→   351→     <h2 class="text-3xl sm:text-4xl font-800 text-white mt-3 gradient-border inline-block pb-3">المسيرة المهنية</h2>
+   352→   352→    </div>
+   353→   353→    <div class="relative">
+   354→   354→     <div class="timeline-line hidden md:block"></div>
+   355→   355→     <div class="space-y-12">
+   356→   356→      <!-- Item 1 -->
+   357→   357→       <div class="md:flex items-center">
+   358→   358→        <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+   359→   359→         <div class="glass-card rounded-2xl p-6">
+   360→   360→          <span class="text-gold-400 text-sm font-bold">2022 - حتى الآن</span>
+   361→   361→          <h3 class="text-white font-bold text-lg mt-2">أستاذ متخصص (هندسة بيداغوجية)</h3>
+   362→   362→          <p class="text-gray-500 text-sm mt-1">المعهد الوطني للتكوين المهني حسان عبد الكريم، الوادي</p>
+   363→   363→          <p class="text-gray-400 text-sm mt-1">تصميم مناهج التكوين المهني، الإشراف على العمليات الزراعية، وتدريب الطلاب على التقنيات الزراعية والهندسة البيداغوجية الحديثة</p>
+   364→   364→         </div>
+   365→   365→        </div>
+   366→   366→        <div class="hidden md:flex w-8 h-8 rounded-full items-center justify-center z-10 mx-auto" style="background:linear-gradient(135deg,#06b6d4,#22d3ee);flex-shrink:0;">
+   367→   367→         <i data-lucide="graduation-cap" style="width:14px;height:14px;color:white"></i>
+   368→   368→        </div>
+   369→   369→        <div class="md:w-1/2 md:pl-12"></div>
+   370→   370→       </div><!-- Item 2 -->
+   371→   371→       <div class="md:flex items-center">
+   372→   372→        <div class="md:w-1/2 md:pr-12"></div>
+   373→   373→        <div class="hidden md:flex w-8 h-8 rounded-full items-center justify-center z-10 mx-auto" style="background:linear-gradient(135deg,#f59e0b,#fbbf24);flex-shrink:0;">
+   374→   374→         <i data-lucide="users" style="width:14px;height:14px;color:#0a0e27"></i>
+   375→   375→        </div>
+   376→   376→        <div class="md:w-1/2 md:pl-12 mb-4 md:mb-0">
+   377→   377→         <div class="glass-card rounded-2xl p-6">
+   378→   378→          <span class="text-gold-400 text-sm font-bold">2016 - حتى الآن</span>
+   379→   379→          <h3 class="text-white font-bold text-lg mt-2">مشرف استغلال زراعي</h3>
+   380→   380→          <p class="text-gray-500 text-sm mt-1">الإشراف على العمليات الزراعية وإدارة أنظمة الإنتاج النباتي والحيواني</p>
+   381→   381→         </div>
+   382→   382→        </div>
+   383→   383→       </div><!-- Item 3 -->
+   384→   384→       <div class="md:flex items-center">
+   385→   385→        <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+   386→   386→         <div class="glass-card rounded-2xl p-6">
+   387→   387→          <span class="text-gold-400 text-sm font-bold">2021 - حتى الآن</span>
+   388→   388→          <h3 class="text-white font-bold text-lg mt-2">مدرب مهني</h3>
+   389→   389→          <p class="text-gray-500 text-sm mt-1">المعهد الوطني للتكوين المهني حسان عبد الكريم، الوادي</p>
+   390→   390→          <p class="text-gray-400 text-sm mt-1">تقديم تدريب عملي في التقنيات الزراعية، مدارس المزارعين الحقلية (FBS)، وتطوير المهارات المهنية للطلاب والمزارعين</p>
+   391→   391→         </div>
+   392→   392→        </div>
+   393→   393→        <div class="hidden md:flex w-8 h-8 rounded-full items-center justify-center z-10 mx-auto" style="background:linear-gradient(135deg,#06b6d4,#22d3ee);flex-shrink:0;">
+   394→   394→         <i data-lucide="users" style="width:14px;height:14px;color:white"></i>
+   395→   395→        </div>
+   396→   396→        <div class="md:w-1/2 md:pl-12"></div>
+   397→   397→        </div><!-- Item 4 - FBS -->
+   398→   398→        <div class="md:flex items-center">
+   399→   399→         <div class="md:w-1/2 md:pr-12"></div>
+   400→   400→         <div class="hidden md:flex w-8 h-8 rounded-full items-center justify-center z-10 mx-auto" style="background:linear-gradient(135deg,#f59e0b,#fbbf24);flex-shrink:0;">
+   401→   401→          <i data-lucide="badge-check" style="width:14px;height:14px;color:#0a0e27"></i>
+   402→   402→         </div>
+   403→   403→         <div class="md:w-1/2 md:pl-12 mb-4 md:mb-0">
+   404→   404→          <div class="glass-card rounded-2xl p-6">
+   405→   405→           <span class="text-gold-400 text-sm font-bold">2022</span>
+   406→   406→           <h3 class="text-white font-bold text-lg mt-2">مدرب رئيسي مساعد FBS</h3>
+   407→   407→           <p class="text-gray-400 text-sm mt-1">ABF (GIZ) — مرفق الأعمال الزراعية لأفريقيا</p>
+   408→   408→           <p class="text-gray-500 text-sm mt-1">مدرب رئيسي مساعد معتمد في مدارس المزارعين الحقلية (FBS). درّب أكثر من 500 مزارع وقدم برامج تدريب المدربين في الجزائر.</p>
+   409→   409→          </div>
+   410→   410→         </div>
+   411→   411→        </div><!-- Item 5 -->
+   412→   412→        <div class="md:flex items-center">
+   413→   413→         <div class="md:w-1/2 md:pr-12"></div>
+   414→   414→         <div class="hidden md:flex w-8 h-8 rounded-full items-center justify-center z-10 mx-auto" style="background:linear-gradient(135deg,#f59e0b,#fbbf24);flex-shrink:0;">
+   415→   415→          <i data-lucide="code" style="width:14px;height:14px;color:#0a0e27"></i>
+   416→   416→         </div>
+   417→   417→         <div class="md:w-1/2 md:pl-12 mb-4 md:mb-0">
+   418→   418→          <div class="glass-card rounded-2xl p-6">
+   419→   419→           <span class="text-gold-400 text-sm font-bold">2011 - 2016</span>
+   420→   420→           <h3 class="text-white font-bold text-lg mt-2">مهندس زراعي</h3>
+   421→   421→           <p class="text-gray-500 text-sm mt-1">شهادة مهندس في تربية الحيوانات في المناطق الجافة</p>
+   422→   422→           <p class="text-gray-400 text-sm mt-1">خبرة عملية في أنظمة الإنتاج الحيواني وبرامج التربية وإدارة المزارع في البيئات الجافة</p>
+   423→   423→          </div>
+   424→   424→         </div>
+   425→   425→        </div><!-- Item 6 - Certifications -->
+   426→   426→        <div class="md:flex items-center">
+   427→   427→         <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+   428→   428→          <div class="glass-card rounded-2xl p-6">
+   429→   429→           <span class="text-gold-400 text-sm font-bold">2024 - 2026</span>
+   430→   430→           <h3 class="text-white font-bold text-lg mt-2">أكثر من 50 شهادة تدريب دولية</h3>
+   431→   431→           <p class="text-gray-500 text-sm mt-1">شهادات متقدمة من Wageningen, FAO, ASM, GIZ, Oxford Climate Society وغيرها</p>
+   432→   432→           <p class="text-gray-400 text-sm mt-1">تطوير مهني مستمر في الزراعة ومنهجية البحث والهندسة البيداغوجية والزراعة الذكية مناخيًا</p>
+   433→   433→          </div>
+   434→   434→         </div>
+   435→   435→         <div class="hidden md:flex w-8 h-8 rounded-full items-center justify-center z-10 mx-auto" style="background:linear-gradient(135deg,#06b6d4,#22d3ee);flex-shrink:0;">
+   436→   436→          <i data-lucide="award" style="width:14px;height:14px;color:white"></i>
+   437→   437→         </div>
+   438→   438→         <div class="md:w-1/2 md:pl-12"></div>
+   439→   439→        </div><!-- Item 7 - Book & Leadership -->
+   440→   440→       <div class="md:flex items-center">
+   441→   441→        <div class="md:w-1/2 md:pr-12"></div>
+   442→   442→        <div class="hidden md:flex w-8 h-8 rounded-full items-center justify-center z-10 mx-auto" style="background:linear-gradient(135deg,#f59e0b,#fbbf24);flex-shrink:0;">
+   443→   443→         <i data-lucide="trophy" style="width:14px;height:14px;color:#0a0e27"></i>
+   444→   444→        </div>
+   445→   445→        <div class="md:w-1/2 md:pl-12 mb-4 md:mb-0">
+   446→   446→         <div class="glass-card rounded-2xl p-6">
+   447→   447→          <span class="text-gold-400 text-sm font-bold">2006 / مستمر</span>
+   448→   448→          <h3 class="text-white font-bold text-lg mt-2">مؤلف كتاب وقائد مجتمعي</h3>
+   449→   449→          <p class="text-gray-400 text-sm mt-1">كتاب <em>"على الحافة"</em> (ISBN 9947-26-849-1, 2006)</p>
+   450→   450→          <p class="text-gray-500 text-sm mt-1">نائب رئيس جمعية النحالين، سفير IAPA للتعلم الإلكتروني، عضو في ASM, EAS، ومنسق الجزائر في عدة منظمات دولية</p>
+   451→   451→         </div>
+   452→   452→        </div>
+   453→   453→       </div>
+   454→   454→     </div>
+   455→   455→    </div>
+   456→   456→   </div>
+   457→   457→  </section><!-- PROJECTS SECTION -->
+   458→   458→  <section id="projects" class="section-padding" style="background:linear-gradient(180deg,rgba(15,21,56,0.5),#0a0e27);">
+   459→   459→   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+   460→   460→    <div class="text-center mb-16">
+   461→   461→     <span class="text-cyan-400 text-sm font-semibold">أعمالي</span>
+   462→   462→     <h2 class="text-3xl sm:text-4xl font-800 text-white mt-3 gradient-border inline-block pb-3">المشاريع</h2>
+   463→   463→    </div><!-- Filter Tabs -->
+   464→   464→    <div class="flex flex-wrap justify-center gap-3 mb-10" id="projectFilters">
+   465→   465→     <button onclick="filterProjects('all')" class="filter-btn px-5 py-2 rounded-lg text-sm font-semibold btn-primary text-white" data-filter="all">الكل</button> <button onclick="filterProjects('research')" class="filter-btn px-5 py-2 rounded-lg text-sm font-semibold btn-outline text-gray-400" data-filter="research">بحث علمي</button> <button onclick="filterProjects('app')" class="filter-btn px-5 py-2 rounded-lg text-sm font-semibold btn-outline text-gray-400" data-filter="app">تطبيقات</button> <button onclick="filterProjects('training')" class="filter-btn px-5 py-2 rounded-lg text-sm font-semibold btn-outline text-gray-400" data-filter="training">تدريب</button> <button onclick="filterProjects('business')" class="filter-btn px-5 py-2 rounded-lg text-sm font-semibold btn-outline text-gray-400" data-filter="business">ريادة أعمال</button>
+   466→   466→    </div>
+   467→   467→    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="projectGrid">
+   468→   468→     <!-- Project cards inserted by JS -->
+   469→   469→    </div>
+   470→   470→   </div>
+   471→   471→  </section><!-- SERVICES SECTION -->
+   472→   472→  <section id="services" class="section-padding">
+   473→   473→   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+   474→   474→    <div class="text-center mb-16">
+   475→   475→     <span class="text-cyan-400 text-sm font-semibold">ماذا أقدّم</span>
+   476→   476→     <h2 id="servicesTitle" class="text-3xl sm:text-4xl font-800 text-white mt-3 gradient-border inline-block pb-3">خدماتي</h2>
+   477→   477→    </div>
+   478→   478→    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+   479→   479→     <div class="glass-card rounded-2xl p-6 text-center">
+   480→   480→      <div class="w-14 h-14 mx-auto rounded-2xl flex items-center justify-center text-2xl mb-4" style="background:rgba(34,211,238,0.1);">
+   481→   481→       🎓
+   482→   482→      </div>
+   483→   483→      <h3 class="text-white font-bold text-lg mb-3">التدريب الزراعي</h3>
+   484→   484→      <p class="text-gray-400 text-sm mb-5">برامج تدريبية متخصصة في الإنتاج الحيواني والزراعة الحديثة</p><a href="#contact" class="text-cyan-400 text-sm font-semibold hover:text-cyan-300 flex items-center justify-center gap-1">اطلب الخدمة <i data-lucide="arrow-left" style="width:14px;height:14px"></i></a>
+   485→   485→     </div>
+   486→   486→     <div class="glass-card rounded-2xl p-6 text-center">
+   487→   487→      <div class="w-14 h-14 mx-auto rounded-2xl flex items-center justify-center text-2xl mb-4" style="background:rgba(251,191,36,0.1);">
+   488→   488→       🔬
+   489→   489→      </div>
+   490→   490→      <h3 class="text-white font-bold text-lg mb-3">الاستشارات البحثية</h3>
+   491→   491→      <p class="text-gray-400 text-sm mb-5">دعم الباحثين في تصميم التجارب وتحليل البيانات والنشر العلمي</p><a href="#contact" class="text-cyan-400 text-sm font-semibold hover:text-cyan-300 flex items-center justify-center gap-1">اطلب الخدمة <i data-lucide="arrow-left" style="width:14px;height:14px"></i></a>
+   492→   492→     </div>
+   493→   493→     <div class="glass-card rounded-2xl p-6 text-center">
+   494→   494→      <div class="w-14 h-14 mx-auto rounded-2xl flex items-center justify-center text-2xl mb-4" style="background:rgba(34,211,238,0.1);">
+   495→   495→       📊
+   496→   496→      </div>
+   497→   497→      <h3 class="text-white font-bold text-lg mb-3">تحليل البيانات</h3>
+   498→   498→      <p class="text-gray-400 text-sm mb-5">تحليل إحصائي متقدم وتصور بيانات باستخدام أحدث الأدوات</p><a href="#contact" class="text-cyan-400 text-sm font-semibold hover:text-cyan-300 flex items-center justify-center gap-1">اطلب الخدمة <i data-lucide="arrow-left" style="width:14px;height:14px"></i></a>
+   499→   499→     </div>
+   500→   500→     <div class="glass-card rounded-2xl p-6 text-center">
+
+[showing lines 1-500 of 913; use offset=501 with limit to continue reading]

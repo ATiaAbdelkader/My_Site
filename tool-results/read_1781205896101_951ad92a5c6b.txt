@@ -1,0 +1,502 @@
+     1→     1→<!doctype html>
+     2→     2→<html lang="en" dir="ltr" class="h-full">
+     3→     3→ <head>
+     4→     4→  <meta charset="UTF-8">
+     5→     5→  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     6→     6→  <meta name="description" content="Abdelkader Atia - PhD Researcher, Agricultural Trainer, and Digital Innovation Expert. Specializing in semen quality and sustainable livestock production.">
+     7→     7→  <meta name="keywords" content="smart agriculture, PhD researcher, agricultural training, digital innovation, livestock production, semen quality">
+     8→     8→  <meta name="author" content="Abdelkader Atia">
+     9→     9→  <meta property="og:title" content="Abdelkader Atia - Ph.D Researcher & Agricultural Innovator">
+    10→    10→  <meta property="og:description" content="Professional specializing in scientific research, training, and digital innovation in agriculture">
+    11→    11→  <meta property="og:image" content="/og-image.svg">
+    12→    12→  <meta property="og:type" content="website">
+    13→    13→  <meta name="twitter:card" content="summary_large_image">
+    14→    14→  <meta name="twitter:title" content="Abdelkader Atia - Ph.D Researcher & Agricultural Innovator">
+    15→    15→  <meta name="twitter:description" content="Professional specializing in scientific research, training, and digital innovation in agriculture">
+    16→    16→  <meta name="twitter:image" content="/og-image.svg">
+    17→    17→  <link rel="canonical" href="https://abdelkader-atia.com/index-en.html">
+    18→    18→  <link rel="manifest" href="/manifest.json">
+    19→    19→  <title>Abdelkader Atia - Agricultural Researcher & Trainer</title>
+    20→    20→  <!-- Google Analytics: Replace G-XXXXXXXXXX with your actual Measurement ID -->
+    21→    21→  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    22→    22→  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script> -->
+    23→    23→  <link href="assets/css/tailwind-built.css" rel="stylesheet">
+    24→    24→  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+    25→    25→  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    26→    26→  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    27→    27→  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
+    28→    28→  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
+    29→    29→  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌾</text></svg>">
+    30→    30→  <script type="application/ld+json">
+    31→    31→  {
+    32→    32→    "@context": "https://schema.org",
+    33→    33→    "@type": "Person",
+    34→    34→    "name": "Abdelkader Atia",
+    35→    35→    "alternateName": "عبد القادر عطيه",
+    36→    36→    "jobTitle": "PhD Researcher & Agricultural Innovator",
+    37→    37→    "description": "PhD Researcher, Agricultural Trainer, and Digital Innovation Expert. Specializing in semen quality and sustainable livestock production.",
+    38→    38→    "email": "contact@abdelkader-atia.com",
+    39→    39→    "address": {
+    40→    40→      "@type": "PostalAddress",
+    41→    41→      "addressCountry": "Algeria"
+    42→    42→    },
+    43→    43→    "sameAs": [
+    44→    44→      "https://www.linkedin.com/in/abdelkader-atia-89061a146/",
+    45→    45→      "https://twitter.com/abdelkader_atia",
+    46→    46→      "https://www.facebook.com/abdelkader.atia",
+    47→    47→      "https://github.com/abdelkader-atia"
+    48→    48→    ],
+    49→    49→    "knowsAbout": [
+    50→    50→      "Animal Sciences",
+    51→    51→      "Semen Quality",
+    52→    52→      "Digital Agriculture",
+    53→    53→      "Agricultural Training",
+    54→    54→      "Agribusiness"
+    55→    55→    ]
+    56→    56→  }
+    57→    57→  </script>
+    58→    58→  <link rel="stylesheet" href="assets/css/style.css">
+    59→    59→  <script src="assets/js/main-en.js" defer></script>
+    60→    60→ </head>
+    61→    61→ <body class="h-full overflow-auto" id="app-body">
+    62→    62→   <!-- Reading Progress Bar --> <div id="readingProgress"></div>
+    63→    63→   <a href="#home" class="sr-only skip-link-focus">Skip to main content</a>
+    64→    64→  <!-- NAVBAR -->
+    65→    65→  <nav id="navbar" class="fixed top-0 right-0 left-0 z-50 transition-all duration-300 navbar-transparent">
+    66→    66→   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    67→    67→    <div class="flex items-center justify-between h-16 lg:h-20">
+    68→    68→     <!-- Logo --> <a href="#home" class="flex items-center gap-3">
+    69→    69→      <div class="w-10 h-10 rounded-lg flex items-center justify-center text-white font-bold text-lg bg-gradient-cyan">
+    70→    70→       AA
+    71→    71→      </div>
+    72→    72→      <div class="hidden sm:block">
+    73→    73→       <div class="text-white font-bold text-sm leading-tight" id="logoName">
+    74→    74→        Abdelkader Atia
+    75→    75→       </div>
+    76→    76→       <div class="text-cyan-400 text-xs">
+    77→    77→        Ph.D Researcher
+    78→    78→       </div>
+    79→    79→      </div></a><!-- Language Toggle -->
+    80→    80→     <div class="hidden sm:flex items-center gap-2 px-3 py-1 rounded-lg glass"><button onclick="loadLanguage('en')" id="langEn" class="px-2 py-1 rounded text-xs font-semibold text-cyan-400 bg-gradient-cyan-light" aria-label="Switch to English">EN</button>
+    81→    81→      <div class="w-px h-4 bg-gray-700"></div><button onclick="loadLanguage('ar')" id="langAr" class="px-2 py-1 rounded text-xs font-semibold text-gray-400 hover:text-cyan-400" aria-label="Switch to Arabic">AR</button><div class="w-px h-4 bg-gray-700"></div><button onclick="loadLanguage('fr')" id="langFr" class="px-2 py-1 rounded text-xs font-semibold text-gray-400 hover:text-cyan-400" aria-label="Switch to French">FR</button>
+    82→    82→     </div><!-- Theme Toggle -->
+    83→    83→     <button id="themeToggle" class="hidden sm:flex items-center justify-center w-10 h-10 rounded-lg glass text-gray-400 hover:text-cyan-400 transition-colors" onclick="toggleTheme()" title="Toggle Theme" aria-label="Toggle dark/light theme">
+    84→    84→      <i id="themeIcon" data-lucide="moon" class="icon-sm"></i>
+    85→    85→     </button><!-- Desktop Nav -->
+    86→    86→     <div class="hidden lg:flex items-center gap-8">
+    87→    87→      <a href="#home" class="nav-link text-gray-300 hover:text-white text-sm font-medium active">Home</a> <a href="#about" class="nav-link text-gray-300 hover:text-white text-sm font-medium">About</a> <a href="#skills" class="nav-link text-gray-300 hover:text-white text-sm font-medium">Skills</a> <a href="#experience" class="nav-link text-gray-300 hover:text-white text-sm font-medium">Experience</a> <a href="#projects" class="nav-link text-gray-300 hover:text-white text-sm font-medium">Projects</a> <a href="#services" class="nav-link text-gray-300 hover:text-white text-sm font-medium">Services</a> <a href="#achievements" class="nav-link text-gray-300 hover:text-white text-sm font-medium">Achievements</a> <a href="#knowledge" class="nav-link text-gray-300 hover:text-white text-sm font-medium">Insights</a> <a href="#contact" class="nav-link text-gray-300 hover:text-white text-sm font-medium">Contact</a>
+    88→    88→     </div><!-- CTA + Mobile Toggle -->
+    89→    89→     <div class="flex items-center gap-3">
+    90→    90→      <a href="#contact" class="hidden sm:inline-flex btn-primary text-white px-5 py-2 rounded-lg text-sm font-semibold">Contact Me</a> <button id="mobileToggle" class="lg:hidden text-white p-2" onclick="toggleMobile()" aria-label="Open mobile menu"> <i data-lucide="menu" style="width:24px;height:24px"></i> </button>
+    91→    91→     </div>
+    92→    92→    </div>
+    93→    93→   </div><!-- Mobile Menu -->
+    94→    94→   <div id="mobileMenu" class="mobile-menu fixed top-0 left-0 h-full w-72 glass z-50 p-6">
+    95→    95→    <div class="flex justify-between items-center mb-8">
+    96→    96→     <span class="text-white font-bold">Menu</span> <button onclick="toggleMobile()" class="text-gray-400 hover:text-white" aria-label="Close mobile menu"><i data-lucide="x" style="width:24px;height:24px"></i></button>
+    97→    97→    </div>
+    98→    98→    <div class="flex flex-col gap-4">
+    99→    99→     <a href="#home" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">Home</a> <a href="#about" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">About</a> <a href="#skills" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">Skills</a> <a href="#experience" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">Experience</a> <a href="#projects" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">Projects</a> <a href="#services" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">Services</a> <a href="#achievements" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">Achievements</a> <a href="#knowledge" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">Insights</a> <a href="#contact" onclick="toggleMobile()" class="text-gray-300 hover:text-cyan-400 py-2 border-b border-gray-800">Contact</a> <a href="#contact" class="btn-primary text-white text-center px-5 py-3 rounded-lg text-sm font-semibold mt-4">Contact Me</a>
+   100→   100→    </div>
+   101→   101→   </div>
+   102→   102→  </nav><!-- HERO SECTION -->
+   103→   103→  <section id="home" class="hero-bg relative min-h-full flex items-center overflow-hidden">
+   104→   104→
+   105→   105→   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 lg:py-0 w-full">
+   106→   106→    <div class="grid lg:grid-cols-2 gap-12 items-center">
+   107→   107→     <div class="text-left">
+   108→   108→      <div class="anim-in inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-cyan-400 text-sm mb-6">
+   109→   109→       <i data-lucide="sparkles" style="width:14px;height:14px"></i> <span>Ph.D Student | Trainer | Innovator</span>
+   110→   110→      </div>
+   111→   111→      <h1 id="heroTitle" class="anim-in text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-900 leading-tight mb-6">Transforming <span class="gradient-text">Agricultural Knowledge</span> into Real Impact</h1>
+   112→   112→      <p id="heroSubtitle" class="anim-in text-gray-400 text-base sm:text-lg leading-relaxed mb-8 max-w-xl">PhD student and trainer specializing in digital agriculture, building bridges between science and practical application to develop smarter, more efficient agricultural systems.</p>
+   113→   113→      <div class="anim-in flex flex-wrap gap-4">
+   114→   114→        <a href="#projects" class="btn-primary text-white px-7 py-3 rounded-xl font-semibold text-sm flex items-center gap-2"> <span>Explore My Work</span> <i data-lucide="arrow-right" style="width:16px;height:16px"></i> </a> <a href="#contact" class="btn-outline text-cyan-400 px-7 py-3 rounded-xl font-semibold text-sm">Get in Touch</a>
+   115→   115→      </div><!-- Quick Stats -->
+   116→   116→      <div class="anim-in flex gap-8 mt-10">
+   117→   117→       <div>
+   118→   118→        <div class="stat-number gradient-text" data-target="12">0</div>
+   119→   119→        <div class="text-gray-500 text-xs mt-1">
+   120→   120→         Years Experience
+   121→   121→        </div>
+   122→   122→       </div>
+   123→   123→       <div>
+   124→   124→        <div class="stat-number gradient-text" data-target="25">0</div>
+   125→   125→        <div class="text-gray-500 text-xs mt-1">
+   126→   126→         Research Projects
+   127→   127→        </div>
+   128→   128→       </div>
+   129→   129→       <div>
+   130→   130→        <div class="stat-number gradient-text" data-target="500">0</div>
+   131→   131→        <div class="text-gray-500 text-xs mt-1">
+   132→   132→         Trainees
+   133→   133→        </div>
+   134→   134→       </div>
+   135→   135→      </div>
+   136→   136→     </div><!-- Hero Visual -->
+   137→   137→     <div class="hidden lg:flex justify-center items-center relative">
+   138→   138→      <div class="w-80 h-80 rounded-full relative" style="background:radial-gradient(circle,rgba(34,211,238,0.1),transparent 70%);">
+   139→   139→       <div class="absolute inset-8 rounded-full glass flex items-center justify-center" style="border:2px solid rgba(34,211,238,0.15);">
+   140→   140→        <div class="text-center">
+   141→   141→         <div class="text-6xl mb-3">
+   142→   142→          🌾
+   143→   143→         </div>
+   144→   144→         <div class="text-white font-bold text-xl">
+   145→   145→          Abdelkader Atia
+   146→   146→         </div>
+   147→   147→         <div class="text-cyan-400 text-sm">
+   148→   148→          PhD Researcher
+   149→   149→         </div>
+   150→   150→        </div>
+   151→   151→
+   152→   152→      </div>
+   153→   153→     </div>
+   154→   154→    </div>
+   155→   155→   </div>
+   156→   156→  </div>
+   157→   157→
+   158→   158→  </section><!-- ABOUT SECTION -->
+   159→   159→  <section id="about" class="section-padding relative">
+   160→   160→   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+   161→   161→    <div class="text-center mb-16">
+   162→   162→     <span class="text-cyan-400 text-sm font-semibold tracking-wider">GET TO KNOW ME</span>
+   163→   163→     <h2 id="aboutTitle" class="text-3xl sm:text-4xl font-800 text-white mt-3 gradient-border inline-block pb-3">About Me</h2>
+   164→   164→    </div>
+   165→   165→    <div class="grid lg:grid-cols-2 gap-12 items-start">
+   166→   166→     <div>
+   167→   167→      <p class="text-gray-300 text-lg leading-loose mb-6">I'm <strong class="text-white">Abdelkader Atia</strong>, an agronomy professional with <strong>12+ years of experience</strong> in agricultural engineering, professional training, and project supervision, I am currently pursuing a PhD in Agronomy (Animal Production), building on a Master's in Plant Production and an Engineer's degree in Arid Region Animal Breeding.</p>
+   168→   168→      <p class="text-gray-400 leading-loose mb-8">My work spans agricultural engineering, pedagogical design, and digital innovation. I serve as a <strong>Specialized Teacher</strong> at Hassani Abdelkrim INSFP in EL-Oued, where I design vocational training programs, supervise agriculture operations, and mentor students in modern farming techniques. I am also the author of the book <em>"On the Edge"</em> (ISBN 9947-26-849-1).</p><!-- Expertise Tags -->
+   169→   169→      <div class="flex flex-wrap gap-3">
+   170→   170→       <span class="px-4 py-2 rounded-lg glass text-cyan-400 text-sm">🔬 Animal Production</span> <span class="px-4 py-2 rounded-lg glass text-cyan-400 text-sm">🌾 Agronomy</span> <span class="px-4 py-2 rounded-lg glass text-cyan-400 text-sm">📊 Digital Agriculture</span> <span class="px-4 py-2 rounded-lg glass text-cyan-400 text-sm">🎓 Vocational Training</span> <span class="px-4 py-2 rounded-lg glass text-cyan-400 text-sm">💼 Agribusiness</span> <span class="px-4 py-2 rounded-lg glass text-cyan-400 text-sm">📖 Pedagogical Engineering</span>
+   171→   171→      </div>
+   172→   172→      <div class="flex flex-wrap gap-3 mt-6">
+   173→   173→        <button onclick="openCV()" class="btn-outline text-cyan-400 px-5 py-2.5 rounded-xl text-sm font-semibold flex items-center gap-2 hover:bg-cyan-500/10 transition"><i data-lucide="eye" style="width:16px;height:16px"></i> Preview CV</button>
+   174→   174→        <button onclick="downloadCV()" class="btn-primary text-white px-5 py-2.5 rounded-xl text-sm font-semibold flex items-center gap-2"><i data-lucide="download" style="width:16px;height:16px"></i> Download CV</button>
+   175→   175→      </div>
+   176→   176→     </div><!-- Stats Grid -->
+   177→   177→     <div class="grid grid-cols-2 gap-4">
+   178→   178→      <div class="glass-card rounded-2xl p-6 text-center">
+   179→   179→       <div class="text-4xl font-900 gradient-text mb-2">
+   180→   180→        +12
+   181→   181→       </div>
+   182→   182→       <div class="text-gray-400 text-sm">
+   183→   183→        Years of Experience
+   184→   184→       </div>
+   185→   185→      </div>
+   186→   186→      <div class="glass-card rounded-2xl p-6 text-center">
+   187→   187→       <div class="text-4xl font-900 gradient-text mb-2">
+   188→   188→        +25
+   189→   189→       </div>
+   190→   190→       <div class="text-gray-400 text-sm">
+   191→   191→        Research Projects
+   192→   192→       </div>
+   193→   193→      </div>
+   194→   194→      <div class="glass-card rounded-2xl p-6 text-center">
+   195→   195→       <div class="text-4xl font-900 gradient-text mb-2">
+   196→   196→        +50
+   197→   197→       </div>
+   198→   198→       <div class="text-gray-400 text-sm">
+   199→   199→        Training Programs
+   200→   200→       </div>
+   201→   201→      </div>
+   202→   202→      <div class="glass-card rounded-2xl p-6 text-center">
+   203→   203→       <div class="text-4xl font-900 gradient-text mb-2">
+   204→   204→        +500
+   205→   205→       </div>
+   206→   206→       <div class="text-gray-400 text-sm">
+   207→   207→        Trainees & Beneficiaries
+   208→   208→       </div>
+   209→   209→      </div>
+   210→   210→     </div>
+   211→   211→    </div>
+   212→   212→   </div>
+   213→   213→  </section><!-- SKILLS SECTION -->
+   214→   214→  <section id="skills" class="section-padding" style="background:linear-gradient(180deg,rgba(15,21,56,0.5),#0a0e27);">
+   215→   215→   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+   216→   216→    <div class="text-center mb-16">
+   217→   217→     <span class="text-cyan-400 text-sm font-semibold">MY ABILITIES</span>
+   218→   218→     <h2 class="text-3xl sm:text-4xl font-800 text-white mt-3 gradient-border inline-block pb-3">Skills</h2>
+   219→   219→    </div>
+   220→   220→    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+   221→   221→     <!-- Research -->
+   222→   222→     <div class="glass-card rounded-2xl p-6">
+   223→   223→      <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl mb-4" style="background:rgba(34,211,238,0.1);">
+   224→   224→       🔬
+   225→   225→      </div>
+   226→   226→      <h3 class="text-white font-bold text-lg mb-4">Research Skills</h3>
+   227→   227→      <div class="space-y-3">
+   228→   228→       <div>
+   229→   229→        <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">Data Analysis</span><span class="text-cyan-400">95%</span>
+   230→   230→        </div>
+   231→   231→        <div class="progress-bar">
+   232→   232→         <div class="progress-fill" style="width:0%" data-width="95%"></div>
+   233→   233→        </div>
+   234→   234→       </div>
+   235→   235→       <div>
+   236→   236→        <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">Experimental Design</span><span class="text-cyan-400">90%</span>
+   237→   237→        </div>
+   238→   238→        <div class="progress-bar">
+   239→   239→         <div class="progress-fill" style="width:0%" data-width="90%"></div>
+   240→   240→        </div>
+   241→   241→       </div>
+   242→   242→       <div>
+   243→   243→        <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">Scientific Writing</span><span class="text-cyan-400">92%</span>
+   244→   244→        </div>
+   245→   245→        <div class="progress-bar">
+   246→   246→         <div class="progress-fill" style="width:0%" data-width="92%"></div>
+   247→   247→        </div>
+   248→   248→       </div>
+   249→   249→      </div>
+   250→   250→     </div><!-- Technical -->
+   251→   251→     <div class="glass-card rounded-2xl p-6">
+   252→   252→      <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl mb-4" style="background:rgba(251,191,36,0.1);">
+   253→   253→       💻
+   254→   254→      </div>
+   255→   255→       <h3 class="text-white font-bold text-lg mb-4">Technical Skills</h3>
+   256→   256→       <div class="space-y-3">
+   257→   257→        <div>
+   258→   258→         <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">Power BI / IBM SPSS</span><span class="text-cyan-400">90%</span>
+   259→   259→         </div>
+   260→   260→         <div class="progress-bar">
+   261→   261→          <div class="progress-fill" style="width:0%" data-width="90%"></div>
+   262→   262→         </div>
+   263→   263→        </div>
+   264→   264→        <div>
+   265→   265→         <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">R / Excel / Data Viz</span><span class="text-cyan-400">88%</span>
+   266→   266→         </div>
+   267→   267→         <div class="progress-bar">
+   268→   268→          <div class="progress-fill" style="width:0%" data-width="88%"></div>
+   269→   269→         </div>
+   270→   270→        </div>
+   271→   271→        <div>
+   272→   272→         <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">EdrawMax / Xmind</span><span class="text-cyan-400">85%</span>
+   273→   273→         </div>
+   274→   274→         <div class="progress-bar">
+   275→   275→          <div class="progress-fill" style="width:0%" data-width="85%"></div>
+   276→   276→         </div>
+   277→   277→        </div>
+   278→   278→       </div>
+   279→   279→     </div><!-- Agricultural -->
+   280→   280→     <div class="glass-card rounded-2xl p-6">
+   281→   281→      <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl mb-4" style="background:rgba(34,211,238,0.1);">
+   282→   282→       🌱
+   283→   283→      </div>
+   284→   284→      <h3 class="text-white font-bold text-lg mb-4">Agricultural Skills</h3>
+   285→   285→      <div class="space-y-3">
+   286→   286→       <div>
+   287→   287→        <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">Livestock Production</span><span class="text-cyan-400">96%</span>
+   288→   288→        </div>
+   289→   289→        <div class="progress-bar">
+   290→   290→         <div class="progress-fill" style="width:0%" data-width="96%"></div>
+   291→   291→        </div>
+   292→   292→       </div>
+   293→   293→       <div>
+   294→   294→        <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">Breeding & Selection</span><span class="text-cyan-400">93%</span>
+   295→   295→        </div>
+   296→   296→        <div class="progress-bar">
+   297→   297→         <div class="progress-fill" style="width:0%" data-width="93%"></div>
+   298→   298→        </div>
+   299→   299→       </div>
+   300→   300→        <div>
+   301→   301→         <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">Animal Nutrition</span><span class="text-cyan-400">90%</span>
+   302→   302→         </div>
+   303→   303→         <div class="progress-bar">
+   304→   304→          <div class="progress-fill" style="width:0%" data-width="90%"></div>
+   305→   305→         </div>
+   306→   306→        </div>
+   307→   307→        <div>
+   308→   308→         <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">Garden Planner / Precision Ag</span><span class="text-cyan-400">88%</span>
+   309→   309→         </div>
+   310→   310→         <div class="progress-bar">
+   311→   311→          <div class="progress-fill" style="width:0%" data-width="88%"></div>
+   312→   312→         </div>
+   313→   313→        </div>
+   314→   314→       </div>
+   315→   315→      </div><!-- Training -->
+   316→   316→     <div class="glass-card rounded-2xl p-6">
+   317→   317→      <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl mb-4" style="background:rgba(251,191,36,0.1);">
+   318→   318→       🎤
+   319→   319→      </div>
+   320→   320→      <h3 class="text-white font-bold text-lg mb-4">Training Skills</h3>
+   321→   321→      <div class="space-y-3">
+   322→   322→       <div>
+   323→   323→        <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">FBS Trainer</span><span class="text-cyan-400">95%</span>
+   324→   324→        </div>
+   325→   325→        <div class="progress-bar">
+   326→   326→         <div class="progress-fill" style="width:0%" data-width="95%"></div>
+   327→   327→        </div>
+   328→   328→       </div>
+   329→   329→       <div>
+   330→   330→        <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">Program Design</span><span class="text-cyan-400">88%</span>
+   331→   331→        </div>
+   332→   332→        <div class="progress-bar">
+   333→   333→         <div class="progress-fill" style="width:0%" data-width="88%"></div>
+   334→   334→        </div>
+   335→   335→       </div>
+   336→   336→       <div>
+   337→   337→        <div class="flex justify-between text-sm mb-1"><span class="text-gray-400">Communication</span><span class="text-cyan-400">92%</span>
+   338→   338→        </div>
+   339→   339→        <div class="progress-bar">
+   340→   340→         <div class="progress-fill" style="width:0%" data-width="92%"></div>
+   341→   341→        </div>
+   342→   342→       </div>
+   343→   343→      </div>
+   344→   344→     </div>
+   345→   345→    </div>
+   346→   346→   </div>
+   347→   347→  </section><!-- EXPERIENCE / TIMELINE -->
+   348→   348→  <section id="experience" class="section-padding">
+   349→   349→   <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+   350→   350→    <div class="text-center mb-16">
+   351→   351→     <span class="text-cyan-400 text-sm font-semibold">MY JOURNEY</span>
+   352→   352→     <h2 class="text-3xl sm:text-4xl font-800 text-white mt-3 gradient-border inline-block pb-3">Professional Experience</h2>
+   353→   353→    </div>
+   354→   354→    <div class="relative">
+   355→   355→     <div class="timeline-line hidden md:block"></div>
+   356→   356→     <div class="space-y-12">
+   357→   357→       <!-- Item 1 -->
+   358→   358→       <div class="md:flex items-center">
+   359→   359→        <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+   360→   360→         <div class="glass-card rounded-2xl p-6">
+   361→   361→          <span class="text-gold-400 text-sm font-bold">2022 - Present</span>
+   362→   362→          <h3 class="text-white font-bold text-lg mt-2">Specialized Teacher (Pedagogical Engineering)</h3>
+   363→   363→          <p class="text-gray-400 text-sm mt-1">Hassani Abdelkrim INSFP, EL-Oued</p>
+   364→   364→          <p class="text-gray-500 text-sm mt-1">Designing vocational training curricula, supervising agriculture operations, and mentoring students in modern farming and pedagogical techniques</p>
+   365→   365→         </div>
+   366→   366→        </div>
+   367→   367→        <div class="hidden md:flex w-8 h-8 rounded-full items-center justify-center z-10 mx-auto" style="background:linear-gradient(135deg,#06b6d4,#22d3ee);flex-shrink:0;">
+   368→   368→         <i data-lucide="graduation-cap" style="width:14px;height:14px;color:white"></i>
+   369→   369→        </div>
+   370→   370→        <div class="md:w-1/2 md:pl-12"></div>
+   371→   371→       </div><!-- Item 2 -->
+   372→   372→      <div class="md:flex items-center">
+   373→   373→       <div class="md:w-1/2 md:pr-12"></div>
+   374→   374→       <div class="hidden md:flex w-8 h-8 rounded-full items-center justify-center z-10 mx-auto" style="background:linear-gradient(135deg,#f59e0b,#fbbf24);flex-shrink:0;">
+   375→   375→        <i data-lucide="users" style="width:14px;height:14px;color:#0a0e27"></i>
+   376→   376→       </div>
+   377→   377→        <div class="md:w-1/2 md:pl-12 mb-4 md:mb-0">
+   378→   378→         <div class="glass-card rounded-2xl p-6">
+   379→   379→          <span class="text-gold-400 text-sm font-bold">2016 - Present</span>
+   380→   380→          <h3 class="text-white font-bold text-lg mt-2">Agriculture Exploitation Supervisor</h3>
+   381→   381→          <p class="text-gray-500 text-sm mt-1">Overseeing agricultural operations, managing crop and livestock production systems, and implementing best practices in sustainable farming</p>
+   382→   382→         </div>
+   383→   383→        </div>
+   384→   384→       </div><!-- Item 3 -->
+   385→   385→      <div class="md:flex items-center">
+   386→   386→        <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+   387→   387→         <div class="glass-card rounded-2xl p-6">
+   388→   388→          <span class="text-gold-400 text-sm font-bold">2021 - Present</span>
+   389→   389→          <h3 class="text-white font-bold text-lg mt-2">Vocational Trainer</h3>
+   390→   390→          <p class="text-gray-500 text-sm mt-1">Hassani Abdelkrim INSFP, EL-Oued</p>
+   391→   391→          <p class="text-gray-400 text-sm mt-1">Delivering hands-on training in agricultural techniques, field farmer schools (FBS), and professional skill development for students and farmers</p>
+   392→   392→         </div>
+   393→   393→        </div>
+   394→   394→        <div class="hidden md:flex w-8 h-8 rounded-full items-center justify-center z-10 mx-auto" style="background:linear-gradient(135deg,#06b6d4,#22d3ee);flex-shrink:0;">
+   395→   395→         <i data-lucide="users" style="width:14px;height:14px;color:white"></i>
+   396→   396→        </div>
+   397→   397→        <div class="md:w-1/2 md:pl-12"></div>
+   398→   398→        </div><!-- Item 4 - FBS -->
+   399→   399→       <div class="md:flex items-center">
+   400→   400→        <div class="md:w-1/2 md:pr-12"></div>
+   401→   401→        <div class="hidden md:flex w-8 h-8 rounded-full items-center justify-center z-10 mx-auto" style="background:linear-gradient(135deg,#f59e0b,#fbbf24);flex-shrink:0;">
+   402→   402→         <i data-lucide="badge-check" style="width:14px;height:14px;color:#0a0e27"></i>
+   403→   403→        </div>
+   404→   404→         <div class="md:w-1/2 md:pl-12 mb-4 md:mb-0">
+   405→   405→          <div class="glass-card rounded-2xl p-6">
+   406→   406→           <span class="text-gold-400 text-sm font-bold">2022</span>
+   407→   407→           <h3 class="text-white font-bold text-lg mt-2">FBS Assistant Master Trainer</h3>
+   408→   408→           <p class="text-gray-400 text-sm mt-1">ABF (GIZ) — Agri-Business Facility for Africa</p>
+   409→   409→           <p class="text-gray-500 text-sm mt-1">Certified Assistant Master Trainer in Farmer Business School (FBS). Trained 500+ farmers and delivered Training of Trainers programs across Algeria.</p>
+   410→   410→          </div>
+   411→   411→         </div>
+   412→   412→        </div><!-- Item 5 -->
+   413→   413→       <div class="md:flex items-center">
+   414→   414→        <div class="md:w-1/2 md:pr-12"></div>
+   415→   415→        <div class="hidden md:flex w-8 h-8 rounded-full items-center justify-center z-10 mx-auto" style="background:linear-gradient(135deg,#f59e0b,#fbbf24);flex-shrink:0;">
+   416→   416→         <i data-lucide="code" style="width:14px;height:14px;color:#0a0e27"></i>
+   417→   417→        </div>
+   418→   418→         <div class="md:w-1/2 md:pl-12 mb-4 md:mb-0">
+   419→   419→          <div class="glass-card rounded-2xl p-6">
+   420→   420→           <span class="text-gold-400 text-sm font-bold">2011 - 2016</span>
+   421→   421→           <h3 class="text-white font-bold text-lg mt-2">Agriculture Engineer</h3>
+   422→   422→           <p class="text-gray-500 text-sm mt-1">Engineer's degree in Arid Region Animal Breeding</p>
+   423→   423→           <p class="text-gray-400 text-sm mt-1">Practical experience in animal production systems, breeding programs, and farm management in arid environments</p>
+   424→   424→          </div>
+   425→   425→         </div>
+   426→   426→        </div><!-- Item 6 - Certifications -->
+   427→   427→       <div class="md:flex items-center">
+   428→   428→         <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+   429→   429→          <div class="glass-card rounded-2xl p-6">
+   430→   430→           <span class="text-gold-400 text-sm font-bold">2024 - 2026</span>
+   431→   431→           <h3 class="text-white font-bold text-lg mt-2">50+ International Training Certifications</h3>
+   432→   432→           <p class="text-gray-500 text-sm mt-1">Advanced certifications from Wageningen, FAO, ASM, GIZ, Oxford Climate Society, and other prestigious institutions</p>
+   433→   433→           <p class="text-gray-400 text-sm mt-1">Continuous professional development in agriculture, research methodology, pedagogical engineering, and climate-smart farming</p>
+   434→   434→          </div>
+   435→   435→         </div>
+   436→   436→         <div class="hidden md:flex w-8 h-8 rounded-full items-center justify-center z-10 mx-auto" style="background:linear-gradient(135deg,#06b6d4,#22d3ee);flex-shrink:0;">
+   437→   437→          <i data-lucide="award" style="width:14px;height:14px;color:white"></i>
+   438→   438→         </div>
+   439→   439→         <div class="md:w-1/2 md:pl-12"></div>
+   440→   440→        </div><!-- Item 7 - Book & Leadership -->
+   441→   441→      <div class="md:flex items-center">
+   442→   442→       <div class="md:w-1/2 md:pr-12"></div>
+   443→   443→       <div class="hidden md:flex w-8 h-8 rounded-full items-center justify-center z-10 mx-auto" style="background:linear-gradient(135deg,#f59e0b,#fbbf24);flex-shrink:0;">
+   444→   444→        <i data-lucide="trophy" style="width:14px;height:14px;color:#0a0e27"></i>
+   445→   445→       </div>
+   446→   446→        <div class="md:w-1/2 md:pl-12 mb-4 md:mb-0">
+   447→   447→         <div class="glass-card rounded-2xl p-6">
+   448→   448→          <span class="text-gold-400 text-sm font-bold">2006 / Ongoing</span>
+   449→   449→          <h3 class="text-white font-bold text-lg mt-2">Published Author & Community Leader</h3>
+   450→   450→          <p class="text-gray-400 text-sm mt-1">Published book <em>"On the Edge"</em> (ISBN 9947-26-849-1, 2006)</p>
+   451→   451→          <p class="text-gray-500 text-sm mt-1">Vice President of Beekeeper Association, IAPA eLearning Ambassador, member of ASM, EAS, and Focal Point for Algeria in multiple international organizations</p>
+   452→   452→         </div>
+   453→   453→        </div>
+   454→   454→       </div>
+   455→   455→      </div>
+   456→   456→     </div>
+   457→   457→    </div>
+   458→   458→   </section><!-- PROJECTS SECTION -->
+   459→   459→  <section id="projects" class="section-padding" style="background:linear-gradient(180deg,rgba(15,21,56,0.5),#0a0e27);">
+   460→   460→   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+   461→   461→    <div class="text-center mb-16">
+   462→   462→     <span class="text-cyan-400 text-sm font-semibold">MY WORK</span>
+   463→   463→     <h2 class="text-3xl sm:text-4xl font-800 text-white mt-3 gradient-border inline-block pb-3">Projects</h2>
+   464→   464→    </div><!-- Filter Tabs -->
+   465→   465→    <div class="flex flex-wrap justify-center gap-3 mb-10" id="projectFilters">
+   466→   466→     <button onclick="filterProjects('all')" class="filter-btn px-5 py-2 rounded-lg text-sm font-semibold btn-primary text-white" data-filter="all">All</button> <button onclick="filterProjects('research')" class="filter-btn px-5 py-2 rounded-lg text-sm font-semibold btn-outline text-gray-400" data-filter="research">Research</button> <button onclick="filterProjects('app')" class="filter-btn px-5 py-2 rounded-lg text-sm font-semibold btn-outline text-gray-400" data-filter="app">Apps</button> <button onclick="filterProjects('training')" class="filter-btn px-5 py-2 rounded-lg text-sm font-semibold btn-outline text-gray-400" data-filter="training">Training</button> <button onclick="filterProjects('business')" class="filter-btn px-5 py-2 rounded-lg text-sm font-semibold btn-outline text-gray-400" data-filter="business">Business</button>
+   467→   467→    </div>
+   468→   468→    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="projectGrid">
+   469→   469→     <!-- Project cards inserted by JS -->
+   470→   470→    </div>
+   471→   471→   </div>
+   472→   472→  </section><!-- SERVICES SECTION -->
+   473→   473→  <section id="services" class="section-padding">
+   474→   474→   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+   475→   475→    <div class="text-center mb-16">
+   476→   476→     <span class="text-cyan-400 text-sm font-semibold">WHAT I OFFER</span>
+   477→   477→     <h2 id="servicesTitle" class="text-3xl sm:text-4xl font-800 text-white mt-3 gradient-border inline-block pb-3">Services</h2>
+   478→   478→    </div>
+   479→   479→    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+   480→   480→     <div class="glass-card rounded-2xl p-6 text-center">
+   481→   481→      <div class="w-14 h-14 mx-auto rounded-2xl flex items-center justify-center text-2xl mb-4" style="background:rgba(34,211,238,0.1);">
+   482→   482→       🎓
+   483→   483→      </div>
+   484→   484→      <h3 class="text-white font-bold text-lg mb-3">Agricultural Training</h3>
+   485→   485→      <p class="text-gray-400 text-sm mb-5">Specialized training programs in livestock production and modern agriculture</p><a href="#contact" class="text-cyan-400 text-sm font-semibold hover:text-cyan-300 flex items-center justify-center gap-1">Request Service <i data-lucide="arrow-right" style="width:14px;height:14px"></i></a>
+   486→   486→     </div>
+   487→   487→     <div class="glass-card rounded-2xl p-6 text-center">
+   488→   488→      <div class="w-14 h-14 mx-auto rounded-2xl flex items-center justify-center text-2xl mb-4" style="background:rgba(251,191,36,0.1);">
+   489→   489→       🔬
+   490→   490→      </div>
+   491→   491→      <h3 class="text-white font-bold text-lg mb-3">Research Consulting</h3>
+   492→   492→      <p class="text-gray-400 text-sm mb-5">Support for researchers in experimental design, data analysis, and scientific publishing</p><a href="#contact" class="text-cyan-400 text-sm font-semibold hover:text-cyan-300 flex items-center justify-center gap-1">Request Service <i data-lucide="arrow-right" style="width:14px;height:14px"></i></a>
+   493→   493→     </div>
+   494→   494→     <div class="glass-card rounded-2xl p-6 text-center">
+   495→   495→      <div class="w-14 h-14 mx-auto rounded-2xl flex items-center justify-center text-2xl mb-4" style="background:rgba(34,211,238,0.1);">
+   496→   496→       📊
+   497→   497→      </div>
+   498→   498→      <h3 class="text-white font-bold text-lg mb-3">Data Analysis</h3>
+   499→   499→      <p class="text-gray-400 text-sm mb-5">Advanced statistical analysis and data visualization using latest tools</p><a href="#contact" class="text-cyan-400 text-sm font-semibold hover:text-cyan-300 flex items-center justify-center gap-1">Request Service <i data-lucide="arrow-right" style="width:14px;height:14px"></i></a>
+   500→   500→     </div>
+
+[showing lines 1-500 of 917; use offset=501 with limit to continue reading]
