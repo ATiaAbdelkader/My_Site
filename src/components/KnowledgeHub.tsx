@@ -42,7 +42,7 @@ export default function KnowledgeHub() {
               className={`px-5 py-2 rounded-lg text-sm font-semibold transition-all min-h-[44px] ${
                 activeTab === tab.key
                   ? 'bg-gradient-to-r from-cyan-500 to-cyan-600 text-white shadow-lg shadow-cyan-500/25'
-                  : 'dark:bg-white/5 bg-gray-100 dark:text-gray-400 text-gray-600 dark:hover:bg-white/10 hover:bg-gray-200'
+                  : 'dark:bg-slate-800/60 bg-gray-100 dark:text-gray-300 text-gray-600 dark:hover:bg-slate-700/60 hover:bg-gray-200'
               }`}
             >
               {tab.label}

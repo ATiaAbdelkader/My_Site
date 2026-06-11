@@ -1,15 +1,9 @@
 import type { Metadata } from "next";
-import { Inter, Cairo } from "next/font/google";
+import { Cairo } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "@/components/theme-provider";
 import { LanguageProvider } from "@/lib/language-context";
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  display: "swap",
-});
 
 const cairo = Cairo({
   variable: "--font-cairo",
@@ -55,7 +49,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${cairo.variable} antialiased bg-background text-foreground`}
+        className={`${cairo.variable} antialiased bg-background text-foreground`
         style={{ fontFamily: "'Cairo', sans-serif" }}
       >
         <ThemeProvider

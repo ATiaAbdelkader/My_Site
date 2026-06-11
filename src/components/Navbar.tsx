@@ -101,7 +101,7 @@ export default function Navbar() {
             {/* Language Switcher */}
             <button
               onClick={switchLang}
-              className="px-3 py-1.5 rounded-lg text-sm font-semibold dark:bg-white/10 bg-gray-100 dark:text-cyan-400 text-cyan-600 hover:dark:bg-white/20 hover:bg-gray-200 transition-all min-h-[44px] min-w-[44px] flex items-center justify-center"
+              className="px-3 py-1.5 rounded-lg text-sm font-semibold dark:bg-slate-800/60 bg-gray-100 dark:text-cyan-400 text-cyan-600 dark:hover:bg-slate-700/60 hover:bg-gray-200 transition-all min-h-[44px] min-w-[44px] flex items-center justify-center"
               aria-label="Switch language"
             >
               {langLabels[language]}
@@ -111,7 +111,7 @@ export default function Navbar() {
             {mounted && (
               <button
                 onClick={toggleTheme}
-                className="p-2 rounded-lg dark:bg-white/10 bg-gray-100 dark:text-yellow-400 text-yellow-600 hover:dark:bg-white/20 hover:bg-gray-200 transition-all min-h-[44px] min-w-[44px] flex items-center justify-center"
+                className="p-2 rounded-lg dark:bg-slate-800/60 bg-gray-100 dark:text-yellow-400 text-yellow-600 dark:hover:bg-slate-700/60 hover:bg-gray-200 transition-all min-h-[44px] min-w-[44px] flex items-center justify-center"
                 aria-label="Toggle theme"
               >
                 {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
@@ -121,7 +121,7 @@ export default function Navbar() {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="lg:hidden p-2 rounded-lg dark:bg-white/10 bg-gray-100 dark:text-white text-gray-900 hover:dark:bg-white/20 hover:bg-gray-200 transition-all min-h-[44px] min-w-[44px] flex items-center justify-center"
+              className="lg:hidden p-2 rounded-lg dark:bg-slate-800/60 bg-gray-100 dark:text-white text-gray-900 dark:hover:bg-slate-700/60 hover:bg-gray-200 transition-all min-h-[44px] min-w-[44px] flex items-center justify-center"
               aria-label="Toggle menu"
             >
               {isOpen ? <X size={20} /> : <Menu size={20} />}
@@ -148,7 +148,7 @@ export default function Navbar() {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: i * 0.05 }}
                   onClick={() => scrollToSection(sectionIds[item])}
-                  className="w-full text-left rtl:text-right px-4 py-3 rounded-lg text-sm font-medium dark:text-gray-300 text-gray-600 dark:hover:text-cyan-400 hover:text-cyan-600 dark:hover:bg-white/5 hover:bg-gray-50 transition-colors min-h-[44px]"
+                  className="w-full text-left rtl:text-right px-4 py-3 rounded-lg text-sm font-medium dark:text-gray-300 text-gray-600 dark:hover:text-cyan-400 hover:text-cyan-600 dark:hover:bg-slate-800/40 hover:bg-gray-50 transition-colors min-h-[44px]"
                 >
                   {t.nav[item as keyof typeof t.nav]}
                 </motion.button>

@@ -74,7 +74,7 @@ export default function About() {
 
             {/* CV Buttons */}
             <div className="flex flex-wrap gap-3 pt-4">
-              <button className="px-5 py-2.5 rounded-xl dark:bg-white/5 bg-gray-100 border dark:border-white/10 border-gray-200 dark:text-white text-gray-700 font-medium text-sm hover:dark:bg-white/10 hover:bg-gray-200 transition-all flex items-center gap-2 min-h-[44px]">
+              <button className="px-5 py-2.5 rounded-xl dark:bg-slate-800/60 bg-gray-100 border dark:border-cyan-500/20 border-gray-200 dark:text-white text-gray-700 font-medium text-sm dark:hover:bg-slate-700/60 hover:bg-gray-200 transition-all flex items-center gap-2 min-h-[44px]">
                 <Eye size={16} />
                 {t.about.previewCv}
               </button>
