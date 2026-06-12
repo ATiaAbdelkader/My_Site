@@ -14,7 +14,7 @@ interface ContactSubmission {
   createdAt: string;
 }
 
-const ADMIN_PASSWORD = 'atia2024';
+// Password is verified server-side via /api/admin/auth
 
 export default function AdminDashboard() {
   const { language } = useLanguage();
@@ -43,11 +43,23 @@ export default function AdminDashboard() {
     date: language === 'ar' ? 'التاريخ' : language === 'fr' ? 'Date' : 'Date',
   };
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (password === ADMIN_PASSWORD) {
-      setIsAuthenticated(true);
-      localStorage.setItem('admin-auth', 'true');
+    try {
+      const res = await fetch('/api/admin/auth', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ password }),
+      });
+      if (res.ok) {
+        setIsAuthenticated(true);
+        localStorage.setItem('admin-auth', 'true');
+      } else {
+        // Show wrong password feedback
+        setPassword('');
+      }
+    } catch {
+      setPassword('');
     }
   };
 

@@ -1,9 +1,29 @@
-skills/
+# Dependencies
 node_modules/
+
+# Build output
 .next/
-.env*
-*.log
+
+# Environment files
+.env
+.env*.local
+
+# Database
 db/
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Platform-specific
+skills/
 tool-results/
 agent-ctx/
-worklog.md
+worklog.md/
+
+# OS
+.DS_Store
+Thumbs.db
