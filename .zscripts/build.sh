@@ -29,6 +29,8 @@ mkdir -p "$BUILD_DIR"
 if [ -d ".next/standalone" ]; then
   echo "  - Copying standalone server..."
   cp -r .next/standalone "$BUILD_DIR/next-service-dist/"
+  # Fix DATABASE_URL in standalone .env to use deployed container path
+  echo "DATABASE_URL=file:/app/db/custom.db" > "$BUILD_DIR/next-service-dist/.env"
 fi
 
 # Copy static files
