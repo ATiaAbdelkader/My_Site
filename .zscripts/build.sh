@@ -35,9 +35,9 @@ mkdir -p "$BUILD_DIR"
 echo "📦 安装依赖..."
 bun install
 
-# 构建 Next.js 应用
-echo "🔨 构建 Next.js 应用..."
-bun run build
+# 构建 Next.js 应用 (standalone mode for local/VPS deployment)
+echo "🔨 构建 Next.js 应用 (standalone mode)..."
+bun run build:standalone
 
 # 构建 mini-services
 # 检查 Next.js 项目目录下是否有 mini-services 目录
