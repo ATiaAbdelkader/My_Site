@@ -4,12 +4,30 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '@/lib/language-context';
 import { ArrowRight } from 'lucide-react';
+import ProjectDetailModal from '@/components/ProjectDetailModal';
 
 type FilterCat = 'all' | 'research' | 'app' | 'training' | 'business';
+
+interface ProjectDetail {
+  icon: string;
+  name: string;
+  cat: string;
+  desc: string;
+  fullDesc?: string;
+  techStack?: string[];
+  highlights?: string[];
+  year?: string;
+  teamSize?: string;
+  impact?: string;
+  link?: string;
+  github?: string;
+}
 
 export default function Projects() {
   const { t } = useLanguage();
   const [filter, setFilter] = useState<FilterCat>('all');
+  const [selectedProject, setSelectedProject] = useState<ProjectDetail | null>(null);
+  const [modalOpen, setModalOpen] = useState(false);
 
   const filters: { key: FilterCat; label: string }[] = [
     { key: 'all', label: t.projects.filters.all },
@@ -28,6 +46,11 @@ export default function Projects() {
     research: t.projects.filters.research,
     training: t.projects.filters.training,
     business: t.projects.filters.business,
+  };
+
+  const openProject = (project: any) => {
+    setSelectedProject(project as ProjectDetail);
+    setModalOpen(true);
   };
 
   return (
@@ -80,7 +103,8 @@ export default function Projects() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.3, delay: i * 0.05 }}
-                className="glass-card rounded-2xl overflow-hidden"
+                className="glass-card rounded-2xl overflow-hidden cursor-pointer"
+                onClick={() => openProject(project)}
               >
                 <div className="h-36 flex items-center justify-center text-5xl bg-gradient-to-br dark:from-cyan-500/10 dark:to-cyan-500/3 from-cyan-50 to-cyan-100/50">
                   {project.icon}
@@ -105,6 +129,13 @@ export default function Projects() {
           </AnimatePresence>
         </div>
       </div>
+
+      {/* Project Detail Modal */}
+      <ProjectDetailModal
+        project={selectedProject}
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+      />
     </section>
   );
 }

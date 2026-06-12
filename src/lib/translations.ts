@@ -9,7 +9,9 @@ export interface Translations {
     projects: string;
     services: string;
     achievements: string;
+    gallery: string;
     knowledge: string;
+    booking: string;
     contact: string;
   };
   hero: {
@@ -201,7 +203,9 @@ export const translations: Record<Language, Translations> = {
       projects: 'المشاريع',
       services: 'الخدمات',
       achievements: 'الإنجازات',
+      gallery: 'معرض',
       knowledge: 'أفكار',
+      booking: 'حجز',
       contact: 'تواصل',
     },
     hero: {
@@ -446,7 +450,9 @@ export const translations: Record<Language, Translations> = {
       projects: 'Projects',
       services: 'Services',
       achievements: 'Achievements',
+      gallery: 'Gallery',
       knowledge: 'Insights',
+      booking: 'Booking',
       contact: 'Contact',
     },
     hero: {
@@ -691,7 +697,9 @@ export const translations: Record<Language, Translations> = {
       projects: 'Projets',
       services: 'Services',
       achievements: 'Réalisations',
+      gallery: 'Galerie',
       knowledge: 'Savoir',
+      booking: 'Réservation',
       contact: 'Contact',
     },
     hero: {

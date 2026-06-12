@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import dynamic from 'next/dynamic';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
@@ -16,6 +15,12 @@ import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import Onboarding from '@/components/Onboarding';
+import Chatbot from '@/components/Chatbot';
+import ScrollProgress from '@/components/ScrollProgress';
+import SmartNotifications from '@/components/SmartNotifications';
+import InteractiveMap from '@/components/InteractiveMap';
+import ImageGallery from '@/components/ImageGallery';
+import BookingCalendar from '@/components/BookingCalendar';
 
 const STORAGE_KEY = 'portfolio-onboarding-completed';
 
@@ -37,10 +42,12 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <ScrollProgress />
       {mounted && showOnboarding && (
         <Onboarding onComplete={handleOnboardingComplete} />
       )}
       <Navbar />
+      <SmartNotifications />
       <main className="flex-1">
         <Hero />
         <About />
@@ -49,12 +56,16 @@ export default function Home() {
         <Projects />
         <Services />
         <Achievements />
+        <ImageGallery />
+        <InteractiveMap />
         <KnowledgeHub />
         <Testimonials />
+        <BookingCalendar />
         <Contact />
       </main>
       <Footer />
       <ScrollToTop />
+      <Chatbot />
     </div>
   );
 }

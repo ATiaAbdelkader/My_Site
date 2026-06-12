@@ -4,6 +4,7 @@ import { useEffect, useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '@/lib/language-context';
 import { ArrowDown, Mail } from 'lucide-react';
+import TypewriterText from '@/components/TypewriterText';
 
 function AnimatedCounter({ target, duration = 2000, suffix = '' }: { target: number; duration?: number; suffix?: string }) {
   const [count, setCount] = useState(0);
@@ -99,7 +100,7 @@ export default function Hero() {
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 leading-tight"
           >
             <span className="dark:text-white text-gray-900">{t.hero.title}</span>{' '}
-            <span className="gradient-text">{t.hero.titleHighlight}</span>
+            <TypewriterText />
             <br />
             <span className="dark:text-white text-gray-900">{t.hero.titleEnd}</span>
           </motion.h1>

@@ -2,7 +2,8 @@
 
 import { motion } from 'framer-motion';
 import { useLanguage } from '@/lib/language-context';
-import { Eye, Download } from 'lucide-react';
+import { Download } from 'lucide-react';
+import CvViewerModal from '@/components/CvViewerModal';
 
 export default function About() {
   const { t } = useLanguage();
@@ -74,14 +75,15 @@ export default function About() {
 
             {/* CV Buttons */}
             <div className="flex flex-wrap gap-3 pt-4">
-              <button className="px-5 py-2.5 rounded-xl dark:bg-slate-800/60 bg-gray-100 border dark:border-cyan-500/20 border-gray-200 dark:text-white text-gray-700 font-medium text-sm dark:hover:bg-slate-700/60 hover:bg-gray-200 transition-all flex items-center gap-2 min-h-[44px]">
-                <Eye size={16} />
-                {t.about.previewCv}
-              </button>
-              <button className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-cyan-600 text-white font-medium text-sm hover:from-cyan-400 hover:to-cyan-500 transition-all flex items-center gap-2 min-h-[44px] shadow-lg shadow-cyan-500/20">
+              <CvViewerModal />
+              <a
+                href="/CV_AbdelkaderAtia.pdf"
+                download
+                className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-cyan-600 text-white font-medium text-sm hover:from-cyan-400 hover:to-cyan-500 transition-all flex items-center gap-2 min-h-[44px] shadow-lg shadow-cyan-500/20"
+              >
                 <Download size={16} />
                 {t.about.downloadCv}
-              </button>
+              </a>
             </div>
           </motion.div>
 

@@ -6,8 +6,9 @@ import { useLanguage } from '@/lib/language-context';
 import { Language } from '@/lib/translations';
 import { useTheme } from 'next-themes';
 import { Sun, Moon, Menu, X } from 'lucide-react';
+import ThemeCustomizer from '@/components/ThemeCustomizer';
 
-const navItems = ['home', 'about', 'skills', 'experience', 'projects', 'services', 'achievements', 'knowledge', 'contact'] as const;
+const navItems = ['home', 'about', 'skills', 'experience', 'projects', 'services', 'achievements', 'gallery', 'knowledge', 'booking', 'contact'] as const;
 
 const langLabels: Record<Language, string> = { ar: 'AR', en: 'EN', fr: 'FR' };
 
@@ -55,7 +56,9 @@ export default function Navbar() {
     projects: 'projects',
     services: 'services',
     achievements: 'achievements',
+    gallery: 'gallery',
     knowledge: 'knowledge',
+    booking: 'booking',
     contact: 'contact',
   };
 
@@ -117,6 +120,11 @@ export default function Navbar() {
                 {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
               </button>
             )}
+
+            {/* Accent Color Customizer */}
+            <div className="relative">
+              <ThemeCustomizer />
+            </div>
 
             {/* Mobile Menu Button */}
             <button
