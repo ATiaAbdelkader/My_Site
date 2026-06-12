@@ -8,11 +8,10 @@ export NEXT_TELEMETRY_DISABLED=1
 export PORT=3000
 
 echo "📦 Installing dependencies..."
-bun install
+npm install
 
 echo "🔧 Generating Prisma client..."
-bun run db:push 2>/dev/null || true
-bun run db:generate
+npx prisma generate 2>/dev/null || true
 
 echo "🚀 Starting Next.js dev server..."
-exec bun run dev
+exec npx next dev -p 3000

@@ -1,11 +1,11 @@
 import type { NextConfig } from "next";
 
-// Vercel sets VERCEL=1 automatically during build
-// Standalone output is only needed for Docker/self-hosted deployments
-const isVercel = !!process.env.VERCEL;
+// Standalone output is only needed for Docker/VPS self-hosted deployments.
+// Vercel and Z AI use standard Next.js output.
+const isSelfHosted = !!process.env.SELF_HOSTED;
 
 const nextConfig: NextConfig = {
-  output: isVercel ? undefined : "standalone",
+  output: isSelfHosted ? "standalone" : undefined,
   typescript: {
     ignoreBuildErrors: true,
   },

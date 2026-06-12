@@ -7,12 +7,12 @@ cd /home/z/my-project
 export NEXT_TELEMETRY_DISABLED=1
 
 echo "📦 Installing dependencies..."
-bun install
+npm install
 
 echo "🔧 Generating Prisma client..."
-bun run db:generate 2>/dev/null || true
+npx prisma generate 2>/dev/null || true
 
-echo "🔨 Building Next.js app (standalone mode)..."
-bun run build:standalone
+echo "🔨 Building Next.js app..."
+npx next build
 
 echo "✅ Build complete!"

@@ -13,6 +13,5 @@ if [ -z "$DATABASE_URL" ]; then
   export DATABASE_URL="file:./db/custom.db"
 fi
 
-echo "🚀 Starting Next.js production server..."
-cd .next/standalone
-exec node server.js
+echo "🚀 Starting Next.js production server on port $PORT..."
+exec npx next start -p 3000
