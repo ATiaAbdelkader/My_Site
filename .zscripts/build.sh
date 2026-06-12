@@ -85,25 +85,17 @@ cleanup() {
 }
 trap cleanup SIGTERM SIGINT
 
+# Z AI platform sets FC_CUSTOM_LISTEN_PORT=81 in deployed containers
+# The health check expects the app to listen on this port
+export PORT="${FC_CUSTOM_LISTEN_PORT:-${PORT:-81}}"
+export HOSTNAME="0.0.0.0"
+export NODE_ENV=production
 DEFAULT_PACKAGED_DB_PATH="/app/db/custom.db"
-DEFAULT_PACKAGED_DATABASE_URL="file:$DEFAULT_PACKAGED_DB_PATH"
+export DATABASE_URL="${DATABASE_URL:-file:$DEFAULT_PACKAGED_DB_PATH}"
 
 if [ -f "./next-service-dist/server.js" ]; then
-  echo "Starting Next.js production server..."
+  echo "Starting Next.js production server on port $PORT..."
   cd next-service-dist/
-  export NODE_ENV=production
-  export PORT="${PORT:-3000}"
-  export HOSTNAME="0.0.0.0"
-  export DATABASE_URL="${DATABASE_URL:-$DEFAULT_PACKAGED_DATABASE_URL}"
-
-  if [ "$DATABASE_URL" = "$DEFAULT_PACKAGED_DATABASE_URL" ]; then
-    if [ ! -f "$DEFAULT_PACKAGED_DB_PATH" ]; then
-      echo "Warning: Packaged database not found at $DEFAULT_PACKAGED_DB_PATH"
-    else
-      echo "Using packaged database: $DEFAULT_PACKAGED_DB_PATH"
-    fi
-  fi
-
   node server.js &
   NEXT_PID=$!
   pids="$NEXT_PID"
