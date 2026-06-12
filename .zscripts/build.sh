@@ -12,6 +12,12 @@ npm install
 echo "🔧 Generating Prisma client..."
 npx prisma generate 2>/dev/null || true
 
+echo "📦 Creating database if needed..."
+mkdir -p db
+if [ ! -f "./db/custom.db" ]; then
+  npx prisma db push --skip-generate 2>/dev/null || true
+fi
+
 echo "🔨 Building Next.js app..."
 npx next build
 

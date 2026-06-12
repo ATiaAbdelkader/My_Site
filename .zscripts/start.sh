@@ -13,5 +13,12 @@ if [ -z "$DATABASE_URL" ]; then
   export DATABASE_URL="file:./db/custom.db"
 fi
 
+# Ensure database exists for Prisma
+if [ ! -f "./db/custom.db" ]; then
+  echo "📦 Creating database..."
+  mkdir -p db
+  npx prisma db push --skip-generate 2>/dev/null || true
+fi
+
 echo "🚀 Starting Next.js production server on port $PORT..."
-exec npx next start -p 3000
+exec npx next start -p $PORT
