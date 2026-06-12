@@ -285,6 +285,12 @@ export const translations: Record<Language, Translations> = {
       items: [
         {
           period: '2022 - حتى الآن',
+          title: 'مدرب رئيسي مساعد FBS',
+          org: 'ABF (GIZ) — منشأة الأعمال الزراعية لأفريقيا',
+          desc: 'مدرب رئيسي مساعد معتمد في مدارس المزارعين الحقلية (FBS). تدريب وإرشاد أكثر من 500 مزارع، وتقديم برامج تدريب المدربين عبر الجزائر. تصميم المناهج التدريبية في ريادة الأعمال الزراعية والزراعة الذكية مناخيًا بدعم من GIZ والاتحاد الأوروبي.',
+        },
+        {
+          period: '2022 - حتى الآن',
           title: 'أستاذ متعاقد (بنظام الساعات)',
           org: 'جامعة الوادي، الوادي',
           desc: 'تدريس وحدات متخصصة لطلاب الطب البيطري (السنتين الأولى والثانية) في اللغة التقنية والإنتاج الحيواني. تطوير مواد بيداغوجية ومناهج دورات الإنتاج الحيواني.',
@@ -532,6 +538,12 @@ export const translations: Record<Language, Translations> = {
       items: [
         {
           period: '2022 – Present',
+          title: 'FBS Assistant Master Trainer',
+          org: 'ABF (GIZ) — Agri-Business Facility for Africa',
+          desc: 'Certified Assistant Master Trainer in Farmer Business School (FBS). Trained and mentored 500+ farmers, delivered Training of Trainers programs across Algeria. Designed curricula in agricultural entrepreneurship and climate-smart agriculture with support from GIZ and the European Union.',
+        },
+        {
+          period: '2022 – Present',
           title: 'Lecturer (Part-time / Hourly Basis)',
           org: 'University of El Oued, EL-Oued',
           desc: 'Deliver specialized modules for 1st and 2nd-year veterinary students, focusing on technical English and Animal Production. Develop structured pedagogical materials and course outlines.',
@@ -777,6 +789,12 @@ export const translations: Record<Language, Translations> = {
       sectionLabel: 'MON PARCOURS',
       title: 'Expérience Professionnelle',
       items: [
+        {
+          period: '2022 – Présent',
+          title: 'Formateur Maître Assistant FBS',
+          org: 'ABF (GIZ) — Facilité Agri-Business pour l\'Afrique',
+          desc: 'Formateur Maître Assistant certifié en Farmer Business School (FBS). Formation et encadrement de plus de 500 agriculteurs, animation de programmes de Formation des Formateurs à travers l\'Algérie. Conception de programmes en entrepreneuriat agricole et agriculture intelligente face au climat avec le soutien de GIZ et de l\'Union Européenne.',
+        },
         {
           period: '2022 – Présent',
           title: 'Enseignant Vacataire (Horaire)',

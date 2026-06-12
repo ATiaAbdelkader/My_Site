@@ -51,10 +51,10 @@ const SYSTEM_PROMPT = `You are the AI assistant for Abdelkader Atia's portfolio 
 
 ## Global Presence
 - Conferences in Peru, Switzerland, Tunisia, and Algeria
-- Member of ASM (Algerian Society for Mammals)
+- Member of ASM (American Society for Microbiology)
 - Member of EAS (European Association for Animal Science)
 - Member of IAPA (International Association for Animal Production)
-- ABF (African Breeders Foundation) Ambassador
+- ABF (Agri-Business Facility for Africa) Ambassador
 
 ## Key Achievements
 - Published multiple research papers in international journals
