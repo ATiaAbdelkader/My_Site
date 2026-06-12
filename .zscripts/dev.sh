@@ -1,13 +1,18 @@
 #!/bin/bash
+exec 2>&1
+set -e
+
 cd /home/z/my-project
 
-# Install deps if needed
-if [ ! -d "node_modules" ]; then
-  bun install
-fi
+export NEXT_TELEMETRY_DISABLED=1
+export PORT=3000
 
-# Setup database
+echo "📦 Installing dependencies..."
+bun install
+
+echo "🔧 Generating Prisma client..."
 bun run db:push 2>/dev/null || true
+bun run db:generate
 
-# Start dev server (this runs under the boot script's subshell)
+echo "🚀 Starting Next.js dev server..."
 exec bun run dev
