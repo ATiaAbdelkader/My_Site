@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-06-06T10:13:18.229Z",
+  "reportPeriod": {
+    "start": "2026-06-06T10:13:18.229Z",
+    "end": "2026-06-06T10:13:18.229Z"
+  },
+  "summary": {
+    "totalSessions": 0,
+    "totalEvents": 0,
+    "totalConversations": 0,
+    "uniqueVisitors": 0
+  },
+  "conversations": {
+    "total": 0,
+    "totalMessages": 0,
+    "totalCost": 0,
+    "averageMessagesPerConversation": 0
+  },
+  "topEvents": [],
+  "recentSessions": []
+}
