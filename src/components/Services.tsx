@@ -40,7 +40,7 @@ export default function Services() {
               transition={{ duration: 0.4, delay: i * 0.1 }}
               className="glass-card rounded-2xl p-6 text-center"
             >
-              <div className={`w-14 h-14 mx-auto rounded-2xl flex items-center justify-center text-2xl mb-4 ${serviceColors[i]}`}>
+              <div className={`w-14 h-14 mx-auto rounded-2xl flex items-center justify-center text-2xl mb-4 ${serviceColors[i % serviceColors.length]}`}>
                 {service.title.split(' ')[0]}
               </div>
               <h3 className="dark:text-white text-gray-900 font-bold text-lg mb-3">

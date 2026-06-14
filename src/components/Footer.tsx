@@ -1,10 +1,24 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { useLanguage } from '@/lib/language-context';
-import { Heart, Wifi, WifiOff } from 'lucide-react';
+import { Wifi, WifiOff } from 'lucide-react';
 
 export default function Footer() {
   const { t, language } = useLanguage();
+  const [isOnline, setIsOnline] = useState(true);
+
+  useEffect(() => {
+    setIsOnline(navigator.onLine);
+    const handleOnline = () => setIsOnline(true);
+    const handleOffline = () => setIsOnline(false);
+    window.addEventListener('online', handleOnline);
+    window.addEventListener('offline', handleOffline);
+    return () => {
+      window.removeEventListener('online', handleOnline);
+      window.removeEventListener('offline', handleOffline);
+    };
+  }, []);
 
   const socialLinks = [
     { name: 'LinkedIn', href: 'https://www.linkedin.com/in/abdelkader-atia-89061a146/' },
@@ -39,10 +53,17 @@ export default function Footer() {
 
           {/* Network Status */}
           <div className="flex items-center gap-2">
-            <span className="flex items-center gap-1.5 text-sm dark:text-emerald-400 text-emerald-600">
-              <Wifi size={14} />
-              {t.footer.online}
-            </span>
+            {isOnline ? (
+              <span className="flex items-center gap-1.5 text-sm dark:text-emerald-400 text-emerald-600">
+                <Wifi size={14} />
+                {t.footer.online}
+              </span>
+            ) : (
+              <span className="flex items-center gap-1.5 text-sm dark:text-red-400 text-red-600">
+                <WifiOff size={14} />
+                {language === 'ar' ? 'غير متصل' : language === 'fr' ? 'Hors ligne' : 'Offline'}
+              </span>
+            )}
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ import { useLanguage } from '@/lib/language-context';
 import { Lock, Users, Mail, BarChart3, Calendar, TrendingUp, ArrowLeft, Eye } from 'lucide-react';
 
 interface ContactSubmission {
-  id: number;
+  id: string;
   name: string;
   email: string;
   subject: string;

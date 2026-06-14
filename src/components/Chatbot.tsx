@@ -47,9 +47,8 @@ export default function Chatbot() {
   };
 
   useEffect(() => {
-    if (messages.length === 0) {
-      setMessages([{ role: 'assistant', content: welcomeMessage[language] || welcomeMessage.en }]);
-    }
+    // Reset messages when language changes so welcome message updates
+    setMessages([{ role: 'assistant', content: welcomeMessage[language] || welcomeMessage.en }]);
   }, [language]);
 
   useEffect(() => {

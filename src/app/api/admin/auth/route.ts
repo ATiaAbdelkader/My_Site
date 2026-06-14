@@ -1,11 +1,18 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 // Admin authentication — password is checked server-side only.
-// Set ADMIN_PASSWORD in your Vercel environment variables.
-// Falls back to a default for local development.
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'atia2024';
+// ADMIN_PASSWORD MUST be set in environment variables.
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
 
 export async function POST(request: NextRequest) {
+  if (!ADMIN_PASSWORD) {
+    console.error('ADMIN_PASSWORD environment variable is not set');
+    return NextResponse.json(
+      { error: 'Server configuration error' },
+      { status: 500 }
+    );
+  }
+
   try {
     const { password } = await request.json();
 

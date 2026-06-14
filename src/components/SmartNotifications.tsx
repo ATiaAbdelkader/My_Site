@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '@/lib/language-context';
-import { Sparkles, Bell, WelcomeBack } from 'lucide-react';
+import { Sparkles, Bell } from 'lucide-react';
 
 export default function SmartNotifications() {
   const { language } = useLanguage();
