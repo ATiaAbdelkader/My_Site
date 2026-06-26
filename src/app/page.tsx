@@ -7,6 +7,7 @@ import About from '@/components/About';
 import Skills from '@/components/Skills';
 import Experience from '@/components/Experience';
 import Projects from '@/components/Projects';
+import Publications from '@/components/Publications';
 import Services from '@/components/Services';
 import Achievements from '@/components/Achievements';
 import KnowledgeHub from '@/components/KnowledgeHub';
@@ -54,6 +55,7 @@ export default function Home() {
         <Skills />
         <Experience />
         <Projects />
+        <Publications />
         <Services />
         <Achievements />
         <ImageGallery />

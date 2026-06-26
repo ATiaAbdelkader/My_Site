@@ -27,3 +27,4 @@ worklog.md/
 # OS
 .DS_Store
 Thumbs.db
+tsconfig.tsbuildinfo

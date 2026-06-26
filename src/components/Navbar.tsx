@@ -8,7 +8,7 @@ import { useTheme } from 'next-themes';
 import { Sun, Moon, Menu, X } from 'lucide-react';
 import ThemeCustomizer from '@/components/ThemeCustomizer';
 
-const navItems = ['home', 'about', 'skills', 'experience', 'projects', 'services', 'achievements', 'gallery', 'knowledge', 'booking', 'contact'] as const;
+const navItems = ['home', 'about', 'skills', 'experience', 'projects', 'publications', 'services', 'achievements', 'gallery', 'knowledge', 'booking', 'contact'] as const;
 
 const langLabels: Record<Language, string> = { ar: 'AR', en: 'EN', fr: 'FR' };
 
@@ -54,12 +54,28 @@ export default function Navbar() {
     skills: 'skills',
     experience: 'experience',
     projects: 'projects',
+    publications: 'publications',
     services: 'services',
     achievements: 'achievements',
     gallery: 'gallery',
     knowledge: 'knowledge',
     booking: 'booking',
     contact: 'contact',
+  };
+
+  // Items that navigate to a separate page instead of scrolling
+  const pageRoutes: Record<string, string> = {
+    publications: '/publications',
+  };
+
+  const handleNavClick = (item: string) => {
+    if (pageRoutes[item]) {
+      // Navigate to the separate page
+      window.location.href = pageRoutes[item];
+      setIsOpen(false);
+    } else {
+      scrollToSection(sectionIds[item]);
+    }
   };
 
   return (
@@ -91,7 +107,7 @@ export default function Navbar() {
             {navItems.map((item) => (
               <button
                 key={item}
-                onClick={() => scrollToSection(sectionIds[item])}
+                onClick={() => handleNavClick(item)}
                 className="px-3 py-2 rounded-lg text-sm font-medium dark:text-gray-300 text-gray-600 dark:hover:text-cyan-400 hover:text-cyan-600 transition-colors min-h-[44px]"
               >
                 {t.nav[item as keyof typeof t.nav]}
@@ -155,7 +171,7 @@ export default function Navbar() {
                   initial={{ opacity: 0, x: dir === 'rtl' ? 20 : -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: i * 0.05 }}
-                  onClick={() => scrollToSection(sectionIds[item])}
+                  onClick={() => handleNavClick(item)}
                   className="w-full text-left rtl:text-right px-4 py-3 rounded-lg text-sm font-medium dark:text-gray-300 text-gray-600 dark:hover:text-cyan-400 hover:text-cyan-600 dark:hover:bg-slate-800/40 hover:bg-gray-50 transition-colors min-h-[44px]"
                 >
                   {t.nav[item as keyof typeof t.nav]}
