@@ -10,6 +10,7 @@ export interface Translations {
     publications: string;
     talks: string;
     teaching: string;
+    grants: string;
     services: string;
     achievements: string;
     gallery: string;
@@ -207,6 +208,7 @@ export const translations: Record<Language, Translations> = {
       publications: 'منشورات',
       talks: 'محاضرات',
       teaching: 'تدريس',
+      grants: 'منح',
       services: 'الخدمات',
       achievements: 'الإنجازات',
       gallery: 'معرض',
@@ -463,6 +465,7 @@ export const translations: Record<Language, Translations> = {
       publications: 'Publications',
       talks: 'Talks',
       teaching: 'Teaching',
+      grants: 'Grants',
       services: 'Services',
       achievements: 'Achievements',
       gallery: 'Gallery',
@@ -719,6 +722,7 @@ export const translations: Record<Language, Translations> = {
       publications: 'Publications',
       talks: 'Conférences',
       teaching: 'Enseignement',
+      grants: 'Subventions',
       services: 'Services',
       achievements: 'Réalisations',
       gallery: 'Galerie',
