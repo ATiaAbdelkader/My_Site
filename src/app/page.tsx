@@ -9,6 +9,7 @@ import Experience from '@/components/Experience';
 import Projects from '@/components/Projects';
 import Publications from '@/components/Publications';
 import AcademicProfiles from '@/components/AcademicProfiles';
+import Talks from '@/components/Talks';
 import Services from '@/components/Services';
 import Achievements from '@/components/Achievements';
 import KnowledgeHub from '@/components/KnowledgeHub';
@@ -58,6 +59,7 @@ export default function Home() {
         <Projects />
         <Publications />
         <AcademicProfiles />
+        <Talks />
         <Services />
         <Achievements />
         <ImageGallery />

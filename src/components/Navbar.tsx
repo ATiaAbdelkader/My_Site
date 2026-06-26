@@ -8,7 +8,7 @@ import { useTheme } from 'next-themes';
 import { Sun, Moon, Menu, X } from 'lucide-react';
 import ThemeCustomizer from '@/components/ThemeCustomizer';
 
-const navItems = ['home', 'about', 'skills', 'experience', 'projects', 'publications', 'services', 'achievements', 'gallery', 'knowledge', 'booking', 'contact'] as const;
+const navItems = ['home', 'about', 'skills', 'experience', 'projects', 'publications', 'talks', 'services', 'achievements', 'gallery', 'knowledge', 'booking', 'contact'] as const;
 
 const langLabels: Record<Language, string> = { ar: 'AR', en: 'EN', fr: 'FR' };
 
@@ -55,6 +55,7 @@ export default function Navbar() {
     experience: 'experience',
     projects: 'projects',
     publications: 'publications',
+    talks: 'talks',
     services: 'services',
     achievements: 'achievements',
     gallery: 'gallery',

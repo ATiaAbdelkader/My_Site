@@ -8,6 +8,7 @@ export interface Translations {
     experience: string;
     projects: string;
     publications: string;
+    talks: string;
     services: string;
     achievements: string;
     gallery: string;
@@ -203,6 +204,7 @@ export const translations: Record<Language, Translations> = {
       experience: 'المسيرة',
       projects: 'المشاريع',
       publications: 'منشورات',
+      talks: 'محاضرات',
       services: 'الخدمات',
       achievements: 'الإنجازات',
       gallery: 'معرض',
@@ -457,6 +459,7 @@ export const translations: Record<Language, Translations> = {
       experience: 'Experience',
       projects: 'Projects',
       publications: 'Publications',
+      talks: 'Talks',
       services: 'Services',
       achievements: 'Achievements',
       gallery: 'Gallery',
@@ -711,6 +714,7 @@ export const translations: Record<Language, Translations> = {
       experience: 'Parcours',
       projects: 'Projets',
       publications: 'Publications',
+      talks: 'Conférences',
       services: 'Services',
       achievements: 'Réalisations',
       gallery: 'Galerie',
