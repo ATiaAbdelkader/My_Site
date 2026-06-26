@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useLanguage } from '@/lib/language-context';
 import { Wifi, WifiOff } from 'lucide-react';
+import { enabledProfiles } from '@/data/academic-profiles';
 
 export default function Footer() {
   const { t, language } = useLanguage();
@@ -23,12 +24,48 @@ export default function Footer() {
   const socialLinks = [
     { name: 'LinkedIn', href: 'https://www.linkedin.com/in/abdelkader-atia-89061a146/' },
     { name: 'Facebook', href: 'https://www.facebook.com/abdelkader.atia' },
-    { name: 'Google Scholar', href: '#' },
   ];
 
   return (
     <footer className="dark:bg-[#060a1f] bg-gray-50 border-t dark:border-white/10 border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {/* Academic profile badges row */}
+        {enabledProfiles.length > 0 && (
+          <div className="flex flex-wrap items-center justify-center gap-3 mb-6 pb-6 border-b dark:border-white/5 border-gray-200">
+            <span className="text-xs text-gray-500 dark:text-gray-400 mr-2">
+              {language === 'ar'
+                ? 'الملفات الأكاديمية:'
+                : language === 'fr'
+                  ? 'Profils académiques :'
+                  : 'Academic profiles:'}
+            </span>
+            {enabledProfiles.map((profile) => (
+              <a
+                key={profile.id}
+                href={profile.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-1.5 px-2.5 py-1 rounded-full dark:bg-slate-800/50 bg-white border dark:border-white/10 border-gray-200 hover:dark:border-cyan-500/30 hover:border-cyan-400/40 transition-all min-h-[32px]"
+                title={profile.description}
+                aria-label={`Visit ${profile.name} profile`}
+              >
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill={profile.color}
+                  className="flex-shrink-0"
+                >
+                  <path d={profile.icon} />
+                </svg>
+                <span className="text-xs font-medium dark:text-gray-300 text-gray-600 group-hover:text-cyan-400 transition-colors">
+                  {profile.name}
+                </span>
+              </a>
+            ))}
+          </div>
+        )}
+
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           {/* Copyright */}
           <div className="flex items-center gap-2 dark:text-gray-400 text-gray-500 text-sm">
