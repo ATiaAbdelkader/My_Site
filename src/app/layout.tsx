@@ -4,6 +4,7 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "@/components/theme-provider";
 import { LanguageProvider } from "@/lib/language-context";
+import { orcidId, googleScholarId } from "@/data/academic-profiles";
 
 const cairo = Cairo({
   variable: "--font-cairo",
@@ -46,8 +47,45 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // JSON-LD structured data for Person schema
+  // Helps Google Scholar and search engines discover academic profiles
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Abdelkader Atia",
+    jobTitle: "PhD Researcher & Agricultural Innovator",
+    description:
+      "PhD Researcher specializing in animal sciences, semen quality, and sustainable livestock production",
+    url: "https://abdelkaderatia.com",
+    identifier: {
+      "@type": "PropertyValue",
+      name: "ORCID iD",
+      value: orcidId,
+    },
+    sameAs: [
+      `https://orcid.org/${orcidId}`,
+      `https://scholar.google.com/citations?user=${googleScholarId}`,
+      "https://www.researchgate.net/profile/Abdelkader-Atia",
+      "https://github.com/ATiaAbdelkader",
+    ],
+    knowsAbout: [
+      "Animal Sciences",
+      "Semen Quality",
+      "Livestock Production",
+      "Sustainable Agriculture",
+      "Digital Agriculture",
+      "Agricultural Training",
+    ],
+  };
+
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
+      </head>
       <body
         className={`${cairo.variable} antialiased bg-background text-foreground`}
         style={{ fontFamily: "'Cairo', sans-serif" }}
